@@ -8,3 +8,8 @@ React Native App for CDART
 - Andrew Nelson
 - Iris Mendoza
 - John Wat
+
+Project Technology
+- React-Native
+- React-Redux
+- Javascript
