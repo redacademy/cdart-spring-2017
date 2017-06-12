@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View
+  Text
 } from 'react-native';
 
 export default class cdart extends Component {
   render() {
     return (
+        <Text>Hello</Text>
     );
   }
 }
