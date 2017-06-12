@@ -7,7 +7,7 @@ import {
 export default class cdart extends Component {
   render() {
     return (
-        <Text>Hello</Text>
+        <Text >Hello</Text >dasdasas
     );
   }
 }
