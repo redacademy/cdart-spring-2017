@@ -9,6 +9,7 @@ React Native App for CDART
 - Iris Mendoza
 - John Wat
 
+<<<<<<< HEAD
 ##Project Technology
 - React-Native
 - React-Redux
@@ -19,3 +20,7 @@ A mobile application developed for the Canadian Disaster Animal Response Team (C
 This app is intended to be used as a central hub for CDART volunteers to access learning resources, key forms and procedures, and training materials,
 as well as for pet owners to share information about their pets that can be used by CDART volunteers to facilitate animal rescue in disaster scenarios.
 
+=======
+#Progress
+Setting up project structure and planning out project flow
+>>>>>>> updating README
