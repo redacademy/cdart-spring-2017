@@ -9,6 +9,7 @@ class PictureList extends Component {
     super();
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
+      //CREATE A PROPERTY CALLED list and PASS AN ARRAY INTO IT
       dataSource: ds.cloneWithRows(this.props.list),
     }
   }
