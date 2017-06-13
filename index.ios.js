@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  Text
+  Text, View
 } from 'react-native';
+import HomeNavigationTab from './js/components/HomeNavigationTab';
 
 export default class cdart extends Component {
   render() {
+    var styles = {
+      container: {
+        flexDirection: 'row',
+        justifyContent: 'space-around'
+      }
+    }
     return (
-        <Text>Hello</Text>
+      <View style={styles.container}>
+        <HomeNavigationTab title="pet profiles"/>
+        <HomeNavigationTab title="some shit"/>
+      </View>
     );
   }
 }
