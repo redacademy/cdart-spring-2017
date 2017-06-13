@@ -5,25 +5,40 @@ const width = Dimensions.get('window').width;
 
 export const styles = StyleSheet.create({
   container: {
+    paddingVertical: 60,
+    flex: 1,
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  ownerSection: {
+    height: (height - 140) * 0.4,
     width: width,
-    backgroundColor: 'aquamarine'
+    marginBottom: 10,
+  },
+  volunteerSection: {
+    height: (height - 140) * 0.6,
+    width: width,
   },
   homeHeader: {
-    marginTop: 20,
-    marginBottom: 35,
+    width: width,
+    textAlign: 'center',
+    marginTop: 10,
+    marginBottom: 15,
   },
   tabContainer: {
-    height: 'auto',
-    width: width * 0.8,
-    paddingHorizontal: width * 0.1,
+    paddingHorizontal: width * 0.05,
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    alignContent: 'center'
   },
   tab: {
-    height: 125,
-    width: 160,
+    height: 90,
+    width: 120,
+    marginVertical: 10,
+    borderWidth: 3,
+    borderColor: 'black',
     backgroundColor: 'yellow'
   }
 });

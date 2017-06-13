@@ -6,33 +6,43 @@ import {
   Text
 }from 'react-native';
 
-import styles from './styles';
+import { styles } from './styles';
 
 const Home = () => {
 
   return (
     <View style={ styles.container }>
-      <Text style={ styles.homeHeader }>
-        Pet Owner
-      </Text>
+      <View style={ styles.ownerSection }>
+         <Text style={ styles.homeHeader }>
+          Pet Owner
+        </Text>
 
-      <View style={ styles.tabContainer }>
-        <View style={ styles.tab }>
-        </View>
+        <View style={ styles.tabContainer }>
+          <View style={ styles.tab }>
+          </View>
 
-        <View style={ styles.tab }>
+          <View style={ styles.tab }>
+          </View>
         </View>
       </View>
 
-      <Text style={ styles.homeHeader }>
-        Volunteer
-      </Text>
+      <View style={ styles.volunteerSection }>
+        <Text style={ styles.homeHeader }>
+          Volunteer
+        </Text>
 
-      <View style={ styles.tabContainer }>
-        <View style={ styles.tab }>
-        </View>
+        <View style={ styles.tabContainer }>
+          <View style={ styles.tab }>
+          </View>
 
-        <View style={ styles.tab }>
+          <View style={ styles.tab }>
+          </View>
+
+          <View style={ styles.tab }>
+          </View>
+
+          <View style={ styles.tab }>
+          </View>
         </View>
       </View>
     </View>

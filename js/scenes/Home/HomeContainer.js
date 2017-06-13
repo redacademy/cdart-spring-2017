@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { connect } from 'react-redux';
-
 import {
   View
 } from 'react-native';
+
+import Home from './Home';
 
 class HomeContainer extends Component {
 
   render() {
     return(
       <View>
-        <HomeScreen />
+        <Home />
       </View>
     );
   }
