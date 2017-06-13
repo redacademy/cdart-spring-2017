@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import { Text } from 'react-native';
 
-GetInvolved.propTypes = {
-  // myProp: PropTypes.array.isRequired,
-}
+// GetInvolved.propTypes = {
+//   // myProp: PropTypes.array.isRequired,
+// }
 
 const GetInvolved = () => {
   return (

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import { Text } from 'react-native';
 
-PetProfile.propTypes = {
-  // myProp: PropTypes.array.isRequired,
-}
+// PetProfile.propTypes = {
+//   // myProp: PropTypes.array.isRequired,
+// }
 
 const PetProfile = () => {
   return (
