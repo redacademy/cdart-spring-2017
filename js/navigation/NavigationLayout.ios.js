@@ -39,14 +39,14 @@ class NavigationLayout extends Component {
   //   return <Icon name={iconName} size={24} color={isSelected ? 'red' : 'gray'} />
   // }
 
-  // renderTitle(isSelected, title) {
-  //   const titleStyle = {
-  //     color: isSelected ? 'red' : 'gray',
-  //     fontSize: 12,
-  //     fontFamily: 'Arial'
-  //   };
-  //   return <Text style={titleStyle}>{title}</Text>
-  // }
+  renderTitle(isSelected, title) {
+    const titleStyle = {
+      color: isSelected ? 'red' : 'gray',
+      fontSize: 12,
+      fontFamily: 'Arial'
+    };
+    return <Text style={titleStyle}>{title}</Text>
+  }
 
   render() {
     return(
@@ -74,7 +74,7 @@ class NavigationLayout extends Component {
           id="petProfile"
           title="Pet Profile"
           //renderIcon={isSelected => this.renderIcon('ios-heart', isSelected)}
-          //renderTitle={this.renderTitle}
+          renderTitle={this.renderTitle}
         >
           <StackNavigation
             id="petProfile"
@@ -88,7 +88,7 @@ class NavigationLayout extends Component {
           id="updates"
           title="Updates"
           //renderIcon={isSelected => this.renderIcon('ios-heart', isSelected)}
-          //renderTitle={this.renderTitle}
+          renderTitle={this.renderTitle}
         >
           <StackNavigation
             id="updates"
@@ -102,7 +102,7 @@ class NavigationLayout extends Component {
           id="getInvolved"
           title="Get Involved"
           //renderIcon={isSelected => this.renderIcon('ios-heart', isSelected)}
-          //renderTitle={this.renderTitle}
+          renderTitle={this.renderTitle}
         >
           <StackNavigation
             id="getInvolved"
