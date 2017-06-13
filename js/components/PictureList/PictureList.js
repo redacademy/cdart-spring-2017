@@ -20,7 +20,6 @@ const whichPicture = (title) => {
   }
 }
 
-
 class PictureList extends Component {
 
   constructor(props){
