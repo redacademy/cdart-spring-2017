@@ -4,7 +4,6 @@ import {
   AppRegistry,
   Text, View
 } from 'react-native';
-import HomeNavigationTab from './js/components/HomeNavigationTab';
 
 import { NavigationProvider, StackNavigation } from '@expo/ex-navigation';
 import { StatusBar } from 'react-native';
@@ -13,12 +12,6 @@ import Router from './js/navigation/router';
 
 export default class cdart extends Component {
   render() {
-    var styles = {
-      container: {
-        flexDirection: 'row',
-        justifyContent: 'space-around'
-      }
-    }
     return (
       <NavigationProvider router={Router}>
         <StatusBar barStyle="light-content" />
