@@ -5,11 +5,12 @@
 
 import React, { Component } from 'react';
 import {
-  StyleSheet,       // CSS-like styles
-  Text,             // Renders text
-  TouchableOpacity, // Pressable container
-  View              // Container component
+  Text,
+  TouchableOpacity,
+  View,
+  Platform,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import { styles } from './styles';
 
@@ -17,9 +18,22 @@ class OnboardingSwiperButton extends Component {
   render({ onPress } = this.props) {
     return (
       <TouchableOpacity onPress={onPress}>
-        <View style={styles.button}>
-          <Text style={styles.text}>{this.props.text.toUpperCase()}</Text>
-        </View>
+          {this.props.text === 'Continue'
+          ?
+          <View style={styles.buttonarrow}>
+            <Icon
+              name={
+                Platform.OS === 'ios' ? 'ios-arrow-forward' : 'md-arrow-forward'
+              }
+              size={32}
+              color={'white'}
+            />
+          </View>
+          :
+          <View style={styles.button}>
+            <Text style={styles.text}>{this.props.text.toUpperCase()}</Text>
+          </View>
+        }
       </TouchableOpacity>
     );
   }

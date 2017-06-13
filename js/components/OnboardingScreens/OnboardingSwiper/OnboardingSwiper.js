@@ -235,13 +235,19 @@ class OnboardingSwiper extends Component {
   renderButton = () => {
     const lastScreen = this.state.index === this.state.total - 1;
     return (
-      <View pointerEvents="box-none" style={[styles.buttonWrapper, styles.fullScreen]}>
+      <View>
         {lastScreen
           // Show this button on the last screen
           // TODO: Add a handler that would send a user to your app after onboarding is complete
-          ? <Button text="Get Started" onPress={() => console.log('Send me to the app')} />
+          ?
+          <View pointerEvents="box-none" style={[styles.buttonWrapper, styles.fullScreen]}>
+            <Button text="Get Started" onPress={() => console.log('Send me to the app')} />
+          </View>
           // Or this one otherwise
-          : <Button text="Continue" onPress={() => this.swipe()} />
+          :
+          <View pointerEvents="box-none" style={[styles.buttonNextWrapper, styles.fullScreen]}>
+            <Button text="Continue" onPress={() => this.swipe()} />
+          </View>
         }
       </View>
     );

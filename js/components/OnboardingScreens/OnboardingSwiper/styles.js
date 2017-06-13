@@ -60,4 +60,16 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'center'
   },
+  buttonNextWrapper:{
+    backgroundColor: 'transparent',
+    flexDirection: 'column',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    flex: 1,
+    paddingHorizontal: 40,
+    paddingVertical: 40,
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end'
+  },
 });
