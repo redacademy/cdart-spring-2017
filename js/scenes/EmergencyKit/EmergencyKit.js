@@ -1,14 +1,30 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View, Text } from 'react-native';
+import PropTypes from 'prop-types';
+import { ListView } from 'react-native';
 
-import { ListItem } from '../../components/ListItem';
+import ListItem from '../../components/ListItem/ListItem';
 
-const EmergencyKit = (kitCheckList) => {
+import { styles } from './styles';
+
+const EmergencyKit = ({ dataSource }) => {
   return (
-    kitCheckList.map((item, i) => {
-      return <ListItem item={item} key={item + i} />
-    })
+    <View>
+      <View style={styles.greyTop} >
+        <Text style={styles.greyTopText} >Prepare your pet for an emergency by having these items ready to grab and go</Text>
+      </View>
+      <ListView
+        dataSource={dataSource}
+        renderRow={(item, i) => {
+          return <ListItem item={item} key={item + i} />
+        }}
+      />
+    </View>
   )
+}
+
+EmergencyKit.propTypes = {
+  kitCheckList: PropTypes.array
 }
 
 export default EmergencyKit;

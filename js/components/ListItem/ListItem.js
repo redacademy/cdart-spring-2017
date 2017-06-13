@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { styles } from './styles';
 
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 const ListItem = ({ item }) => {
   return (
-    <Text>{item}</Text>
+    <View style={styles.container} >
+      <Text style={styles.itemText} >{item}</Text>
+    </View>
   )
 }
 

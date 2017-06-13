@@ -15,17 +15,12 @@ import Router from './js/navigation/router';
 export default class cdart extends Component {
   render() {
     return (
-<<<<<<< HEAD
       <NavigationProvider router={Router}>
         <StatusBar barStyle="light-content" />
         <StackNavigation
           navigatorUID="root"
           initialRoute={Router.getRoute('navigation')} />
       </NavigationProvider>
-=======
-        // <Text>Hello</Text>
-        <PictureList />
->>>>>>> updated pictureList
     );
   }
 }
