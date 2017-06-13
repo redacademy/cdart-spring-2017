@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  Text, View
+  Text
 } from 'react-native';
+import HomeNavigationTab from './js/components/HomeNavigationTab';
 
 export default class cdart extends Component {
   render() {
     return (
-      <Text>hello </Text>
+        <Text>Hello</Text>
     );
   }
 }

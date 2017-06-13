@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { View, Text, Image, ListView } from 'react-native';
 
 class PictureList extends Component {
   constructor(){
@@ -9,7 +10,9 @@ class PictureList extends Component {
   }
   render() {
     return (
+      <View>
 
+      </View>
     );
   }
 }
