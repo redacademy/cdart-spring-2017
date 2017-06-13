@@ -7,22 +7,23 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 10,
+    alignItems: 'center',
+    padding: 5,
+    paddingRight: 10,
   },
   greenCheck: {
-    borderRadius: 25,
-    height: 50,
-    width: 50,
+    borderRadius: 15,
+    height: 30,
+    width: 30,
     borderWidth: 1,
-    borderColor: 'black'
+    borderColor: 'grey'
   },
   clickedGreenCheck: {
-    backgroundColor: 'green',
-    borderRadius: 25,
-    height: 50,
-    width: 50,
+    borderRadius: 15,
+    height: 30,
+    width: 30,
     borderWidth: 1,
-    borderColor: 'black'
+    borderColor: 'grey'
   },
   itemText: {
     padding: 16,

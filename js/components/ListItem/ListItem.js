@@ -9,23 +9,26 @@ class ListItem extends Component {
   constructor (){
     super();
     this.state = {
-      clicked: true
+      clicked: false
     }
   }
 
   render(){
     return (
-      <View style={ styles.container } >
-        <Text style={ styles.itemText } >{ this.props.item }</Text>
-        <TouchableHighlight
-          onPress={() => this.setState({clicked: !this.state.clicked})}
-        >
-          <Image
-            style={ this.state.clicked ? styles.greenCheck : styles.clickedGreenCheck }
-            source={require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/icon-20@3x.png')}
-          />
-        </TouchableHighlight>
-      </View>
+      <TouchableHighlight onPress={() => this.setState({clicked: !this.state.clicked})} >
+        <View style={ styles.container } >
+          <Text style={ styles.itemText } >{ this.props.item }</Text>
+          {
+            this.state.clicked ?
+            <Image
+              style={styles.clickedGreenCheck}
+              source={require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/icon-20@3x.png')}
+            />
+            :
+            <View style={styles.greenCheck} ></View>
+          }
+        </View>
+      </TouchableHighlight>
     )
   }
 
