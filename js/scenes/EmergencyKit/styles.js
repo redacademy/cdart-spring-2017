@@ -9,11 +9,15 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     width: width,
     padding: 16,
-
-
   },
   greyTopText: {
     color: 'darkgrey'
-  }
-
+  },
+  separator: {
+    flex: 1,
+    marginLeft: 3,
+    marginRight: 3,
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: '#8E8E8E',
+  },
 });

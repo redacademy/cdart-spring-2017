@@ -10,15 +10,15 @@ import { NavigationProvider, StackNavigation } from '@expo/ex-navigation';
 import { StatusBar } from 'react-native';
 
 import Router from './js/navigation/router';
+import EmergencyKit from './js/scenes/EmergencyKit'
 
 export default class cdart extends Component {
   render() {
     return (
       <NavigationProvider router={Router}>
+        <EmergencyKit />
         <StatusBar barStyle="light-content" />
-        <StackNavigation
-          navigatorUID="root"
-          initialRoute={Router.getRoute('navigation')} />
+
       </NavigationProvider>
     );
   }

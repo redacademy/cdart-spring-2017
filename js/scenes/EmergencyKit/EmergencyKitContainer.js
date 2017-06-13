@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ListView } from 'react-native';
 
 import EmergencyKit from './EmergencyKit'
+import { petEmergencyKit } from '../../assets/data'
 
 class EmergencyKitContainer extends Component {
 
@@ -9,7 +10,7 @@ class EmergencyKitContainer extends Component {
     super();
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      dataSource: ds.cloneWithRows(kitCheckList),
+      dataSource: ds.cloneWithRows(petEmergencyKit),
     };
   }
 
@@ -19,17 +20,5 @@ class EmergencyKitContainer extends Component {
     )
   }
 }
-
-const kitCheckList = [
-  'Pet food for 1 week',
-  'Carrier',
-  'Collar/ID Tags',
-  'Leash',
-  'Bottled Water',
-  'Medication',
-  'Litter and litter box',
-  'Recent photos of your pet',
-  'Can opener',
-]
 
 export default EmergencyKitContainer
