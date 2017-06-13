@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-
-import {
-  AppRegistry,
-  Text, View
-} from 'react-native';
+import { AppRegistry } from 'react-native';
 
 import { NavigationProvider, StackNavigation } from '@expo/ex-navigation';
 import { StatusBar } from 'react-native';
