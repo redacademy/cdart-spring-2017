@@ -60,7 +60,6 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'center'
   },
-<<<<<<< HEAD
   buttonNextWrapper:{
     backgroundColor: 'transparent',
     flexDirection: 'column',
@@ -73,6 +72,4 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-end'
   },
-=======
->>>>>>> implement swiping ability
 });
