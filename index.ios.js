@@ -6,8 +6,6 @@ import { StatusBar } from 'react-native';
 
 import Router from './js/navigation/router';
 
-import Home from './js/scenes/Home';
-
 export default class cdart extends Component {
   render() {
     return (
