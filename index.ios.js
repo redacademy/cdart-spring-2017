@@ -16,7 +16,7 @@ export default class cdart extends Component {
     return (
       <View style={styles.container}>
         <HomeNavigationTab title="pet profiles"/>
-        <HomeNavigationTab title="some shit"/>
+        <HomeNavigationTab title="some stuff"/>
       </View>
     );
   }
