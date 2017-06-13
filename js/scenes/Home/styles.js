@@ -5,18 +5,18 @@ const width = Dimensions.get('window').width;
 
 export const styles = StyleSheet.create({
   container: {
-    paddingVertical: 60,
+    paddingVertical: 50,
     flex: 1,
     justifyContent: 'space-between',
     alignItems: 'center'
   },
   ownerSection: {
-    height: (height - 140) * 0.4,
+    height: (height - 100) * 0.4,
     width: width,
     marginBottom: 10,
   },
   volunteerSection: {
-    height: (height - 140) * 0.6,
+    height: (height - 100) * 0.6,
     width: width,
   },
   homeHeader: {
@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     marginBottom: 15,
   },
   tabContainer: {
-    paddingHorizontal: width * 0.05,
+    paddingHorizontal: width * 0.03,
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',

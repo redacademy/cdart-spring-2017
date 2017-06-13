@@ -8,6 +8,8 @@ import {
 
 import { styles } from './styles';
 
+import HomeTab from '../../components/HomeNavigationTab';
+
 const Home = () => {
 
   return (
@@ -18,11 +20,9 @@ const Home = () => {
         </Text>
 
         <View style={ styles.tabContainer }>
-          <View style={ styles.tab }>
-          </View>
+          <HomeTab />
 
-          <View style={ styles.tab }>
-          </View>
+          <HomeTab />
         </View>
       </View>
 
@@ -32,17 +32,13 @@ const Home = () => {
         </Text>
 
         <View style={ styles.tabContainer }>
-          <View style={ styles.tab }>
-          </View>
+          <HomeTab />
 
-          <View style={ styles.tab }>
-          </View>
+          <HomeTab />
 
-          <View style={ styles.tab }>
-          </View>
+          <HomeTab />
 
-          <View style={ styles.tab }>
-          </View>
+          <HomeTab />
         </View>
       </View>
     </View>

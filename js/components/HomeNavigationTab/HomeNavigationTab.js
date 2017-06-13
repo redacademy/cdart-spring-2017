@@ -1,16 +1,22 @@
 import React from 'react';
-import { View, Text, Image, Dimensions} from 'react-native';
+import PropTypes from 'prop-types';
+
+import { View, Text, Image } from 'react-native';
 import { styles } from './styles';
 
 const HomeNavigationTab = ({title}) => {
 
   return (
-    <View style={styles.container}>
+    <View style={styles.tab}>
       <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
-       style={{width: 75, height: 75}} />
+       style={ styles.image } />
       <Text>{title}</Text>
     </View>
   );
+}
+
+HomeNavigationTab.propTypes = {
+  title: PropTypes.text
 }
 
 export default HomeNavigationTab;
