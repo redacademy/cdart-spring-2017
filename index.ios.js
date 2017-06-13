@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 import {
   AppRegistry,
-  Text, View
+  Text
 } from 'react-native';
+import HomeNavigationTab from './js/components/HomeNavigationTab';
 
 import { NavigationProvider, StackNavigation } from '@expo/ex-navigation';
 import { StatusBar } from 'react-native';
