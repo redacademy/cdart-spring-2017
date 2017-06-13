@@ -18,6 +18,7 @@ const EmergencyKit = ({ dataSource }) => {
         renderRow={(item, i) => {
           return <ListItem item={item} key={item + i} />
         }}
+        renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
       />
     </View>
   )
