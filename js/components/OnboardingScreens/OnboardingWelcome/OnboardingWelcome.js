@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-<<<<<<< HEAD
   Text,
   View
 } from 'react-native';
@@ -10,40 +9,18 @@ import { styles } from './styles';
 
 const OnboardingWelcome = () => {
   return (
-      <LinearGradient
-        start={{x: 0.0, y: 0.2}} end={{x: 0.5, y: 1.0}}
-        locations={[0,1.0]}
-        colors={['#fa725d', '#bf3841']}
-        style={styles.linearGradient}
-      >
-        <View style={[styles.slide, { backgroundColor: 'transparent' } ]}>
-            <Text style={styles.header}>Welcome to CDART Assist</Text>
-            <Text style={styles.text}>Assisting you and your domestic animals in preparation for an emergency.</Text>
-        </View>
-      </LinearGradient>
-    );
-  }
-=======
-  View,
-  Text,
-  Image,
-  TouchableHighlight,
-} from 'react-native';
-
-const OnboardingWelcome = () => {
-  return (
-    <View>
-      <Text >Welcome to CDART Assist</Text>
-      <Text >Assisting you and your domestic animals in preparation for an emergency</Text>
-      <TouchableHighlight onPress={console.log('here')}>
-        <Text> Hello </Text>
-      </TouchableHighlight>
-      <TouchableHighlight onPress={console.log('here')}>
-        <Text> Hello </Text>
-      </TouchableHighlight>
-    </View>
+    <LinearGradient
+      start={{x: 0.0, y: 0.2}} end={{x: 0.5, y: 1.0}}
+      locations={[0,1.0]}
+      colors={['#fa725d', '#bf3841']}
+      style={styles.linearGradient}
+    >
+      <View style={[styles.slide, { backgroundColor: 'transparent' } ]}>
+          <Text style={styles.header}>Welcome to CDART Assist</Text>
+          <Text style={styles.text}>Assisting you and your domestic animals in preparation for an emergency.</Text>
+      </View>
+    </LinearGradient>
   );
 }
->>>>>>> add onboarding scenes
 
 export default OnboardingWelcome;

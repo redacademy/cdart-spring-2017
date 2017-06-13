@@ -11,9 +11,12 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 50,    // Horizontal padding
     paddingVertical: 10,      // Vertical padding
   },
+<<<<<<< HEAD
   buttonarrow: {
     alignItems: 'flex-end'
   },
+=======
+>>>>>>> implement swiping ability
   // Button text
   text: {
     color: '#FFFFFF',
