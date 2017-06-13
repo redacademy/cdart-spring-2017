@@ -39,6 +39,5 @@ export const styles = StyleSheet.create({
     marginVertical: 10,
     borderWidth: 3,
     borderColor: 'black',
-    backgroundColor: 'yellow'
   }
 });
