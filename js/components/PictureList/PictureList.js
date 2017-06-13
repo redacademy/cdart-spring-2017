@@ -3,20 +3,13 @@ import { View, Text, Image, ListView, Dimensions } from 'react-native';
 import { styles } from './styles';
 
 var { height, width } = Dimensions.get('window');
-const procedureList = [
-  'Daily Volunteer Duties',
-  'Animal Rescue Flow',
-  'Incident Command Flow',
-  'Reception Centre Setup',
-  'Animal Condition Inspection',
-  'Basic Animal Care'
-]
+
 class PictureList extends Component {
   constructor(){
     super();
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      dataSource: ds.cloneWithRows(procedureList),
+      dataSource: ds.cloneWithRows(this.props.list),
     }
   }
   render() {
