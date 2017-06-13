@@ -1,31 +1,24 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 
-=======
->>>>>>> Rough out home screen component.
 import {
   AppRegistry,
   Text, View
 } from 'react-native';
-<<<<<<< HEAD
-=======
-import HomeNavigationTab from './js/components/HomeNavigationTab';
->>>>>>> Rough out home screen component.
 
-import Home from './js/scenes/Home';
+import { NavigationProvider, StackNavigation } from '@expo/ex-navigation';
+import { StatusBar } from 'react-native';
+
+import Router from './js/navigation/router';
 
 export default class cdart extends Component {
   render() {
-    var styles = {
-      container: {
-        flexDirection: 'row',
-        justifyContent: 'space-around'
-      }
-    }
     return (
-      <View style={styles.container}>
-        <Home />
-      </View>
+      <NavigationProvider router={Router}>
+        <StatusBar barStyle="light-content" />
+        <StackNavigation
+          navigatorUID="root"
+          initialRoute={Router.getRoute('navigation')} />
+      </NavigationProvider>
     );
   }
 }
