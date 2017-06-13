@@ -3,12 +3,11 @@ import { StyleSheet, Dimensions } from 'react-native';
 var { height, width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
-  container: {
-    margin: 4,
+  tab: {
     padding: 4,
-    marginTop: 32,
+    marginBottom: 10,
     borderWidth: 2,
-    width: width / 2.13333333333,
+    width: width / 2.2,
     height: height / 5.16363636364,
     alignItems: 'center',
     borderRadius: 7,
@@ -16,5 +15,9 @@ export const styles = StyleSheet.create({
     borderTopColor: 'blue',
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
+  },
+  image: {
+    height: 75,
+    width: 75
   }
 });
