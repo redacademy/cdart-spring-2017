@@ -4,7 +4,7 @@ var { height, width } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
   greyTop: {
-    backgroundColor: 'lightgrey', //change
+    backgroundColor: 'lightgrey',
     // flex: 1,
     alignItems: 'center',
     width: width,
