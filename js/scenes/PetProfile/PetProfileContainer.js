@@ -10,9 +10,13 @@ class PetProfileContainer extends Component {
     }
   }
 
+  createProfile(){
+    console.log('created');
+  }
+
   render() {
     return (
-      <PetProfile />
+      <PetProfile createProfile={this.createProfile} />
     );
   }
 }
