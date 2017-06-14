@@ -130,3 +130,20 @@ export const volunteerPackList = [
   'Important personal papers',
   'Spare eyeglasses/contact solution'
 ]
+<<<<<<< HEAD
+=======
+
+export const cdartMission = {
+  title1: `About the app`,
+  paragraph1: `CDART Assist aims to help volunteers and pet owners be prepared for disasters and emergencies. The content of the app is developed by CDART. `,
+  title2: `Canadian Disaster Animal Response Team`,
+  paragraph2: `CDART volunteers respond in times of disaster and emergencies when domestic animals are in need of rescue and sheltering. CDART is 100% volunteer based and 100% of our funding comes from donations.`,
+  listItemLink: `Learn more at cdart.org`
+}
+
+export const takeACourse = {
+  title1: `Training`,
+  paragraph1: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`,
+  listItemLink: `Course Information`
+}
+>>>>>>> added proptypes and styling to picturestory content

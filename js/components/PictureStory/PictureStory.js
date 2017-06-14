@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text, Image, ListView, Dimensions,ScrollView } from 'react-native';
+import PropTypes from 'prop-types';
+import { View, Text, Image, Dimensions, ScrollView } from 'react-native';
 import { styles } from './styles';
 
-var { height, width } = Dimensions.get('window');
+var {  width } = Dimensions.get('window');
 
 
 class PictureStory extends Component {
@@ -30,14 +31,34 @@ class PictureStory extends Component {
     return (
       <View>
         <Image source={{uri: 'https://s-media-cache-ak0.pinimg.com/736x/73/91/86/7391863170be07a072ffeb3e7605db2a.jpg'}}
-        style={{width: width, height: 150}} />
+        style={{width: width, height: 175}} />
         <ScrollView style={styles.contentContainer}>
-          {this.renderContent()}
-          {this.renderMoreContent()}
+          <View style={{padding:16}}>
+            {this.renderContent()}
+            {this.renderMoreContent()}
+          </View>
+          <View style={styles.listBoxContainer}>
+            <View style={styles.listBox}>
+              <Text style={styles.listText}>{this.props.content.listItemLink}</Text>
+              <Image source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
+                style={{width: 25, height: 25, marginRight: 8}} />
+            </View>
+          </View>
         </ScrollView>
       </View>
     );
   }
+}
+
+PictureStory.propTypes = {
+  content: PropTypes.shape({
+      title1: PropTypes.string,
+      paragraph1: PropTypes.string,
+      title2: PropTypes.string,
+      paragraph2: PropTypes.string,
+      listItemLink: PropTypes.string
+    }).isRequired
+
 }
 
 export default PictureStory;
