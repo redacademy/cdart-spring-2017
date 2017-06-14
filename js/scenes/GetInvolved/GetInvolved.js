@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Text } from 'react-native';
+import {
+  Text,
+  Image,
+   } from 'react-native';
 
 const GetInvolved = () => {
   return (
