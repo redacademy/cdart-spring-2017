@@ -5,6 +5,7 @@ import PetProfile from '../scenes/PetProfile';
 import Updates from '../scenes/Updates';
 import GetInvolved from '../scenes/GetInvolved';
 import EmergencyKit from '../scenes/EmergencyKit';
+import GetInvolvedInfo from '../scenes/GetInvolvedInfo';
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
@@ -12,7 +13,8 @@ const Router = createRouter(() => ({
   petProfile: () => PetProfile,
   updates: () => Updates,
   getInvolved: () => GetInvolved,
-  emergencyKit: () => EmergencyKit
+  emergencyKit: () => EmergencyKit,
+  getInvolvedInfo: () => GetInvolvedInfo,
 }));
 
 export default Router;

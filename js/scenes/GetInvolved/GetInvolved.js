@@ -1,17 +1,14 @@
 import React from 'react';
-
 import {
-  Text,
-  Image,
   View,
 } from 'react-native';
 
-import GetInvolvedList from '../../components/GetInvolvedList';
+import GetInvolvedList from '../../components/GetInvolvedScreens/GetInvolvedList';
 
 const GetInvolved = ({list}) => {
   return (
     <View>
-      <GetInvolvedList list={list}/>
+      <GetInvolvedList list={list} />
     </View>
   );
 }

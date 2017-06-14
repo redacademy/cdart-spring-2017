@@ -21,3 +21,10 @@ export const goToTab = (targetTab, targetRoute) => {
       stacks( 'home' ).push( Router.getRoute( targetRoute ));
     });
 }
+
+export const goToInfoPage = (currentNavigatorUID, infoData) => {
+  Store.dispatch(NavigationActions.push(
+    currentNavigatorUID,
+    Router.getRoute('getInvolvedInfo', { infoData })
+  ));
+}

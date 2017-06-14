@@ -5,24 +5,25 @@ import {
   Text,
   Image,
   TouchableHighlight,
-  ListView
 } from 'react-native';
+
+import { goToInfoPage } from '../../../lib/navigationHelpers';
 
 import { styles } from './styles';
 
-const GetInvolvedListItem = ({list}) => {
+const GetInvolvedListItem = ({list, currentNavigatorUID}) => {
   return (
     <TouchableHighlight
-    onPress={console.log('hello')}
+    onPress={() => goToInfoPage(currentNavigatorUID, list)}
     underlayColor="#999999"
     style={styles.container}
     >
       <View style={styles.singleItem}>
-        <View style={styles.description}>
+        <View style={styles.title}>
           <Image
-            source={{ uri: list.image }}
+            source={{ uri: list.icon }}
             style={{width: 35, height: 35, marginLeft: 8}} />
-          <Text style={styles.textList}>{list.description}</Text>
+          <Text style={styles.textList}>{list.title}</Text>
         </View>
         <Image
           source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}

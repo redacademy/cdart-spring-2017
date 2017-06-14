@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#dee8ef',
     padding: 20,
   },
-  description:{
+  title:{
     flexDirection: 'row',
     alignItems: 'center'
   },

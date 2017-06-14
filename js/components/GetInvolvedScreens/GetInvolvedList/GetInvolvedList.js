@@ -6,7 +6,7 @@ import GetInvolvedListItem from '../GetInvolvedListItem';
 
 var { height, width } = Dimensions.get('window');
 
-class PictureList extends Component {
+class GetInvolvedList extends Component {
   constructor(props){
     super(props);
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
@@ -23,9 +23,12 @@ class PictureList extends Component {
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(rowData) => {
-            if(rowData.description.length) {
+            if(rowData.title.length) {
               return (
-                <GetInvolvedListItem list={rowData} />
+                <GetInvolvedListItem
+                  list={rowData}
+                  currentNavigatorUID = "getInvolved"
+                />
               )}
             return <View style={styles.blank} />;
           }}
@@ -37,4 +40,4 @@ class PictureList extends Component {
   }
 }
 
-export default PictureList;
+export default GetInvolvedList;
