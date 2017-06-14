@@ -22,13 +22,13 @@ class PetProfileContainer extends Component {
     }
   }
 
-  createProfile(){
-    console.log('created');
+  createProfile(myDogs){
+    console.log(myDogs);
   }
 
   render() {
     return (
-      <PetProfile createProfile={this.createProfile} myDogs={this.state.mockDog} />
+      <PetProfile createProfile={this.createProfile} myDogs={[this.state.mockDog]} />
     );
   }
 }
