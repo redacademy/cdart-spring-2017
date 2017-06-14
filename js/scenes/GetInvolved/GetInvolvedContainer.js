@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
-import { Text } from 'react-native';
 import GetInvolved from './GetInvolved';
+import { getInvolved } from '../../assets/data';
 
 class GetInvolvedContainer extends Component {
-
-  static propTypes = {
-    // myProp: PropTypes.array.isRequired,
-  }
 
   static route = {
     navigationBar: {
@@ -17,8 +12,9 @@ class GetInvolvedContainer extends Component {
   }
 
   render() {
+    console.log(getInvolved);
     return (
-      <GetInvolved />
+      <GetInvolved list={getInvolved} />
     );
   }
 }

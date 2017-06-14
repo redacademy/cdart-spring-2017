@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
-import { Text } from 'react-native';
 import PetProfile from './PetProfile';
 
 class PetProfileContainer extends Component {
-
-  static propTypes = {
-    // myProp: PropTypes.array.isRequired,
-  }
 
   static route = {
     navigationBar: {
@@ -16,9 +10,13 @@ class PetProfileContainer extends Component {
     }
   }
 
+  createProfile(){
+    console.log('created');
+  }
+
   render() {
     return (
-      <PetProfile />
+      <PetProfile createProfile={this.createProfile} />
     );
   }
 }

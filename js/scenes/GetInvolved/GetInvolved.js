@@ -1,15 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import { Text } from 'react-native';
+import {
+  Text,
+  Image,
+  View,
+} from 'react-native';
 
-// GetInvolved.propTypes = {
-//   // myProp: PropTypes.array.isRequired,
-// }
+import GetInvolvedList from '../../components/GetInvolvedList';
 
-const GetInvolved = () => {
+const GetInvolved = ({list}) => {
   return (
-    <Text>************ GET INVOLVED ***********</Text>
+    <View>
+      <GetInvolvedList list={list}/>
+    </View>
   );
 }
 

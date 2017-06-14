@@ -11,20 +11,23 @@ const EmergencyKit = ({ dataSource }) => {
   return (
     <View>
       <View style={styles.greyTop} >
-        <Text style={styles.greyTopText} >Prepare your pet for an emergency by having these items ready to grab and go</Text>
+        <Text style={styles.greyTopText} >
+          Prepare your pet for an emergency by having these items ready to grab and go.
+        </Text>
       </View>
       <ListView
         dataSource={dataSource}
         renderRow={(item, i) => {
           return <ListItem item={item} key={item + i} />
         }}
+        renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
       />
     </View>
   )
 }
 
 EmergencyKit.propTypes = {
-  kitCheckList: PropTypes.array
+  dataSource: PropTypes.object
 }
 
 export default EmergencyKit;

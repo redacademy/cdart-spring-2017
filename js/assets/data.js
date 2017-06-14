@@ -44,9 +44,52 @@ export const procedureList = [
 ]
 // Get Involved
 export const getInvolved = [
-  `CDART's Mission`,
-  'Take a Course',
-  'Volunteer with CDART',
-  'Donate',
-  'Rate this app'
+  {
+    description: `CDART's Mission`,
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  },
+  {
+    description: 'Take a Course',
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  },
+  {
+    description: 'Volunteer with CDART',
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  },
+  {
+    description: 'Donate',
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  },
+  {
+    description: '',
+    image: ''
+  },
+  {
+    description: 'Rate this app',
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  }
 ]
+
+export const volunteerPackList = [
+  'Change of clothing (Seasonal)',
+  'Personal hygiene items',
+  'Personal medication',
+  'Coins for telephone calls',
+  'First aid kit',
+  'Battery powered flashlights',
+  'Bottled water, food, and snacks',
+  'Important personal papers',
+  'Spare eyeglasses/contact solution'
+]
+
+export const cdartMission = {
+  title1: `About the app`,
+  paragraph1: `CDART Assist aims to help volunteers and pet owners be prepared for disasters and emergencies. The content of the app is developed by CDART. `,
+  title2: `Canadian Disaster Animal Response Team`,
+  paragraph2: `CDART volunteers respond in times of disaster and emergencies when domestic animals are in need of rescue and sheltering. CDART is 100% volunteer based and 100% of our funding comes from donations.`
+}
+
+export const takeACourse = {
+  title1: `Training`,
+  paragraph1: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`
+}

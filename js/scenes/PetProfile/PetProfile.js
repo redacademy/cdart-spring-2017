@@ -1,15 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { TouchableHighlight, Text, View } from 'react-native';
 
-import { Text } from 'react-native';
+import { styles } from './styles';
 
-// PetProfile.propTypes = {
-//   // myProp: PropTypes.array.isRequired,
-// }
-
-const PetProfile = () => {
+const PetProfile = ({ createProfile }) => {
   return (
-    <Text>************ PET PROFILE ***********</Text>
+    <View>
+      <TouchableHighlight style={styles.createProfile} onPress={() => createProfile()} >
+        <Text>Create Pet Profile</Text>
+      </TouchableHighlight>
+    </View>
   );
 }
 

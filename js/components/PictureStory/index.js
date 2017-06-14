@@ -1,3 +1,3 @@
-import PictureList from './PictureList';
+import PictureStory from './PictureStory';
 
-export default PictureList;
+export default PictureStory;
