@@ -21,6 +21,12 @@ export const styles = StyleSheet.create({
   dogPic: {
     height: 80,
     width: 80,
-    borderRadius: 30,
+    // borderRadius: 40,
+  },
+  breed: {
+    color: 'grey',
+  },
+  edit: {
+    color: 'blue',
   }
 });
