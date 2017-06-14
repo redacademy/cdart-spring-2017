@@ -10,7 +10,7 @@ const HomeNavigationTab = ({title, navStackUID, targetRoute}) => {
 
   return (
     <TouchableWithoutFeedback
-      onPress={ goToView(navStackUID, targetRoute) }
+      onPress={ () => goToView(navStackUID, targetRoute) }
     >
       <View style={styles.tab}>
 
