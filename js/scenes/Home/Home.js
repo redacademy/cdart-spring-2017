@@ -10,6 +10,8 @@ import { styles } from './styles';
 
 import HomeTab from '../../components/HomeNavigationTab';
 
+const navStackUID = 'home';
+
 const Home = () => {
 
   return (
@@ -20,7 +22,11 @@ const Home = () => {
         </Text>
 
         <View style={ styles.tabContainer }>
-          <HomeTab />
+          <HomeTab
+            title='Pet Emergency Kit'
+            navStackUID={ navStackUID }
+            targetRoute='emergencyKit'
+          />
 
           <HomeTab />
         </View>

@@ -1,17 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { View, Text, Image } from 'react-native';
+import { goToView } from '../../lib/navigationHelpers';
+
+import { View, Text, Image, TouchableWithoutFeedback } from 'react-native';
 import { styles } from './styles';
 
-const HomeNavigationTab = ({title}) => {
+const HomeNavigationTab = ({title, navStackUID, targetRoute}) => {
 
   return (
-    <View style={styles.tab}>
-      <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
-       style={ styles.image } />
-      <Text>{title}</Text>
-    </View>
+    <TouchableWithoutFeedback
+      onPress={ goToView(navStackUID, targetRoute) }
+    >
+      <View style={styles.tab}>
+
+        <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
+        style={ styles.image } />
+
+        <Text>{title}</Text>
+
+      </View>
+    </TouchableWithoutFeedback>
   );
 }
 
