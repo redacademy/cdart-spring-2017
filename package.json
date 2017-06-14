@@ -12,13 +12,8 @@
     "react": "^16.0.0-alpha.12",
     "react-native": "^0.45.1",
     "react-native-linear-gradient": "^2.0.0",
-<<<<<<< HEAD
-    "react-native-vector-icons": "^4.2.0",
-    "react-native-splash-screen": "^2.1.0"
-=======
     "react-native-splash-screen": "^2.1.0",
     "react-native-vector-icons": "^4.2.0"
->>>>>>> Create VolunteerPacking view.
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
