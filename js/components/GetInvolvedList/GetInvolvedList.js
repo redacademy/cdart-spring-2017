@@ -24,9 +24,10 @@ class PictureList extends Component {
             <View style={styles.singleItem}>
               <Text style={styles.textList}>{rowData}</Text>
               <Image source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
-              style={{width: 25, height: 25, marginRight: 8}} />
+        style={{width: 25, height: 25, marginRight: 8}} />
             </View>
-          )}
+
+            )}
           renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
           style={styles.list}
         />
@@ -36,4 +37,3 @@ class PictureList extends Component {
 }
 
 export default PictureList;
-

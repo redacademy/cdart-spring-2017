@@ -3,11 +3,20 @@ import React from 'react';
 import {
   Text,
   Image,
+<<<<<<< HEAD
    } from 'react-native';
+=======
+  View,
+} from 'react-native';
+>>>>>>> Create Get Involved List View.
 
-const GetInvolved = () => {
+import GetInvolvedList from '../../components/GetInvolvedList';
+
+const GetInvolved = ({list}) => {
   return (
-    <Text>************ GET INVOLVED ***********</Text>
+    <View>
+      <GetInvolvedList list={list}/>
+    </View>
   );
 }
 

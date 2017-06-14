@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import GetInvolved from './GetInvolved';
+import { getInvolved } from '../../assets/data';
 
 class GetInvolvedContainer extends Component {
 
@@ -11,8 +12,9 @@ class GetInvolvedContainer extends Component {
   }
 
   render() {
+    console.log(getInvolved);
     return (
-      <GetInvolved />
+      <GetInvolved list={getInvolved} />
     );
   }
 }
