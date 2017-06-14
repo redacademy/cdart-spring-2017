@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   View,
 } from 'react-native';
@@ -12,5 +13,9 @@ const GetInvolved = ({list}) => {
     </View>
   );
 }
+
+GetInvolved.propTypes = {
+  list: PropTypes.arr,
+};
 
 export default GetInvolved;
