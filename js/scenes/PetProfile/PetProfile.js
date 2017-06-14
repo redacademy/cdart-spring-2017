@@ -26,11 +26,16 @@ const PetProfile = ({ createProfile, myDogs }) => {
         <TouchableHighlight key={dog.name + i} onPress={() => createProfile(myDogs)} >
           <View style={styles.singleDog} >
             <Image source={dog.picture} style={styles.dogPic} />
+<<<<<<< HEAD
             <View style={styles.dogText} >
               <Text>{dog.name}</Text>
               <Text style={styles.breed} >{dog.breed}</Text>
             </View>
             <Text style={styles.edit}>Edit</Text>
+=======
+            <Text>{dog.name}</Text>
+            <Text>{dog.breed}</Text>
+>>>>>>> 9cd6454b87421c48408729433d17ac2c2756466f
           </View>
         </TouchableHighlight>
       ))
