@@ -20,19 +20,23 @@ class PictureList extends Component {
         style={{width: width, height: 200}} />
         <ListView
           dataSource={this.state.dataSource}
-          renderRow={(rowData) => (
-              <View style={styles.singleItem}>
-                <View style={styles.description}>
+          renderRow={(rowData) => {
+            if(rowData.description.length) {
+              return (
+                <View style={styles.singleItem}>
+                  <View style={styles.description}>
+                    <Image
+                      source={{ uri: rowData.image }}
+                      style={{width: 35, height: 35, marginLeft: 8}} />
+                    <Text style={styles.textList}>{rowData.description}</Text>
+                  </View>
                   <Image
-                    source={{ uri: rowData.image }}
-                    style={{width: 35, height: 35, marginLeft: 8}} />
-                  <Text style={styles.textList}>{rowData.description}</Text>
+                    source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
+                    style={{width: 25, height: 25, marginRight: 8}} />
                 </View>
-                <Image
-                  source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
-                  style={{width: 25, height: 25, marginRight: 8}} />
-              </View>
-            )}
+              )}
+            return <View style={styles.blank} />;
+          }}
           renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
           style={styles.list}
         />

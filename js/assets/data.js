@@ -61,6 +61,10 @@ export const getInvolved = [
     image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
   },
   {
+    description: '',
+    image: ''
+  },
+  {
     description: 'Rate this app',
     image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
   }
