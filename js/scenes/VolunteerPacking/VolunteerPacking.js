@@ -7,12 +7,13 @@ import ListItem from '../../components/ListItem/ListItem';
 
 import { styles } from './styles';
 
-const EmergencyKit = ({ dataSource }) => {
+const VolunteerPacking = ({ dataSource }) => {
   return (
     <View>
       <View style={styles.greyTop} >
         <Text style={styles.greyTopText} >
-          Prepare your pet for an emergency by having these items ready to grab and go.
+          As a volunteer, being prepared is crucial to any situation.
+          Be sure to keep a personal bag handy in case of an emergency.
         </Text>
       </View>
       <ListView
@@ -26,8 +27,8 @@ const EmergencyKit = ({ dataSource }) => {
   )
 }
 
-EmergencyKit.propTypes = {
+VolunteerPacking.propTypes = {
   dataSource: PropTypes.object
 }
 
-export default EmergencyKit;
+export default VolunteerPacking;

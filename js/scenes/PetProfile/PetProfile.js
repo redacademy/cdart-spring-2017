@@ -1,10 +1,15 @@
 import React from 'react';
+import { Text, View } from 'react-native';
 
-import { Text } from 'react-native';
+import { styles } from './styles';
 
 const PetProfile = () => {
   return (
-    <Text>************ PET PROFILE ***********</Text>
+    <View>
+      <View style={styles.createProfile} >
+        <Text>Create Pet Profile</Text>
+      </View>
+    </View>
   );
 }
 

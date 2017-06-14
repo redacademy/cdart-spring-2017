@@ -50,3 +50,15 @@ export const getInvolved = [
   'Donate',
   'Rate this app'
 ]
+
+export const volunteerPackList = [
+  'Change of clothing (Seasonal)',
+  'Personal hygiene items',
+  'Personal medication',
+  'Coins for telephone calls',
+  'First aid kit',
+  'Battery powered flashlights',
+  'Bottled water, food, and snacks',
+  'Important personal papers',
+  'Spare eyeglasses/contact solution'
+]
