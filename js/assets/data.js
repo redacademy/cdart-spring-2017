@@ -44,11 +44,26 @@ export const procedureList = [
 ]
 // Get Involved
 export const getInvolved = [
-  `CDART's Mission`,
-  'Take a Course',
-  'Volunteer with CDART',
-  'Donate',
-  'Rate this app'
+  {
+    description: `CDART's Mission`,
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  },
+  {
+    description: 'Take a Course',
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  },
+  {
+    description: 'Volunteer with CDART',
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  },
+  {
+    description: 'Donate',
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  },
+  {
+    description: 'Rate this app',
+    image: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png'
+  }
 ]
 
 export const volunteerPackList = [

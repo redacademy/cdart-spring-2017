@@ -13,7 +13,7 @@ class PictureList extends Component {
     }
   }
   render() {
-    console.log(this.props.list)
+
     return (
       <View>
         <Image source={{uri: 'https://s-media-cache-ak0.pinimg.com/736x/73/91/86/7391863170be07a072ffeb3e7605db2a.jpg'}}
@@ -21,12 +21,17 @@ class PictureList extends Component {
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(rowData) => (
-            <View style={styles.singleItem}>
-              <Text style={styles.textList}>{rowData}</Text>
-              <Image source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
-        style={{width: 25, height: 25, marginRight: 8}} />
-            </View>
-
+              <View style={styles.singleItem}>
+                <View style={styles.description}>
+                  <Image
+                    source={{ uri: rowData.image }}
+                    style={{width: 35, height: 35, marginLeft: 8}} />
+                  <Text style={styles.textList}>{rowData.description}</Text>
+                </View>
+                <Image
+                  source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
+                  style={{width: 25, height: 25, marginRight: 8}} />
+              </View>
             )}
           renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
           style={styles.list}

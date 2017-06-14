@@ -8,8 +8,12 @@ export const styles = StyleSheet.create({
     height: StyleSheet.hairlineWidth,
     backgroundColor: '#8E8E8E',
   },
+  description:{
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
   textList: {
-    padding: 16,
+    padding: 5,
     fontSize: 16
   },
   singleItem: {
