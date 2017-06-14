@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { View, Text, Image, ListView, Dimensions } from 'react-native';
 import { styles } from './styles';
 
+import GetInvolvedListItem from '../GetInvolvedListItem';
+
 var { height, width } = Dimensions.get('window');
 
 class PictureList extends Component {
@@ -23,17 +25,7 @@ class PictureList extends Component {
           renderRow={(rowData) => {
             if(rowData.description.length) {
               return (
-                <View style={styles.singleItem}>
-                  <View style={styles.description}>
-                    <Image
-                      source={{ uri: rowData.image }}
-                      style={{width: 35, height: 35, marginLeft: 8}} />
-                    <Text style={styles.textList}>{rowData.description}</Text>
-                  </View>
-                  <Image
-                    source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
-                    style={{width: 25, height: 25, marginRight: 8}} />
-                </View>
+                <GetInvolvedListItem list={rowData} />
               )}
             return <View style={styles.blank} />;
           }}
