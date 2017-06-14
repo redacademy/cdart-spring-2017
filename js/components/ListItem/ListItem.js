@@ -4,6 +4,8 @@ import { styles } from './styles';
 
 import { Image, TouchableHighlight, Text, View } from 'react-native';
 
+const imageSource = require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/icon-20@3x.png');
+
 class ListItem extends Component {
 
   constructor (){
@@ -22,7 +24,7 @@ class ListItem extends Component {
             this.state.clicked ?
             <Image
               style={styles.clickedGreenCheck}
-              source={require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/icon-20@3x.png')}
+              source={imageSource}
             />
             :
             <View style={styles.greenCheck} ></View>

@@ -5,7 +5,6 @@ var { height, width } = Dimensions.get('window')
 export const styles = StyleSheet.create({
   greyTop: {
     backgroundColor: 'lightgrey',
-    // flex: 1,
     alignItems: 'center',
     width: width,
     padding: 16,
