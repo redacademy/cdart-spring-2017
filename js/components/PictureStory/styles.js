@@ -8,8 +8,15 @@ export const styles = StyleSheet.create({
     height: StyleSheet.hairlineWidth,
     backgroundColor: '#8E8E8E',
   },
-  header:{
-    color: 'lightblue',
-    fontWeight: 'bold'
+  header: {
+    color: '#4079A2',
+    fontSize: 16,
+  },
+  contentContainer: {
+    padding: 16
+  },
+  paragraph: {
+    marginTop: 8,
+    marginBottom: 8
   }
 });

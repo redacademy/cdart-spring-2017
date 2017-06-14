@@ -69,3 +69,8 @@ export const cdartMission = {
   title2: `Canadian Disaster Animal Response Team`,
   paragraph2: `CDART volunteers respond in times of disaster and emergencies when domestic animals are in need of rescue and sheltering. CDART is 100% volunteer based and 100% of our funding comes from donations.`
 }
+
+export const takeACourse = {
+  title1: `Training`,
+  paragraph1: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`
+}
