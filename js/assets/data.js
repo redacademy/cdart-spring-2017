@@ -130,8 +130,6 @@ export const volunteerPackList = [
   'Important personal papers',
   'Spare eyeglasses/contact solution'
 ]
-<<<<<<< HEAD
-=======
 
 export const cdartMission = {
   title1: `About the app`,
@@ -146,4 +144,3 @@ export const takeACourse = {
   paragraph1: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`,
   listItemLink: `Course Information`
 }
->>>>>>> added proptypes and styling to picturestory content
