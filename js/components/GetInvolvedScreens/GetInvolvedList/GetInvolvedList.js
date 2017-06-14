@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-import { View, Text, Image, ListView, Dimensions } from 'react-native';
+import {
+  View,
+  Image,
+  ListView,
+  Dimensions
+} from 'react-native';
 import { styles } from './styles';
 
 import GetInvolvedListItem from '../GetInvolvedListItem';
 
-var { height, width } = Dimensions.get('window');
+var { width } = Dimensions.get('window');
 
 class GetInvolvedList extends Component {
   constructor(props){

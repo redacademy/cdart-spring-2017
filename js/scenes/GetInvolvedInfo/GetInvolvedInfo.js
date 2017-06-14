@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Text,
   Image,
@@ -10,9 +11,9 @@ import {
 
 import { styles } from './styles';
 
-var { height, width } = Dimensions.get('window');
+var { width } = Dimensions.get('window');
 
-const GetInvolved = ({infoData, handleClick}) => {
+const GetInvolvedInfo = ({infoData, handleClick}) => {
   return (
     <ScrollView>
       <Image source={{uri: infoData.image}}
@@ -37,4 +38,9 @@ const GetInvolved = ({infoData, handleClick}) => {
   );
 }
 
-export default GetInvolved;
+GetInvolvedInfo.propTypes = {
+  infoData: PropTypes.arr,
+  handleClick: PropTypes.func,
+};
+
+export default GetInvolvedInfo;

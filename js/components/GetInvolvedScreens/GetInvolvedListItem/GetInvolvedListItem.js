@@ -31,4 +31,9 @@ const GetInvolvedListItem = ({list, currentNavigatorUID}) => {
       </View>
     </TouchableHighlight>
   )};
+
+  GetInvolvedListItem.propTypes = {
+  list: PropTypes.arr,
+  currentNavigatorUID: PropTypes.string,
+};
 export default GetInvolvedListItem;
