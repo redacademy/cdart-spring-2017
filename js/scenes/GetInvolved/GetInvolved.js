@@ -15,7 +15,7 @@ const GetInvolved = ({list}) => {
 }
 
 GetInvolved.propTypes = {
-  list: PropTypes.arr,
+  list: PropTypes.array,
 };
 
 export default GetInvolved;

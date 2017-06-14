@@ -33,7 +33,7 @@ const GetInvolvedListItem = ({list, currentNavigatorUID}) => {
   )};
 
   GetInvolvedListItem.propTypes = {
-  list: PropTypes.arr,
+  list: PropTypes.object,
   currentNavigatorUID: PropTypes.string,
 };
 export default GetInvolvedListItem;

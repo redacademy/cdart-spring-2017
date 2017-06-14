@@ -39,7 +39,7 @@ const GetInvolvedInfo = ({infoData, handleClick}) => {
 }
 
 GetInvolvedInfo.propTypes = {
-  infoData: PropTypes.arr,
+  infoData: PropTypes.object,
   handleClick: PropTypes.func,
 };
 
