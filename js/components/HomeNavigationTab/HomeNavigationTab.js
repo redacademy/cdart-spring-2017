@@ -16,7 +16,7 @@ const HomeNavigationTab = ({title}) => {
 }
 
 HomeNavigationTab.propTypes = {
-  title: PropTypes.text
+  title: PropTypes.string
 }
 
 export default HomeNavigationTab;
