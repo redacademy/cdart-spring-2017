@@ -1,14 +1,14 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { TouchableHighlight, Text, View } from 'react-native';
 
 import { styles } from './styles';
 
-const PetProfile = () => {
+const PetProfile = ({ createProfile }) => {
   return (
     <View>
-      <View style={styles.createProfile} >
+      <TouchableHighlight style={styles.createProfile} onPress={() => createProfile()} >
         <Text>Create Pet Profile</Text>
-      </View>
+      </TouchableHighlight>
     </View>
   );
 }

@@ -4,7 +4,7 @@ import { styles } from './styles';
 
 import { Image, TouchableHighlight, Text, View } from 'react-native';
 
-const imageSource = require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/icon-20@3x.png');
+const imageSource = require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/Icon-40.png');
 
 class ListItem extends Component {
 
