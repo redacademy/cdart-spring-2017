@@ -1,14 +1,37 @@
 import React from 'react';
-import { TouchableHighlight, Text, View } from 'react-native';
+import { Image, TouchableHighlight, Text, View } from 'react-native';
 
 import { styles } from './styles';
 
-const PetProfile = ({ createProfile }) => {
+const PetProfile = ({ createProfile, myDogs }) => {
   return (
+    myDogs.length < 1 ?
     <View>
-      <TouchableHighlight style={styles.createProfile} onPress={() => createProfile()} >
-        <Text>Create Pet Profile</Text>
+      <TouchableHighlight onPress={() => createProfile(myDogs)} >
+        <View style={styles.createProfile} >
+          <Text>Create Pet Profile</Text>
+        </View>
       </TouchableHighlight>
+      <View style={styles.bePrepared} >
+        <Text>
+          Be prepared. Create a shareable pet profile to help you
+          & emergency services locate your pet in case of an emergency.
+        </Text>
+      </View>
+    </View>
+    :
+    <View>
+    {
+      myDogs.map((dog, i) => (
+        <TouchableHighlight key={dog.name + i} onPress={() => createProfile(myDogs)} >
+          <View style={styles.singleDog} >
+            <Image source={dog.picture} style={styles.dogPic} />
+            <Text>{dog.name}</Text>
+            <Text>{dog.breed}</Text>
+          </View>
+        </TouchableHighlight>
+      ))
+    }
     </View>
   );
 }
