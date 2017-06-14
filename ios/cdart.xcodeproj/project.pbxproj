@@ -18,7 +18,7 @@
 		83426471E05042078F7254A8 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 946FC4FDFF374FAEBAABCF29 /* Ionicons.ttf */; };
 		8BE90B7A5C2C418CBD62FBE9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F35890D0F41458555DA0D /* FontAwesome.ttf */; };
 		8F9E44C465F74347AE240A92 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F676BF3E8AE446FAA4BAFB48 /* MaterialIcons.ttf */; };
-		995C42051EF1C3F7000388EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 995C42041EF1C3F7000388EB /* LaunchScreen.xib */; };
+		99DD39881EF1E0BD00662816 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99DD39871EF1E0BD00662816 /* LaunchScreen.xib */; };
 		D38B2B8BB1FD44CEB53287F0 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA03239C0914D088B867771 /* libSplashScreen.a */; };
 /* End PBXBuildFile section */
 
@@ -421,7 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				995C40421EF1A9A4000388EB /* Images.xcassets */,
-				995C42041EF1C3F7000388EB /* LaunchScreen.xib */,
+				99DD39871EF1E0BD00662816 /* LaunchScreen.xib */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -967,7 +967,7 @@
 				8BE90B7A5C2C418CBD62FBE9 /* FontAwesome.ttf in Resources */,
 				83426471E05042078F7254A8 /* Ionicons.ttf in Resources */,
 				8F9E44C465F74347AE240A92 /* MaterialIcons.ttf in Resources */,
-				995C42051EF1C3F7000388EB /* LaunchScreen.xib in Resources */,
+				99DD39881EF1E0BD00662816 /* LaunchScreen.xib in Resources */,
 				60F61DAAF7F24764A354F88B /* Octicons.ttf in Resources */,
 				5016151E218C4AFE9AA94118 /* SimpleLineIcons.ttf in Resources */,
 				77E2EFE7FD254098A782EF4E /* Zocial.ttf in Resources */,
