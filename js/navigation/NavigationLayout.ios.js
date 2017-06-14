@@ -1,31 +1,37 @@
 import React, { Component } from 'react';
-
 import {
   StackNavigation,
   TabNavigation,
   TabNavigationItem as TabItem,
 } from '@expo/ex-navigation';
+import LinearGradient from 'react-native-linear-gradient';
 
 import Router from './router';
-
-import { Text } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
+import { colors, typography, gradients } from '../config/styles';
 
 const defaultRouteConfig = {
   navigationBar: {
-    tintColor: 'white',
+    tintColor: colors.white,
     titleStyle: {
-      fontFamily: 'Arial'
+      fontFamily: 'Arial',
+      fontSize: typography.baseSize
     },
-    backgroundColor: 'red'
-    /*renderBackground: () =>
+    renderBackground: () =>
       <LinearGradient
-        style={styles.linearGradient}
-        colors={[colors.purple, colors.red]}
-        start={{x: 0.25, y: 1}}
-        end={{x: 1, y: 0.25}}
-      />*/
+        style={navStyles.linearGradient}
+        colors={gradients.redGradient}
+        start={{x: 0, y: 1}}
+        end={{x: 1, y: 1}}
+      />
   }
 }
+
+const navStyles = StyleSheet.create({
+  linearGradient: {
+    flex: 1,
+  }
+});
 
 class NavigationLayout extends Component {
 
@@ -35,13 +41,9 @@ class NavigationLayout extends Component {
     }
   }
 
-  // renderIcon(iconName, isSelected) {
-  //   return <Icon name={iconName} size={24} color={isSelected ? 'red' : 'gray'} />
-  // }
-
   renderTitle(isSelected, title) {
     const titleStyle = {
-      color: isSelected ? 'red' : 'gray',
+      color: isSelected ? colors.red : colors.lightGrey,
       fontSize: 12,
       fontFamily: 'Arial'
     };
@@ -56,11 +58,10 @@ class NavigationLayout extends Component {
         initialTab="updates"
         tabBarColor="white">
 
-        {/*<TabItem
+        <TabItem
           id="home"
           title="Home"
-          //renderIcon={isSelected => this.renderIcon('ios-calendar', isSelected)}
-          //renderTitle={this.renderTitle}
+          renderTitle={this.renderTitle}
         >
           <StackNavigation
             id="home"
@@ -68,12 +69,11 @@ class NavigationLayout extends Component {
             initialRoute={Router.getRoute('home')}
             defaultRouteConfig={defaultRouteConfig}
           />
-        </TabItem>*/}
+        </TabItem>
 
         <TabItem
           id="petProfile"
           title="Pet Profile"
-          //renderIcon={isSelected => this.renderIcon('ios-heart', isSelected)}
           renderTitle={this.renderTitle}
         >
           <StackNavigation
@@ -87,7 +87,6 @@ class NavigationLayout extends Component {
         <TabItem
           id="updates"
           title="Updates"
-          //renderIcon={isSelected => this.renderIcon('ios-heart', isSelected)}
           renderTitle={this.renderTitle}
         >
           <StackNavigation
@@ -101,7 +100,6 @@ class NavigationLayout extends Component {
         <TabItem
           id="getInvolved"
           title="Get Involved"
-          //renderIcon={isSelected => this.renderIcon('ios-heart', isSelected)}
           renderTitle={this.renderTitle}
         >
           <StackNavigation
