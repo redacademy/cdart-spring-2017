@@ -12,7 +12,6 @@ class GetInvolvedContainer extends Component {
   }
 
   render() {
-    console.log(getInvolved);
     return (
       <GetInvolved list={getInvolved} />
     );

@@ -8,3 +8,10 @@ export const goToView = (currentNavigatorUID, routeName) => {
     Router.getRoute(routeName)
   ));
 }
+
+export const goToInfoPage = (currentNavigatorUID, infoData) => {
+  Store.dispatch(NavigationActions.push(
+    currentNavigatorUID,
+    Router.getRoute('getInvolvedInfo', { infoData })
+  ));
+}
