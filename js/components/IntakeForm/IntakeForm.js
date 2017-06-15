@@ -1,24 +1,22 @@
 import React from 'react';
-import {
-  View
-} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
-
+import { View } from 'react-native';
 import { styles } from './styles';
+
+import PropTypes from 'prop-types';
+import IntakeFormList from './../IntakeFormList';
+import LinearGradient from 'react-native-linear-gradient';
+import {intakeInstructions} from './../../assets/data';
 
 const IntakeForm = () => {
   return (
-  <LinearGradient
-    start={{x: 0.0, y: 0.2}} end={{x: 0.5, y: 1.0}}
-    locations={[0,1.0]}
-    colors={['#4d96cd', '#6ca5cf']}
-    style={styles.linearGradient}
-  >
     <View>
-
+      <IntakeFormList list={intakeInstructions} />
     </View>
-  </LinearGradient>
   )
 }
 
 export default IntakeForm;
+
+IntakeForm.propTypes = {
+  list: PropTypes.array
+}

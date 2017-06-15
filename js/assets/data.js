@@ -144,3 +144,66 @@ export const takeACourse = {
   paragraph1: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`,
   listItemLink: `Course Information`
 }
+
+export const intakeInstructions = [
+  {
+    title: 'Upon intake, every animal evacuee is',
+    description: [
+    'Photographed',
+    'Tagged',
+    'Assessed',
+    ]
+  },
+  {
+    title: 'Basic Info',
+    description: [
+    'Date and Time',
+    'Your FIRST name – bottom left',
+    ]
+  },
+  {
+    title: 'Status of Animal On Arrival',
+    description: [
+    'Brought in by CDART',
+    'Non-Owner Drop off',
+    'Brought in by Owner',
+    'Owner Surrender',
+    'Dead on Arrival',
+    ]
+  },
+  {
+    title: 'Owner Information',
+    description: [
+    'Name',
+    'ID',
+    'Permanent vs. Temp',
+    ]
+  },
+  {
+    title: 'Animal Information',
+    description: [
+    'EACH animal gets a form',
+    'Describe as best as possible',
+    'Intact – is important',
+    'Immediate medical needs',
+    ]
+  },
+  {
+    title: 'Agency Information',
+    description: [
+    'Ess file number',
+    'PEP Task Number',
+    'Confidentail File',
+    'First Nations',
+    'Media Permission',
+    ]
+  },
+  {
+    title: 'Status of Animal on Departure',
+    description: [
+    'Completed when animal leaves – very important to remember!',
+    'Get Signature',
+    'Put your FIRST name on the bottom right space',
+    ]
+  }
+]
