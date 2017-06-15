@@ -14,7 +14,7 @@ const IntakeFormList = ({ formData }) => {
           title={formSingleSectionData.title}
           descriptions={formSingleSectionData.descriptions}
         />
-      })};
+      })}
     </View>
   );
 };

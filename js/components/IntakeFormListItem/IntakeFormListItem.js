@@ -10,7 +10,7 @@ const IntakeFormListItem = ({ title, descriptions }) => {
       <Text style={styles.listItemTitle}>{title}</Text>
       {descriptions.map((description, i) => {
         return <Text key={i}>{`\u2022   ${description}`}</Text>
-      })};
+      })}
     </View>
   );
 };
