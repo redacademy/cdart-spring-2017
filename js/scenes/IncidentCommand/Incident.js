@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableHighlight, LayoutAnimation } from 'react-native';
+import { View, Text, Image, TouchableOpacity, LayoutAnimation } from 'react-native';
 import PropTypes from 'prop-types';
 
 import { styles } from './styles';
@@ -25,7 +25,7 @@ class Incident extends Component {
   render(){
     return (
       <View>
-        <TouchableHighlight onPress={() => this.toggleIncident()} key={this.props.rowData.title} >
+        <TouchableOpacity onPress={() => this.toggleIncident()} key={this.props.rowData.title} >
           <View style={styles.incident} >
             <Text style={{color: this.props.rowData.color}} >{this.props.rowData.title}</Text>
             <Image
@@ -33,9 +33,12 @@ class Incident extends Component {
               style={[styles.arrow, { transform: [{ rotate: this.state.arrow }] }]}
             />
           </View>
-        </TouchableHighlight>
+        </TouchableOpacity>
         {
-          this.state.open && <Text style={styles.incidentText} >{this.props.rowData.text}</Text>
+          this.state.open &&
+          <View>
+            <Text style={ styles.incidentText } >{this.props.rowData.text}</Text>
+          </View>
         }
       </View>
     )
