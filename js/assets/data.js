@@ -147,8 +147,8 @@ export const takeACourse = {
 
 export const intakeInstructions = [
   {
-    title: 'Upon intake, every animal evacuee is',
-    description: [
+    title: 'Upon intake, every animal evacuee is:',
+    descriptions: [
     'Photographed',
     'Tagged',
     'Assessed',
@@ -156,14 +156,14 @@ export const intakeInstructions = [
   },
   {
     title: 'Basic Info',
-    description: [
+    descriptions: [
     'Date and Time',
     'Your FIRST name – bottom left',
     ]
   },
   {
     title: 'Status of Animal On Arrival',
-    description: [
+    descriptions: [
     'Brought in by CDART',
     'Non-Owner Drop off',
     'Brought in by Owner',
@@ -173,7 +173,7 @@ export const intakeInstructions = [
   },
   {
     title: 'Owner Information',
-    description: [
+    descriptions: [
     'Name',
     'ID',
     'Permanent vs. Temp',
@@ -181,7 +181,7 @@ export const intakeInstructions = [
   },
   {
     title: 'Animal Information',
-    description: [
+    descriptions: [
     'EACH animal gets a form',
     'Describe as best as possible',
     'Intact – is important',
@@ -190,7 +190,7 @@ export const intakeInstructions = [
   },
   {
     title: 'Agency Information',
-    description: [
+    descriptions: [
     'Ess file number',
     'PEP Task Number',
     'Confidentail File',
@@ -200,7 +200,7 @@ export const intakeInstructions = [
   },
   {
     title: 'Status of Animal on Departure',
-    description: [
+    descriptions: [
     'Completed when animal leaves – very important to remember!',
     'Get Signature',
     'Put your FIRST name on the bottom right space',
