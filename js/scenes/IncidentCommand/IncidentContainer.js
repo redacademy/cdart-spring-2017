@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import { ListView, View } from 'react-native';
 import Incident from './Incident';
+import { incidentList } from '../../assets/data';
 
 import { styles } from './styles';
-
-const incidentList = [
-  'Command',
-  'Operations',
-  'Logistics',
-  'Planning',
-  'Finance'
-]
 
 class IncidentContainer extends Component {
 
@@ -18,7 +11,7 @@ class IncidentContainer extends Component {
     super();
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      dataSource: ds.cloneWithRows(incidentList),
+      dataSource: ds.cloneWithRows(incidentList)
     }
   }
 

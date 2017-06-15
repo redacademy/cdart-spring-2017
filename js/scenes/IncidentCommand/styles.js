@@ -19,5 +19,8 @@ export const styles = StyleSheet.create({
     height: 25,
     marginRight: 8,
     transform: [{ rotate: '90deg'}]
+  },
+  incidentText: {
+    padding: 10,
   }
 });

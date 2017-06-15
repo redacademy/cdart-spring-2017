@@ -145,65 +145,25 @@ export const takeACourse = {
   listItemLink: `Course Information`
 }
 
-export const intakeInstructions = [
+export const incidentList = [
   {
-    title: 'Upon intake, every animal evacuee is:',
-    descriptions: [
-    'Photographed',
-    'Tagged',
-    'Assessed',
-    ]
+    title: 'Command',
+    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
   },
   {
-    title: 'Basic Info',
-    descriptions: [
-    'Date and Time',
-    'Your FIRST name – bottom left',
-    ]
+    title: 'Operations',
+    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
   },
   {
-    title: 'Status of Animal On Arrival',
-    descriptions: [
-    'Brought in by CDART',
-    'Non-Owner Drop off',
-    'Brought in by Owner',
-    'Owner Surrender',
-    'Dead on Arrival',
-    ]
+    title: 'Logistics',
+    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
   },
   {
-    title: 'Owner Information',
-    descriptions: [
-    'Name',
-    'ID',
-    'Permanent vs. Temp',
-    ]
+    title: 'Planning',
+    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. '
   },
   {
-    title: 'Animal Information',
-    descriptions: [
-    'EACH animal gets a form',
-    'Describe as best as possible',
-    'Intact – is important',
-    'Immediate medical needs',
-    ]
-  },
-  {
-    title: 'Agency Information',
-    descriptions: [
-    'Ess file number',
-    'PEP Task Number',
-    'Confidentail File',
-    'First Nations',
-    'Media Permission',
-    ]
-  },
-  {
-    title: 'Status of Animal on Departure',
-    descriptions: [
-    'Completed when animal leaves – very important to remember!',
-    'Get Signature',
-    'Put your FIRST name on the bottom right space',
-    ]
+    title: 'Finance',
+    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. '
   }
 ]
