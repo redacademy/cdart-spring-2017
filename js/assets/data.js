@@ -149,21 +149,26 @@ export const incidentList = [
   {
     title: 'Command',
     text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
+    color: 'green'
   },
   {
     title: 'Operations',
     text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
+    color: 'red'
   },
   {
     title: 'Logistics',
     text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
+    color: 'red'
   },
   {
     title: 'Planning',
-    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. '
+    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
+    color: 'gold'
   },
   {
     title: 'Finance',
-    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. '
+    text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
+    color: 'blue'
   }
 ]
