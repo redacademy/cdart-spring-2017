@@ -15,20 +15,6 @@ export const goToView = (currentNavigatorUID, routeName, tabName, isTabNav, navi
   }
 }
 
-export const goToTab = (targetTab, targetRoute) => {
-    this.props.navigation.performAction(({ tabs, stacks }) => {
-      tabs( 'main' ).jumpToTab( targetTab );
-      stacks( 'home' ).push( Router.getRoute( targetRoute ));
-    });
-}
-
-export const goToInfoPage = (currentNavigatorUID, infoData) => {
-  Store.dispatch(NavigationActions.push(
-    currentNavigatorUID,
-    Router.getRoute('getInvolvedInfo', { infoData })
-  ));
-}
-
 export const goToInfoPage = (currentNavigatorUID, infoData) => {
   Store.dispatch(NavigationActions.push(
     currentNavigatorUID,
