@@ -6,7 +6,6 @@ export const goToView = (currentNavigatorUID, routeName, tabName, isTabNav, navi
   if( isTabNav ) {
     navigation.performAction(({ tabs, stacks }) => {
       tabs( 'main' ).jumpToTab( tabName );
-      stacks( 'home' ).push( Router.getRoute( routeName ));
     });
   } else {
     Store.dispatch( NavigationActions.push(
