@@ -21,3 +21,10 @@ export const goToInfoPage = (currentNavigatorUID, infoData) => {
     Router.getRoute('getInvolvedInfo', { infoData })
   ));
 }
+
+export const goToApp = () => {
+  Store.dispatch(NavigationActions.push(
+    "root",
+    Router.getRoute('navigation')
+  ));
+}

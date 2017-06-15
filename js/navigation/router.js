@@ -9,9 +9,11 @@ import GetInvolvedInfo from '../scenes/GetInvolvedInfo';
 import Checklists from '../scenes/Checklists';
 import Forms from '../scenes/Forms';
 import Procedures from '../scenes/Procedures';
+import Onboarding from '../scenes/Onboarding';
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
+  onboarding: () => Onboarding,
   home: () => Home,
   petProfile: () => PetProfile,
   updates: () => Updates,

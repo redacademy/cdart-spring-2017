@@ -23,6 +23,12 @@ export const styles = StyleSheet.create({
     marginHorizontal: 40,
     textAlign: 'center',
   },
+  buttontext: {
+    color: '#000',
+    fontFamily: 'Avenir',
+    fontSize: 18,
+    marginHorizontal: 40,
+  },
   linearGradient: {
     flex: 1,
     paddingLeft: 15,

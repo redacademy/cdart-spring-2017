@@ -13,6 +13,7 @@ import {
   View,             // Container component
 } from 'react-native';
 import Button from '../OnboardingSwiperButton';
+import { goToApp } from '../../../lib/navigationHelpers';
 
 import { styles } from './styles';
 
@@ -241,7 +242,7 @@ class OnboardingSwiper extends Component {
           // TODO: Add a handler that would send a user to your app after onboarding is complete
           ?
           <View pointerEvents="box-none" style={[styles.buttonWrapper, styles.fullScreen]}>
-            <Button text="Get Started" onPress={() => console.log('Send me to the app')} />
+            <Button text="Get Started" onPress={() => goToApp()} />
           </View>
           // Or this one otherwise
           :

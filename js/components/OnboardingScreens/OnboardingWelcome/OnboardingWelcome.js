@@ -1,9 +1,12 @@
 import React from 'react';
 import {
   Text,
-  View
+  View,
+  TouchableOpacity
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+
+import { goToApp } from '../../../lib/navigationHelpers';
 
 import { styles } from './styles';
 
@@ -18,6 +21,11 @@ const OnboardingWelcome = () => {
       <View style={[styles.slide, { backgroundColor: 'transparent' } ]}>
           <Text style={styles.header}>Welcome to CDART Assist</Text>
           <Text style={styles.text}>Assisting you and your domestic animals in preparation for an emergency.</Text>
+          <TouchableOpacity onPress={() => goToApp()}>
+            <View style={styles.button}>
+              <Text style={styles.buttontext}>Skip</Text>
+            </View>
+          </TouchableOpacity>
       </View>
     </LinearGradient>
   );

@@ -55,7 +55,7 @@ class NavigationLayout extends Component {
       <TabNavigation
         id="main"
         navigatorUID="main"
-        initialTab="updates"
+        initialTab="home"
         tabBarColor="white">
 
         <TabItem
