@@ -6,8 +6,10 @@ import {
   Dimensions,
   View,
   ScrollView,
-  TouchableHighlight
+  TouchableOpacity,
+  Platform
 } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import { styles } from './styles';
 
@@ -15,25 +17,33 @@ var { width } = Dimensions.get('window');
 
 const GetInvolvedInfo = ({infoData, handleClick}) => {
   return (
-    <ScrollView>
+    <ScrollView style={styles.contentContainer}>
       <Image source={{uri: infoData.image}}
         style={{width: width, height: 150}} />
       {infoData.subsection.map((info, i) => (
-        <View key={i}>
-          <Text>{info.subtitle}</Text>
-          <Text>{info.description}</Text>
+        <View key={i} style={{padding:16}}>
+          <Text style={styles.subtitle}>{info.subtitle}</Text>
+          <Text style={styles.description}>{info.description}</Text>
         </View>
       ))
       }
-      <TouchableHighlight
-        onPress={() => handleClick(infoData.link)}
-      >
-        <View style={styles.singleItem}>
-          <Text style={styles.textList}>{infoData.linktext}</Text>
-          <Image source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
-          style={{width: 25, height: 25, marginRight: 8}} />
-        </View>
-      </TouchableHighlight>
+      <View style={styles.listBoxContainer}>
+        <TouchableOpacity
+          onPress={() => handleClick(infoData.link)}
+        >
+          <View style={styles.listBox}>
+            <Text style={styles.listText}>{infoData.linktext}</Text>
+            <Icon
+              name={
+                Platform.OS === 'ios' ? 'ios-arrow-forward' : 'md-arrow-forward'
+              }
+              size={32}
+              color={'grey'}
+              style={{marginRight: 8}}
+            />
+          </View>
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 }

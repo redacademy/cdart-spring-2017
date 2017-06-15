@@ -5,7 +5,9 @@ import {
   Text,
   Image,
   TouchableHighlight,
+  Platform
 } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import { goToInfoPage } from '../../../lib/navigationHelpers';
 
@@ -25,9 +27,14 @@ const GetInvolvedListItem = ({list, currentNavigatorUID}) => {
             style={{width: 35, height: 35, marginLeft: 8}} />
           <Text style={styles.textList}>{list.title}</Text>
         </View>
-        <Image
-          source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
-          style={{width: 25, height: 25, marginRight: 8}} />
+        <Icon
+          name={
+            Platform.OS === 'ios' ? 'ios-arrow-forward' : 'md-arrow-forward'
+          }
+          size={32}
+          color={'grey'}
+          style={{width: 25, height: 25, marginRight: 8}}
+        />
       </View>
     </TouchableHighlight>
   )};

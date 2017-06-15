@@ -5,6 +5,7 @@ import {
   ListView,
   Dimensions
 } from 'react-native';
+
 import { styles } from './styles';
 
 import GetInvolvedListItem from '../GetInvolvedListItem';
