@@ -1,0 +1,927 @@
+commit e27deb84fbe59b6fb341ba8dc0487a9fed7bdadc
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 22:10:36 2017 -0700
+
+    Fix errors from last merge.
+
+commit c52403fc6d4cb6e982d4f35c668b06e47bacc5b4
+Merge: 887a909 e941026
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 22:07:21 2017 -0700
+
+    Fixing merge conflicts with feature-addnavigationhelpers.
+
+commit e941026e01165ebf7806212d4a6c4b693b1b33bd
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 22:01:58 2017 -0700
+
+    Add navigation to Get Involved, Checklists, Forms, Procedures from home screen buttons.
+
+commit f6aef3a132c403953db230e5c18833469d2a423e
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 17:05:31 2017 -0700
+
+    Get Pet Profile navigation from home tab button working (with bug).
+
+commit e3363c3eb44a8c92e275eeeedbf70da596e7f4ec
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 16:43:36 2017 -0700
+
+    Fix proptypes on get involved.
+
+commit 055a570d41014b691c5573a33c434189e53e2cdc
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 16:39:05 2017 -0700
+
+    Add Props to getinvolved.
+
+commit 418462a5bd2d61e7e9eda03040ea0fb922c89e8e
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 16:28:35 2017 -0700
+
+    Add home to tab nav bar.
+
+commit 8f508a506f83b32de41358716c36844cf61b1214
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 17:42:36 2017 -0700
+
+    Add red gradient to nav bar and fix text colors
+
+commit 5cbfc5740c98c447d80b7648aa29778f6447e8dc
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 16:42:24 2017 -0700
+
+    removed tests scenes from updates
+
+commit 29b2e333cc985eadd201cd867c2f476dedf89587
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 16:38:53 2017 -0700
+
+    added proptypes and styling to picturestory content
+
+commit e6016cb52bc6a1248b1cfa53c5956c8d1afd0400
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 16:07:58 2017 -0700
+
+    Added get involved info pages and linking
+
+commit 8eac4a3a9af3a3fdc7472f9aaf5332ccf25a9983
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 16:28:35 2017 -0700
+
+    Add home to tab nav bar.
+
+commit a947a94be5d88ca9c0907cdf68d9510801ec115f
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 15:52:19 2017 -0700
+
+    Update pet profile dog styling.
+
+commit b3477ea185e0cdb1c9354aec830aa3e2c922bfcc
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 15:42:47 2017 -0700
+
+    Conditional rendering of petprofile, depending on if there are my dogs.
+
+commit a8055d4a97881f3493f68ca04f7ced5cae6822c3
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 15:05:31 2017 -0700
+
+    Added LaunchScreen.storyboard to ios.
+
+commit bcb0b9a74107922820882956f985314f998d31ae
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 14:40:27 2017 -0700
+
+    pulling changes
+
+commit dc36405b206689c9f20589e6b4afa51d3008b4fe
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 14:47:34 2017 -0700
+
+    Restore Backup ios file to get Xcode working.
+
+commit 6e3d287f18139ae15e99f3cd4404ebfb7b22df4b
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 14:28:46 2017 -0700
+
+    Add get involved list item.
+
+commit 60bd6b9fd3ff11a8e7fd2724dfa06042230acbe2
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 14:26:28 2017 -0700
+
+    Restored LaunchScreen.xib file in ios folder.
+
+commit 20dcf4cf55fd295d0a3bb1729b1b1d0a00c09a28
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 13:49:50 2017 -0700
+
+    Create IntakeForm Component. Added LaunchScreen.xib to ios folder.
+
+commit 48aa9e80bbc2e2142089f8748837ccf7c58881be
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 14:22:08 2017 -0700
+
+    Reconfigure Infor.plist file in ios.
+
+commit f177dc4943c4072abcbdc3f7f852558294b4680a
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 17:10:06 2017 -0700
+
+    Fix bug (pet profile remaining on top of nav stack after using helper funcion.)
+
+commit 208511395f5f3e87b91af8be194331acaa3a4819
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 17:05:31 2017 -0700
+
+    Get Pet Profile navigation from home tab button working (with bug).
+
+commit 887a909b6cfd22015a19729094fb6b0ff4ef855c
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 16:43:36 2017 -0700
+
+    Fix proptypes on get involved.
+
+commit 0af446b5b1fe575156610050afb9bfba5b2d5097
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 16:39:05 2017 -0700
+
+    Add Props to getinvolved.
+
+commit aa3dec62591b1829597c758bc799b4b543d29ace
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 16:28:35 2017 -0700
+
+    Add home to tab nav bar.
+
+commit 621e3cd42d406f38d8a855e539424286f69aa3cf
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 17:42:36 2017 -0700
+
+    Add red gradient to nav bar and fix text colors
+
+commit 215ce2f88588e2dd8b5f5d4b488d3313cfa209eb
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 16:42:24 2017 -0700
+
+    removed tests scenes from updates
+
+commit 849f0879118d460f9769fa75a20febd0ffb47e3f
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 16:38:53 2017 -0700
+
+    added proptypes and styling to picturestory content
+
+commit dcf896050934ebbf0d855778f1dc90df57600303
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 16:07:58 2017 -0700
+
+    Added get involved info pages and linking
+
+commit b2508a40f5ba0b2c26d1eee45ce1f523c118912e
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 16:28:35 2017 -0700
+
+    Add home to tab nav bar.
+
+commit 87e84ee2fc1078d5eeeb412adaeedd345bde76a2
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 17:42:36 2017 -0700
+
+    Add red gradient to nav bar and fix text colors
+
+commit 19e1b30d5bad46f0745a9b6f474bad6f46c8c25c
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 15:52:19 2017 -0700
+
+    Update pet profile dog styling.
+
+commit b5ad8ffb71c6b18e3aaaddb9eb728e2238d56bf7
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 15:42:47 2017 -0700
+
+    Conditional rendering of petprofile, depending on if there are my dogs.
+
+commit 8d5c7589e7fd96104614e71b4d99842c1596c734
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 15:05:31 2017 -0700
+
+    Added LaunchScreen.storyboard to ios.
+
+commit 62296ff0de4f3488292a7149fce33c96e25e7494
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 14:40:27 2017 -0700
+
+    pulling changes
+
+commit 4829a1020770719a292d91a1f27f714e2b4950d0
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 14:47:34 2017 -0700
+
+    Restore Backup ios file to get Xcode working.
+
+commit 4d92c195c43e45db0538fc700fbcd6adb9a5e40a
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 14:28:46 2017 -0700
+
+    Add get involved list item.
+
+commit a3429cd7c8ee682584419dc51c57c4daf652e2d9
+Merge: 20fa97f ad06eba
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 14:39:25 2017 -0700
+
+    Merge branch 'develop' of https://github.com/redacademy/cdart-spring-2017 into develop
+
+commit 20fa97f822f17c72fc0ce9af7aaa8bf79d939981
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 14:26:28 2017 -0700
+
+    Restored LaunchScreen.xib file in ios folder.
+
+commit ad06ebaad9f59d9cc701da025692a529465db632
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 14:33:00 2017 -0700
+
+    Add mockdata dog, to conditionally change petprofile home.
+
+commit a3d75f6300e38fd71b5bdf17ba31953cfad95cfe
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 13:49:50 2017 -0700
+
+    Create IntakeForm Component. Added LaunchScreen.xib to ios folder.
+
+commit c85b1ae3ca14d02b1d8154c0c016e35dfa046938
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 14:22:08 2017 -0700
+
+    Reconfigure Infor.plist file in ios.
+
+commit 8b3998cd022f2ceaebdd5b4f415c27f7ff9a6771
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 13:51:10 2017 -0700
+
+    Add navigation helper to push regular views onto home nav stack, and implement for 'pet emergency checklist'.
+
+commit c3950043893a06c29de728ba95c2daa50bd1df2f
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 12:22:25 2017 -0700
+
+    Merging package.json.
+
+commit 894b6ab338032ce5f2c1616b926972c48bb0a9ad
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 16:28:35 2017 -0700
+
+    Add home to tab nav bar.
+
+commit e5b258558873db206e49a9b5c6dac72e50ae189c
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 17:42:36 2017 -0700
+
+    Add red gradient to nav bar and fix text colors
+
+commit 6b6f4366aacbbe835a58cfab442e3efe89aa6f69
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 16:28:35 2017 -0700
+
+    Add home to tab nav bar.
+
+commit 595f0b869fa93c8ab010e1f75ebea0a06f3b3235
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 10:56:27 2017 -0700
+
+    Remove style causing warnings from petprofile
+
+commit 5b99ea3fcad80d73f25951ca01ffc50b65a3c932
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 17:42:36 2017 -0700
+
+    Add red gradient to nav bar and fix text colors
+
+commit dd5bb400654237391a5e6a20fc934c6bd9e4020b
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 16:28:35 2017 -0700
+
+    Add home to tab nav bar.
+
+commit 2363cb084c7c4435761e32381ec4eb315e079505
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 13:37:43 2017 -0700
+
+    clean updates
+
+commit 73b174f05b54bb8da744fbce89433ff7b2c316ec
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 13:29:01 2017 -0700
+
+    Add blank row on get involved.
+
+commit 02ccdaf0d7ed1578ccbe473951f715dc9bd61725
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 13:05:03 2017 -0700
+
+    Add Icons to Get Involved list.
+
+commit d4822d86deec2da544c4affffa11733081122c22
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 11:52:18 2017 -0700
+
+    Create Get Involved List View.
+
+commit 29bc34b6c8d6f82211cf8446593a7b8fe0d0c07d
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 13:38:56 2017 -0700
+
+    Fix merge errors.
+
+commit 39d1cffb2a9fc191c9fa07c9e3026f3b96d9043f
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 10:53:13 2017 -0700
+
+    Add react-native components to getinvolved.
+
+commit 682b0b043b422d8dcf4e9f36d78a6e638c735993
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 13:33:52 2017 -0700
+
+    Fix index.ios.js after testing out new component with it.
+
+commit 2b488f38386cfb41aec19c50f981735a9eb9fa1c
+Merge: 1847ebb e75f8a5
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 13:31:43 2017 -0700
+
+    Fix merge conflicts after merge petprofile branch.
+
+commit 1847ebba4c514ed5e5baf170780a12bf35fe03f4
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 10:56:27 2017 -0700
+
+    Remove style causing warnings from petprofile
+
+commit ca4434fb580bdcc09697fdf8203b7fff45e11e05
+Merge: ed3a28e cc4f608
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 12:51:07 2017 -0700
+
+    Fix merge conflict with feature-fixhomelayout in package.json
+
+commit cc4f60817704c3c3d04f6020237201d511024118
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 12:48:16 2017 -0700
+
+    Fix merge conflict in package.json.
+
+commit ed3a28ef3fbf0effdbc410aeb467ac6f3ce4c4b2
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 12:29:24 2017 -0700
+
+    created format and layout for the picturestory template
+
+commit a1927454c5a8f65dea2855ec005fd4628ddc118a
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 11:52:14 2017 -0700
+
+    created new branch for pictureStory
+
+commit 3c1f0f2c6f79571fbabf0fffdff23df4e050eeda
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 12:22:50 2017 -0700
+
+    Add LaunchScreen.xib file.
+
+commit 0f20b98fa458719947e961037e3855b605006c76
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 12:08:36 2017 -0700
+
+    Remove Splashscreen file.
+
+commit c43880b9e375081f4333eb6c6a6cb462030b365f
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 12:01:20 2017 -0700
+
+    Set Splashscreen to default.
+
+commit e75f8a5dee969f80abfde3ac4fe7ee76e7f631e0
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 11:50:07 2017 -0700
+
+    Add create profile touchablehighlight, and CSS to createpetprofile.
+
+commit e725ddcf99943f60fdb6a7dec7f8c43804ffc559
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 11:07:05 2017 -0700
+
+    Resolve black bars contraining app issue
+
+commit 708108bc95c99a8516bdd44e99c67436b234a729
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Wed Jun 14 10:59:12 2017 -0700
+
+    Fix home scene layout and homenavtab proptype error.
+
+commit 4b2491eea0781b02f2a05b363c868eb5856e55ae
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 10:56:27 2017 -0700
+
+    Remove style causing warnings from petprofile
+
+commit 16b448267a0c9bfa20c63e9e30865e3fafbfda43
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 10:38:47 2017 -0700
+
+    Remove blackbars from containing app. Retreived app icon.
+
+commit 97ede52bc7b192cabe7d772c6a20b764ff3c75bf
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 10:04:51 2017 -0700
+
+    add new app iconset
+
+commit ed04fd00be3b52a3e10f57923df3d42594beab98
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 10:42:25 2017 -0700
+
+    Add Retina 4 splashscreen
+
+commit 7950b41d6df3c518974ba38039c3e2d6cebcb789
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 10:44:22 2017 -0700
+
+    fixing pull
+
+commit d08c8896114edfc0546039a68181c0338022b96c
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Wed Jun 14 10:04:43 2017 -0700
+
+    pulling changes
+
+commit 929c5a9e17c19449f9d6b87cc43e3a4b466ed107
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 10:47:04 2017 -0700
+
+    Fix merge conflict in package.json
+
+commit a2bf8a1f23d7513df7140d235aac7e11b00c3b6c
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 10:43:50 2017 -0700
+
+    Fix feature emergkit pull request issues that are doable now.
+
+commit 9b18e77fe4003934847c8e58c8e7fe4f73644be6
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 10:21:00 2017 -0700
+
+    Create VolunteerPacking view.
+
+commit 8def559bacf5732385cf7f34fa0f8c493fcc857d
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Wed Jun 14 09:12:15 2017 -0700
+
+    Style the emergency kit separator.
+
+commit a2fc948a96a4f51e16ef1c2db2bfd2ee2ddb280f
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 10:18:15 2017 -0700
+
+    Find and fix linking error.
+
+commit 8b4794b7a3347351f76f7d01429f49f6d3310163
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 10:00:37 2017 -0700
+
+    Fix merge conflict in package.json.
+
+commit 4c724bda5c2894fdabd47e93d9e5baec1d56e632
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Wed Jun 14 09:58:45 2017 -0700
+
+    Fix merge conflicts in develop branch.
+
+commit 42d42508950806006d790b2cd2c577b550e8720e
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Wed Jun 14 09:14:52 2017 -0700
+
+    Add new splashscreen template.
+
+commit 7a382a0d250761bb4bda8e1e7dbd6639d831eddb
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 17:58:15 2017 -0700
+
+    Remove comments and unused code from PetProfile, GetInvolved, and Updates components
+
+commit f21baa8791f4e2b11b3f3746ec1e68d298f6d604
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 17:42:36 2017 -0700
+
+    Add red gradient to nav bar and fix text colors
+
+commit 94ae9536058a169e1c02b5e0f4dac51dc79a4e4d
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 17:40:45 2017 -0700
+
+    Install and link react-native-linear-gradient.
+
+commit d7b9f99e83c309af3762d9f814a2c04c8dda90d9
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 16:01:41 2017 -0700
+
+    install react-native-linear-gradient
+
+commit d6ba09ea4b28fd270e615cbe74d98831259ef464
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 14:50:29 2017 -0700
+
+    add arrow buttons to onboarding
+
+commit f672829b8467d98aef999ecc7beba20163deecc1
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 14:19:49 2017 -0700
+
+    implement swiping ability
+
+commit c3368cb37a4651e32a99d8df7acd67c7b0c52206
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 12:39:17 2017 -0700
+
+    add onboarding scenes
+
+commit ace31b73871d7038239f5fea83750b7156dfc4ca
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 10:31:18 2017 -0700
+
+    add onboarding container
+
+commit 4d0079714bae9da25e27ba1bec49f282c620a181
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:41:11 2017 -0700
+
+    wrap main app component with NavigationProvider
+
+commit 85e9c76146c4f1e7f4743b6b8cafea53f91c6b2d
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 10:17:03 2017 -0700
+
+    install ex-navigation
+
+commit 9be834af773af2199909efa9f4710dbdd1588c9b
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 11:27:40 2017 -0700
+
+    updated homeNavTabs
+
+commit e4ae2eef8875f3ac992c6c5b9083fe89c673451c
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 11:15:45 2017 -0700
+
+    updated homeNavigationTabs to use phone dimensions
+
+commit 837b3ec3dcc02156707125a1b5798bfbf9ef246a
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 14:50:29 2017 -0700
+
+    add arrow buttons to onboarding
+
+commit c9bd7db9c4ceddca1f8054b79a442310110d7cf5
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 14:19:49 2017 -0700
+
+    implement swiping ability
+
+commit 67ef0d908ee98a2e8baf0309bc05dfc0ffc01f95
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 12:39:17 2017 -0700
+
+    add onboarding scenes
+
+commit 48cef7b6902937ab717a18d9f0c0f268d0cc1af5
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 10:31:18 2017 -0700
+
+    add onboarding container
+
+commit 52a944f3813e85b48d4939e94e0c3b515f7af9f1
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Tue Jun 13 09:23:23 2017 -0700
+
+    update file
+
+commit 35175a69cde61ea85343a9545eb6134e3bdbe037
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Tue Jun 13 15:58:25 2017 -0700
+
+    Splash screen setup
+
+commit 64b5e0245e234e8402c2447d24b7441ff534012e
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Tue Jun 13 15:33:31 2017 -0700
+
+    fixed indexiosjs
+
+commit 98fd88d217a904076b6cce0b700f14f4ad12ac76
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Tue Jun 13 15:30:45 2017 -0700
+
+    got green clicked functionality down, just need real assets now
+
+commit 9e61428afeb3ad875710a924c82a3bdbcc01ddf6
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Tue Jun 13 15:13:47 2017 -0700
+
+    trying to import array into emergkit
+
+commit 91554775585b330eee41aa01d255ca5b94a989c9
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Tue Jun 13 15:10:27 2017 -0700
+
+    got the click button kinda owrking
+
+commit 9df0e2cd770aa408d6545f91a20e52e7c1d88888
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 15:08:10 2017 -0700
+
+    added data
+
+commit b90a0eda8bd00125f3f0723f5a216e385cd25ebc
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Tue Jun 13 14:23:52 2017 -0700
+
+    got listview working for emergkit
+
+commit b61291da1cfbb4bbfb87395aff40c26b51dbcbe3
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Tue Jun 13 11:23:52 2017 -0700
+
+    started emergkit
+
+commit bc862769d33b9f27ac4338a667cdb05f7328e029
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 14:17:20 2017 -0700
+
+    updated pictureList
+
+commit 3b66ccfc16743828d9e8f9c0a413942494391bec
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 13:16:23 2017 -0700
+
+    starting on the reusable picture list
+
+commit f08ba10fb07d1964ccbb677b6a8f47f5a3ab96a9
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 12:14:11 2017 -0700
+
+    Revert index.ios.js to current version.
+
+commit 52fb468bd9aff447fad0a11188d2eee7cef89bec
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 12:04:57 2017 -0700
+
+    Plug in home tab components into home layout.
+
+commit d0ed75201389818ad4e1a80391bad5a4a3321f7d
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 09:59:49 2017 -0700
+
+    Rough out home screen component.
+
+commit a4b3e9cc5fbb4773cd4f91852117820471888aa8
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 11:27:40 2017 -0700
+
+    updated homeNavTabs
+
+commit 4047a62f2d64a085e4369816dcf00ca1afeff051
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 11:15:45 2017 -0700
+
+    updated homeNavigationTabs to use phone dimensions
+
+commit e106f8bc4fa623314f997a82bf462a25591a3248
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 11:12:36 2017 -0700
+
+    Basic home layout.
+
+commit 22af38af9a853ff67f5022a57a67e23eaaf1e7f2
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 09:59:49 2017 -0700
+
+    Rough out home screen component.
+
+commit 50e57046a8875f1db7c65af3a4f58a7879753207
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Tue Jun 13 09:59:49 2017 -0700
+
+    Rough out home screen component.
+
+commit 895f280aff37a147c66715234d8b952223155682
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:47:31 2017 -0700
+
+    comment out prop-type objects temporarily
+
+commit b1ec9a743d3d3cab20b722af587ceb71dc32ac12
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:46:03 2017 -0700
+
+    change tab title color when selected
+
+commit 927e3b84ddad335505bf1fcbaacbabfd8b92f51a
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:43:34 2017 -0700
+
+    add tab and stack navigation components to nav tab bar
+
+commit 47e57ed0b78f5a7fd7d78b44d9b95bda9ea787c9
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:41:39 2017 -0700
+
+    create routes in router.js
+
+commit 58f0c42e5868177dcc2d98fcc3ebd9c9ccd4265e
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:41:11 2017 -0700
+
+    wrap main app component with NavigationProvider
+
+commit ab00bbfa38edfb54da65b189f9cb7d52402f92bf
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:26:19 2017 -0700
+
+    set up basic GetInvolved scene
+
+commit 17acd321cb329f78fb8c45e8adccb2f88766e9f6
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:24:28 2017 -0700
+
+    set up basic Updates scene
+
+commit 91866584481f381e6b276178a9d2c4363da90a78
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 11:21:00 2017 -0700
+
+    set up basic PetProfile scene
+
+commit 93d9b82ad2c0a04ad35146daab3f997136870fd6
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 10:17:55 2017 -0700
+
+    update .babelrc
+
+commit ffc5e9eea8cba6de2c8d39f2ffe718e642f57fcb
+Author: Iris <mdza.iris@gmail.com>
+Date:   Tue Jun 13 10:17:03 2017 -0700
+
+    install ex-navigation
+
+commit 4205b2fa24b8efa25bd2ce4cc62f3c21233f7d64
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 11:27:40 2017 -0700
+
+    updated homeNavTabs
+
+commit ef2eae747a63ed2d192c736fff8598d7b01b92e1
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 11:26:45 2017 -0700
+
+    updated homeNavTabs
+
+commit 584692d3967a039fa54c372f2e4cd186e5bc231d
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 11:15:45 2017 -0700
+
+    updated homeNavigationTabs to use phone dimensions
+
+commit 2f70f749aa086e480b11755a20206b3394570983
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 10:35:37 2017 -0700
+
+    added reusable homescreen tab components
+
+commit de0d0374f049efc1e5d99050e5c11679b12e017a
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Tue Jun 13 09:14:53 2017 -0700
+
+    pulling
+
+commit ea8ad92c14db7d45c47296818bc77f738cda53b8
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Mon Jun 12 16:33:58 2017 -0700
+
+    updated package
+
+commit 1a94d3124bc979c973cc1af1719734b050b7722f
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Tue Jun 13 10:28:20 2017 -0700
+
+    Added default colors, typograghy and gradients to style config
+
+commit c4e7d1633b885c6211e06f6357a997532e51563f
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Tue Jun 13 10:14:25 2017 -0700
+
+    added app icon images to new folder in assets
+
+commit 7fbea9fcf3a2d906c6c611c26afec77c65533efe
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Tue Jun 13 09:57:04 2017 -0700
+
+    fixed mistake
+
+commit 9f18211f192e9c3032faf979ac50bff611e98249
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Mon Jun 12 16:36:18 2017 -0700
+
+    got eslint workin
+
+commit 64488d6504fe1e35e5f4ea50267fa0f9a6003040
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Mon Jun 12 16:33:25 2017 -0700
+
+    added eslint plugin react
+
+commit 7ca2fe3c1150dc776265a921abbbc13400e0669e
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Mon Jun 12 16:15:31 2017 -0700
+
+    Rought out file folder structure.
+
+commit d3f3c681674be9b419c2d75993aaf197a5021304
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Mon Jun 12 16:13:58 2017 -0700
+
+    did editor config
+
+commit eefe244afa9432058eebfbc63379b61aedca9644
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Mon Jun 12 11:40:55 2017 -0700
+
+    removed android boiler plate
+
+commit f43a306e574161f483d95cd6960f7573c26cf1bb
+Author: andrew.nelsonrd@gmail.com <andrew.nelsonrd@gmail.com>
+Date:   Mon Jun 12 11:11:16 2017 -0700
+
+    initial commit
+
+commit 8e8f271ff4ee39fb3530dde59fd8aa2347b2d054
+Author: Iris <mdza.iris@gmail.com>
+Date:   Mon Jun 12 11:09:17 2017 -0700
+
+    add eslintrc file
+
+commit a6f3694ba24b9ab8df7d3367f4bae5f48c9b163c
+Author: Johnwat92 <JohnWat92@gmail.com>
+Date:   Mon Jun 12 11:08:34 2017 -0700
+
+    eslint branch
+
+commit e7bc42a98b4463a23b7156a7c6e24e105ac2138d
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Mon Jun 12 11:14:09 2017 -0700
+
+    fix README
+
+commit bdada1317ca4e84ee6b7455fdd3f5add0bf15f94
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Mon Jun 12 11:13:32 2017 -0700
+
+    removed merge headings
+
+commit 80803995991e57e6949c02921e0fc31acb77cb8a
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Mon Jun 12 11:10:45 2017 -0700
+
+    updating README
+
+commit 4c602bd936c40385e52e24d2b29a9a3c0bbda54a
+Author: Evan Gray <evanlawgray@gmail.com>
+Date:   Mon Jun 12 11:10:02 2017 -0700
+
+    Add project description.
+
+commit c3f1454901c4efc39d548f664a7217c068ca6b16
+Author: Warren Chan <warrenchan@warren-2.local>
+Date:   Mon Jun 12 11:08:34 2017 -0700
+
+    Reade me update technologies used
+
+commit 5f4f3cea64c186f8e61235017ad92f0894808333
+Author: Montana Sawyer <montanarsawyer@gmail.com>
+Date:   Mon Jun 12 11:05:42 2017 -0700
+
+    update README
+
+commit c925802c418b99add8367f1de83289d480d2d233
+Author: Mackenzie <remember.mackenzie@gmail.com>
+Date:   Mon Jun 12 09:25:28 2017 -0700
+
+    Create README.md
+
+commit ceecc3bbfb3b656c6708046ad5ee52b45b773ef8
+Author: Mackenzie Kieran <mackenzie@redacademy.com>
+Date:   Mon Jun 12 09:04:03 2017 -0700
+
+    Initial commit.
