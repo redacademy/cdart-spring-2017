@@ -13,7 +13,7 @@ class PictureList extends Component {
     }
   }
   render() {
-    console.log(this.props.list)
+
     return (
       <View>
         <Image source={{uri: 'https://s-media-cache-ak0.pinimg.com/736x/73/91/86/7391863170be07a072ffeb3e7605db2a.jpg'}}

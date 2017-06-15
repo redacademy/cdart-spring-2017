@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Updates from './Updates';
+import IncidentContainer from '../IncidentCommand/IncidentContainer'
 
 class UpdatesContainer extends Component {
 
@@ -12,7 +13,7 @@ class UpdatesContainer extends Component {
 
   render() {
     return (
-      <Updates />
+      <IncidentContainer />
     );
   }
 }
