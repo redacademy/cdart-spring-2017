@@ -32,14 +32,11 @@ const Home = ({ navigation }) => {
             title='Pet Emergency Kit'
             navStackUID={ homeStackUID }
             targetRoute='emergencyKit'
-            targetTab={ null }
             isTabNav={ false }
-            navigation={ null }
           />
 
           <HomeTab
             title='Pet Profile'
-            navStackUID={ null }
             targetRoute='petProfile'
             targetTab='petProfile'
             isTabNav={ true }
@@ -54,13 +51,34 @@ const Home = ({ navigation }) => {
         </Text>
 
         <View style={ styles.tabContainer }>
-          <HomeTab />
+          <HomeTab
+            title='Checklists'
+            navStackUID={ homeStackUID }
+            targetRoute='checklists'
+            isTabNav={ false }
+          />
 
-          <HomeTab />
+          <HomeTab
+            title='Forms'
+            navStackUID={ homeStackUID }
+            targetRoute='forms'
+            isTabNav={ false }
+          />
 
-          <HomeTab />
+          <HomeTab
+            title='Procedures'
+            navStackUID={ homeStackUID }
+            targetRoute='procedures'
+            isTabNav={ false }
+          />
 
-          <HomeTab />
+          <HomeTab
+            title='Get Involved'
+            targetRoute='getInvolved'
+            targetTab='getInvolved'
+            isTabNav={ true }
+            navigation={ navigation }
+          />
         </View>
       </View>
     </View>

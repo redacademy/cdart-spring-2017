@@ -6,6 +6,9 @@ import Updates from '../scenes/Updates';
 import GetInvolved from '../scenes/GetInvolved';
 import EmergencyKit from '../scenes/EmergencyKit';
 import GetInvolvedInfo from '../scenes/GetInvolvedInfo';
+import Checklists from '../scenes/Checklists';
+import Forms from '../scenes/Forms';
+import Procedures from '../scenes/Procedures';
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
@@ -15,6 +18,9 @@ const Router = createRouter(() => ({
   getInvolved: () => GetInvolved,
   emergencyKit: () => EmergencyKit,
   getInvolvedInfo: () => GetInvolvedInfo,
+  checklists: () => Checklists,
+  forms: () => Forms,
+  procedures: () => Procedures
 }));
 
 export default Router;
