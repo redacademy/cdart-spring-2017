@@ -13,7 +13,8 @@ class IntakeFormList extends Component {
     renderListItemTitle(intakeItems) {
         if(intakeItems.length) {
             return intakeItems.map((intakeItem, i) =>
-                <Text key={i} >{intakeItem.title}</Text>
+                // <Text key={i} >{intakeItem.title}</Text>
+                console.log(intakeItem.description)
                 // Map through array of descriptions in here to get bulletpoints
             )
         }
