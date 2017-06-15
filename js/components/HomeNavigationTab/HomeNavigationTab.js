@@ -6,11 +6,11 @@ import { goToView } from '../../lib/navigationHelpers';
 import { View, Text, Image, TouchableWithoutFeedback } from 'react-native';
 import { styles } from './styles';
 
-const HomeNavigationTab = ({title, navStackUID, targetRoute}) => {
+const HomeNavigationTab = ({title, navStackUID, targetRoute, targetTab, isTabNav, navigation}) => {
 
   return (
     <TouchableWithoutFeedback
-      onPress={ () => goToView(navStackUID, targetRoute) }
+      onPress={ () => goToView(navStackUID, targetRoute, targetTab, isTabNav, navigation) }
     >
       <View style={styles.tab}>
 

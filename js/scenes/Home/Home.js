@@ -3,16 +3,22 @@ import PropTypes from 'prop-types';
 
 import {
   View,
-  Text
+  Text,
+  TouchableWithoutFeedback
 }from 'react-native';
 
 import { styles } from './styles';
 
+import { goToView, goToTab } from '../../lib/navigationHelpers';
+
+import PetProfile from '../PetProfile';
+
 import HomeTab from '../../components/HomeNavigationTab';
 
-const navStackUID = 'home';
+const homeStackUID = 'home';
+const mainStackUID = 'main';
 
-const Home = () => {
+const Home = ({ navigation }) => {
 
   return (
     <View style={ styles.container }>
@@ -24,11 +30,18 @@ const Home = () => {
         <View style={ styles.tabContainer }>
           <HomeTab
             title='Pet Emergency Kit'
-            navStackUID={ navStackUID }
+            navStackUID={ homeStackUID }
             targetRoute='emergencyKit'
+            isTabNav={ false }
           />
 
-          <HomeTab />
+          <HomeTab
+            title='Pet Profile'
+            targetRoute='petProfile'
+            targetTab='petProfile'
+            isTabNav={ true }
+            navigation={ navigation }
+          />
         </View>
       </View>
 
@@ -38,13 +51,34 @@ const Home = () => {
         </Text>
 
         <View style={ styles.tabContainer }>
-          <HomeTab />
+          <HomeTab
+            title='Checklists'
+            navStackUID={ homeStackUID }
+            targetRoute='checklists'
+            isTabNav={ false }
+          />
 
-          <HomeTab />
+          <HomeTab
+            title='Forms'
+            navStackUID={ homeStackUID }
+            targetRoute='forms'
+            isTabNav={ false }
+          />
 
-          <HomeTab />
+          <HomeTab
+            title='Procedures'
+            navStackUID={ homeStackUID }
+            targetRoute='procedures'
+            isTabNav={ false }
+          />
 
-          <HomeTab />
+          <HomeTab
+            title='Get Involved'
+            targetRoute='getInvolved'
+            targetTab='getInvolved'
+            isTabNav={ true }
+            navigation={ navigation }
+          />
         </View>
       </View>
     </View>
