@@ -1,19 +1,24 @@
 export const colors = {
-  black: '#000000',
-  white: '#ffffff',
-  lightRed: '#E2452D',
   red: '#BF3841',
+  lightRed: '#FB725D',
   dimRed: '#DB8F94',
-  skyBlue: '#2895E5',
+
+  darkBlue: '#1F425B',
   blue: '#3D78A3',
+  lightBlue: '#4C96CD',
+  dimBlue: '#D7E4EC',
+
+  black: '#000000',
+  asphaltGrey: '#4A4A4A',
+  grey: '#9B9B9B',
+  lightGrey: '#EFEDED',
+  white: '#ffffff',
+
+  skyBlue: '#2895E5',
   green: '#1F8C50',
   yellow: '#F2B32C',
-  asphaltGrey: '#4A4A4A',
-  lightGrey: '#D8D8D8',
 
   checkButtonBorder: '#979797',
-  textBackgroundGrey: '#EFEDED',
-
   transparentBlue: 'rgba(61,120,163,0.09)',
 };
 
