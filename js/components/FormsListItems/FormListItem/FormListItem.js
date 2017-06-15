@@ -4,7 +4,7 @@ import { styles } from './styles';
 
 import PropTypes from 'prop-types';
 
-const IntakeFormListItem = ({ title, descriptions }) => {
+const FormListItem = ({ title, descriptions }) => {
   return (
     <View style={styles.listItem}>
       <Text style={styles.listItemTitle}>{title}</Text>
@@ -14,9 +14,9 @@ const IntakeFormListItem = ({ title, descriptions }) => {
     </View>
   );
 };
-export default IntakeFormListItem;
+export default FormListItem;
 
-IntakeFormListItem.propTypes = {
+FormListItem.propTypes = {
   title: PropTypes.string,
   descriptions: PropTypes.array
 };

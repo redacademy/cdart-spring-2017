@@ -3,13 +3,13 @@ import { View } from 'react-native';
 
 import PropTypes from 'prop-types';
 
-import IntakeFormListItem from './../IntakeFormListItem';
+import FormListItem from './../FormListItem';
 
 const IntakeFormList = ({ formData }) => {
   return (
     <View>
       {formData.map((formSingleSectionData, i) => {
-        return <IntakeFormListItem
+        return <FormListItem
           key={i}
           title={formSingleSectionData.title}
           descriptions={formSingleSectionData.descriptions}
