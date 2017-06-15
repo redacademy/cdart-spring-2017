@@ -12,7 +12,7 @@ class HomeContainer extends Component {
   render() {
     return(
       <View>
-        <Home />
+        <Home navigation={ this.props.navigation }/>
       </View>
     );
   }

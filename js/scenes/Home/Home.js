@@ -3,16 +3,22 @@ import PropTypes from 'prop-types';
 
 import {
   View,
-  Text
+  Text,
+  TouchableWithoutFeedback
 }from 'react-native';
 
 import { styles } from './styles';
 
+import { goToView, goToTab } from '../../lib/navigationHelpers';
+
+import PetProfile from '../PetProfile';
+
 import HomeTab from '../../components/HomeNavigationTab';
 
-const navStackUID = 'home';
+const homeStackUID = 'home';
+const mainStackUID = 'main';
 
-const Home = () => {
+const Home = ({ navigation }) => {
 
   return (
     <View style={ styles.container }>
@@ -24,11 +30,21 @@ const Home = () => {
         <View style={ styles.tabContainer }>
           <HomeTab
             title='Pet Emergency Kit'
-            navStackUID={ navStackUID }
+            navStackUID={ homeStackUID }
             targetRoute='emergencyKit'
+            targetTab={ null }
+            isTabNav={ false }
+            navigation={ null }
           />
 
-          <HomeTab />
+          <HomeTab
+            title='Pet Profile'
+            navStackUID={ null }
+            targetRoute='petProfile'
+            targetTab='petProfile'
+            isTabNav={ true }
+            navigation={ navigation }
+          />
         </View>
       </View>
 
