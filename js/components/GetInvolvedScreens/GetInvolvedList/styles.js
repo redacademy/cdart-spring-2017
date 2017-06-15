@@ -1,13 +1,15 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
+
+import { colors } from '../../../config/styles';
 
 export const styles = StyleSheet.create({
   separator: {
     flex: 1,
     height: StyleSheet.hairlineWidth,
-    backgroundColor: '#8E8E8E',
+    backgroundColor: colors.grey,
   },
   blank: {
-    backgroundColor: '#dee8ef',
+    backgroundColor: colors.dimBlue,
     padding: 14,
   },
 });

@@ -13,11 +13,13 @@ import { goToInfoPage } from '../../../lib/navigationHelpers';
 
 import { styles } from './styles';
 
+import { colors } from '../../../config/styles';
+
 const GetInvolvedListItem = ({list, currentNavigatorUID}) => {
   return (
     <TouchableHighlight
     onPress={() => goToInfoPage(currentNavigatorUID, list)}
-    underlayColor="#999999"
+    underlayColor={colors.grey}
     style={styles.container}
     >
       <View style={styles.singleItem}>
@@ -32,7 +34,7 @@ const GetInvolvedListItem = ({list, currentNavigatorUID}) => {
             Platform.OS === 'ios' ? 'ios-arrow-forward' : 'md-arrow-forward'
           }
           size={32}
-          color={'grey'}
+          color={colors.grey}
           style={{width: 25, height: 25, marginRight: 8}}
         />
       </View>

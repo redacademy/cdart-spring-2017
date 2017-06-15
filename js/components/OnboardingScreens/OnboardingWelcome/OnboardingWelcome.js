@@ -9,13 +9,14 @@ import LinearGradient from 'react-native-linear-gradient';
 import { goToApp } from '../../../lib/navigationHelpers';
 
 import { styles } from './styles';
+import { colors } from '../../../config/styles';
 
 const OnboardingWelcome = () => {
   return (
     <LinearGradient
       start={{x: 0.0, y: 0.2}} end={{x: 0.5, y: 1.0}}
       locations={[0,1.0]}
-      colors={['#fa725d', '#bf3841']}
+      colors={[colors.lightRed, colors.red]}
       style={styles.linearGradient}
     >
       <View style={[styles.slide, { backgroundColor: 'transparent' } ]}>

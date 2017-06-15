@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../../config/styles';
 
 export const styles = StyleSheet.create({
   // Slide styles
@@ -9,7 +10,7 @@ export const styles = StyleSheet.create({
   },
   // Header styles
   header: {
-    color: '#FFFFFF',
+    color: colors.white,
     fontFamily: 'Avenir',
     fontSize: 30,
     fontWeight: 'bold',
@@ -17,7 +18,7 @@ export const styles = StyleSheet.create({
   },
   // Text below header
   text: {
-    color: '#FFFFFF',
+    color: colors.white,
     fontFamily: 'Avenir',
     fontSize: 18,
     marginHorizontal: 40,

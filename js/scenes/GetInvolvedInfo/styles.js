@@ -1,15 +1,17 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-var { height, width } = Dimensions.get('window');
+var { width } = Dimensions.get('window');
+
+import { colors } from '../../config/styles';
 
 export const styles = StyleSheet.create({
   separator: {
     flex: 1,
     height: StyleSheet.hairlineWidth,
-    backgroundColor: '#8E8E8E',
+    backgroundColor: colors.grey,
   },
   subtitle: {
-    color: '#4079A2',
+    color: colors.blue,
     fontSize: 16,
     fontWeight: 'bold'
   },
@@ -18,32 +20,35 @@ export const styles = StyleSheet.create({
   },
   description: {
     marginTop: 2,
-    marginBottom: 2
+    marginBottom: 2,
+    color: colors.asphaltGrey
   },
   listText: {
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    backgroundColor:'white',
-    borderColor: '#CDCDCD',
+    backgroundColor:colors.white,
+    borderColor: colors.grey,
     paddingLeft:16,
     height:40,
     justifyContent:'center',
     textAlignVertical: 'center',
     lineHeight: 40,
-    fontSize: 16
+    fontSize: 16,
+    color: colors.asphaltGrey
   },
   listBox: {
     flexDirection: 'row',
     justifyContent:'space-between',
-    backgroundColor:'white',
-    alignItems:'center'
+    backgroundColor:colors.white,
+    alignItems:'center',
   },
   listBoxContainer: {
-    borderWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
     height: 100,
     justifyContent:'center',
-    backgroundColor: 'rgba(61,120,163,0.17)',
-    borderColor: '#CDCDCD',
+    backgroundColor: colors.dimBlue,
+    borderColor: colors.grey,
     width: width
   }
 });

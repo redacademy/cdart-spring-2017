@@ -7,12 +7,14 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import { styles } from './styles';
 
+import { colors } from '../../../config/styles';
+
 const OnboardingPet = () => {
   return (
     <LinearGradient
       start={{x: 0.0, y: 0.2}} end={{x: 0.5, y: 1.0}}
       locations={[0,1.0]}
-      colors={['#4d96cd', '#6ca5cf']}
+      colors={[colors.lightBlue, colors.blue]}
       style={styles.linearGradient}
     >
       <View style={[styles.slide, { backgroundColor: 'transparent' } ]}>
