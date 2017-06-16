@@ -14,7 +14,6 @@ class FormsContainer extends Component {
     return(
       <PictureList
         list={ homeForms }
-        targetRoute={ targetRoute }
         currentNavigatorUID={ currentNavigatorUID }
       />
     );
