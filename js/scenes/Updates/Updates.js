@@ -1,10 +1,10 @@
  import React from 'react';
 
-import { Text } from 'react-native';
+import ReceptionContainer from '../ReceptionCentre';
 
 const Updates = () => {
   return (
-    <Text>Updates...</Text>
+    <ReceptionContainer />
   );
 }
 
