@@ -22,12 +22,12 @@ export const homeForms = [
 ]
 // Procedures
 export const procedureList = [
-  { title: 'Daily Volunteer Duties'},
-  { title: 'Animal Rescue Flow'},
-  { title: 'Incident Command Flow'},
-  { title: 'Reception Centre Setup'},
-  { title: 'Animal Condition Inspection'},
-  { title: 'Basic Animal Care'}
+  { title: 'Daily Volunteer Duties', targetRoute: 'animalFlow'},
+  { title: 'Animal Rescue Flow', targetRoute: 'animalFlow'},
+  { title: 'Incident Command Flow', targetRoute: 'singleIncident'},
+  { title: 'Reception Centre Setup', targetRoute: 'reception'},
+  { title: 'Animal Condition Inspection', targetRoute: 'animalCondition'},
+  { title: 'Basic Animal Care', targetRoute: 'animalCare'}
 ]
 // Get Involved
 export const getInvolved = [

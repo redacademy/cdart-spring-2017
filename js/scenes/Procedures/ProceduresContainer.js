@@ -5,13 +5,12 @@ import { procedureList } from '../../assets/data';
 
 import PictureList from '../../components/PictureList';
 
-const targetRoute = 'singleIncident';
 const currentNavigatorUID = 'home';
 class ProceduresContainer extends Component {
 
   render() {
     return(
-      <PictureList targetRoute={targetRoute} currentNavigatorUID={ currentNavigatorUID } list={ procedureList } />
+      <PictureList currentNavigatorUID={ currentNavigatorUID } list={ procedureList } />
     );
   }
 }
