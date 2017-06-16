@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { ListView } from 'react-native';
 
+import { removeFromNavStack } from '../../lib/navigationHelpers';
+
 import EmergencyKit from './EmergencyKit'
 import { petEmergencyKit } from '../../assets/data'
+
+const navigatorUID = 'home';
+const targetRoute = 'emergencyKit';
 
 class EmergencyKitContainer extends Component {
 

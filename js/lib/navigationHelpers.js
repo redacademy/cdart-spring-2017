@@ -15,6 +15,12 @@ export const goToView = (currentNavigatorUID, routeName, tabName, isTabNav, navi
   }
 }
 
+export const clearNavStack = () => {
+  Store.dispatch( NavigationActions.pop(
+    'home'
+  ));
+}
+
 export const goToInfoPage = (currentNavigatorUID, infoData) => {
   Store.dispatch(NavigationActions.push(
     currentNavigatorUID,
