@@ -15,22 +15,27 @@ import { styles } from './styles';
 
 var { width } = Dimensions.get('window');
 
-const missionImage = require('../../assets/images/cdart_mission.png');
-const courseImage = require('../../assets/images/take_a_course.png');
-const volunteerImage = require('../../assets/images/take_a_course.png');
-const donateImage = require('../../assets/images/take_a_course.png');
-const rateImage = require('../../assets/images/take_a_course.png');
-let image = null;
+const whichImage = (icon) => {
+  switch(icon){
+    case 'mission':
+      return require('../../assets/images/cdart_mission.png');
+    case 'course':
+      return require('../../assets/images/take_a_course.png');
+    case 'volunteer':
+      return require('../../assets/images/take_a_course.png');
+    case 'donate':
+      return require('../../assets/images/take_a_course.png');
+    case 'rate':
+      return require('../../assets/images/take_a_course.png');
+    default:
+      return ;
+  }
+}
 
 const GetInvolvedInfo = ({infoData, handleClick}) => {
-  if(infoData.image === 'mission') image = missionImage;
-  if(infoData.image === 'course') image = courseImage;
-  if(infoData.image === 'volunteer') image = volunteerImage;
-  if(infoData.image === 'donate') image = donateImage;
-  if(infoData.image === 'rate') image = rateImage;
   return (
     <ScrollView style={styles.contentContainer}>
-      <Image source={image}
+      <Image source={whichImage(infoData.image)}
         style={{width: width, height: 150}} />
       {infoData.subsection.map((info, i) => (
         <View key={i} style={{padding:16}}>
