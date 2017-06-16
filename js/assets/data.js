@@ -33,8 +33,8 @@ export const procedureList = [
 export const getInvolved = [
   {
     title: `CDART's Mission`,
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    icon: 'mission',
+    image: 'mission',
     subsection: [
       {
         subtitle:'About the app',
@@ -50,8 +50,8 @@ export const getInvolved = [
   },
   {
     title: 'Take a Course',
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    icon: 'course',
+    image: 'course',
     subsection: [
       {
         subtitle:'Training',
@@ -63,8 +63,8 @@ export const getInvolved = [
   },
   {
     title: 'Volunteer with CDART',
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    icon: 'volunteer',
+    image: 'volunteer',
     subsection: [
       {
         subtitle:'Training',
@@ -76,8 +76,8 @@ export const getInvolved = [
   },
   {
     title: 'Donate',
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    icon: 'donate',
+    image: 'donate',
     subsection: [
       {
         subtitle:'Training',
@@ -93,8 +93,8 @@ export const getInvolved = [
   },
   {
     title: 'Rate this app',
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    icon: 'rate',
+    image: 'rate',
     subsection: [
       {
         subtitle:'Training',
@@ -117,20 +117,6 @@ export const volunteerPackList = [
   'Important personal papers',
   'Spare eyeglasses/contact solution'
 ]
-
-export const cdartMission = {
-  title1: `About the app`,
-  paragraph1: `CDART Assist aims to help volunteers and pet owners be prepared for disasters and emergencies. The content of the app is developed by CDART. `,
-  title2: `Canadian Disaster Animal Response Team`,
-  paragraph2: `CDART volunteers respond in times of disaster and emergencies when domestic animals are in need of rescue and sheltering. CDART is 100% volunteer based and 100% of our funding comes from donations.`,
-  listItemLink: `Learn more at cdart.org`
-}
-
-export const takeACourse = {
-  title1: `Training`,
-  paragraph1: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`,
-  listItemLink: `Course Information`
-}
 
 export const incidentList = [
   {

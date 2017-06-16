@@ -12,6 +12,8 @@ import GetInvolvedListItem from '../GetInvolvedListItem';
 
 var { width } = Dimensions.get('window');
 
+const mainImage = require('../../../assets/images/get_involved.png');
+
 class GetInvolvedList extends Component {
   constructor(props){
     super(props);
@@ -21,10 +23,9 @@ class GetInvolvedList extends Component {
     }
   }
   render() {
-
     return (
       <View>
-        <Image source={{uri: 'https://s-media-cache-ak0.pinimg.com/736x/73/91/86/7391863170be07a072ffeb3e7605db2a.jpg'}}
+        <Image source={mainImage}
         style={{width: width, height: 200}} />
         <ListView
           dataSource={this.state.dataSource}
