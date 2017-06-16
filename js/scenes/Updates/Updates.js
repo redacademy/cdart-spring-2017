@@ -1,13 +1,10 @@
-import React from 'react';
-import { Text } from 'react-native';
-
-import ReceptionContainer from '../ReceptionCentre';
-import AnimalRescue from '../AnimalRescue';
-import IncidentContainer from '../IncidentCommand/IncidentContainer';
+ import React from 'react';
+ import { Text } from 'react-native';
+ import IntakeFormInstruction from './../../components/Forms/IntakeFormInstrution';
 
 const Updates = () => {
   return (
-    <Text>Hell</Text>
+    <IntakeFormInstruction />
   );
 }
 
