@@ -3,17 +3,22 @@ import { Image, TouchableHighlight, Text, View } from 'react-native';
 
 import { styles } from './styles';
 
+const petImage = require('../../assets/images/pet-profile.png')
+const plusCircle = require('../../assets/images/plus-circle-black@2x.png');
+
 const PetProfile = ({ createProfile, myDogs }) => {
   return (
     myDogs.length < 1 ?
     <View>
       <TouchableHighlight onPress={() => createProfile(myDogs)} >
         <View style={styles.createProfile} >
-          <Text>Create Pet Profile</Text>
+          <Text style={styles.createProfileText} >Create Pet Profile</Text>
+          <Image source={plusCircle} style={styles.plusCircle} />
         </View>
       </TouchableHighlight>
       <View style={styles.bePrepared} >
-        <Text>
+        <Image source={petImage} />
+        <Text style={styles.bePreparedText} >
           Be prepared. Create a shareable pet profile to help you
           & emergency services locate your pet in case of an emergency.
         </Text>

@@ -28,7 +28,7 @@ class PetProfileContainer extends Component {
 
   render() {
     return (
-      <PetProfile createProfile={this.createProfile} myDogs={[this.state.mockDog]} />
+      <PetProfile createProfile={this.createProfile} myDogs={this.state.myDogs} />
     );
   }
 }
