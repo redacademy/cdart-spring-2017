@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { clearNavStack } from '../../lib/navigationHelpers';
+
 import Updates from './Updates';
 
 class UpdatesContainer extends Component {
@@ -8,6 +10,10 @@ class UpdatesContainer extends Component {
     navigationBar: {
       title: 'Updates',
     }
+  }
+
+  componentDidMount() {
+    clearNavStack();
   }
 
   render() {

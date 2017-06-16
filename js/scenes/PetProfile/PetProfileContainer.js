@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
 
+import { clearNavStack } from '../../lib/navigationHelpers';
+
 import PetProfile from './PetProfile';
 
 class PetProfileContainer extends Component {
@@ -25,6 +27,10 @@ class PetProfileContainer extends Component {
     navigationBar: {
       title: 'Pet Profile',
     }
+  }
+
+  componentDidMount() {
+    clearNavStack();
   }
 
   createProfile(myDogs){
