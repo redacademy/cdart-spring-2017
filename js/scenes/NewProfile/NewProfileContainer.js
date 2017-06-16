@@ -6,7 +6,7 @@ class NewProfileContainer extends Component {
 
   static route = {
     navigationBar: {
-      title: 'Updates',
+      title: 'New Profile',
     }
   }
 
