@@ -9,7 +9,11 @@ import GetInvolvedInfo from '../scenes/GetInvolvedInfo';
 import Checklists from '../scenes/Checklists';
 import Forms from '../scenes/Forms';
 import Procedures from '../scenes/Procedures';
+<<<<<<< HEAD
 import Onboarding from '../scenes/Onboarding';
+=======
+import NewProfile from '../scenes/NewProfile';
+>>>>>>> Add routing and navigation helper for pet profile form.
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
@@ -22,7 +26,8 @@ const Router = createRouter(() => ({
   getInvolvedInfo: () => GetInvolvedInfo,
   checklists: () => Checklists,
   forms: () => Forms,
-  procedures: () => Procedures
+  procedures: () => Procedures,
+  newProfile: () => NewProfile
 }));
 
 export default Router;

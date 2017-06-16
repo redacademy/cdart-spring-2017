@@ -28,3 +28,11 @@ export const goToApp = () => {
     Router.getRoute('navigation')
   ));
 }
+
+export const goToNewProfile = (currentNavigatorUID) => {
+  console.log('hi from nav helper');
+  Store.dispatch(NavigationActions.push(
+    currentNavigatorUID,
+    Router.getRoute('newProfile')
+  ));
+}
