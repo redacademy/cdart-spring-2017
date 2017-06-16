@@ -17,21 +17,21 @@ export const petProfile = [
 ]
 // Forms
 export const homeForms = [
-  'Animal Intake Form',
-  'Action Request Form',
-  'Daily Animal Care Log',
-  'Volunteer Sign-In Form',
-  'Transportation Records',
-  'Basic Animal Care'
+  { title: 'Animal Intake Form'},
+  { title: 'Action Request Form'},
+  { title: 'Daily Animal Care Log'},
+  { title: 'Volunteer Sign-In Form'},
+  { title: 'Transportation Records'},
+  { title: 'Basic Animal Care'}
 ]
 // Procedures
 export const procedureList = [
-  'Daily Volunteer Duties',
-  'Animal Rescue Flow',
-  'Incident Command Flow',
-  'Reception Centre Setup',
-  'Animal Condition Inspection',
-  'Basic Animal Care'
+  { title: 'Daily Volunteer Duties'},
+  { title: 'Animal Rescue Flow'},
+  { title: 'Incident Command Flow'},
+  { title: 'Reception Centre Setup'},
+  { title: 'Animal Condition Inspection'},
+  { title: 'Basic Animal Care'}
 ]
 // Get Involved
 export const getInvolved = [
