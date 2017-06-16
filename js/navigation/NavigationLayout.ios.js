@@ -61,7 +61,6 @@ class NavigationLayout extends Component {
         <TabItem
           id="home"
           title="Home"
-          // renderIcon={isSelected => this.renderIcon('ios-calendar', isSelected)}
           renderTitle={this.renderTitle}
         >
           <StackNavigation
