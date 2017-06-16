@@ -15,15 +15,6 @@ export const petEmergencyKit = [
 export const petProfile = [
 
 ]
-// Volunteer Checklists
-export const checkLists = [
-  'Volunteer Packing Checklist',
-  'Prepare to Volunteer',
-  'Kennel & Shelter Supply',
-  'Pet First Aid Kit',
-  'Pet Care Center Supplies',
-  'Emotional Preparedness',
-]
 // Forms
 export const homeForms = [
   'Animal Intake Form',
@@ -171,4 +162,48 @@ export const incidentList = [
     text: 'The operations role controls and supports the tactical field response activities. They are responsible for determining the needed resources. ',
     color: 'blue'
   }
+]
+export const checkLists = [
+  {
+    title: `Volunteer Packing Checklist`,
+    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
+    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    subsection: volunteerPackList,
+    subsectionText: `As a volunteer, being prepared is crucial to any situation. Be sure to keep a personal bag handy in case of an emergency.`
+  },
+  {
+    title: `Prepare to Volunteer`,
+    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
+    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    subsection: volunteerPackList,
+    subsectionText: `Don't be a teapot be a Volunteer. Would you like to know more`
+  },
+  {
+    title: `Kennel & Shelter Supply`,
+    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
+    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    subsection: volunteerPackList,
+    subsectionText: `DA KENNEL FOR DA DOGS AND CATS.`
+  },
+  {
+    title: `Pet First Aid Kit`,
+    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
+    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    subsection: volunteerPackList,
+    subsectionText: `MEDICUUUUUUUUUUU, AMBULAAAANCUUUUUUUU`
+  },
+  {
+    title: `Pet Care Center Supplies`,
+    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
+    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    subsection: volunteerPackList,
+    subsectionText: `Peruse our wares for your lovely pets who are lost`
+  },
+  {
+    title: `Emotional Preparedness`,
+    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
+    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
+    subsection: volunteerPackList,
+    subsectionText: `Prepare yourself, for emotional trauma and disaster`
+  },
 ]

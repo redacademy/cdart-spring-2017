@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, Image, ListView, Dimensions, TouchableHighlight, ScrollView } from 'react-native';
 import { styles } from './styles';
 import { goToCheckListPage } from '../../lib/navigationHelpers';
+import PictureListItem from '../PictureListItem';
 
 var { height, width } = Dimensions.get('window');
 
@@ -21,17 +22,7 @@ class PictureList extends Component {
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(rowData) => (
-            <TouchableHighlight
-              onPress={() => goToCheckListPage(this.props.currentNavigatorUID, this.props.list)}
-              underlayColor="#999999"
-              style={styles.container}
-            >
-              <View style={styles.singleItem}>
-                <Text style={styles.textList}>{rowData}</Text>
-                <Image source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
-                style={{width: 25, height: 25, marginRight: 8}} />
-              </View>
-            </TouchableHighlight>
+            <PictureListItem list={rowData} currentNavigatorUID={this.props.currentNavigatorUID}/>
           )}
           renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
           style={styles.list}
