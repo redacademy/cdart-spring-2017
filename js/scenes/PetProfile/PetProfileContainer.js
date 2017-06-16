@@ -39,7 +39,14 @@ class PetProfileContainer extends Component {
 
   render() {
     return (
+<<<<<<< HEAD
       <PetProfile createProfile={this.createProfile} myDogs={this.state.mockDog} />
+=======
+      <PetProfile
+        createProfile={this.createProfile}
+        myDogs={[this.state.mockDog]}
+        currentNavigatorUID="petProfile" />
+>>>>>>> Add routing and navigation helper for pet profile form.
     );
   }
 }
