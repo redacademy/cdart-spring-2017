@@ -1,9 +1,13 @@
- import React from 'react';
- import { Text } from 'react-native';
+import React from 'react';
+import { Text } from 'react-native';
+
+import ReceptionContainer from '../ReceptionCentre';
+import AnimalRescue from '../AnimalRescue';
+import IncidentContainer from '../IncidentCommand/IncidentContainer';
 
 const Updates = () => {
   return (
-    <Text>updates....</Text>
+    <Text>Hell</Text>
   );
 }
 
