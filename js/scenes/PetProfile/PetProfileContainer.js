@@ -11,12 +11,12 @@ class PetProfileContainer extends Component {
       mockDog: [{
         name: 'Bert',
         breed: 'husky',
-        picture: require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/Icon-40.png')
+        picture: require('../../assets/icons/check.png')
       },
       {
         name: 'Ernie',
         breed: 'Shepard/Husky',
-        picture: require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/Icon-40.png')
+        picture: require('../../assets/icons/check.png')
       }],
       myDogs: []
     }
