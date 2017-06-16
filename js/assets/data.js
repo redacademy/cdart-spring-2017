@@ -11,10 +11,6 @@ export const petEmergencyKit = [
   'Recent photos of your pet',
   'Can opener'
 ]
-// Pet Profile
-export const petProfile = [
-
-]
 // Forms
 export const homeForms = [
   { title: 'Animal Intake Form'},
