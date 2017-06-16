@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Updates from './Updates';
-import IncidentContainer from '../IncidentCommand/IncidentContainer'
+import VolunteerPackingChecklist from '../VolunteerPacking/VolunteerPackingContainer';
 
 class UpdatesContainer extends Component {
 
@@ -13,7 +13,7 @@ class UpdatesContainer extends Component {
 
   render() {
     return (
-      <IncidentContainer />
+      <VolunteerPackingChecklist />
     );
   }
 }
