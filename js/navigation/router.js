@@ -17,6 +17,7 @@ import AnimalFlow from '../scenes/AnimalRescue';
 import Reception from '../scenes/ReceptionCentre';
 import NewProfile from '../scenes/NewProfile';
 import ChecklistsPage from '../scenes/ChecklistsPage';
+import SingleIncident from '../scenes/IncidentCommand/IncidentContainer';
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
