@@ -1,3 +1,3 @@
-import IntakeForm from './IntakeForm';
+import IntakeFormInstruction from './IntakeFormInstruction';
 
-export default IntakeForm;
+export default IntakeFormInstruction;

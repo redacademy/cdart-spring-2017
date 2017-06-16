@@ -24,12 +24,11 @@ export const colors = {
 
 export const typography = {
   baseSize: 16,
-  fontMain: 'SF UI Text Regular',
-  fontMainLight: 'SF UI Text Light',
-  fontMainMedium: 'SF UI Text Medium',
-  fontMainSemiBold: 'SF UI Text Semibold',
-  fontBold: 'Muli Bold',
-  fontExtraBold: 'Muli ExtraBold',
+  fontMain: 'SFUIText-Regular',
+  fontMainLight: 'SFUIText-Light',
+  fontMainMedium: 'SFUIText-Medium',
+  fontMainSemiBold: 'SFUIText-Semibold',
+  fontExtraBold: 'Muli-ExtraBold',
 };
 
 export const gradients = {
