@@ -4,13 +4,16 @@ var { height, width } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
   greyTop: {
-    backgroundColor: 'lightgrey',
+    backgroundColor: 'rgba(61,120,163,0.17)',
     alignItems: 'center',
     width: width,
     padding: 16,
   },
   greyTopText: {
-    color: 'darkgrey'
+    fontSize: 16,
+    lineHeight: 19,
+    fontStyle: 'italic',
+    color: '#4A4A4A'
   },
   separator: {
     flex: 1,
