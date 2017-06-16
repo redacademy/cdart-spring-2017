@@ -203,3 +203,65 @@ export const checkLists = [
     subsectionText: `Prepare yourself, for emotional trauma and disaster`
   },
 ]
+export const intakeInstructions= [
+  {
+    title: 'Upon intake, every animal evacuee is:',
+    descriptions: [
+      'Photographed',
+      'Tagged',
+      'Assessed'
+    ]
+  },
+  {
+    title: 'Basic Info',
+    descriptions: [
+      'Date and times',
+      'Your FIRST name – bottom left'
+    ]
+  },
+  {
+    title: 'Status of Animal On Arrival',
+    descriptions: [
+      'Brought in by CDART',
+      'Non-Owner Drop off',
+      'Brought in by Owner',
+      'Owner Surrender',
+      'Dead on Arrival'
+    ]
+  },
+  {
+    title: 'Owner Information',
+    descriptions: [
+      'Name',
+      'ID',
+      'Permanent vs. Temp'
+    ]
+  },
+  {
+    title: 'Animal Information',
+    descriptions: [
+      'EACH animal gets a form',
+      'Describe as best as possible',
+      'Intact – is important',
+      'Immediate medical needs',
+    ]
+  },
+  {
+    title: 'Agency Information',
+    descriptions: [
+      'Ess file number',
+      'PEP Task Number',
+      'Confidentail File',
+      'First Nations',
+      'Media Permission',
+    ]
+  },
+  {
+    title: 'Status of Animal on Departure',
+    descriptions: [
+      'Completed when animal leaves – very important to remember!',
+      'Get Signature',
+      'Put your FIRST name on the bottom right space'
+    ]
+  }
+]

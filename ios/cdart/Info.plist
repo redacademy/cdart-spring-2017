@@ -36,7 +36,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Entypo.ttf</string>
@@ -49,6 +49,11 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>Muli-ExtraBold.ttf</string>
+		<string>SFUIText-Light.ttf</string>
+		<string>SFUIText-Medium.ttf</string>
+		<string>SFUIText-Regular.ttf</string>
+		<string>SFUIText-Semibold.ttf</string>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
