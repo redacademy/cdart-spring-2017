@@ -35,7 +35,7 @@ class CheckListTemplate extends Component {
     )
   }
 }
-// CheckListTemplate.propTypes = {
-//   dataSource: PropTypes.
-// }
+CheckListTemplate.propTypes = {
+  dataSource: PropTypes.object
+}
 export default CheckListTemplate;
