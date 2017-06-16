@@ -10,4 +10,19 @@ export const styles = StyleSheet.create({
     height: StyleSheet.hairlineWidth,
     backgroundColor: '#8E8E8E',
   },
+  receptionContainer: {
+    flex: 1,
+    padding: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  receptionNum: {
+    fontSize: 36,
+  },
+  receptionText: {
+    paddingLeft: 20,
+    paddingRight: 20,
+    fontSize: 17,
+    lineHeight: 20
+  }
 });
