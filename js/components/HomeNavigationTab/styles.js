@@ -35,7 +35,6 @@ export const styles = StyleSheet.create({
   },
   tabText: {
     marginTop: 4,
-
   },
   linearGradient: {
     flex: 1,
