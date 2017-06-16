@@ -17,7 +17,7 @@ const HomeNavigationTab = ({title, navStackUID, targetRoute, targetTab, isTabNav
     >
       <View style={styles.tabContainer}>
       <LinearGradient
-              colors={ ( title === 'Pet Profile' || title === 'Pet Emergency Kit') ? gradients.blueGradient : gradients.redTabGradient}
+              colors={ ( title === 'Pet Profile' || title === 'Pet Emergency Kit') ? gradients.blueTabGradient : gradients.redTabGradient}
               style={styles.linearGradient}
               start={{x: 0, y: 1}}
               end={{x: 1, y: 1.0}}

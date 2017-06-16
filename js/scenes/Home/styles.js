@@ -7,12 +7,15 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-start',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: '#EEF3F7'
+
   },
   ownerSection: {
     height: (height - 100) * 0.35,
     width: width,
-    marginBottom: 10,
+    // marginBottom: 10,
+    marginTop:15
   },
   volunteerSection: {
     height: (height - 100) * 0.55,
@@ -21,7 +24,7 @@ export const styles = StyleSheet.create({
   homeHeader: {
     width: width,
     textAlign: 'center',
-    marginTop: 10,
+    // marginTop: 10,
     marginBottom: 15,
   },
   tabContainer: {
