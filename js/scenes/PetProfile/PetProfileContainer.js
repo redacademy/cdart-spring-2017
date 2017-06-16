@@ -8,11 +8,16 @@ class PetProfileContainer extends Component {
   constructor(){
     super();
     this.state = {
-      mockDog: {
+      mockDog: [{
         name: 'Bert',
         breed: 'husky',
         picture: require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/Icon-40.png')
       },
+      {
+        name: 'Ernie',
+        breed: 'Shepard/Husky',
+        picture: require('../../../ios/cdart/Images.xcassets/AppIcon.appiconset/Icon-40.png')
+      }],
       myDogs: []
     }
   }
@@ -28,7 +33,7 @@ class PetProfileContainer extends Component {
 
   render() {
     return (
-      <PetProfile createProfile={this.createProfile} myDogs={this.state.myDogs} />
+      <PetProfile createProfile={this.createProfile} myDogs={this.state.mockDog} />
     );
   }
 }

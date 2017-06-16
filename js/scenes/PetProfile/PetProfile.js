@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, TouchableHighlight, Text, View } from 'react-native';
+import { Image, TouchableOpacity, Text, View } from 'react-native';
 
 import { styles } from './styles';
 
@@ -10,12 +10,12 @@ const PetProfile = ({ createProfile, myDogs }) => {
   return (
     myDogs.length < 1 ?
     <View>
-      <TouchableHighlight onPress={() => createProfile(myDogs)} >
+      <TouchableOpacity onPress={() => createProfile(myDogs)} >
         <View style={styles.createProfile} >
           <Text style={styles.createProfileText} >Create Pet Profile</Text>
           <Image source={plusCircle} style={styles.plusCircle} />
         </View>
-      </TouchableHighlight>
+      </TouchableOpacity>
       <View style={styles.bePrepared} >
         <Image source={petImage} />
         <Text style={styles.bePreparedText} >
@@ -28,16 +28,18 @@ const PetProfile = ({ createProfile, myDogs }) => {
     <View>
     {
       myDogs.map((dog, i) => (
-        <TouchableHighlight key={dog.name + i} onPress={() => createProfile(myDogs)} >
+        <TouchableOpacity key={dog.name + i} onPress={() => createProfile(myDogs)} >
           <View style={styles.singleDog} >
-            <Image source={dog.picture} style={styles.dogPic} />
+            <View style={styles.dogPicContainer} >
+              <Image source={dog.picture} style={styles.dogPic} />
+            </View>
             <View style={styles.dogText} >
-              <Text>{dog.name}</Text>
+              <Text style={styles.name} >{dog.name}</Text>
               <Text style={styles.breed} >{dog.breed}</Text>
             </View>
             <Text style={styles.edit}>Edit</Text>
           </View>
-        </TouchableHighlight>
+        </TouchableOpacity>
       ))
     }
     </View>

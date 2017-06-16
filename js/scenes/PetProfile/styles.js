@@ -33,21 +33,40 @@ export const styles = StyleSheet.create({
     borderBottomWidth: 2,
     borderColor: 'lightgrey',
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center'
+    alignItems: 'center',
+    height: 100,
+    paddingLeft: 10,
+    paddingRight: 20,
+  },
+  dogPicContaienr: {
+    flex: 1/4,
   },
   dogPic: {
-    height: 80,
-    width: 80,
-    borderRadius: 30,
+    flex: 1,
+    borderRadius: 50,
+    height: 100,
+    width: 100,
+  },
+  dogText: {
+    padding: 20,
+    flex: 1/2,
   },
   plusCicle: {
 
   },
+  name: {
+    fontWeight: "600",
+    fontSize: 18,
+  },
   breed: {
     color: 'grey',
+    lineHeight: 21,
+    fontSize: 18,
   },
   edit: {
-    color: 'blue',
+    color: '#3D78A3',
+    fontSize: 17,
+    flex: 1/4,
+    textAlign: 'right',
   }
 });

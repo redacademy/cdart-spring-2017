@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Updates from './Updates';
-import VolunteerPackingChecklist from '../VolunteerPacking/VolunteerPackingContainer';
 
 class UpdatesContainer extends Component {
 
@@ -13,7 +12,7 @@ class UpdatesContainer extends Component {
 
   render() {
     return (
-      <VolunteerPackingChecklist />
+      <Updates />
     );
   }
 }
