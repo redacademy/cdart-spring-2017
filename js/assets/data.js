@@ -151,42 +151,48 @@ export const checkLists = [
     icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
     image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
     subsection: volunteerPackList,
-    subsectionText: `As a volunteer, being prepared is crucial to any situation. Be sure to keep a personal bag handy in case of an emergency.`
+    subsectionText: `As a volunteer, being prepared is crucial to any situation. Be sure to keep a personal bag handy in case of an emergency.`,
+    targetRoute: 'checklistsPage'
   },
   {
     title: `Prepare to Volunteer`,
     icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
     image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
     subsection: volunteerPackList,
-    subsectionText: `Don't be a teapot be a Volunteer. Would you like to know more`
+    subsectionText: `Don't be a teapot be a Volunteer. Would you like to know more`,
+    targetRoute: 'checklistsPage'
   },
   {
     title: `Kennel & Shelter Supply`,
     icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
     image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
     subsection: volunteerPackList,
-    subsectionText: `DA KENNEL FOR DA DOGS AND CATS.`
+    subsectionText: `DA KENNEL FOR DA DOGS AND CATS.`,
+    targetRoute: 'checklistsPage'
   },
   {
     title: `Pet First Aid Kit`,
     icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
     image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
     subsection: volunteerPackList,
-    subsectionText: `MEDICUUUUUUUUUUU, AMBULAAAANCUUUUUUUU`
+    subsectionText: `MEDICUUUUUUUUUUU, AMBULAAAANCUUUUUUUU`,
+    targetRoute: 'checklistsPage'
   },
   {
     title: `Pet Care Center Supplies`,
     icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
     image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
     subsection: volunteerPackList,
-    subsectionText: `Peruse our wares for your lovely pets who are lost`
+    subsectionText: `Peruse our wares for your lovely pets who are lost`,
+    targetRoute: 'checklistsPage'
   },
   {
     title: `Emotional Preparedness`,
     icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
     image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
     subsection: volunteerPackList,
-    subsectionText: `Prepare yourself, for emotional trauma and disaster`
+    subsectionText: `Prepare yourself, for emotional trauma and disaster`,
+    targetRoute: 'checklistsPage'
   },
 ]
 export const intakeInstructions= [

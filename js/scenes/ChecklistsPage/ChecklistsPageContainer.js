@@ -9,7 +9,7 @@ import CheckListTemplate from '../../components/CheckListTemplate/';
 class ChecklistsPageContainer extends Component {
   render() {
     return (
-      <CheckListTemplate infoData={this.props.infoData}/>
+      <CheckListTemplate infoData={this.props.data}/>
     );
   }
 }
