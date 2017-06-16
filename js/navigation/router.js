@@ -8,6 +8,7 @@ import EmergencyKit from '../scenes/EmergencyKit';
 import GetInvolvedInfo from '../scenes/GetInvolvedInfo';
 import Checklists from '../scenes/Checklists';
 import Forms from '../scenes/Forms';
+import SingleForm from '../scenes/SingleForm';
 import Procedures from '../scenes/Procedures';
 import Onboarding from '../scenes/Onboarding';
 import NewProfile from '../scenes/NewProfile';
@@ -25,8 +26,9 @@ const Router = createRouter(() => ({
   checklists: () => Checklists,
   checklistsPage: () => ChecklistsPage,
   forms: () => Forms,
-  procedures: () => Procedures,
-  newProfile: () => NewProfile
+  newProfile: () => NewProfile,
+  singleForm: () => SingleForm,
+  procedures: () => Procedures
 }));
 
 export default Router;

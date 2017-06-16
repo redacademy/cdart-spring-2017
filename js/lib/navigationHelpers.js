@@ -28,6 +28,13 @@ export const goToInfoPage = (currentNavigatorUID, infoData) => {
   ));
 }
 
+export const goToSubpage = (targetRoute, currentNavigatorUID, data) => {
+  Store.dispatch( NavigationActions.push(
+    currentNavigatorUID,
+    Router.getRoute(targetRoute, { data })
+  ));
+}
+
 export const goToCheckListPage = (currentNavigatorUID, infoData) => {
   Store.dispatch(NavigationActions.push(
     currentNavigatorUID,

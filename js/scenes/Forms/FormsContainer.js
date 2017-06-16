@@ -5,11 +5,18 @@ import { homeForms } from '../../assets/data';
 
 import PictureList from '../../components/PictureList';
 
+const targetRoute = 'singleForm';
+const currentNavigatorUID = 'home'
+
 class FormsContainer extends Component {
 
   render() {
     return(
-      <PictureList list={ homeForms } />
+      <PictureList
+        list={ homeForms }
+        targetRoute={ targetRoute }
+        currentNavigatorUID={ currentNavigatorUID }
+      />
     );
   }
 }
