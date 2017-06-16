@@ -7,11 +7,15 @@ import { colors } from '../../../config/styles';
 export const styles = StyleSheet.create({
   // Button container
   button: {
-    borderRadius: 50,         // Rounded border
+    borderRadius: 10,         // Rounded border
     borderWidth: 2,           // 2 point border widht
-    borderColor: colors.white,   // White colored border
+    borderColor: colors.blue,   // White colored border
     paddingHorizontal: 50,    // Horizontal padding
-    paddingVertical: 10,      // Vertical padding
+    paddingVertical: 10,
+    backgroundColor: colors.blue,
+    shadowOffset:{  width: 2,  height: 2,  },
+    shadowColor: colors.black,
+    shadowOpacity: 0.5,
   },
   buttonarrow: {
     alignItems: 'flex-end'

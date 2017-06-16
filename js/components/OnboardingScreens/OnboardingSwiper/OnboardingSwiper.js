@@ -10,7 +10,9 @@ import {
   Dimensions,       // Detects screen dimensions
   Platform,         // Detects platform running the app
   ScrollView,       // Handles navigation between screens       // CSS-like styles
-  View,             // Container component
+  View,
+  Text,             // Container component
+  TouchableOpacity
 } from 'react-native';
 import Button from '../OnboardingSwiperButton';
 import { goToApp } from '../../../lib/navigationHelpers';
@@ -235,21 +237,29 @@ class OnboardingSwiper extends Component {
    */
   renderButton = () => {
     const lastScreen = this.state.index === this.state.total - 1;
+    const firstScreen = this.state.index === 0;
+    let button = null;
+    if(lastScreen){
+          button = <View pointerEvents="box-none" style={[styles.buttonWrapper, styles.fullScreen]}>
+                    <Button text="Get Started" onPress={() => goToApp()} />
+                  </View>
+    } else if(firstScreen){
+      button=<View pointerEvents="box-none" style={[styles.buttonSkipWrapper, styles.fullScreen]}>
+              <TouchableOpacity onPress={() => goToApp()}>
+                <View style={styles.button}>
+                  <Text style={styles.buttontext}>Skip</Text>
+                </View>
+              </TouchableOpacity>
+              <Button text="Continue" onPress={() => this.swipe()} />
+            </View>;
+    } else{
+      button = <View pointerEvents="box-none" style={[styles.buttonNextWrapper, styles.fullScreen]}>
+          <Button text="Continue" onPress={() => this.swipe()} />
+        </View>
+    }
     return (
       <View>
-        {lastScreen
-          // Show this button on the last screen
-          // TODO: Add a handler that would send a user to your app after onboarding is complete
-          ?
-          <View pointerEvents="box-none" style={[styles.buttonWrapper, styles.fullScreen]}>
-            <Button text="Get Started" onPress={() => goToApp()} />
-          </View>
-          // Or this one otherwise
-          :
-          <View pointerEvents="box-none" style={[styles.buttonNextWrapper, styles.fullScreen]}>
-            <Button text="Continue" onPress={() => this.swipe()} />
-          </View>
-        }
+        {button}
       </View>
     );
   }
