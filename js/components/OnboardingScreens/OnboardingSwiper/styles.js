@@ -67,9 +67,6 @@ export const styles = StyleSheet.create({
     fontFamily: 'Avenir',
     fontSize: 18,
   },
-  startbutton: {
-    backgroundColor: colors.blue
-  },
   buttonNextWrapper:{
     backgroundColor: 'transparent',
     flexDirection: 'column',
