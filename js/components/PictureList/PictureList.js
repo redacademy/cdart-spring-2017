@@ -22,7 +22,7 @@ class PictureList extends Component {
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(rowData) => (
-            <PictureListItem list={rowData} currentNavigatorUID={this.props.currentNavigatorUID}/>
+            <PictureListItem rowData={rowData} targetRoute={this.props.targetRoute} currentNavigatorUID={ this.props.currentNavigatorUID } />
           )}
           renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
           style={styles.list}
