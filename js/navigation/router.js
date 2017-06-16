@@ -10,6 +10,7 @@ import Checklists from '../scenes/Checklists';
 import Forms from '../scenes/Forms';
 import Procedures from '../scenes/Procedures';
 import Onboarding from '../scenes/Onboarding';
+import ChecklistsPage from '../scenes/ChecklistsPage';
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
@@ -21,6 +22,7 @@ const Router = createRouter(() => ({
   emergencyKit: () => EmergencyKit,
   getInvolvedInfo: () => GetInvolvedInfo,
   checklists: () => Checklists,
+  checklistsPage: () => ChecklistsPage,
   forms: () => Forms,
   procedures: () => Procedures
 }));

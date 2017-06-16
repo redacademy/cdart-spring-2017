@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {styles} from './styles';
 
 import {
   View
@@ -11,7 +12,7 @@ class HomeContainer extends Component {
 
   render() {
     return(
-      <View>
+      <View style={styles.container}>
         <Home navigation={ this.props.navigation }/>
       </View>
     );
