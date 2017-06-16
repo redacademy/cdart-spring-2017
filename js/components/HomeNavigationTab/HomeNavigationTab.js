@@ -9,6 +9,25 @@ import { styles } from './styles';
 
 import { gradients } from '../../config/styles';
 
+const whichPicture = (title) => {
+  switch(title){
+    case 'Pet Emergency Kit':
+      return require('../../assets/icons/emergency_kit_icon.png');
+    case 'Pet Profile':
+      return require('../../assets/icons/pet_profile_home_icon.png');
+    case 'Checklists':
+      return require('../../assets/icons/checklist_icon.png');
+    case 'Forms':
+      return require('../../assets/icons/forms_icon.png');
+    case 'Procedures':
+      return require('../../assets/icons/procedures_icon.png');
+    case 'Get Involved':
+      return require('../../assets/icons/red_getinvolved_icon.png')
+    default:
+      return ;
+  }
+}
+
 const HomeNavigationTab = ({title, navStackUID, targetRoute, targetTab, isTabNav, navigation}) => {
 
   return (
@@ -25,7 +44,7 @@ const HomeNavigationTab = ({title, navStackUID, targetRoute, targetTab, isTabNav
             >
       </LinearGradient>
           <View style={styles.tab}>
-            <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
+            <Image source={whichPicture(title)}
             style={ styles.image } />
             <Text style={styles.tabText}>{title}</Text>
           </View>
