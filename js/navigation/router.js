@@ -13,6 +13,7 @@ import Procedures from '../scenes/Procedures';
 import Onboarding from '../scenes/Onboarding';
 import NewProfile from '../scenes/NewProfile';
 import ChecklistsPage from '../scenes/ChecklistsPage';
+import SingleIncident from '../scenes/IncidentCommand/IncidentContainer';
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
@@ -28,7 +29,8 @@ const Router = createRouter(() => ({
   forms: () => Forms,
   newProfile: () => NewProfile,
   singleForm: () => SingleForm,
-  procedures: () => Procedures
+  procedures: () => Procedures,
+  singleIncident: () => SingleIncident
 }));
 
 export default Router;
