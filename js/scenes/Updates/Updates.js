@@ -5,7 +5,7 @@ import IntakeForm from './../../components/Forms/IntakeForm';
 
 const Updates = () => {
   return (
-    <IntakeForm/>
+    <Text>Updates...</Text>
   );
 };
 
