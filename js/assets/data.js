@@ -13,12 +13,12 @@ export const petEmergencyKit = [
 ]
 // Forms
 export const homeForms = [
-  { title: 'Animal Intake Form'},
-  { title: 'Action Request Form'},
-  { title: 'Daily Animal Care Log'},
-  { title: 'Volunteer Sign-In Form'},
-  { title: 'Transportation Records'},
-  { title: 'Basic Animal Care'}
+  { title: 'Animal Intake Form', targetRoute: 'singleForm'},
+  { title: 'Action Request Form', targetRoute: 'singleForm'},
+  { title: 'Daily Animal Care Log', targetRoute: 'singleForm'},
+  { title: 'Volunteer Sign-In Form', targetRoute: 'singleForm'},
+  { title: 'Transportation Records', targetRoute: 'singleForm'},
+  { title: 'Basic Animal Care', targetRoute: 'singleForm'}
 ]
 // Procedures
 export const procedureList = [
