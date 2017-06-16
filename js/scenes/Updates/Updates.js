@@ -4,7 +4,7 @@
 
 const Updates = () => {
   return (
-    <IntakeFormInstruction />
+    <Text>Updates...</Text>
   );
 }
 
