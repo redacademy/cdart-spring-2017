@@ -23,10 +23,9 @@ const Home = ({ navigation }) => {
   return (
     <View style={ styles.container }>
       <View style={ styles.ownerSection }>
-         <Text style={ styles.homeHeader }>
+        <Text style={ styles.homeHeader }>
           Pet Owner
         </Text>
-
         <View style={ styles.tabContainer }>
           <HomeTab
             title='Pet Emergency Kit'
@@ -34,7 +33,6 @@ const Home = ({ navigation }) => {
             targetRoute='emergencyKit'
             isTabNav={ false }
           />
-
           <HomeTab
             title='Pet Profile'
             targetRoute='petProfile'
@@ -44,12 +42,10 @@ const Home = ({ navigation }) => {
           />
         </View>
       </View>
-
       <View style={ styles.volunteerSection }>
         <Text style={ styles.homeHeader }>
           Volunteer
         </Text>
-
         <View style={ styles.tabContainer }>
           <HomeTab
             title='Checklists'
@@ -57,21 +53,18 @@ const Home = ({ navigation }) => {
             targetRoute='checklists'
             isTabNav={ false }
           />
-
           <HomeTab
             title='Forms'
             navStackUID={ homeStackUID }
             targetRoute='forms'
             isTabNav={ false }
           />
-
           <HomeTab
             title='Procedures'
             navStackUID={ homeStackUID }
             targetRoute='procedures'
             isTabNav={ false }
           />
-
           <HomeTab
             title='Get Involved'
             targetRoute='getInvolved'

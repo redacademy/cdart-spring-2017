@@ -22,6 +22,13 @@ export const goToInfoPage = (currentNavigatorUID, infoData) => {
   ));
 }
 
+export const goToCheckListPage = (currentNavigatorUID, infoData) => {
+  Store.dispatch(NavigationActions.push(
+    currentNavigatorUID,
+    Router.getRoute('checklistsPage', { infoData })
+  ));
+}
+
 export const goToApp = () => {
   Store.dispatch(NavigationActions.push(
     "root",
