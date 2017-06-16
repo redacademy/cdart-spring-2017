@@ -14,6 +14,8 @@ import Onboarding from '../scenes/Onboarding';
 import NewProfile from '../scenes/NewProfile';
 import ChecklistsPage from '../scenes/ChecklistsPage';
 import SingleIncident from '../scenes/IncidentCommand/IncidentContainer';
+import AnimalFlow from '../scenes/AnimalRescue';
+import Reception from '../scenes/ReceptionCentre';
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
@@ -30,7 +32,9 @@ const Router = createRouter(() => ({
   newProfile: () => NewProfile,
   singleForm: () => SingleForm,
   procedures: () => Procedures,
-  singleIncident: () => SingleIncident
+  singleIncident: () => SingleIncident,
+  animalFlow: () => AnimalFlow,
+  reception: () => Reception,
 }));
 
 export default Router;

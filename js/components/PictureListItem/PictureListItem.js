@@ -14,10 +14,10 @@ import { goToSubpage } from '../../lib/navigationHelpers';
 
 import { styles } from './styles';
 
-const PictureListItem = ({list, currentNavigatorUID, targetRoute }) => {
+const PictureListItem = ({rowData, currentNavigatorUID }) => {
   return (
     <TouchableHighlight
-      onPress={() => goToSubpage( targetRoute, currentNavigatorUID, list)}
+      onPress={() => goToSubpage( rowData.targetRoute, currentNavigatorUID, rowData)}
       underlayColor="#999999"
       style={styles.container}
     >
