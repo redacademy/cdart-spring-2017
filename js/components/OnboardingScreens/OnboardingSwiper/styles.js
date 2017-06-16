@@ -3,6 +3,8 @@ import {
   Dimensions
 } from 'react-native';
 
+import { colors } from '../../../config/styles';
+
 const { width, height } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
@@ -60,6 +62,14 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'center'
   },
+  buttontext: {
+    color: colors.asphaltGrey,
+    fontFamily: 'Avenir',
+    fontSize: 18,
+  },
+  startbutton: {
+    backgroundColor: colors.blue
+  },
   buttonNextWrapper:{
     backgroundColor: 'transparent',
     flexDirection: 'column',
@@ -72,4 +82,16 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-end'
   },
+  buttonSkipWrapper: {
+    backgroundColor: 'transparent',
+    flexDirection: 'row',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    flex: 1,
+    paddingHorizontal: 40,
+    paddingVertical: 40,
+    justifyContent: 'space-between',
+    alignItems: 'flex-end'
+  }
 });

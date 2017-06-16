@@ -1,10 +1,10 @@
 export const colors = {
   red: '#BF3841',
   lightRed: '#FB725D',
-  dimRed: '#DB8F94',
+  dimRed: '#1F8C50',
 
   darkBlue: '#1F425B',
-  blue: '#3D78A3',
+  blue: '#3D78A4',
   lightBlue: '#4C96CD',
   dimBlue: '#D7E4EC',
 
@@ -12,7 +12,7 @@ export const colors = {
   asphaltGrey: '#4A4A4A',
   grey: '#9B9B9B',
   lightGrey: '#EFEDED',
-  white: '#ffffff',
+  white: '#FFFFFF',
 
   skyBlue: '#2895E5',
   green: '#1F8C50',
@@ -33,8 +33,8 @@ export const typography = {
 };
 
 export const gradients = {
-  redGradient: ['#BF3841', '#FB725D'],
-  blueGradient: ['#6CA5CF', '#4D96CD'],
+  redGradient: ['#FB725D', '#BF3841'],
+  blueGradient: ['#4D96CD', '#6CA5CF'],
   blueTabGradient: ['#1690EB','#D1E0EC'],
   redTabGradient: ['#CD5256','#E39F99']
 };

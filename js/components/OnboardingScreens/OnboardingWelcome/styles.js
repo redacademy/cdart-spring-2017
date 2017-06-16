@@ -2,37 +2,32 @@ import { StyleSheet } from 'react-native';
 import { colors } from '../../../config/styles';
 
 export const styles = StyleSheet.create({
-  // Slide styles
   slide: {
-    flex: 1,                    // Take up all screen
-    justifyContent: 'center',   // Center vertically
-    alignItems: 'center',       // Center horizontally
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  // Header styles
   header: {
     color: colors.white,
     fontFamily: 'Avenir',
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: 'bold',
-    marginVertical: 15,
+    marginVertical: 20,
   },
-  // Text below header
   text: {
     color: colors.white,
     fontFamily: 'Avenir',
     fontSize: 18,
-    marginHorizontal: 40,
+    marginHorizontal: 15,
     textAlign: 'center',
-  },
-  buttontext: {
-    color: colors.asphaltGrey,
-    fontFamily: 'Avenir',
-    fontSize: 18,
-    marginHorizontal: 40,
   },
   linearGradient: {
     flex: 1,
     paddingLeft: 15,
     paddingRight: 15,
   },
+  mainImage: {
+    width: 182,
+    height: 145
+  }
 });
