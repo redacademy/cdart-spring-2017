@@ -3,16 +3,21 @@ import { Text, ListView, View } from 'react-native';
 
 import { styles } from './styles';
 
+let count = 0;
+
 const Reception = ({ dataSource }) => {
   return (
     <ListView
       dataSource={dataSource}
-      renderRow={(item, i) => (
-        <View>
-          <Text>{i}</Text>
-          <Text>{item}</Text>
-        </View>
-      )}
+      renderRow={(item) => {
+        count++
+        return (
+          <View style={styles.receptionContainer} >
+            <Text style={styles.receptionNum} >{count}</Text>
+            <Text style={styles.receptionText} >{item}</Text>
+          </View>
+        )
+      }}
       renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
     />
   )
