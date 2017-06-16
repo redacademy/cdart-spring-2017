@@ -3,7 +3,7 @@ import { Image, TouchableOpacity, Text, View } from 'react-native';
 
 import { styles } from './styles';
 
-const petImage = require('../../assets/icons/pet-profile.png')
+const petImage = require('../../assets/icons/new_pet_profile_icon.png')
 const plusCircle = require('../../assets/icons/plus-circle-black@2x.png');
 
 const PetProfile = ({ createProfile, myDogs }) => {
