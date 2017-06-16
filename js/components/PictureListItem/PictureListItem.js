@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import { goToCheckListPage } from '../../lib/navigationHelpers';
 import { goToSubpage } from '../../lib/navigationHelpers';
 
 import { styles } from './styles';
