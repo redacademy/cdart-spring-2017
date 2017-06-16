@@ -6,22 +6,14 @@ import { goToNewProfile } from '../../lib/navigationHelpers';
 import { styles } from './styles';
 import { colors } from '../../config/styles';
 
-<<<<<<< HEAD
 const petImage = require('../../assets/icons/new_pet_profile_icon.png')
 const plusCircle = require('../../assets/icons/plus-circle-black@2x.png');
 
-const PetProfile = ({ createProfile, myDogs }) => {
-  return (
-    myDogs.length < 1 ?
-    <View>
-      <TouchableOpacity onPress={() => createProfile(myDogs)} >
-=======
 const PetProfile = ({ createProfile, myDogs, currentNavigatorUID }) => {
   return (
     myDogs.length < 1 ?
     <View>
-      <TouchableHighlight onPress={() => goToNewProfile(currentNavigatorUID)} >
->>>>>>> Add routing and navigation helper for pet profile form.
+      <TouchableOpacity onPress={() => goToNewProfile(currentNavigatorUID)} >
         <View style={styles.createProfile} >
           <Text style={styles.createProfileText} >Create Pet Profile</Text>
           <Image source={plusCircle} style={styles.plusCircle} />
