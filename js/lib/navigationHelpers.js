@@ -16,6 +16,7 @@ export const goToView = (currentNavigatorUID, routeName, tabName, isTabNav, navi
 }
 
 export const clearNavStack = () => {
+  console.log('cleared');
   Store.dispatch( NavigationActions.pop(
     'home'
   ));
