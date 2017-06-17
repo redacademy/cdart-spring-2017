@@ -20,7 +20,7 @@ const defaultRouteConfig = {
     renderBackground: () =>
       <LinearGradient
         style={navStyles.linearGradient}
-        colors={gradients.redGradient}
+        colors={gradients.redTabGradient}
         start={{x: 0, y: 1}}
         end={{x: 1, y: 1}}
       />
