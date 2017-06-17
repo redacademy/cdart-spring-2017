@@ -29,12 +29,12 @@ class PetProfileContainer extends Component {
     }
   }
 
-  componentDidMount() {
-    clearNavStack();
-  }
-
   createProfile(myDogs){
     console.log(myDogs);
+  }
+
+  componentWillUpdate() {
+    clearNavStack();
   }
 
   render() {

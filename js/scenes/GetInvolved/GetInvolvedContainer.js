@@ -13,7 +13,7 @@ class GetInvolvedContainer extends Component {
     }
   }
 
-  componentDidMount() {
+  componentWillUpdate() {
     clearNavStack();
   }
 

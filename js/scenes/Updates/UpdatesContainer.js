@@ -12,7 +12,7 @@ class UpdatesContainer extends Component {
     }
   }
 
-  componentDidMount() {
+  componentWillUpdate() {
     clearNavStack();
   }
 
