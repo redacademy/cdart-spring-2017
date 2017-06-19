@@ -51,9 +51,15 @@ const NewProfile = (props) => {
       <FieldArray name="ownerContact" component={ContactInfoItem} />
       <FieldArray name="vetContact" component={ContactInfoItem} />
 
+<<<<<<< HEAD
       <SaveButton handleSubmit={props.handleSubmit} />
+=======
+      <SaveButton handleSubmit={handleSubmit} />
+>>>>>>> Save button is console logging.
     </ScrollView>
   );
 }
 
-export default NewProfile;
+export default reduxForm({
+  form: 'pet'
+})(NewProfile)
