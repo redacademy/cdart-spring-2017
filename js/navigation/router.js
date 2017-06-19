@@ -29,12 +29,10 @@ const Router = createRouter(() => ({
   checklists: () => Checklists,
   checklistsPage: () => ChecklistsPage,
   forms: () => Forms,
-  singleForm: () =>  SingleForm,
   procedures: () => Procedures,
   singleIncident: () => SingleIncident,
   animalFlow: () => AnimalFlow,
   reception: () => Reception,
-  newProfile: () => NewProfile
 }));
 
 export default Router;
