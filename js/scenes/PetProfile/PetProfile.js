@@ -31,7 +31,7 @@ const PetProfile = ({ createProfile, myDogs, currentNavigatorUID }) => {
     <View>
     {
       myDogs.map((dog, i) => (
-        <TouchableOpacity key={dog.name + i} onPress={() => createProfile(myDogs)} >
+        <TouchableOpacity key={dog.name + i} onPress={() => goToNewProfile(currentNavigatorUID)} >
           <View style={styles.singleDog} >
             <View style={styles.dogPicContainer} >
               <Image source={dog.picture} style={styles.dogPic} />
