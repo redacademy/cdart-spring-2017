@@ -1,11 +1,16 @@
 import { NavigationActions } from '@expo/ex-navigation';
+import { Platform } from 'react-native';
 import Store from '../redux/store';
 import Router from '../navigation/router';
 
 export const goToView = (currentNavigatorUID, routeName, tabName, isTabNav, navigation) => {
   if( isTabNav ) {
-    navigation.performAction(({ tabs, stacks }) => {
+    Platform.OS === 'ios' ?
+    navigation.performAction(({ tabs }) => {
       tabs( 'main' ).jumpToTab( tabName );
+    }):
+    navigation.performAction(({ drawer }) => {
+      drawer('main').jumpToItem(tabName);
     });
   } else {
     Store.dispatch( NavigationActions.push(
