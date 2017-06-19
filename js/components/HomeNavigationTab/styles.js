@@ -31,8 +31,8 @@ export const styles = StyleSheet.create({
     marginBottom: height* (16 / 568)
   },
   image: {
-    height: 65,
-    width: 65,
+    height: height*(65 / 568),
+    width: width*(65 / 320),
     resizeMode: 'contain'
   },
   tabText: {
