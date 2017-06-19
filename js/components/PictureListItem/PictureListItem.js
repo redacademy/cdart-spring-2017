@@ -13,7 +13,7 @@ import { colors } from '../../config/styles.js';
 
 import { styles } from './styles';
 
-const PictureListItem = ({rowData, currentNavigatorUID }) => {
+const PictureListItem = ({ rowData, currentNavigatorUID }) => {
   return (
     <TouchableHighlight
       onPress={() => goToSubpage( rowData.targetRoute, currentNavigatorUID, rowData)}
@@ -35,7 +35,8 @@ const PictureListItem = ({rowData, currentNavigatorUID }) => {
   )};
 
   PictureListItem.propTypes = {
-  list: PropTypes.object,
+  list: PropTypes.array,
   currentNavigatorUID: PropTypes.string,
+  rowData: PropTypes.object
 };
 export default PictureListItem;
