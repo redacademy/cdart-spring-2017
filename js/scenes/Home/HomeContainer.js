@@ -9,7 +9,6 @@ import {
 import Home from './Home';
 
 class HomeContainer extends Component {
-
   render() {
     return(
       <View style={styles.container}>

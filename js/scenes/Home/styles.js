@@ -1,12 +1,13 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-const height = Dimensions.get('window').height;
-const width = Dimensions.get('window').width;
+// const height = Dimensions.get('window').height;
+// const width = Dimensions.get('window').width;
+var { height, width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: '#EEF3F7'
 
@@ -14,7 +15,8 @@ export const styles = StyleSheet.create({
   ownerSection: {
     height: (height - 100) * 0.35,
     width: width,
-    marginTop:15
+    marginTop: height*( 16 / 568 )
+    // marginTop:15
   },
   volunteerSection: {
     height: (height - 100) * 0.55,
@@ -23,7 +25,7 @@ export const styles = StyleSheet.create({
   homeHeader: {
     width: width,
     textAlign: 'center',
-    marginTop: 16,
+    // marginTop: 16,
     fontSize: 16
   },
   tabContainer: {
@@ -36,10 +38,10 @@ export const styles = StyleSheet.create({
     alignContent: 'center'
   },
   tab: {
-    height: 90,
-    width: 120,
-    marginVertical: 10,
-    borderWidth: 3,
-    borderColor: 'black',
+    // height: 90,
+    // width: 120,
+    // marginVertical: 10,
+    // borderWidth: 3,
+    // borderColor: 'black',
   }
 });
