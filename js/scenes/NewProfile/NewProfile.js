@@ -1,4 +1,5 @@
 import React from 'react';
+import { Field, reduxForm } from 'redux-form'
 
 import { ScrollView, View, Text, TextInput } from 'react-native';
 
@@ -12,7 +13,7 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 import { colors } from '../../config/styles';
 import { styles } from './styles';
 
-const NewProfile = () => {
+const NewProfile = ({ handleSubmit }) => {
   console.log('hi from new profile');
   return (
     <ScrollView style={styles.container}>
@@ -56,9 +57,11 @@ const NewProfile = () => {
       <ContactInfoItem />
       <ContactInfoItem />
 
-      <SaveButton />
+      <SaveButton handleSubmit={handleSubmit} />
     </ScrollView>
   );
 }
 
-export default NewProfile;
+export default reduxForm({
+  form: 'pet'
+})(NewProfile)

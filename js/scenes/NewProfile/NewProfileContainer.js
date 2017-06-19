@@ -10,9 +10,13 @@ class NewProfileContainer extends Component {
     }
   }
 
+  handleSubmit(){
+    console.log('Hey now youre a rockstar');
+  }
+
   render() {
     return (
-      <NewProfile />
+      <NewProfile handleSubmit={this.handleSubmit} />
     );
   }
 }

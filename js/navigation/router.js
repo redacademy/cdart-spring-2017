@@ -16,6 +16,8 @@ import SingleIncident from '../scenes/IncidentCommand/IncidentContainer';
 import AnimalFlow from '../scenes/AnimalRescue';
 import Reception from '../scenes/ReceptionCentre';
 import NewProfile from '../scenes/NewProfile';
+import ContactForm from '../components/PetProfileForm/ContactForm';
+
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
@@ -33,6 +35,8 @@ const Router = createRouter(() => ({
   singleIncident: () => SingleIncident,
   animalFlow: () => AnimalFlow,
   reception: () => Reception,
+  contactForm: () => ContactForm,
+  newProfile: () => NewProfile,
 }));
 
 export default Router;

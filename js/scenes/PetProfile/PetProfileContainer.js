@@ -41,7 +41,7 @@ class PetProfileContainer extends Component {
     return (
       <PetProfile
         createProfile={this.createProfile}
-        myDogs={[this.state.mockDog]}
+        myDogs={[]}
         currentNavigatorUID="petProfile" />
     );
   }

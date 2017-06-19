@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, TouchableOpacity, Text, View } from 'react-native';
 
-import { goToNewProfile } from '../../lib/navigationHelpers';
+import { goToSubpage } from '../../lib/navigationHelpers';
 
 import { styles } from './styles';
 import { colors } from '../../config/styles';
@@ -13,7 +13,7 @@ const PetProfile = ({ createProfile, myDogs, currentNavigatorUID }) => {
   return (
     myDogs.length < 1 ?
     <View>
-      <TouchableOpacity onPress={() => goToNewProfile(currentNavigatorUID)} >
+      <TouchableOpacity onPress={() => goToSubpage('newProfile', currentNavigatorUID)} >
         <View style={styles.createProfile} >
           <Text style={styles.createProfileText} >Create Pet Profile</Text>
           <Image source={plusCircle} style={styles.plusCircle} />
@@ -31,7 +31,7 @@ const PetProfile = ({ createProfile, myDogs, currentNavigatorUID }) => {
     <View>
     {
       myDogs.map((dog, i) => (
-        <TouchableOpacity key={dog.name + i} onPress={() => goToNewProfile(currentNavigatorUID)} >
+        <TouchableOpacity key={dog.name + i} onPress={() => goToSubpage('', currentNavigatorUID, dog)} >
           <View style={styles.singleDog} >
             <View style={styles.dogPicContainer} >
               <Image source={dog.picture} style={styles.dogPic} />

@@ -1,16 +1,16 @@
 import React from 'react';
 import {
   Text,
-  TouchableHighlight
+  TouchableOpacity
 } from 'react-native';
 
 import { styles } from './styles';
 
-const SaveButton = () => {
+const SaveButton = ({ handleSubmit }) => {
   return (
-    <TouchableHighlight style={styles.button}>
+    <TouchableOpacity onPress={() => handleSubmit()} style={styles.button}>
       <Text style={styles.buttonText}>Save Profile</Text>
-    </TouchableHighlight>
+    </TouchableOpacity>
   );
 }
 
