@@ -22,7 +22,7 @@ const whichPicture = (title) => {
     case 'Procedures':
       return require('../../assets/icons/procedures_icon.png');
     case 'Get Involved':
-      return require('../../assets/icons/red_getinvolved_icon.png')
+      return require('../../assets/icons/getinvolved_icon.png');
     default:
       return ;
   }
@@ -35,19 +35,19 @@ const HomeNavigationTab = ({title, navStackUID, targetRoute, targetTab, isTabNav
       onPress={ () => goToView(navStackUID, targetRoute, targetTab, isTabNav, navigation) }
     >
       <View style={styles.tabContainer}>
-      <LinearGradient
-              colors={ ( title === 'Pet Profile' || title === 'Pet Emergency Kit') ? gradients.blueTabGradient : gradients.redTabGradient}
-              style={styles.linearGradient}
-              start={{x: 0, y: 1}}
-              end={{x: 1, y: 1.0}}
-              locations={[0,1]}
-            >
-      </LinearGradient>
-          <View style={styles.tab}>
-            <Image source={whichPicture(title)}
-            style={ styles.image } />
-            <Text style={styles.tabText}>{title}</Text>
-          </View>
+        <LinearGradient
+          colors={ ( title === 'Pet Profile' || title === 'Pet Emergency Kit') ? gradients.blueTabGradient : gradients.redTabGradient}
+          style={styles.linearGradient}
+          start={{x: 0, y: 1}}
+          end={{x: 1, y: 1.0}}
+          locations={[0,1]}
+        >
+        </LinearGradient>
+        <View style={styles.tab}>
+          <Image source={whichPicture(title)}
+          style={ styles.image } />
+          <Text style={styles.tabText}>{title}</Text>
+        </View>
       </View>
     </TouchableWithoutFeedback>
   );

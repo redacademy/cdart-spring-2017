@@ -17,8 +17,8 @@ class PictureList extends Component {
   render() {
     return (
       <ScrollView>
-        <Image source={{uri: 'https://i.ytimg.com/vi/R3Lhzw3DNaU/maxresdefault.jpg'}}
-        style={{width: width, height: 200}} />
+        <Image source={require('../../assets/images/volunteer_checklist.png')}
+        style={{width: width, height: (height / 2.75)}} />
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(rowData) => (
