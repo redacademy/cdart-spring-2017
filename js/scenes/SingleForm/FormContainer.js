@@ -7,7 +7,7 @@ import { styles } from './styles';
 
 import {
 View,
-Text
+Text,
 } from 'react-native';
 
 const pathToImage = '/../ios/samplePDF.pdf';

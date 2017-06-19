@@ -9,12 +9,14 @@ export const styles = StyleSheet.create({
         paddingBottom: 10,
         paddingLeft: 20,
         paddingRight: 20,
-        fontFamily: typography.fontMain,
     },
     listItemTitle: {
         color: colors.blue,
         fontSize: 15,
         marginBottom: 2,
         fontFamily: typography.fontMainSemiBold,
+    },
+    listItemBullet: {
+        fontFamily: typography.fontMain,
     }
 });
