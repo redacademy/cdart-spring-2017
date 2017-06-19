@@ -58,7 +58,7 @@ HomeNavigationTab.propTypes = {
   targetRoute: PropTypes.string,
   targetTab: PropTypes.string,
   isTabNav: PropTypes.bool,
-  navigation: PropTypes.string
+  navigation: PropTypes.object
 }
 
 export default HomeNavigationTab;
