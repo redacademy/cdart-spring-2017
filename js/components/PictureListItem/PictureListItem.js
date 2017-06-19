@@ -3,13 +3,11 @@ import PropTypes from 'prop-types';
 import {
   View,
   Text,
-  Image,
   TouchableHighlight,
   Platform
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import { goToCheckListPage } from '../../lib/navigationHelpers';
 import { goToSubpage } from '../../lib/navigationHelpers';
 import { colors } from '../../config/styles.js';
 
