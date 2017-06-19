@@ -1,13 +1,13 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
 
-import FormList from './../../FormsListItems/FormList';
+import { ScrollView } from 'react-native';
+import SingleFormList from './../../../components/SingleFormsListItems/SingleFormList';
 import { intakeInstructions } from './../../../assets/data';
 
 const IntakeForm = () => {
   return (
     <ScrollView>
-      <FormList formData={intakeInstructions} />
+      <SingleFormList formData={intakeInstructions} />
     </ScrollView>
   );
 };

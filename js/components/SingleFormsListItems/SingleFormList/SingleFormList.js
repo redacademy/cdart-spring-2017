@@ -1,15 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
-
 import PropTypes from 'prop-types';
 
-import FormListItem from './../FormListItem';
+import { View } from 'react-native';
+import SingleFormListItem from './../SingleFormListItem';
 
-const IntakeFormList = ({ formData }) => {
+const SingleFormList = ({ formData }) => {
   return (
     <View>
       {formData.map((formSingleSectionData, i) => {
-        return <FormListItem
+        return <SingleFormListItem
           key={i}
           title={formSingleSectionData.title}
           descriptions={formSingleSectionData.descriptions}
@@ -19,8 +18,8 @@ const IntakeFormList = ({ formData }) => {
   );
 };
 
-export default IntakeFormList;
+export default SingleFormList;
 
-IntakeFormList.propTypes = {
+SingleFormList.propTypes = {
   formData: PropTypes.array,
 }
