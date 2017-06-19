@@ -1,33 +1,34 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 var { height, width } = Dimensions.get('window');
+import { typography } from '../../config/styles';
 
 export const styles = StyleSheet.create({
   tab: {
     // padding: 4,
-    marginBottom: 10,
+    // marginBottom: 30,
     borderWidth: 1,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 7,
-    width: width*.48,
+    width: width*.45,
     height: height*.175,
     borderColor: '#D9E4EB',
     borderTopLeftRadius: 7,
     borderTopRightRadius: 7,
     position:'absolute',
     top: height*.0111,
-    // left: -(width*.0035),
+    left: width* -( 1.5 / 320),
     backgroundColor: 'white'
   },
   tabContainer: {
     position: 'relative',
-    width: width*.43,
+    width: width*.44,
     height: height*.175,
     borderTopLeftRadius: 9,
     borderTopRightRadius: 9,
-    marginBottom: 16
+    marginBottom: height* (16 / 568)
   },
   image: {
     height: 65,
@@ -35,7 +36,8 @@ export const styles = StyleSheet.create({
     resizeMode: 'contain'
   },
   tabText: {
-    marginTop: 4,
+    marginTop: height* (4 / 568),
+    // fontFamily: typography.fontMain
   },
   linearGradient: {
     flex: 1,
