@@ -38,14 +38,14 @@ export const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 20,
   },
-  dogPicContaienr: {
-    flex: 1/4,
+  dogPicContainer: {
+    borderRadius: 10,
   },
   dogPic: {
     flex: 1,
-    borderRadius: 50,
     height: 100,
     width: 100,
+    resizeMode: 'contain'
   },
   dogText: {
     padding: 20,
