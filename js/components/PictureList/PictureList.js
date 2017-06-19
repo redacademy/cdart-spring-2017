@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { View, Text, Image, ListView, Dimensions, TouchableHighlight, ScrollView } from 'react-native';
+import PropTypes from 'prop-types';
+import { View, Image, ListView, Dimensions, ScrollView } from 'react-native';
 import { styles } from './styles';
-import { goToCheckListPage } from '../../lib/navigationHelpers';
+
 import PictureListItem from '../PictureListItem';
 
-var { height, width } = Dimensions.get('window');
+let { height, width } = Dimensions.get('window');
+
 const whichPicture = (title) => {
   switch(title){
     case 'checklists':
@@ -17,6 +19,7 @@ const whichPicture = (title) => {
       return ;
   }
 }
+
 class PictureList extends Component {
   constructor(props){
     super(props);
@@ -42,6 +45,12 @@ class PictureList extends Component {
     );
   }
 }
+
+PictureList.propTypes = {
+  list: PropTypes.array,
+  title: PropTypes.string,
+  currentNavigatorUID: PropTypes.string
+};
 
 export default PictureList;
 
