@@ -16,4 +16,19 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     alignSelf: 'center'
   },
+  selectedButton: {
+    borderColor: colors.green,
+    borderWidth: 1,
+    borderRadius: 15,
+    justifyContent: 'center',
+    paddingVertical: 5,
+    paddingHorizontal: 15,
+    margin: 5,
+    backgroundColor: colors.green
+  },
+  selectedButtonText: {
+    color: colors.white,
+    fontSize: 14,
+    alignSelf: 'center'
+  },
 });
