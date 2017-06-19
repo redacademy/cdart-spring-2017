@@ -5,7 +5,18 @@ import { goToCheckListPage } from '../../lib/navigationHelpers';
 import PictureListItem from '../PictureListItem';
 
 var { height, width } = Dimensions.get('window');
-
+const whichPicture = (title) => {
+  switch(title){
+    case 'checklists':
+      return require('../../assets/images/volunteer_checklist.png');
+    case 'procedures':
+      return require('../../assets/images/procedures.png');
+    case 'forms':
+      return require('../../assets/images/forms.png');
+    default:
+      return ;
+  }
+}
 class PictureList extends Component {
   constructor(props){
     super(props);
@@ -17,7 +28,7 @@ class PictureList extends Component {
   render() {
     return (
       <ScrollView>
-        <Image source={require('../../assets/images/volunteer_checklist.png')}
+        <Image source={whichPicture(this.props.title)}
         style={{width: width, height: (height / 2.75)}} />
         <ListView
           dataSource={this.state.dataSource}

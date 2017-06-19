@@ -10,7 +10,7 @@ class ProceduresContainer extends Component {
 
   render() {
     return(
-      <PictureList currentNavigatorUID={ currentNavigatorUID } list={ procedureList } />
+      <PictureList title='procedures' currentNavigatorUID={ currentNavigatorUID } list={ procedureList } />
     );
   }
 }
