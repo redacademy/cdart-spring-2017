@@ -1,5 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
+import { typography } from '../../config/styles'
+
 var { height, width } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
@@ -21,5 +23,6 @@ export const styles = StyleSheet.create({
   },
   incidentText: {
     padding: 10,
+    fontFamily: typography.fontMain,
   }
 });
