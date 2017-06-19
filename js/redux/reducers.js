@@ -11,5 +11,4 @@ export default combineReducers({
     form: formReducer,
     otherInputs:  petReducer,
   }),
-  form: formReducer,
 });
