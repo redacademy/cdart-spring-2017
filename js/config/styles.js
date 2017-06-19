@@ -34,7 +34,7 @@ export const typography = {
 export const gradients = {
   redGradient: ['#FB725D', '#BF3841'],
   blueGradient: ['#4D96CD', '#6CA5CF'],
-  blueTabGradient: ['#1690EB','#D1E0EC'],
+  blueTabGradient: ['#8DB5D8','#D1E0EC'],
   redTabGradient: ['#CD5256','#E39F99']
 };
 
