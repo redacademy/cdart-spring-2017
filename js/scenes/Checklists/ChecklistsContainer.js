@@ -9,7 +9,7 @@ class ChecklistsContainer extends Component {
 
   render() {
     return (
-      <PictureList currentNavigatorUID='home' list={ checkLists }/>
+      <PictureList title='checklists' currentNavigatorUID='home' list={ checkLists }/>
     );
   }
 }

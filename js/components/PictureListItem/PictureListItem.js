@@ -11,6 +11,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import { goToCheckListPage } from '../../lib/navigationHelpers';
 import { goToSubpage } from '../../lib/navigationHelpers';
+import { colors } from '../../config/styles.js';
 
 import { styles } from './styles';
 
@@ -23,8 +24,14 @@ const PictureListItem = ({rowData, currentNavigatorUID }) => {
     >
       <View style={styles.singleItem}>
         <Text style={styles.textList}>{rowData.title}</Text>
-        <Image source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
-        style={{width: 25, height: 25, marginRight: 8}} />
+        <Icon
+          name={
+            Platform.OS === 'ios' ? 'ios-arrow-forward' : 'md-arrow-forward'
+          }
+          size={32}
+          color={colors.grey}
+          style={{width: 25, marginRight: 8}}
+        />
       </View>
     </TouchableHighlight>
   )};
