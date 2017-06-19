@@ -4,17 +4,14 @@ import {
   Text,
   TextInput
 } from 'react-native';
+import { Field } from 'redux-form';
+import { styles } from './styles'
 
-import { styles } from './styles';
-
-const InlineInput = () => {
+const InlineInput = ({ renderInput }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Name</Text>
-      <TextInput
-        style={styles.textInput}
-        editable={true}
-      />
+      <Field name="name" component={(val) => renderInput(val)} />
     </View>
   );
 }

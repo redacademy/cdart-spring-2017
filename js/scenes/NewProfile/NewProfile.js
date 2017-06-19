@@ -13,19 +13,18 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 import { colors } from '../../config/styles';
 import { styles } from './styles';
 
-const NewProfile = ({ handleSubmit }) => {
-  console.log('hi from new profile');
+const NewProfile = ({ handleSubmit, renderInput }) => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} onSubmit={val => handleSubmit(val)} >
 
       <Text>Add Photo</Text>
 
-      <InlineInput />
-      <InlineInput />
-      <InlineInput />
-      <InlineInput />
-      <InlineInput />
-      <InlineInput />
+      <InlineInput renderInput={renderInput} />
+      <InlineInput renderInput={renderInput} />
+      <InlineInput renderInput={renderInput} />
+      <InlineInput renderInput={renderInput} />
+      <InlineInput renderInput={renderInput} />
+      <InlineInput renderInput={renderInput} />
 
       <View style={styles.inlineButtonsWrapper}>
         <SwitchButton />
