@@ -7,6 +7,7 @@ import MultilineTextarea from '../../components/PetProfileForm/MultilineTextarea
 import ToggleButton from '../../components/PetProfileForm/ToggleButton';
 import SwitchButton from '../../components/PetProfileForm/SwitchButton';
 import SaveButton from '../../components/PetProfileForm/SaveButton';
+import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 
 import { colors } from '../../config/styles';
 import { styles } from './styles';
@@ -18,6 +19,7 @@ const NewProfile = () => {
 
       <Text>Add Photo</Text>
 
+      <InlineInput />
       <InlineInput />
       <InlineInput />
       <InlineInput />
@@ -43,12 +45,16 @@ const NewProfile = () => {
         multiline={true}
         numberOfLines={3}
         placeholder={`Expand on your animal's temperament`}
-        placeholderTextColor={'gray'}
+        placeholderTextColor={colors.grey}
       />
 
       <MultilineTextarea />
       <MultilineTextarea />
       <MultilineTextarea />
+
+      <ContactInfoItem />
+      <ContactInfoItem />
+      <ContactInfoItem />
 
       <SaveButton />
     </ScrollView>
