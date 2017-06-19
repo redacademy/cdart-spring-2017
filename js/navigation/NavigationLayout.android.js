@@ -5,7 +5,7 @@ import {
   DrawerNavigation,
   DrawerNavigationItem,
 } from '@expo/ex-navigation';
-import { Text, StyleSheet } from 'react-native';
+import { Text, Image, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -43,9 +43,30 @@ class NavigationLayout extends Component {
     }
   }
 
+  renderIcon(iconName, isSelected) {
+    const whichIcon = (icon, isSelected) => {
+      switch(icon){
+        case "home":
+          return isSelected ? require('../assets/icons/red_home_icon.png'): require('../assets/icons/outline_home_icon.png') ;
+        case "petProfile":
+          return isSelected ? require('../assets/icons/paw_icon.png'): require('../assets/icons/pet_profile_icon.png') ;
+        case "updates":
+          return isSelected ? require('../assets/icons/red_updates_icon.png'): require('../assets/icons/updates_icon.png') ;
+        case "getInvolved":
+          return isSelected ? require('../assets/icons/red_involved_icon.png'): require('../assets/icons/outline_involved_icon.png') ;
+        default:
+          return ;
+      }
+    }
+    return <Image
+            source={whichIcon(iconName, isSelected)}
+            style={{width: 30, height: 30, marginRight: 8, resizeMode: 'contain'}}
+          />
+  }
+
   renderTitle(title, isSelected) {
     const titleStyle = {
-      color: isSelected ? colors.red : colors.lightGrey,
+      color: isSelected ? colors.red : colors.grey,
       fontSize: 12,
       fontFamily: 'Arial'
     };
@@ -62,7 +83,7 @@ class NavigationLayout extends Component {
         <DrawerNavigationItem
           id="home"
           title="Home"
-          // renderIcon={isSelected => this.renderIcon('ios-calendar', isSelected)}
+          renderIcon={isSelected => this.renderIcon("home", isSelected)}
           renderTitle={(isSelected) => this.renderTitle('Home', isSelected)}
         >
           <StackNavigation
@@ -76,7 +97,7 @@ class NavigationLayout extends Component {
         <DrawerNavigationItem
           id="petProfile"
           title="Pet Profile"
-          // renderIcon={isSelected => this.renderIcon('ios-calendar', isSelected)}
+          renderIcon={isSelected => this.renderIcon("petProfile", isSelected)}
           renderTitle={(isSelected) => this.renderTitle('Pet Profile', isSelected)}
         >
           <StackNavigation
@@ -90,7 +111,7 @@ class NavigationLayout extends Component {
         <DrawerNavigationItem
           id="updates"
           title="Updates"
-          // renderIcon={isSelected => this.renderIcon('ios-calendar', isSelected)}
+          renderIcon={isSelected => this.renderIcon("updates", isSelected)}
           renderTitle={(isSelected) => this.renderTitle('Updates', isSelected)}
         >
           <StackNavigation
@@ -104,7 +125,7 @@ class NavigationLayout extends Component {
         <DrawerNavigationItem
           id="getInvolved"
           title="Get Involved"
-          // renderIcon={isSelected => this.renderIcon('ios-calendar', isSelected)}
+          renderIcon={isSelected => this.renderIcon("getInvolved", isSelected)}
           renderTitle={(isSelected) => this.renderTitle('Get Involved', isSelected)}
         >
           <StackNavigation
