@@ -28,11 +28,11 @@ const NewProfile = (props) => {
 
       <Text style={styles.heading}>Temperament</Text>
       <View style={styles.toggleButtonsWrapper}>
-        <ToggleButton />
-        <ToggleButton />
-        <ToggleButton />
-        <ToggleButton />
-        <ToggleButton />
+        <Field name="friendly" component={ToggleButton} type='radio' />
+        <Field name="energetic" component={ToggleButton} type='radio' />
+        <Field name="timid" component={ToggleButton} type='radio' />
+        <Field name="aggressive" component={ToggleButton} type='radio' />
+        <Field name="obedient" component={ToggleButton} type='radio' />
       </View>
       <TextInput
         style={styles.multilineInput}
@@ -43,13 +43,13 @@ const NewProfile = (props) => {
         placeholderTextColor={colors.grey}
       />
 
-      <MultilineTextarea />
-      <MultilineTextarea />
-      <MultilineTextarea />
+      <Field name="distinguishing" component={MultilineTextarea} />
+      <Field name="care" component={MultilineTextarea} />
+      <Field name="medical" component={MultilineTextarea} />
 
-      <ContactInfoItem />
-      <ContactInfoItem />
-      <ContactInfoItem />
+      <Field name="microchip" component={ContactInfoItem} />
+      <Field name="ownerContact" component={ContactInfoItem} />
+      <Field name="vetContact" component={ContactInfoItem} />
 
       <SaveButton handleSubmit={props.handleSubmit} />
     </ScrollView>

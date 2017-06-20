@@ -8,11 +8,15 @@ import {
 import { colors } from '../../../config/styles';
 import { styles } from './styles';
 
-const MultilineTextarea = () => {
+export default function MultilineTextarea(props) {
+  const { input, ...inputProps } = props;
+
   return (
     <View>
       <Text style={styles.heading}>Distinguishing Features</Text>
       <TextInput
+        onChangeText={input.onChange}
+        value={input.value}
         style={styles.multilineInput}
         editable={true}
         multiline={true}
@@ -23,5 +27,3 @@ const MultilineTextarea = () => {
     </View>
   );
 }
-
-export default MultilineTextarea;
