@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { goToView } from '../../lib/navigationHelpers';
 import LinearGradient from 'react-native-linear-gradient';
 
-import { View, Text, Image, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { styles } from './styles';
 
 import { gradients } from '../../config/styles';
@@ -30,7 +30,7 @@ const whichPicture = (title) => {
 
 const HomeNavigationTab = ({title, navStackUID, targetRoute, targetTab, isTabNav, navigation}) => {
   return (
-    <TouchableWithoutFeedback
+    <TouchableOpacity
       onPress={ () => goToView(navStackUID, targetRoute, targetTab, isTabNav, navigation) }
     >
       <View style={styles.tabContainer}>
@@ -48,7 +48,7 @@ const HomeNavigationTab = ({title, navStackUID, targetRoute, targetTab, isTabNav
           <Text style={styles.tabText}>{title}</Text>
         </View>
       </View>
-    </TouchableWithoutFeedback>
+    </TouchableOpacity>
   );
 }
 
