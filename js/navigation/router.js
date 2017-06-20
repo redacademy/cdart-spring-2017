@@ -36,7 +36,7 @@ const Router = createRouter(() => ({
   animalFlow: () => AnimalFlow,
   reception: () => Reception,
   contactForm: () => ContactForm,
-  newProfile: () => NewProfile,
+  newProfile: () => NewProfile
 }));
 
 export default Router;

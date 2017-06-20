@@ -13,22 +13,17 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 import { colors } from '../../config/styles';
 import { styles } from './styles';
 
-const NewProfile = ({ handleSubmit, renderInput }) => {
+const NewProfile = (props) => {
   return (
-    <ScrollView style={styles.container} onSubmit={val => handleSubmit(val)} >
+    <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
       <Text>Add Photo</Text>
 
-      <InlineInput renderInput={renderInput} />
-      <InlineInput renderInput={renderInput} />
-      <InlineInput renderInput={renderInput} />
-      <InlineInput renderInput={renderInput} />
-      <InlineInput renderInput={renderInput} />
-      <InlineInput renderInput={renderInput} />
+      <Field name="name" component={InlineInput} />
 
       <View style={styles.inlineButtonsWrapper}>
-        <SwitchButton />
-        <ToggleButton />
+        <Field name="gender" component={SwitchButton} />
+        <Field name="test" component={ToggleButton} />
       </View>
 
       <Text style={styles.heading}>Temperament</Text>
@@ -56,11 +51,9 @@ const NewProfile = ({ handleSubmit, renderInput }) => {
       <ContactInfoItem />
       <ContactInfoItem />
 
-      <SaveButton handleSubmit={handleSubmit} />
+      <SaveButton handleSubmit={props.handleSubmit} />
     </ScrollView>
   );
 }
 
-export default reduxForm({
-  form: 'pet'
-})(NewProfile)
+export default NewProfile;

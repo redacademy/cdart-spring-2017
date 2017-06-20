@@ -4,16 +4,23 @@ import {
   Text,
   TextInput
 } from 'react-native';
-import { Field } from 'redux-form';
-import { styles } from './styles'
 
-const InlineInput = ({ renderInput }) => {
+import { styles } from './styles';
+
+export default function InlineInput(props) {
+  const { input, ...inputProps } = props;
+
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Name</Text>
-      <Field name="name" component={(val) => renderInput(val)} />
+      <TextInput
+        {...inputProps}
+        onChangeText={input.onChange}
+        onBlur={input.onBlur}
+        onFocus={input.onFocus}
+        value={input.value}
+        style={styles.textInput}
+        />
     </View>
   );
 }
-
-export default InlineInput;

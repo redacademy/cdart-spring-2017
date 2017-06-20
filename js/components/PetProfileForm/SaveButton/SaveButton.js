@@ -8,7 +8,7 @@ import { styles } from './styles';
 
 const SaveButton = ({ handleSubmit }) => {
   return (
-    <TouchableOpacity onPress={(val) => handleSubmit(val)} style={styles.button}>
+    <TouchableOpacity onPress={() => handleSubmit()} style={styles.button}>
       <Text style={styles.buttonText}>Save Profile</Text>
     </TouchableOpacity>
   );

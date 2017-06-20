@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { TextInput } from 'react-native';
+import { connect } from 'react-redux';
+import { getFormValues, reduxForm } from 'redux-form';
 
 import NewProfile from './NewProfile';
-import { styles } from '../../components/PetProfileForm/InlineInput'
 
 class NewProfileContainer extends Component {
 
@@ -12,20 +12,25 @@ class NewProfileContainer extends Component {
     }
   }
 
-  handleSubmit(value){
-    console.log('Hey now youre a rockstar', value);
-  }
-
-  renderInput = ({ input: { onChange, ...restInput }}) => {
-    console.log('shit boi')
-    return <TextInput onChangeText={onChange} {...restInput} />
+  handleSubmit(){
+    console.log(this.props.formValues)
   }
 
   render() {
     return (
-      <NewProfile handleSubmit={this.handleSubmit} renderInput={this.renderInput} />
+      <NewProfile {...this.props} handleSubmit={() => this.handleSubmit()} />
     );
   }
 }
 
-export default NewProfileContainer;
+function mapStateToProps(state) {
+  return {
+    formValues: getFormValues('NewProfileForm')(state),
+  }
+}
+
+const NewProfileForm = reduxForm({
+  form: 'NewProfileForm'
+})(NewProfileContainer)
+
+export default connect(mapStateToProps)(NewProfileForm);
