@@ -26,12 +26,12 @@ export const homeForms = [
 ]
 // Procedures
 export const procedureList = [
-  { title: 'Daily Volunteer Duties', targetRoute: 'animalFlow'},
+  { title: 'Daily Volunteer Duties', targetRoute: 'reception'},
   { title: 'Animal Rescue Flow', targetRoute: 'animalFlow'},
   { title: 'Incident Command Flow', targetRoute: 'singleIncident'},
-  { title: 'Reception Centre Setup', targetRoute: 'reception'},
-  { title: 'Animal Condition Inspection', targetRoute: 'animalCondition'},
-  { title: 'Basic Animal Care', targetRoute: 'animalCare'}
+  { title: 'Reception Shelter Centre Setup', targetRoute: 'reception'},
+  { title: 'Animal Condition Inspection', targetRoute: 'reception'},
+  { title: 'Basic Animal Care', targetRoute: 'reception'}
 ]
 // Get Involved
 export const getInvolved = [
@@ -228,13 +228,13 @@ export const checkLists = [
     targetRoute: 'checklistsPage'
   },
   {
-    title: `Animal Intake Supply List (First Aid Kit)`,
+    title: `Animal Intake Supply List`,
     subsection: animalIntakeSupplyList,
     subsectionText: `Animal Intake Supply List (First Aid Kit)`,
     targetRoute: 'checklistsPage'
   },
   {
-    title: `Shelter Supply List, Human First Aid Kit`,
+    title: `Shelter Supply List`,
     subsection: shelterSupplyList,
     subsectionText: `Shelter Supply List (Including human first aid kits)`,
     targetRoute: 'checklistsPage'
@@ -332,4 +332,45 @@ export const receptionShelterSetup = [
   'Waste removal/storage',
   'Morgue',
 
+]
+
+export const dailyVolunteerDuties = [
+  'Attend training sessions - update and practice skills',
+  'Update personal preparedness plan',
+  'Discuss deployment with family - friends - employers(Letter from CDART available)',
+  'Assemble personal grab and go bag, Include I.D bade, unfirom, snacks, personal hygiene items, device chargers',
+  'Keep vehicles fueled',
+  'When called record task number/Shelter address',
+  'Be honest with yourself about your readiness to respond'
+]
+
+export const basicAnimalCare = [
+  'If space permits, crates or kennels should be 12" or more apart',
+  'Animals should be segregated by species',
+  'Crates should be oriented to keep animals facing away from each other',
+  'Provide food and water bowls, ID tag, leash, and bedding for each crate',
+  'For animals sensitive to noise, activity or other animals, provide a sheet to keep the sides of the crate covered.',
+  'The dog area should be close to an exit door to facilitate reaching dog walk areas; provide all owners with plastic bags for clean-up each time they walk their dog.',
+  'Provide separate areas for animals that are sick.',
+  'Animals that are seriously ill or pose a health risk to others should be transported to a local vet. Contact the on-call veterinarian for assistance.',
+  'Aggressive animals must be securely contained. Ideally the owner will be responsible for care and feeding of an aggressive animal, however if that is not possible, only experienced volunteers should be handling that animal. A muzzle maybe required',
+  'Staff may refuse admittance to any animal that appears uncontrollable or dangerously aggressive.',
+  'Isolate animals that are in heat.',
+  'Provide food and water bowls, ID tag, and bedding for each crate.',
+  'Provide a litter box inside the crate. Litter boxes should be cleaned (scooped) regularly.',
+  'Keep the areas as quiet as possible',
+  'Assign specific shelter staff to care for sick animals, or develop a special protocol to prevent disease transmission between sick and healthy animals. (Supplies to consider: gloves, gowns, hand sanitizer, etc.).',
+  'Establish protocols to protect volunteers and evacuees from infection from zoonotic diseases',
+  'Rehearse established protocol for escaped/loose animals'
+
+]
+
+export const animalConditionInspection = [
+  'Perform a basic wellness check as each animal comes in',
+  'Assess over all demeanour and attitude',
+  'Discharge from eyes or nose',
+  'Listen for coughing or sneezing',
+  'Check animals elimination for presence of parasites or abnormal discharge',
+  'Assess general body condition',
+  'Assess for any signs of injury'
 ]

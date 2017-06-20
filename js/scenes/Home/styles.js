@@ -23,7 +23,9 @@ export const styles = StyleSheet.create({
   homeHeader: {
     width: width,
     textAlign: 'center',
-    fontSize: 16
+    fontSize: 16,
+    paddingBottom: height*( 16 / 568 )
+
   },
   tabContainer: {
     paddingHorizontal: width * 0.015,

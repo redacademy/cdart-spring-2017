@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
     padding: 15,
     flexDirection: 'row',
     alignItems: 'center',
+    // justifyContent:'space-between'
   },
   receptionNum: {
     fontSize: 36,
@@ -23,7 +24,7 @@ export const styles = StyleSheet.create({
   },
   receptionText: {
     paddingLeft: 20,
-    paddingRight: 20,
+    paddingRight: 50,
     fontSize: 17,
     lineHeight: 20
   }
