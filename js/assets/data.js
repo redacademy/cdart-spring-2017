@@ -314,3 +314,22 @@ export const intakeInstructions= [
     ]
   }
 ]
+
+export const receptionShelterSetup = [
+  'On arrival report to Incident Command and sign in',
+  'Receive Situation briefing, liaise with Management team',
+  'Identify priorities for next Operational Period',
+  'Identity and establish Shelter location, quiet dividable area, outside access and fresh water supply',
+  'Identify resources needed – volunteers, equipment, transport',
+  'Secure Intake Bins',
+  'Designate attending volunteers to Shelters roles, Intake, Safety , PIO, meet and greet, team leaders ie – dog section',
+  'Set up Intake area – intake bin – tables – chairs, forms, office supplies, slip, leads, printer – camera, communications.',
+  'Set up animal care area, Daily care bins, kennels, food/water dishes, bedding, cleaning supplies',
+  'Set up food preparation area',
+  'Establish dog walk areas, stock with waste bags',
+  'First aid and triage area',
+  'Volunteer quiet area',
+  'Waste removal/storage',
+  'Morgue',
+
+]
