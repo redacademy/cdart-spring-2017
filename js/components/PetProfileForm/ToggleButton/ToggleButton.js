@@ -33,11 +33,14 @@ class ToggleButton extends Component {
   };
 
   render() {
+    console.log(this.props)
     return (
       this.state.selected ?
         <TouchableHighlight
           onPress={this.onPress}
-          style={this.state.selected ? styles.selectedButton : styles.button}
+          style={styles.selectedButton}
+          onChange={val => this.props.onChange(val)}
+          value={this.props.value}
         >
           <Text style={styles.selectedButtonText}>{this.props.info}</Text>
         </TouchableHighlight>
@@ -45,8 +48,9 @@ class ToggleButton extends Component {
         <TouchableHighlight
           onPress={this.onPress}
           style={styles.button}
+          onChange={val => this.props.onChange(val)}
         >
-          <Text style={styles.buttonText}>{this.props.info}</Text>
+          <Text style={styles.buttonText}>Friendly</Text>
         </TouchableHighlight>
     );
   }

@@ -28,11 +28,11 @@ const NewProfile = (props) => {
 
       <Text style={styles.heading}>Temperament</Text>
       <View style={styles.toggleButtonsWrapper}>
-        <ToggleButton info='Energetic' />
-        <ToggleButton info='Friendly' />
-        <ToggleButton info='Timid' />
-        <ToggleButton info='Aggresive' />
-        <ToggleButton info='Obedient' />
+        <Field name="friendly" component={ToggleButton} type='radio' />
+        <Field name="energetic" component={ToggleButton} type='radio' />
+        <Field name="timid" component={ToggleButton} type='radio' />
+        <Field name="aggressive" component={ToggleButton} type='radio' />
+        <Field name="obedient" component={ToggleButton} type='radio' />
       </View>
       <TextInput
         style={styles.multilineInput}
@@ -47,9 +47,15 @@ const NewProfile = (props) => {
       <Field name="care" component={MultilineTextarea} />
       <Field name="medical" component={MultilineTextarea} />
 
+<<<<<<< HEAD
       <FieldArray name="microchip" component={ContactInfoItem} />
       <FieldArray name="ownerContact" component={ContactInfoItem} />
       <FieldArray name="vetContact" component={ContactInfoItem} />
+=======
+      <Field name="microchip" component={ContactInfoItem} />
+      <Field name="ownerContact" component={ContactInfoItem} />
+      <Field name="vetContact" component={ContactInfoItem} />
+>>>>>>> Got redux-form working on all componenets except toggleButton.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
