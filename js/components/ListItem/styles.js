@@ -27,5 +27,6 @@ export const styles = StyleSheet.create({
   },
   itemText: {
     padding: 16,
+    width: width*(270 / 320)
   }
 });

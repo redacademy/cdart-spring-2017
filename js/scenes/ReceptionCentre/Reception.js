@@ -3,9 +3,9 @@ import { Text, ListView, View } from 'react-native';
 
 import { styles } from './styles';
 
-let count = 0;
 
 const Reception = ({ dataSource }) => {
+  let count = 0;
   return (
     <ListView
       dataSource={dataSource}
@@ -13,7 +13,7 @@ const Reception = ({ dataSource }) => {
         count++
         return (
           <View style={styles.receptionContainer} >
-            <Text style={styles.receptionNum} >{count}.</Text>
+            <Text style={styles.receptionNum} >{count}</Text>
             <Text style={styles.receptionText} >{item}</Text>
           </View>
         )
