@@ -19,11 +19,11 @@ const NewProfile = (props) => {
 
       <Text>Add Photo</Text>
 
-      <Field name="DogName" component={InlineInput} />
+      <Field name="name" component={InlineInput} />
 
       <View style={styles.inlineButtonsWrapper}>
-        <SwitchButton />
-        <ToggleButton info='Spayed' />
+        <Field name="gender" component={SwitchButton} />
+        <Field name="test" component={ToggleButton} />
       </View>
 
       <Text style={styles.heading}>Temperament</Text>
@@ -52,14 +52,16 @@ const NewProfile = (props) => {
       <FieldArray name="vetContact" component={ContactInfoItem} />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       <SaveButton handleSubmit={props.handleSubmit} />
 =======
       <SaveButton handleSubmit={handleSubmit} />
 >>>>>>> Save button is console logging.
+=======
+      <SaveButton handleSubmit={props.handleSubmit} />
+>>>>>>> Got form data stored in the store.
     </ScrollView>
   );
 }
 
-export default reduxForm({
-  form: 'pet'
-})(NewProfile)
+export default NewProfile;

@@ -14,6 +14,7 @@ export default function InlineInput(props) {
     <View style={styles.container}>
       <Text style={styles.heading}>Name</Text>
       <TextInput
+        {...inputProps}
         onChangeText={input.onChange}
         onBlur={input.onBlur}
         onFocus={input.onFocus}
