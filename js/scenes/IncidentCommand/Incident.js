@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Image, TouchableOpacity, LayoutAnimation } from 'react-native';
 import PropTypes from 'prop-types';
-
+import Expand from 'react-native-simple-expand';
 import { styles } from './styles';
 
 class Incident extends Component {
@@ -34,12 +34,9 @@ class Incident extends Component {
             />
           </View>
         </TouchableOpacity>
-        {
-          this.state.open &&
-          <View>
-            <Text style={ styles.incidentText } >{this.props.rowData.text}</Text>
-          </View>
-        }
+        <Expand value={this.state.open}>
+          <Text style={ styles.incidentText }>{this.props.rowData.text}</Text>
+        </Expand>
       </View>
     )
   }
