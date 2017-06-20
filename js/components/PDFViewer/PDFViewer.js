@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 
 import { styles } from './styles';
+import { height, width } from 'Dimensions';
 
-import { View } from 'react-native';
-
-import PDFView from 'react-native-pdf-view';
+import { View, WebView, Text } from 'react-native';
 
 // Note that pdf images must be added to your xcode project and included
 // in build folder to be displayed. Just adding them to the project's assets folder
@@ -19,17 +18,22 @@ class PDFViewer extends Component {
   render() {
 
     return (
-    <View style={{backgroundColor: 'aquamarine', height: 420, width: 350 }}>
-      <PDFView
-        ref={(pdf)=>{this.pdfView = pdf;}}
-        path={'cdart/ios/cdart/Images.xcassets/samplePDF.pdf'}
-        onLoadComplete = {(pageCount)=>{
-          this.pdfView.setNativeProps({
-              zoom: 1.5
-          });
-        }}
-        style={ styles.pdfViewer }
+    <View
+     style={styles.pdfViewer}
+    >
+      <WebView
+        source={this.props.imagePath}
+        style={styles.pdfViewer}
       />
+      <View
+        style={ styles.instructionsBox }
+      >
+        <Text
+          style={ styles.instructionsText }
+        >
+          Pinch to zoom...
+        </Text>
+      </View>
     </View>
   );
   }
@@ -37,7 +41,7 @@ class PDFViewer extends Component {
 }
 
 PDFViewer.propTypes = {
-  imageURI: PropTypes.string
+  imagePath: PropTypes.number
 }
 
 export default PDFViewer;

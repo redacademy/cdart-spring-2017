@@ -1,12 +1,25 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
-import { height, width } from 'Dimensions';
+import { colors, typography } from '../../config/styles';
+
+const height = Dimensions.get('window').height;
+const width = Dimensions.get('window').width;
 
 export const styles = StyleSheet.create({
   pdfViewer: {
-    height: 400,
-    width: 275,
-    borderWidth: 3,
-    borderColor: 'black'
+    height: height * 0.8,
+    width: width,
+  },
+  instructionsBox: {
+    backgroundColor: colors.dimBlue,
+    flex: 0.15,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  instructionsText: {
+    height: 16,
+    fontFamily: typography.fontMain,
+    fontSize: typography.baseSize,
+    textAlign: 'center'
   }
 })
