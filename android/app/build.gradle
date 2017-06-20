@@ -134,6 +134,7 @@ android {
 
 dependencies {
     compile project(':react-native-pdf-view')
+    compile project(':react-native-twitter')
     compile project(':react-native-vector-icons')
     compile project(':react-native-linear-gradient')
     compile fileTree(dir: "libs", include: ["*.jar"])
