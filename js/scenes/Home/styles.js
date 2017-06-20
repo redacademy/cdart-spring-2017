@@ -7,7 +7,6 @@ var { height, width } = Dimensions.get('window');
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: '#EEF3F7'
 
@@ -16,7 +15,6 @@ export const styles = StyleSheet.create({
     height: (height - 100) * 0.35,
     width: width,
     marginTop: height*( 16 / 568 )
-    // marginTop:15
   },
   volunteerSection: {
     height: (height - 100) * 0.55,
@@ -25,7 +23,6 @@ export const styles = StyleSheet.create({
   homeHeader: {
     width: width,
     textAlign: 'center',
-    // marginTop: 16,
     fontSize: 16
   },
   tabContainer: {
@@ -37,11 +34,4 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     alignContent: 'center'
   },
-  tab: {
-    // height: 90,
-    // width: 120,
-    // marginVertical: 10,
-    // borderWidth: 3,
-    // borderColor: 'black',
-  }
 });

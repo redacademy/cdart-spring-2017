@@ -18,6 +18,8 @@ export const styles = StyleSheet.create({
   },
   receptionNum: {
     fontSize: 36,
+    width: 50,
+    textAlign: 'center'
   },
   receptionText: {
     paddingLeft: 20,
