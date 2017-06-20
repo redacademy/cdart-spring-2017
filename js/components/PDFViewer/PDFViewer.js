@@ -23,6 +23,11 @@ class PDFViewer extends Component {
       <PDFView
         ref={(pdf)=>{this.pdfView = pdf;}}
         path={'cdart/ios/cdart/Images.xcassets/samplePDF.pdf'}
+        onLoadComplete = {(pageCount)=>{
+          this.pdfView.setNativeProps({
+              zoom: 1.5
+          });
+        }}
         style={ styles.pdfViewer }
       />
     </View>

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -37,7 +36,6 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* cdartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* cdartTests.m */; };
 		4A3927607A3242A892577296 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 809F96140E05450694C412B7 /* FontAwesome.ttf */; };
-		516B6370682E4E2380F60A2C /* libRNPDFView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8E596F258D464182F5852E /* libRNPDFView.a */; };
 		54A89DEE0979441A809394F5 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B27783FDB1D0405FAC9E8B2B /* Octicons.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		62FB622EBC5E4E92A954340C /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2403303AAF2C4FEFB948B0D9 /* libBVLinearGradient.a */; };
@@ -245,13 +243,6 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		EB6B4D631EF8CDA60056CA15 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3020880AE1043FA8A33EB3F /* RNPDFView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 20D8E03F1C8E946C00039823;
-			remoteInfo = RNPDFView;
-		};
 		EBB8037D1EF2F87200FE997A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ECEABA05E43545DFB5762DC2 /* BVLinearGradient.xcodeproj */;
@@ -318,10 +309,8 @@
 		9C15CBDB7A0643C48672AC83 /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Semibold.ttf"; path = "../js/assets/fonts/SFUIText-Semibold.ttf"; sourceTree = "<group>"; };
 		A02E08E9194C4696AFF9317C /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		B27783FDB1D0405FAC9E8B2B /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		BC8E596F258D464182F5852E /* libRNPDFView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNPDFView.a; sourceTree = "<group>"; };
 		BEA75E8ECB4A424C9928CA40 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Regular.ttf"; path = "../js/assets/fonts/SFUIText-Regular.ttf"; sourceTree = "<group>"; };
 		BF55E34C603F4925B5057119 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		C3020880AE1043FA8A33EB3F /* RNPDFView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNPDFView.xcodeproj; path = "../node_modules/react-native-pdf-view/RNPDFView.xcodeproj"; sourceTree = "<group>"; };
 		C603BAAAF4564EC38897031F /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Medium.ttf"; path = "../js/assets/fonts/SFUIText-Medium.ttf"; sourceTree = "<group>"; };
 		C862AE315A7446CC8C6B7354 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		ECEABA05E43545DFB5762DC2 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
@@ -355,7 +344,6 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				62FB622EBC5E4E92A954340C /* libBVLinearGradient.a in Frameworks */,
 				EEC3DCA8589B4E988971AB7B /* libRNVectorIcons.a in Frameworks */,
-				516B6370682E4E2380F60A2C /* libRNPDFView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +535,6 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				ECEABA05E43545DFB5762DC2 /* BVLinearGradient.xcodeproj */,
 				7A7CCE55623444289445F2D7 /* RNVectorIcons.xcodeproj */,
-				C3020880AE1043FA8A33EB3F /* RNPDFView.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -581,14 +568,6 @@
 				00E356EE1AD99517003FC87E /* cdartTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* cdart-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* cdart-tvOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EB6B4D441EF8CDA60056CA15 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EB6B4D641EF8CDA60056CA15 /* libRNPDFView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -767,10 +746,6 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-				},
-				{
-					ProductGroup = EB6B4D441EF8CDA60056CA15 /* Products */;
-					ProjectRef = C3020880AE1043FA8A33EB3F /* RNPDFView.xcodeproj */;
 				},
 				{
 					ProductGroup = EBB8039E1EF2F87200FE997A /* Products */;
@@ -963,13 +938,6 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EB6B4D641EF8CDA60056CA15 /* libRNPDFView.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNPDFView.a;
-			remoteRef = EB6B4D631EF8CDA60056CA15 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		EBB8037E1EF2F87200FE997A /* libBVLinearGradient.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1142,14 +1110,12 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-pdf-view/RNPDFView",
 				);
 				INFOPLIST_FILE = cdartTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1169,14 +1135,12 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-pdf-view/RNPDFView",
 				);
 				INFOPLIST_FILE = cdartTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1198,7 +1162,6 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-pdf-view/RNPDFView",
 				);
 				INFOPLIST_FILE = cdart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1222,7 +1185,6 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-pdf-view/RNPDFView",
 				);
 				INFOPLIST_FILE = cdart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1252,13 +1214,11 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-pdf-view/RNPDFView",
 				);
 				INFOPLIST_FILE = "cdart-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1288,13 +1248,11 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-pdf-view/RNPDFView",
 				);
 				INFOPLIST_FILE = "cdart-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1323,7 +1281,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.cdart-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1348,7 +1305,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.cdart-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
