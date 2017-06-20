@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ListView } from 'react-native';
+import { View, Text, ListView, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 
 import { styles } from './styles';
@@ -17,7 +17,7 @@ class CheckListTemplate extends Component {
   }
   render(){
     return (
-      <View>
+      <ScrollView>
         <View style={styles.greyTop} >
           <Text style={styles.greyTopText} >
             {this.props.data.subsectionText}
@@ -30,7 +30,7 @@ class CheckListTemplate extends Component {
           }}
           renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
         />
-      </View>
+      </ScrollView>
     )
   }
 }

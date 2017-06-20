@@ -1,15 +1,19 @@
 //HOME SCENE
 // Pet Emergency Kit
 export const petEmergencyKit = [
-  'Pet food for 1 week',
-  'Carrier',
-  'Collar/ID Tags',
-  'Leash',
-  'Bottled Water',
+  'Preferred food for one week',
+  'Water for one week',
+  'Bowls for food and water',
+  'I.D tags/tattoos/microchip',
+  'Collar & leash',
   'Medication',
-  'Litter and litter box',
-  'Recent photos of your pet',
-  'Can opener'
+  'Litter, litter box, scoop',
+  'Picture of you with your pet',
+  'Cloth with your scent, bagged',
+  'Out of area contact information',
+  'Carrier',
+  'Documents - Vaccinations – prescriptions - Veterinary contacts',
+  'Emergency Boarding contacts',
 ]
 // Forms
 export const homeForms = [
@@ -106,17 +110,7 @@ export const getInvolved = [
   }
 ]
 
-export const volunteerPackList = [
-  'Change of clothing (Seasonal)',
-  'Personal hygiene items',
-  'Personal medication',
-  'Coins for telephone calls',
-  'First aid kit',
-  'Battery powered flashlights',
-  'Bottled water, food, and snacks',
-  'Important personal papers',
-  'Spare eyeglasses/contact solution'
-]
+
 
 export const incidentList = [
   {
@@ -145,53 +139,116 @@ export const incidentList = [
     color: 'blue'
   }
 ]
+
+export const volunteerSupplyList = [
+  'T-shirts , Jeans, sweatshirt (layers) ',
+  'Appropriate ID',
+  'Outerwear for expected conditions',
+  'Footwear, closed toed – as required',
+  'Personal hygiene items',
+  'Medication – photocopy of prescriptions',
+  'First aid kit (personal)',
+  'Electronic devices and charger',
+  'Multi tool (Leatherman)',
+  'Sunscreen, hat, hydration device',
+  'Earplugs, sleeping mask',
+  'Sleeping bag, air mattress',
+  'Sleepwear'
+]
+
+export const animalIntakeSupplyList = [
+  'Binder One -  Animal intake forms',
+  'Binder Two - dividers and page protectors',
+  'Binder Three - Volunteer sign-in sheet and signage',
+  'Shelter managers log book',
+  'Daily animal care form',
+  'Action request form',
+  'Release of responsibility form',
+  'Request to foster animal form',
+  'Clipboards, file folder with extra forms',
+  'Stationary Supplies, White-bard and marker',
+  'Communication radios',
+  'Camera and photo printer, paper',
+  'Tyvek wrist bands for ID'
+]
+
+export const shelterSupplyList = [
+  'Crates, XL, L, M',
+  'First Aid Kit, boxes of gloves',
+  'Can opener, bowls 2 per',
+  'Spray bottles for 10% Bleach solution',
+  'Dish Soap, Small squeegees, Paper towels',
+  'Large garbage bags, Garbage cans with lids',
+  'Sheets & towels, bedding',
+  'Tool kit, long cable ties',
+  'Slip leads, collars, leashes Muzzles',
+  'Watering cans, poop bags',
+  'Mop, buckets. Undiluted bleach',
+  'Long-gauntlet bite gloves',
+  'Duct tape, Caution tape Flashlights/headlamps',
+  'Sharpie pens, Scissors',
+  'Live capture traps - handled nets'
+]
+
+export const barnSupplyList = [
+  'Halters, lead ropes',
+  'Hoof picks, brush, combs',
+  'Shovels & Forks',
+  'Grass hay only',
+  'Water buckets',
+  'Radios',
+  'Wheelbarrow',
+  'Work gloves',
+  'Equine forms',
+  'Bedding'
+]
+
+export const communitySupplyResources = [
+  'High visibility vests',
+  'Kneww pads, safety glasses, gloves',
+  'Kleenex, hand sanitizer',
+  'Surgical masks for mortality recovery',
+  'Vicks/ other scent to mask odours',
+  'Litter pans and litter non clumping',
+  'Extra leashes and collars',
+  'Flashlights & extra batteries',
+  'Self-closing bags - various sizes',
+  'Extra stationary supplies',
+  'Paper towels',
+  'N95 respirator masks',
+  'Other animal rescue groups contact information',
+  'Veterinary clinics contact information',
+  'Locate pet supply stores nearby'
+]
 export const checkLists = [
   {
     title: `Volunteer Packing Checklist`,
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
-    subsection: volunteerPackList,
-    subsectionText: `As a volunteer, being prepared is crucial to any situation. Be sure to keep a personal bag handy in case of an emergency.`,
+    subsection: volunteerSupplyList,
+    subsectionText: `Volunteer Packing Checklist`,
     targetRoute: 'checklistsPage'
   },
   {
-    title: `Prepare to Volunteer`,
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
-    subsection: volunteerPackList,
-    subsectionText: `Don't be a teapot be a Volunteer. Would you like to know more`,
+    title: `Animal Intake Supply List (First Aid Kit)`,
+    subsection: animalIntakeSupplyList,
+    subsectionText: `Animal Intake Supply List (First Aid Kit)`,
     targetRoute: 'checklistsPage'
   },
   {
-    title: `Kennel & Shelter Supply`,
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
-    subsection: volunteerPackList,
-    subsectionText: `DA KENNEL FOR DA DOGS AND CATS.`,
+    title: `Shelter Supply List, Human First Aid Kit`,
+    subsection: shelterSupplyList,
+    subsectionText: `Shelter Supply List (Including human first aid kits)`,
     targetRoute: 'checklistsPage'
   },
   {
-    title: `Pet First Aid Kit`,
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
-    subsection: volunteerPackList,
-    subsectionText: `MEDICUUUUUUUUUUU, AMBULAAAANCUUUUUUUU`,
+    title: `Barn Supply List`,
+    subsection: barnSupplyList,
+    subsectionText: `Barn Supply List`,
     targetRoute: 'checklistsPage'
   },
   {
-    title: `Pet Care Center Supplies`,
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
-    subsection: volunteerPackList,
-    subsectionText: `Peruse our wares for your lovely pets who are lost`,
-    targetRoute: 'checklistsPage'
-  },
-  {
-    title: `Emotional Preparedness`,
-    icon: 'https://cdn0.iconfinder.com/data/icons/animal-traces/128/cat_one_paw-512.png',
-    image: 'https://s-media-cache-ak0.pinimg.com/236x/83/03/cd/8303cd03e5c41a733b9239b7f57d1822.jpg',
-    subsection: volunteerPackList,
-    subsectionText: `Prepare yourself, for emotional trauma and disaster`,
+    title: `Community Supply Resources`,
+    subsection: communitySupplyResources,
+    subsectionText: `Community Supply Resources`,
     targetRoute: 'checklistsPage'
   },
 ]
