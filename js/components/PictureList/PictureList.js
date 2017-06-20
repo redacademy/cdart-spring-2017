@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-<<<<<<< .merge_file_Krxdt1
+
 import PropTypes from 'prop-types';
-import { View, Image, ListView, Dimensions, ScrollView } from 'react-native';
-=======
 
 import { View, Text, Image, ListView, Dimensions } from 'react-native';
->>>>>>> .merge_file_EjRNXF
+
 import { styles } from './styles';
 
 import PictureListItem from '../PictureListItem';
