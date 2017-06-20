@@ -24,19 +24,11 @@ class ToggleButton extends Component {
 
   render() {
     return (
-      this.state.selected ?
         <TouchableHighlight
           onPress={this.onPress}
-          style={styles.selectedButton}
+          style={this.state.selected ? styles.selectedButton : styles.button}
         >
-          <Text style={styles.selectedButtonText}>Friendly</Text>
-        </TouchableHighlight>
-      :
-        <TouchableHighlight
-          onPress={this.onPress}
-          style={styles.button}
-        >
-          <Text style={styles.buttonText}>Friendly</Text>
+          <Text style={this.state.selected ? styles.selectedButtonText : styles.buttonText}>Friendly</Text>
         </TouchableHighlight>
     );
   }

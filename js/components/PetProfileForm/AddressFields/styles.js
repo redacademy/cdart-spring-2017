@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
   },
   textInputShort: {
     width: 65,
-    marginRight: 10
+    marginTop: 5
   },
   textInputMedium: {
     width: 200,
