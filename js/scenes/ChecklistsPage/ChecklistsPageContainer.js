@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
-import { Text } from 'react-native'
-import { checkLists } from '../../assets/data'
 
-import PictureList from '../../components/PictureList';
 import CheckListTemplate from '../../components/CheckListTemplate/';
 
 class ChecklistsPageContainer extends Component {
   render() {
     return (
-      <CheckListTemplate infoData={this.props.data}/>
+      <CheckListTemplate data={this.props.data}/>
     );
   }
 }
 
 ChecklistsPageContainer.propTypes = {
-  list: PropTypes.array
+  data: PropTypes.object
 }
 
 export default ChecklistsPageContainer;

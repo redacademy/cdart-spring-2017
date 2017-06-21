@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 var { height, width } = Dimensions.get('window');
-import { typography } from '../../config/styles';
+import { typography, colors } from '../../config/styles';
 
 export const styles = StyleSheet.create({
   tab: {
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     height: height*.175,
     borderTopLeftRadius: 9,
     borderTopRightRadius: 9,
-    marginBottom: height* (16 / 568)
+    marginBottom: height* (20 / 568)
   },
   image: {
     height: height*(65 / 568),
@@ -37,6 +37,7 @@ export const styles = StyleSheet.create({
   },
   tabText: {
     marginTop: height* (4 / 568),
+    color: colors.blue,
     // fontFamily: typography.fontMain
   },
   linearGradient: {

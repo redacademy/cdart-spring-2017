@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 15,
     margin: 5,
-    backgroundColor: colors.green
+    backgroundColor: colors.green,
   },
   selectedButtonText: {
     color: colors.white,

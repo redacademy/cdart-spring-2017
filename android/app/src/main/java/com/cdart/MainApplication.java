@@ -3,7 +3,7 @@ package com.cdart;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.keyee.pdfview.PDFView;
+import ga.piroro.rnt.RNTPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactNativeHost;
@@ -26,7 +26,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new PDFView(),
+            new RNTPackage(),
             new VectorIconsPackage(),
             new LinearGradientPackage()
       );

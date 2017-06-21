@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ListView, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
-import { ListView } from 'react-native';
-
-import ListItem from '../../components/ListItem/ListItem';
 
 import { styles } from './styles';
+
+import ListItem from '../../components/ListItem/ListItem';
 
 class CheckListTemplate extends Component {
 
@@ -13,15 +12,15 @@ class CheckListTemplate extends Component {
     super(props);
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      dataSource: ds.cloneWithRows(this.props.infoData.subsection),
+      dataSource: ds.cloneWithRows(this.props.data.subsection),
     };
   }
   render(){
     return (
-      <View>
+      <ScrollView>
         <View style={styles.greyTop} >
           <Text style={styles.greyTopText} >
-            {this.props.infoData.subsectionText}
+            {this.props.data.subsectionText}
           </Text>
         </View>
         <ListView
@@ -31,11 +30,12 @@ class CheckListTemplate extends Component {
           }}
           renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
         />
-      </View>
+      </ScrollView>
     )
   }
 }
 CheckListTemplate.propTypes = {
-  dataSource: PropTypes.object
+  dataSource: PropTypes.object,
+  data: PropTypes.object,
 }
 export default CheckListTemplate;

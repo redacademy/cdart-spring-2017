@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
-
+import {colors} from '../../config/styles';
 var { height, width } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
@@ -20,4 +20,8 @@ export const styles = StyleSheet.create({
     height: StyleSheet.hairlineWidth,
     backgroundColor: '#8E8E8E',
   },
+  blank: {
+      backgroundColor: colors.dimBlue,
+      padding: 14,
+  }
 });

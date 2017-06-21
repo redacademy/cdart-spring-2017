@@ -3,9 +3,9 @@ import { Text, ListView, View } from 'react-native';
 
 import { styles } from './styles';
 
-let count = 0;
 
 const Reception = ({ dataSource }) => {
+  let count = 0;
   return (
     <ListView
       dataSource={dataSource}
