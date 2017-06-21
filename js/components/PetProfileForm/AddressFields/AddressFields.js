@@ -29,7 +29,7 @@ const AddressFields = () => {
           <Text style={styles.subheading}>City</Text>
         </View>
         <View>
-          <Field name='City' component={renderText} />
+          <Field name='Province' component={renderText} />
           <Text style={styles.subheading}>Province</Text>
         </View>
 
