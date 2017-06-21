@@ -5,8 +5,10 @@ import {
   Text,
   Image,
   ImagePickerIOS,
+  TouchableHighlight
 } from 'react-native';
 
+import { colors } from '../../config/styles';
 import { styles } from './styles';
 
 class ImagePicker extends Component {
@@ -18,10 +20,6 @@ class ImagePicker extends Component {
     };
   }
 
-  componentDidMount() {
-    this.pickImage();
-  }
-
   pickImage() {
     // openSelectDialog(config, successCallback, errorCallback);
     ImagePickerIOS.openSelectDialog({}, imageUri => {
@@ -31,12 +29,18 @@ class ImagePicker extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
-        {this.state.image?
-          <Image style={{ flex: 1, alignSelf: 'center', width: 210, height: 140, marginTop: 5, marginBottom: 15, borderRadius: 15 }} source={{ uri: this.state.image }} /> :
-          null
-        }
-      </View>
+      <TouchableHighlight
+        underlayColor={colors.grey}
+        onPress={() => this.pickImage()}
+        style={styles.container}
+      >
+        <Image
+          style={styles.image}
+          source={
+            this.state.image ? { uri: this.state.image }
+            : require('../../assets/icons/paw_icon.png')}
+        />
+      </TouchableHighlight>
     );
   }
 }
