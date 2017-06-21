@@ -15,12 +15,16 @@ TouchableWithoutFeedback,
 
 class FormContainer extends Component {
 
-  constructor(props) {
-    super(props)
+  static route = {
+    navigationBar: {
+      title(params) {
+        return params.data.title
+      }
+    }
   }
 
-  componentDidMount() {
-    console.log(this.props.data.filePath);
+  constructor(props) {
+    super(props);
   }
 
   render() {
@@ -31,16 +35,20 @@ class FormContainer extends Component {
           imagePath={ this.props.data.filePath }
           style={styles.pdf}
         />
-        <TouchableWithoutFeedback
-          title="i"
-          onPress={() => goToSubpage('intakeFormInstruction', 'home')}
-          style={ styles.iconContainer }
-        >
-          <Image
-            source={require('../../assets/icons/info_Icon@2x.png') }
-            style={styles.infoIcon}
-          />
-        </TouchableWithoutFeedback>
+        {
+          this.props.data.title === 'Animal Intake Form' &&
+
+            <TouchableWithoutFeedback
+              title="i"
+              onPress={() => goToSubpage('intakeFormInstruction', 'home')}
+              style={ styles.iconContainer }
+            >
+              <Image
+                source={require('../../assets/icons/info_Icon@2x.png') }
+                style={styles.infoIcon}
+              />
+            </TouchableWithoutFeedback>
+        }
       </View>
     );
   }

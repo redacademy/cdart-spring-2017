@@ -15,11 +15,11 @@ class PDFViewer extends Component {
     super( props );
 
     this.state = {
-      imagePath: ''
+      imagePath: 'tings'
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     switch(this.props.title) {
       case 'Animal Intake Form': {
         let imagePath = require('../../assets/images/animalIntake.pdf');
@@ -27,6 +27,146 @@ class PDFViewer extends Component {
         this.setState({
           imagePath: imagePath
         });
+
+        break;
+      }
+      case 'Action Request Form': {
+        let imagePath = require('../../assets/images/actionRequest.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Daily Animal Care Log': {
+        let imagePath = require('../../assets/images/animalCare.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Volunteer Sign-In Form': {
+        let imagePath = require('../../assets/images/volunteerSignIn.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Foster Locations Form': {
+        let imagePath = require('../../assets/images/fosterLocations.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Offer to Help Form': {
+        let imagePath = require('../../assets/images/offerHelp.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Position Log Form': {
+        let imagePath = require('../../assets/images/positionLog.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Publication Consent Form': {
+        let imagePath = require('../../assets/images/publicationConsent.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Release of Responsibility Form': {
+        let imagePath = require('../../assets/images/releaseResponsibility.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Foster Request Form': {
+        let imagePath = require('../../assets/images/fosterRequest.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Situation Report Form': {
+        let imagePath = require('../../assets/images/situationReport.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Supplies Borrowed by CDART': {
+        let imagePath = require('../../assets/images/suppliesBorrowed.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Supplies Lent by CDART': {
+        let imagePath = require('../../assets/images/suppliesLent.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Supplies Lent by Volunteers': {
+        let imagePath = require('../../assets/images/volunteerSuppliesLent.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Volunteer Phone Contact List': {
+        let imagePath = require('../../assets/images/volunteerPhone.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      case 'Volunteer Hauler Form': {
+        let imagePath = require('../../assets/images/volunteerHauler.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+
+        break;
+      }
+      default: {
+        return false;
       }
     }
   }

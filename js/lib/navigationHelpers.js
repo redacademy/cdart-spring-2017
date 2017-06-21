@@ -34,7 +34,6 @@ export const goToInfoPage = (currentNavigatorUID, infoData) => {
 }
 
 export const goToSubpage = (targetRoute, currentNavigatorUID, data) => {
-  console.log(data);
   Store.dispatch( NavigationActions.push(
     currentNavigatorUID,
     Router.getRoute(targetRoute, { data })

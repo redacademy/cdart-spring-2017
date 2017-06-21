@@ -10,6 +10,12 @@ const currentNavigatorUID = 'home'
 
 class FormsContainer extends Component {
 
+  static route = {
+    navigationBar: {
+      title: 'Forms'
+    }
+  }
+
   render() {
     return(
       <PictureList
