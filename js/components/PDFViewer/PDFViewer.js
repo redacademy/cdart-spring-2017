@@ -15,7 +15,7 @@ class PDFViewer extends Component {
     super( props );
 
     this.state = {
-      imagePath: 'tings'
+      imagePath: ''
     }
   }
 

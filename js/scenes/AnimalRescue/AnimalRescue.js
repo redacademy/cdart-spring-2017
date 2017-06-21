@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
+import { WebView } from 'react-native';
 
 import { styles } from './styles'
 
-const flowImage = require('../../assets/images/animal_flow.png')
+const flowImage = require('../../assets/images/animalFlow.png')
 
 class AnimalRescue extends Component {
 
@@ -17,7 +17,7 @@ class AnimalRescue extends Component {
 
   render() {
     return (
-      <Image source={flowImage} style={styles.animalFlow} />
+      <WebView source={flowImage} style={styles.animalFlow} />
     )
   }
 }
