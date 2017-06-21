@@ -17,8 +17,7 @@ const PhoneNumberField = (props) => {
           <TextInput
             style={styles.textInput}
             editable={true}
-            onChangeText={props.onChange}
-            value={props.value}
+            onChangeText={props.input.onChange}
           />
           <Text style={styles.subheading}>Area Code</Text>
         </View>
@@ -26,8 +25,7 @@ const PhoneNumberField = (props) => {
         <TextInput
           style={styles.textInput}
           editable={true}
-          onChangeText={props.onChange}
-          value={props.value}
+          onChangeText={props.input.onChange}
         />
         <Icon
           name={'ios-remove'}
@@ -37,8 +35,7 @@ const PhoneNumberField = (props) => {
         <TextInput
           style={styles.textInput}
           editable={true}
-          onChangeText={props.onChange}
-          value={props.value}
+          onChangeText={props.input.onChange}
         />
       </View>
     </View>

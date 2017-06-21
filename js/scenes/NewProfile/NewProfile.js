@@ -28,11 +28,11 @@ const NewProfile = (props) => {
 
       <Text style={styles.heading}>Temperament</Text>
       <View style={styles.toggleButtonsWrapper}>
-        <Field name="friendly" component={ToggleButton} type='radio' />
-        <Field name="energetic" component={ToggleButton} type='radio' />
-        <Field name="timid" component={ToggleButton} type='radio' />
-        <Field name="aggressive" component={ToggleButton} type='radio' />
-        <Field name="obedient" component={ToggleButton} type='radio' />
+        <ToggleButton temper='Friendly' />
+        <ToggleButton temper='Energetic' />
+        <ToggleButton temper='Timid' />
+        <ToggleButton temper='Aggresive' />
+        <ToggleButton temper='Obedient' />
       </View>
       <TextInput
         style={styles.multilineInput}

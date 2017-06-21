@@ -5,6 +5,10 @@ import {
   TouchableHighlight,
   LayoutAnimation
 } from 'react-native';
+import { connect } from 'react-redux'
+import { getFormValues } from 'redux-form';
+
+import { addButtonInfo } from '../../../redux/modules/otherInputs'
 
 import { styles } from './styles';
 
@@ -20,30 +24,38 @@ class ToggleButton extends Component {
   onPress = () => {
     LayoutAnimation.easeInEaseOut();
     this.setState({selected: !this.state.selected});
+    // if(this.state.selected){
+    //   this.props.dispatch(addButtonInfo(this.props.temper))
+    // }
+    this.props.dispatch(addButtonInfo(this.props.temper))
+    console.log(this.props.form)
   };
 
   render() {
-    console.log(this.props)
     return (
       this.state.selected ?
         <TouchableHighlight
           onPress={this.onPress}
           style={styles.selectedButton}
-          onChange={val => this.props.onChange(val)}
-          value={this.props.value}
         >
-          <Text style={styles.selectedButtonText}>Friendly</Text>
+          <Text style={styles.selectedButtonText}>{this.props.temper}</Text>
         </TouchableHighlight>
       :
         <TouchableHighlight
           onPress={this.onPress}
           style={styles.button}
-          onChange={val => this.props.onChange(val)}
         >
-          <Text style={styles.buttonText}>Friendly</Text>
+          <Text style={styles.buttonText}>{this.props.temper}</Text>
         </TouchableHighlight>
     );
   }
 }
 
-export default ToggleButton;
+function mapStateToProps(state){
+  return {
+    data: state.petProfile,
+    form: getFormValues('NewProfileForm')(state)
+  }
+}
+
+export default connect(mapStateToProps)(ToggleButton);

@@ -1,15 +1,15 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import petReducer from './modules/otherInputs';
+import { reducer as petReducer } from './modules/otherInputs';
+import { getFormValues } from 'redux-form';
 
 import { NavigationReducer } from '@expo/ex-navigation';
 
 export default combineReducers({
   navigation: NavigationReducer,
-  petProfile
+  petProfile: combineReducers({
+    form: formReducer,
+    otherInputs:  petReducer,
+  }),
+  form: formReducer,
 });
-
-const petProfile = combineReducers({
-  reduxForm: formReducer,
-  otherInputs:  petReducer
-})

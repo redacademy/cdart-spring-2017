@@ -13,7 +13,6 @@ class NewProfileContainer extends Component {
   }
 
   handleSubmit(){
-    console.log(this.props.formValues)
   }
 
   render() {

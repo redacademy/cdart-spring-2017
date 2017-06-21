@@ -11,7 +11,6 @@ import AddressFields from '../AddressFields';
 import { styles } from './styles';
 
 const ContactForm = (props) => {
-  console.log(props)
   return(
     <View>
       <Text style={styles.heading}>Full Name</Text>
