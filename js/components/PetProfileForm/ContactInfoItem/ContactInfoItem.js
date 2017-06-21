@@ -27,6 +27,7 @@ class ContactInfoItem extends Component {
   };
 
   render() {
+    console.log(this.props)
     return (
       <View style={styles.container}>
         <TouchableHighlight
@@ -42,7 +43,7 @@ class ContactInfoItem extends Component {
         </TouchableHighlight>
 
         { this.state.expanded &&
-          <ContactForm />
+          <ContactForm {...this.props} />
         }
       </View>
     );

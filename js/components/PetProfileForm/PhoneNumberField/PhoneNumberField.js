@@ -8,7 +8,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import { styles } from './styles';
 
-const PhoneNumberField = () => {
+const PhoneNumberField = (props) => {
   return (
     <View>
       <Text style={styles.heading}>Phone Number</Text>
@@ -17,6 +17,8 @@ const PhoneNumberField = () => {
           <TextInput
             style={styles.textInput}
             editable={true}
+            onChangeText={props.onChange}
+            value={props.value}
           />
           <Text style={styles.subheading}>Area Code</Text>
         </View>
@@ -24,6 +26,8 @@ const PhoneNumberField = () => {
         <TextInput
           style={styles.textInput}
           editable={true}
+          onChangeText={props.onChange}
+          value={props.value}
         />
         <Icon
           name={'ios-remove'}
@@ -33,6 +37,8 @@ const PhoneNumberField = () => {
         <TextInput
           style={styles.textInput}
           editable={true}
+          onChangeText={props.onChange}
+          value={props.value}
         />
       </View>
     </View>

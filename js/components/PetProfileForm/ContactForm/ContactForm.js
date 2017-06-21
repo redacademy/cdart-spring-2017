@@ -10,21 +10,24 @@ import AddressFields from '../AddressFields';
 
 import { styles } from './styles';
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+  console.log(props)
   return(
     <View>
       <Text style={styles.heading}>Full Name</Text>
       <TextInput
         style={styles.textInput}
         editable={true}
+        onChangeText={props.input.onChange}
       />
 
-      <PhoneNumberField />
+      <PhoneNumberField {...props} />
 
       <Text style={styles.heading}>Email Address</Text>
       <TextInput
         style={styles.textInput}
         editable={true}
+        onChangeText={props.input.onChange}
       />
 
       <AddressFields />
