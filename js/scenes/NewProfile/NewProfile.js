@@ -23,7 +23,6 @@ const NewProfile = (props) => {
 
       <View style={styles.inlineButtonsWrapper}>
         <Field name="gender" component={SwitchButton} />
-        <Field name="test" component={ToggleButton} />
         <ToggleButton info='Spayed' />
       </View>
 
