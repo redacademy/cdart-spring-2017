@@ -17,12 +17,22 @@ export const petEmergencyKit = [
 ]
 // Forms
 export const homeForms = [
-  { title: 'Animal Intake Form', targetRoute: 'singleForm'},
+  {title: 'Animal Intake Form', targetRoute: 'singleForm'},
   { title: 'Action Request Form', targetRoute: 'singleForm'},
   { title: 'Daily Animal Care Log', targetRoute: 'singleForm'},
   { title: 'Volunteer Sign-In Form', targetRoute: 'singleForm'},
-  { title: 'Transportation Records', targetRoute: 'singleForm'},
-  { title: 'Basic Animal Care', targetRoute: 'singleForm'}
+  { title: 'Foster Locations Form', targetRoute: 'singleForm'},
+  { title: 'Offer to Help Form', targetRoute: 'singleForm' },
+  { title: 'Position Log Form', targetRoute: 'singleForm' },
+  { title: 'Publication Consent Form', targetRoute: 'singleForm'},
+  { title: 'Release of Responsibility Form', targetRoute: 'singleForm'},
+  { title: 'Foster Request Form', targetRoute: 'singleForm' },
+  { title: 'Situation Report Form', targetRoute: 'singleForm' },
+  { title: 'Supplies Borrowed by CDART', targetRoute: 'singleForm' },
+  { title: 'Supplies Lent by CDART', targetRoute: 'singleForm' },
+  { title: 'Supplies Lent by Volunteers', targetRoute: 'singleForm' },
+  { title: 'Volunteer Phone Contact List', targetRoute: 'singleForm' },
+  { title: 'Volunteer Hauler Form', targetRoute: 'singleForm' },
 ]
 // Procedures
 export const procedureList = [
