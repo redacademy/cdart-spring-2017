@@ -19,20 +19,21 @@ const NewProfile = (props) => {
 
       <Text>Add Photo</Text>
 
-      <Field name="name" component={InlineInput} />
+      <Field name="DogName" component={InlineInput} />
 
       <View style={styles.inlineButtonsWrapper}>
         <Field name="gender" component={SwitchButton} />
         <Field name="test" component={ToggleButton} />
+        <ToggleButton info='Spayed' />
       </View>
 
       <Text style={styles.heading}>Temperament</Text>
       <View style={styles.toggleButtonsWrapper}>
-        <ToggleButton temper='Friendly' />
-        <ToggleButton temper='Energetic' />
-        <ToggleButton temper='Timid' />
-        <ToggleButton temper='Aggresive' />
-        <ToggleButton temper='Obedient' />
+        <ToggleButton info='Energetic' />
+        <ToggleButton info='Friendly' />
+        <ToggleButton info='Timid' />
+        <ToggleButton info='Aggresive' />
+        <ToggleButton info='Obedient' />
       </View>
       <TextInput
         style={styles.multilineInput}
@@ -46,26 +47,20 @@ const NewProfile = (props) => {
       <Field name="distinguishing" component={MultilineTextarea} />
       <Field name="care" component={MultilineTextarea} />
       <Field name="medical" component={MultilineTextarea} />
-
-<<<<<<< HEAD
       <FieldArray name="microchip" component={ContactInfoItem} />
       <FieldArray name="ownerContact" component={ContactInfoItem} />
       <FieldArray name="vetContact" component={ContactInfoItem} />
-=======
       <Field name="microchip" component={ContactInfoItem} />
       <Field name="ownerContact" component={ContactInfoItem} />
       <Field name="vetContact" component={ContactInfoItem} />
->>>>>>> Got redux-form working on all componenets except toggleButton.
+      <FieldArray name="microchip" component={ContactInfoItem} />
+      <FieldArray name="ownerContact" component={ContactInfoItem} />
+      <FieldArray name="vetContact" component={ContactInfoItem} />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       <SaveButton handleSubmit={props.handleSubmit} />
-=======
       <SaveButton handleSubmit={handleSubmit} />
->>>>>>> Save button is console logging.
-=======
       <SaveButton handleSubmit={props.handleSubmit} />
->>>>>>> Got form data stored in the store.
+
     </ScrollView>
   );
 }
