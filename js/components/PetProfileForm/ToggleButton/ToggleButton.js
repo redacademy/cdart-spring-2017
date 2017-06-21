@@ -27,24 +27,26 @@ class ToggleButton extends Component {
     // if(this.state.selected){
     //   this.props.dispatch(addButtonInfo(this.props.temper))
     // }
-    this.props.dispatch(addButtonInfo(this.props.temper))
+    this.props.dispatch(addButtonInfo(this.props.info))
     console.log(this.props.form)
+    console.log(this.props.data)
   };
 
   render() {
     return (
+      this.state.selected ?
         <TouchableHighlight
           onPress={this.onPress}
           style={this.state.selected ? styles.selectedButton : styles.button}
         >
-          <Text style={styles.selectedButtonText}>{this.props.temper}</Text>
+          <Text style={styles.selectedButtonText}>{this.props.info}</Text>
         </TouchableHighlight>
       :
         <TouchableHighlight
           onPress={this.onPress}
           style={styles.button}
         >
-          <Text style={styles.buttonText}>{this.props.temper}</Text>
+          <Text style={styles.buttonText}>{this.props.info}</Text>
         </TouchableHighlight>
     );
   }

@@ -4,41 +4,38 @@ import {
   Text,
   TextInput,
 } from 'react-native';
+import { Field } from 'redux-form';
 
 import { styles } from './styles';
+
+const renderText = (props) => {
+  return <TextInput
+          style={styles.textInput}
+          editable={true}
+          onChangeText={props.input.onChange}
+        />
+}
 
 const AddressFields = () => {
   return(
     <View style={styles.container}>
       <Text style={styles.heading}>Address</Text>
-      <TextInput
-        style={styles.textInput}
-        editable={true}
-      />
+      <Field name='Address' component={renderText} />
       <Text style={styles.subheading}>Street Name and Number</Text>
 
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         <View>
-          <TextInput
-            style={[styles.textInputMedium, styles.textInput]}
-            editable={true}
-          />
+          <Field name='City' component={renderText} />
           <Text style={styles.subheading}>City</Text>
         </View>
         <View>
-          <TextInput
-            style={[styles.textInputShort, styles.textInput]}
-            editable={true}
-          />
+          <Field name='City' component={renderText} />
           <Text style={styles.subheading}>Province</Text>
         </View>
 
       </View>
 
-      <TextInput
-        style={[styles.textInputMedium, styles.textInput]}
-        editable={true}
-      />
+      <Field name='PostalCode' component={renderText} />
       <Text style={styles.subheading}>Postal Code</Text>
     </View>
   );
