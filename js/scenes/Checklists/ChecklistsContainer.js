@@ -7,6 +7,12 @@ import PictureList from '../../components/PictureList';
 
 class ChecklistsContainer extends Component {
 
+  static route = {
+    navigationBar: {
+      title: 'Checklists'
+    }
+  }
+
   render() {
     return (
       <PictureList title='checklists' currentNavigatorUID='home' list={ checkLists }/>
