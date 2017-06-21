@@ -27,7 +27,6 @@ class ReceptionContainer extends Component {
   }
 
   render(){
-    console.log(this.props)
     return (
       <Reception dataSource={this.state.dataSource} />
     );
