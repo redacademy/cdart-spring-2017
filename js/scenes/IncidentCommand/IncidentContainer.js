@@ -7,6 +7,14 @@ import { styles } from './styles';
 
 class IncidentContainer extends Component {
 
+  static route = {
+    navigationBar: {
+      title(params) {
+        return params.data.title;
+      }
+    }
+  }
+
   constructor(){
     super();
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});

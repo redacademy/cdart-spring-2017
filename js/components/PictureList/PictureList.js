@@ -25,6 +25,7 @@ const whichPicture = (title) => {
 
 
 class PictureList extends Component {
+
   constructor(props){
     super(props);
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
@@ -32,6 +33,7 @@ class PictureList extends Component {
       dataSource: ds.cloneWithRows(this.props.list),
     }
   }
+
   render() {
     return (
       <ScrollView>

@@ -8,6 +8,12 @@ import PictureList from '../../components/PictureList';
 const currentNavigatorUID = 'home';
 class ProceduresContainer extends Component {
 
+  static route = {
+    navigationBar: {
+      title: 'Procedures'
+    }
+  }
+
   render() {
     return(
       <PictureList title='procedures' currentNavigatorUID={ currentNavigatorUID } list={ procedureList } />

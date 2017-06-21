@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ListView } from 'react-native';
 
 import { receptionShelterSetup, dailyVolunteerDuties, basicAnimalCare, animalConditionInspection } from '../../assets/data';
-import Reception from './Reception';
+import ProcedureList from './ProcedureList';
 
 const whichInfo = (title) => {
   switch(title){
@@ -18,6 +18,14 @@ const whichInfo = (title) => {
 }
 class ReceptionContainer extends Component {
 
+  static route = {
+    navigationBar: {
+      title(params) {
+        return params.data.title
+      }
+    }
+  }
+
   constructor(props) {
     super(props);
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
@@ -28,7 +36,7 @@ class ReceptionContainer extends Component {
 
   render(){
     return (
-      <Reception dataSource={this.state.dataSource} />
+      <ProcedureList dataSource={this.state.dataSource} />
     );
   }
 }
