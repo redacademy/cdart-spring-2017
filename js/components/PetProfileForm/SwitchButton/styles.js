@@ -12,9 +12,16 @@ export const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 15
   },
+  clicked: {
+    paddingVertical: 5,
+    paddingHorizontal: 15,
+    backgroundColor: colors.green,
+  },
   buttonText: {
-    color: colors.black,
     fontSize: 14,
     alignSelf: 'center'
+  },
+  clickedText: {
+    color: 'white',
   }
 });
