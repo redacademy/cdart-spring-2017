@@ -13,6 +13,22 @@ import { View, WebView, Text } from 'react-native';
 class PDFViewer extends Component {
   constructor( props ) {
     super( props );
+
+    this.state = {
+      imagePath: ''
+    }
+  }
+
+  componentDidMount() {
+    switch(this.props.title) {
+      case 'Animal Intake Form': {
+        let imagePath = require('../../assets/images/animalIntake.pdf');
+
+        this.setState({
+          imagePath: imagePath
+        });
+      }
+    }
   }
 
   render() {
@@ -22,7 +38,7 @@ class PDFViewer extends Component {
      style={styles.pdfViewer}
     >
       <WebView
-        source={this.props.imagePath}
+        source={ this.state.imagePath }
         style={styles.pdfViewer}
       />
       <View
@@ -41,7 +57,8 @@ class PDFViewer extends Component {
 }
 
 PDFViewer.propTypes = {
-  imagePath: PropTypes.number
+  title: PropTypes.string,
+  imagePath: PropTypes.string
 }
 
 export default PDFViewer;

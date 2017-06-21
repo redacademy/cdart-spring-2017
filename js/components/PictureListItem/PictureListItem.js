@@ -10,7 +10,7 @@ import {styles} from './styles';
 const PictureListItem = ({ rowData, currentNavigatorUID }) => {
   return (
     <TouchableHighlight
-      onPress={() => goToSubpage( rowData.targetRoute, currentNavigatorUID, rowData)}
+      onPress={() => goToSubpage( rowData.targetRoute, currentNavigatorUID, rowData )}
       underlayColor="#999999"
       style={styles.container}
     >

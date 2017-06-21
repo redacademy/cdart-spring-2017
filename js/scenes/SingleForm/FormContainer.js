@@ -13,15 +13,22 @@ Image,
 TouchableWithoutFeedback,
 } from 'react-native';
 
-const pathToImage = require('../../assets/images/samplePDF2.pdf');
-
 class FormContainer extends Component {
+
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    console.log(this.props.data.filePath);
+  }
 
   render() {
     return (
       <View>
         <PDFViewer
-          imagePath={ pathToImage }
+          title={ this.props.data.title }
+          imagePath={ this.props.data.filePath }
           style={styles.pdf}
         />
         <TouchableWithoutFeedback
@@ -37,6 +44,10 @@ class FormContainer extends Component {
       </View>
     );
   }
+}
+
+FormContainer.propTypes = {
+  data: PropTypes.object
 }
 
 export default FormContainer;
