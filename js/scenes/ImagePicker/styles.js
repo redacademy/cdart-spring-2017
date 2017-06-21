@@ -4,17 +4,17 @@ import { colors, typography } from '../../config/styles';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5FCFF',
-  },
-  imageGrid: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center'
+    alignSelf: 'center',
+    marginTop: 5,
+    marginBottom: 15,
+    borderWidth: 1,
+    borderColor: colors.skyBlue,
+    borderRadius: 15,
+    overflow: 'hidden'
   },
   image: {
-    width: 100,
-    height: 100,
-    margin: 10,
-  },
+    flex: 1,
+    width: 210,
+    height: 140
+  }
 });

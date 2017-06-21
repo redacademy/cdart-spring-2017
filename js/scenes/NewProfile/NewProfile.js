@@ -2,6 +2,7 @@ import React from 'react';
 
 import { ScrollView, View, Text, TextInput } from 'react-native';
 
+import ImagePicker from '../../scenes/ImagePicker/ImagePicker';
 import InlineInput from '../../components/PetProfileForm/InlineInput';
 import MultilineTextarea from '../../components/PetProfileForm/MultilineTextarea';
 import ToggleButton from '../../components/PetProfileForm/ToggleButton';
@@ -17,7 +18,7 @@ const NewProfile = () => {
   return (
     <ScrollView style={styles.container}>
 
-      <Text>Add Photo</Text>
+      <ImagePicker />
 
       <InlineInput />
       <InlineInput />
