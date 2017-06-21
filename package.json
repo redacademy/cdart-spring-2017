@@ -19,6 +19,7 @@
     "react-native-vector-icons": "^4.2.0",
     "react-redux": "^5.0.5",
     "readline2": "^1.0.1",
+    "realm": "^1.8.1",
     "redux": "^3.6.0",
     "redux-form": "^6.8.0",
     "redux-thunk": "^2.2.0",
