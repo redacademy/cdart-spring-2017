@@ -16,7 +16,6 @@ export default function MultilineTextarea(props) {
       <Text style={styles.heading}>{input.name}</Text>
       <TextInput
         onChangeText={input.onChange}
-        value={input.value}
         style={styles.multilineInput}
         editable={true}
         multiline={true}

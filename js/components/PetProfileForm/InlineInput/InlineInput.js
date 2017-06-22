@@ -17,7 +17,6 @@ export default function InlineInput(props) {
         onChangeText={input.onChange}
         onBlur={input.onBlur}
         onFocus={input.onFocus}
-        value={input.value}
         style={styles.textInput}
         />
     </View>
