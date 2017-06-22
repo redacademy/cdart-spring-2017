@@ -5,8 +5,7 @@ import ActivityView from 'react-native-activity-view';
 
 import PDFViewer from '../../components/PDFViewer';
 import ShareButton from '../../components/ShareButton';
-
-import { goToSubpage } from '../../lib/navigationHelpers';
+import FormInfoButton from '../../components/FormInfoButton';
 
 import { styles } from './styles';
 
@@ -53,17 +52,7 @@ class FormContainer extends Component {
         />
         {
           this.props.data.title === 'Animal Intake Form' &&
-
-            <TouchableWithoutFeedback
-              title="i"
-              onPress={() => goToSubpage('intakeFormInstruction', 'home')}
-              style={ styles.iconContainer }
-            >
-              <Image
-                source={require('../../assets/icons/info_Icon@2x.png') }
-                style={styles.infoIcon}
-              />
-            </TouchableWithoutFeedback>
+            <FormInfoButton />
         }
       </View>
     );
