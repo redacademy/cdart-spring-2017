@@ -31,6 +31,7 @@ const Router = createRouter(() => ({
   checklists: () => Checklists,
   checklistsPage: () => ChecklistsPage,
   forms: () => Forms,
+  singleForm: () => SingleForm,
   procedures: () => Procedures,
   singleIncident: () => SingleIncident,
   animalFlow: () => AnimalFlow,
