@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 
+import ActivityView from 'react-native-activity-view';
+
 import PDFViewer from '../../components/PDFViewer';
 import { goToSubpage } from '../../lib/navigationHelpers';
 
@@ -15,8 +17,13 @@ Image,
 TouchableWithoutFeedback,
 } from 'react-native';
 
-const printPdf = () => {
-  console.log('print pdf button pressed');
+const startAirDrop = (imageData) => {
+  console.log(imageData);
+
+  ActivityView.show({
+    text: `Check out the CDART ${ imageData.title }`,
+    image: '../../assets/images/actionRequest.pdf',
+  });
 }
 
 class FormContainer extends Component {
@@ -27,16 +34,18 @@ class FormContainer extends Component {
 
   static route = {
     navigationBar: {
-      title(params) {
+      title( params ) {
         return params.data.title
       },
-      renderRight: () => <Icon
-                            name={ 'md-more' }
-                            size={ 35 }
-                            color={ 'white' }
-                            style={ styles.printButton }
-                            onPress={ () => printPdf() }
-                          />
+      renderRight( params ) {
+        return <Icon
+          name={ 'md-more' }
+          size={ 35 }
+          color={ 'white' }
+          style={ styles.printButton }
+          onPress={ ( ) => startAirDrop( params.data ) }
+        />
+      }
     }
   }
 

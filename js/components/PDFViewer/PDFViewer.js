@@ -11,6 +11,7 @@ import { View, WebView, Text } from 'react-native';
 // won't work!
 
 class PDFViewer extends Component {
+
   constructor( props ) {
     super( props );
 
