@@ -3,7 +3,7 @@ import { Field, FieldArray, reduxForm } from 'redux-form'
 
 import { ScrollView, View, Text, TextInput } from 'react-native';
 
-import ImagePicker from '../../scenes/ImagePicker/ImagePicker';
+import ImageUploader from '../../components/PetProfileForm/ImageUploader';
 import InlineInput from '../../components/PetProfileForm/InlineInput';
 import MultilineTextarea from '../../components/PetProfileForm/MultilineTextarea';
 import ToggleButton from '../../components/PetProfileForm/ToggleButton';
@@ -18,7 +18,7 @@ const NewProfile = (props) => {
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
-      <ImagePicker />
+      <ImageUploader currentNavigatorUID="petProfile"/>
 
       <Field name="Name" component={InlineInput} />
       <Field name="Age" component={InlineInput} />
