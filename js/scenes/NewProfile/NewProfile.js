@@ -3,6 +3,7 @@ import { Field, FieldArray, reduxForm } from 'redux-form'
 
 import { ScrollView, View, Text, TextInput } from 'react-native';
 
+import ImagePicker from '../../scenes/ImagePicker/ImagePicker';
 import InlineInput from '../../components/PetProfileForm/InlineInput';
 import MultilineTextarea from '../../components/PetProfileForm/MultilineTextarea';
 import ToggleButton from '../../components/PetProfileForm/ToggleButton';
@@ -17,13 +18,16 @@ const NewProfile = (props) => {
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
-      <Text>Add Photo</Text>
+      <ImagePicker />
 
-      <Field name="DogName" component={InlineInput} />
+      <Field name="Name" component={InlineInput} />
+      <Field name="Age" component={InlineInput} />
+      <Field name="Species" component={InlineInput} />
+      <Field name="Breed" component={InlineInput} />
+      <Field name="Color" component={InlineInput} />
 
       <View style={styles.inlineButtonsWrapper}>
-        <Field name="gender" component={SwitchButton} />
-        <Field name="test" component={ToggleButton} />
+        <Field name="Gender" component={SwitchButton} />
         <ToggleButton info='Spayed' />
       </View>
 
@@ -35,22 +39,16 @@ const NewProfile = (props) => {
         <ToggleButton info='Aggresive' />
         <ToggleButton info='Obedient' />
       </View>
-      <TextInput
-        style={styles.multilineInput}
-        editable={true}
-        multiline={true}
-        numberOfLines={3}
-        placeholder={`Expand on your animal's temperament`}
-        placeholderTextColor={colors.grey}
-      />
 
-      <Field name="distinguishing" component={MultilineTextarea} />
-      <Field name="care" component={MultilineTextarea} />
-      <Field name="medical" component={MultilineTextarea} />
+      <Field name="Expand" component={MultilineTextarea} />
+      <Field name="Distinguishing Features" component={MultilineTextarea} />
+      <Field name="Care Instructions" component={MultilineTextarea} />
+      <Field name="Medical Alerts" component={MultilineTextarea} />
 
-      <FieldArray name="microchip" component={ContactInfoItem} />
-      <FieldArray name="ownerContact" component={ContactInfoItem} />
-      <FieldArray name="vetContact" component={ContactInfoItem} />
+      <FieldArray name="Microchip" component={ContactInfoItem} />
+      <FieldArray name="Owner Contact" component={ContactInfoItem} />
+      <FieldArray name="Veterinarian Contact" component={ContactInfoItem} />
+      <FieldArray name="Secondary Contact" component={ContactInfoItem} />
 
       <SaveButton handleSubmit={props.handleSubmit} />
     </ScrollView>

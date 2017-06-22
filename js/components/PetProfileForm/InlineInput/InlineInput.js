@@ -12,12 +12,11 @@ export default function InlineInput(props) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Name</Text>
+      <Text style={styles.heading}>{input.name}</Text>
       <TextInput
         onChangeText={input.onChange}
         onBlur={input.onBlur}
         onFocus={input.onFocus}
-        value={input.value}
         style={styles.textInput}
         />
     </View>
