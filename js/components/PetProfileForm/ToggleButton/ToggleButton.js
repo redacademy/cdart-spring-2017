@@ -27,9 +27,11 @@ class ToggleButton extends Component {
     // if(this.state.selected){
     //   this.props.dispatch(addButtonInfo(this.props.temper))
     // }
-    this.props.dispatch(addButtonInfo(this.props.info))
-    console.log(this.props.form)
-    console.log(this.props.data)
+    if(this.props.info === 'Spayed'){
+      this.props.dispatch(addButtonInfo(true))
+    } else {
+      this.props.dispatch(addButtonInfo(this.props.info))
+    }
   };
 
   render() {

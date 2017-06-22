@@ -9,10 +9,11 @@ export function reducer(state = [], action) {
     case ADD_BUTTON_INFO:
         return [...state, action.payload]
     case ADD_GENDER_INFO:
-        if(state.includes('male')){
-            state.filter(item => item === 'male')
-        } else if(state.includes('female')){
-            state.filter(item => item === 'female')
+        if(state.includes(action.payload)){
+          return state;
+        } else if(state.includes('male' || 'female')){
+          state.splice(state.indexOf('male'), 1)
+          return
         }
         return [...state, action.payload]
     default:
