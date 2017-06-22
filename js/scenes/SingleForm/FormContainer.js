@@ -4,9 +4,9 @@ import { PropTypes } from 'prop-types';
 import ActivityView from 'react-native-activity-view';
 
 import PDFViewer from '../../components/PDFViewer';
-import { goToSubpage } from '../../lib/navigationHelpers';
+import ShareButton from '../../components/ShareButton';
 
-import Icon from 'react-native-vector-icons/Ionicons';
+import { goToSubpage } from '../../lib/navigationHelpers';
 
 import { styles } from './styles';
 
@@ -18,11 +18,10 @@ TouchableWithoutFeedback,
 } from 'react-native';
 
 const startAirDrop = (imageData) => {
-  console.log(imageData);
-
   ActivityView.show({
-    text: `Check out the CDART ${ imageData.title }`,
-    image: '../../assets/images/actionRequest.pdf',
+    text: `Check out CDART's ${ imageData.title }`,
+    url: 'http://www.cdart.org',
+    image: 'image!animalIntake'
   });
 }
 
@@ -38,13 +37,8 @@ class FormContainer extends Component {
         return params.data.title
       },
       renderRight( params ) {
-        return <Icon
-          name={ 'md-more' }
-          size={ 35 }
-          color={ 'white' }
-          style={ styles.printButton }
-          onPress={ ( ) => startAirDrop( params.data ) }
-        />
+        const data = params.params.data;
+        return <ShareButton startAirDrop={ startAirDrop } data={ data }/>
       }
     }
   }
