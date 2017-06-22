@@ -5,9 +5,14 @@ import {
   ScrollView,
   TouchableHighlight,
   View,
+  Text,
+  Dimensions,
   NativeModules
 } from 'react-native';
+
 import { styles } from './styles';
+
+const { width } = Dimensions.get('window')
 
 class CameraRollView extends Component {
   constructor(props) {
@@ -46,17 +51,16 @@ class CameraRollView extends Component {
   render() {
     console.log('state onPress', this.state, 'selectedImage', this.state.selectedImage)
     return (
-      <View style={{ flex: 1, backgroundColor: 'white' }}>
-        <ScrollView style={styles.container}>
-          <View style={styles.imageGrid}>
-            {this.state.images.map(image => (
-              <TouchableHighlight style={styles.container} key={image.uri} onPress={() => this._selectImage(image.uri)}>
-                <Image style={styles.image} source={{ uri: image.uri }} />
-              </TouchableHighlight>
-            ))}
-          </View>
-        </ScrollView>
-      </View>
+      <ScrollView style={styles.container}>
+        <Text>Camera Roll</Text>
+        <View style={styles.imageGrid}>
+          {this.state.images.map(image => (
+            <TouchableHighlight style={styles.container} key={image.uri} onPress={() => this._selectImage(image.uri)}>
+              <Image style={{ width: width/3, height: width/3}} source={{ uri: image.uri }} />
+            </TouchableHighlight>
+          ))}
+        </View>
+      </ScrollView>
     );
   }
 }
