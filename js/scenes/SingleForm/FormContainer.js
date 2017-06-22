@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 
+import ActivityView from 'react-native-activity-view';
+
 import PDFViewer from '../../components/PDFViewer';
-import { goToSubpage } from '../../lib/navigationHelpers';
+import ShareButton from '../../components/ShareButton';
+import FormInfoButton from '../../components/FormInfoButton';
 
 import { styles } from './styles';
 
@@ -13,18 +16,30 @@ Image,
 TouchableWithoutFeedback,
 } from 'react-native';
 
-class FormContainer extends Component {
+const startAirDrop = (imageData) => {
+  ActivityView.show({
+    text: `Check out CDART's ${ imageData.title }`,
+    url: 'http://www.cdart.org',
+    image: 'image!animalIntake'
+  });
+}
 
-  static route = {
-    navigationBar: {
-      title(params) {
-        return params.data.title
-      }
-    }
-  }
+class FormContainer extends Component {
 
   constructor(props) {
     super(props);
+  }
+
+  static route = {
+    navigationBar: {
+      title( params ) {
+        return params.data.title
+      },
+      renderRight( params ) {
+        const data = params.params.data;
+        return <ShareButton startAirDrop={ startAirDrop } data={ data }/>
+      }
+    }
   }
 
   render() {
@@ -37,17 +52,7 @@ class FormContainer extends Component {
         />
         {
           this.props.data.title === 'Animal Intake Form' &&
-
-            <TouchableWithoutFeedback
-              title="i"
-              onPress={() => goToSubpage('intakeFormInstruction', 'home')}
-              style={ styles.iconContainer }
-            >
-              <Image
-                source={require('../../assets/icons/info_Icon@2x.png') }
-                style={styles.infoIcon}
-              />
-            </TouchableWithoutFeedback>
+            <FormInfoButton />
         }
       </View>
     );
