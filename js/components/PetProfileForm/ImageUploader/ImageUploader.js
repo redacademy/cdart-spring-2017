@@ -5,9 +5,13 @@ import {
 } from 'react-native';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {goToCameraRollView} from '../../../lib/navigationHelpers';
 =======
 >>>>>>> Add ImageUploader component.
+=======
+import {goToCameraRollView} from '../../../lib/navigationHelpers';
+>>>>>>> Add routing to CameraRollView for pet profile form.
 import { colors } from '../../../config/styles';
 import { styles } from './styles';
 
@@ -26,9 +30,13 @@ class ImageUploader extends Component {
       <TouchableHighlight
         underlayColor={colors.grey}
 <<<<<<< HEAD
+<<<<<<< HEAD
         onPress={() => goToCameraRollView()}
 =======
 >>>>>>> Add ImageUploader component.
+=======
+        onPress={() => goToCameraRollView()}
+>>>>>>> Add routing to CameraRollView for pet profile form.
         style={styles.container}
       >
         <Image
