@@ -61,3 +61,11 @@ export const goToNewProfile = (currentNavigatorUID) => {
     Router.getRoute('newProfile')
   ));
 }
+
+export const goToCameraRollView = () => {
+  console.log('hi from camera roll view nav helper');
+  Store.dispatch(NavigationActions.push(
+    'root',
+    Router.getRoute('cameraRollView')
+  ));
+}
