@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 
-import { addGenderInfo } from '../../../redux/modules/otherInputs'
+import { addGender } from '../../../redux/modules/petInfo'
 import { styles } from './styles';
 
 class SwitchButton extends Component{
@@ -22,10 +22,10 @@ class SwitchButton extends Component{
   press(gender){
     if(gender === 'female'){
       this.setState({ female: true, male: false })
-      this.props.dispatch(addGenderInfo('female'))
+      this.props.dispatch(addGender('female'))
     } else {
       this.setState({ male: true, female: false })
-      this.props.dispatch(addGenderInfo('male'))
+      this.props.dispatch(addGender('male'))
     }
   }
 

@@ -8,7 +8,7 @@ import {
 import { connect } from 'react-redux'
 import { getFormValues } from 'redux-form';
 
-import { addButtonInfo } from '../../../redux/modules/otherInputs'
+import { addTemperment, addSpayed } from '../../../redux/modules/petInfo'
 
 import { styles } from './styles';
 
@@ -24,13 +24,10 @@ class ToggleButton extends Component {
   onPress = () => {
     LayoutAnimation.easeInEaseOut();
     this.setState({selected: !this.state.selected});
-    // if(this.state.selected){
-    //   this.props.dispatch(addButtonInfo(this.props.temper))
-    // }
     if(this.props.info === 'Spayed'){
-      this.props.dispatch(addButtonInfo(true))
+      this.props.dispatch(addSpayed(this.props.info))
     } else {
-      this.props.dispatch(addButtonInfo(this.props.info))
+      this.props.dispatch(addTemperment(this.props.info))
     }
   };
 
