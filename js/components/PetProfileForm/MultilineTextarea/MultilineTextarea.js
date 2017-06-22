@@ -13,7 +13,7 @@ export default function MultilineTextarea(props) {
 
   return (
     <View>
-      <Text style={styles.heading}>Distinguishing Features</Text>
+      <Text style={styles.heading}>{input.name}</Text>
       <TextInput
         onChangeText={input.onChange}
         value={input.value}
