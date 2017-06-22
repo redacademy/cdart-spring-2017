@@ -22,7 +22,8 @@ const NewProfile = (props) => {
       <Field name="DogName" component={InlineInput} />
 
       <View style={styles.inlineButtonsWrapper}>
-        <SwitchButton />
+        <Field name="gender" component={SwitchButton} />
+        <Field name="test" component={ToggleButton} />
         <ToggleButton info='Spayed' />
       </View>
 

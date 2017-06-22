@@ -37,7 +37,7 @@ class ToggleButton extends Component {
       this.state.selected ?
         <TouchableHighlight
           onPress={this.onPress}
-          style={this.state.selected ? styles.selectedButton : styles.button}
+          style={styles.selectedButton}
         >
           <Text style={styles.selectedButtonText}>{this.props.info}</Text>
         </TouchableHighlight>
