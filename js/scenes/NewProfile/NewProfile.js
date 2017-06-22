@@ -47,20 +47,12 @@ const NewProfile = (props) => {
       <Field name="distinguishing" component={MultilineTextarea} />
       <Field name="care" component={MultilineTextarea} />
       <Field name="medical" component={MultilineTextarea} />
-      <FieldArray name="microchip" component={ContactInfoItem} />
-      <FieldArray name="ownerContact" component={ContactInfoItem} />
-      <FieldArray name="vetContact" component={ContactInfoItem} />
-      <Field name="microchip" component={ContactInfoItem} />
-      <Field name="ownerContact" component={ContactInfoItem} />
-      <Field name="vetContact" component={ContactInfoItem} />
+
       <FieldArray name="microchip" component={ContactInfoItem} />
       <FieldArray name="ownerContact" component={ContactInfoItem} />
       <FieldArray name="vetContact" component={ContactInfoItem} />
 
       <SaveButton handleSubmit={props.handleSubmit} />
-      <SaveButton handleSubmit={handleSubmit} />
-      <SaveButton handleSubmit={props.handleSubmit} />
-
     </ScrollView>
   );
 }
