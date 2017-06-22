@@ -4,7 +4,10 @@ import {
   TouchableHighlight
 } from 'react-native';
 
+<<<<<<< HEAD
 import {goToCameraRollView} from '../../../lib/navigationHelpers';
+=======
+>>>>>>> Add ImageUploader component.
 import { colors } from '../../../config/styles';
 import { styles } from './styles';
 
@@ -22,7 +25,10 @@ class ImageUploader extends Component {
     return (
       <TouchableHighlight
         underlayColor={colors.grey}
+<<<<<<< HEAD
         onPress={() => goToCameraRollView()}
+=======
+>>>>>>> Add ImageUploader component.
         style={styles.container}
       >
         <Image
