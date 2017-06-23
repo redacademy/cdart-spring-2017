@@ -19,6 +19,7 @@ import NewProfile from '../scenes/NewProfile';
 import ContactForm from '../components/PetProfileForm/ContactForm';
 import IntakeFormInstruction from '../scenes/SingleFormInstructions/IntakeFormInstruction'
 import CameraRollView from '../scenes/CameraRollView';
+import ViewPetProfile from '../scenes/ViewPetProfile';
 
 const Router = createRouter(() => ({
   navigation: () => NavigationLayout,
@@ -40,6 +41,7 @@ const Router = createRouter(() => ({
   newProfile: () => NewProfile,
   intakeFormInstruction: () => IntakeFormInstruction,
   cameraRollView: () => CameraRollView,
+  viewPetProfile: () => ViewPetProfile,
 }));
 
 export default Router;
