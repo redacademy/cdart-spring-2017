@@ -22,7 +22,16 @@ class PetProfileContainer extends Component {
         breed: 'Shepard/Husky',
         picture: require('../../assets/icons/check.png')
       }],
-      myPets: []
+      myDogs: [{
+        name: 'Bert',
+        breed: 'husky',
+        picture: require('../../assets/icons/check.png')
+      },
+      {
+        name: 'Ernie',
+        breed: 'Shepard/Husky',
+        picture: require('../../assets/icons/check.png')
+      }]
     }
   }
   static route = {
