@@ -14,7 +14,7 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 import { colors } from '../../config/styles';
 import { styles } from './styles';
 
-const NewProfile = (props) => {
+const NewProfile = (props, handleSubmit) => {
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
@@ -41,16 +41,16 @@ const NewProfile = (props) => {
       </View>
 
       <Field name="Expand" component={MultilineTextarea} />
-      <Field name="Distinguishing Features" component={MultilineTextarea} />
-      <Field name="Care Instructions" component={MultilineTextarea} />
-      <Field name="Medical Alerts" component={MultilineTextarea} />
+      <Field name="DistinguishingFeatures" component={MultilineTextarea} />
+      <Field name="CareInstructions" component={MultilineTextarea} />
+      <Field name="MedicalAlerts" component={MultilineTextarea} />
 
       <FieldArray name="Microchip" component={ContactInfoItem} />
-      <FieldArray name="Owner Contact" component={ContactInfoItem} />
-      <FieldArray name="Veterinarian Contact" component={ContactInfoItem} />
-      <FieldArray name="Secondary Contact" component={ContactInfoItem} />
+      <FieldArray name="OwnerContact" component={ContactInfoItem} />
+      <FieldArray name="VeterinarianContact" component={ContactInfoItem} />
+      <FieldArray name="SecondaryContact" component={ContactInfoItem} />
 
-      <SaveButton handleSubmit={props.handleSubmit} />
+      <SaveButton />
     </ScrollView>
   );
 }

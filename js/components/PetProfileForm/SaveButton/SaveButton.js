@@ -1,17 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Text,
   TouchableOpacity
 } from 'react-native';
+import { connect } from 'react-redux';
+
+import { createPetProfile } from '../../../config/models';
 
 import { styles } from './styles';
 
-const SaveButton = ({ handleSubmit }) => {
-  return (
-    <TouchableOpacity onPress={() => handleSubmit()} style={styles.button}>
-      <Text style={styles.buttonText}>Save Profile</Text>
-    </TouchableOpacity>
-  );
+class SaveButton extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      selected: false,
+    }
+  }
+
+  handleSubmit = () => {
+    createPetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs);
+  }
+
+  render() {
+    return (
+      <TouchableOpacity onPress={this.handleSubmit} style={styles.button}>
+        <Text style={styles.buttonText}>Save Profile</Text>
+      </TouchableOpacity>
+    );
+  }
 }
 
-export default SaveButton;
+function mapStateToProps(state){
+  return {
+    formData: state.petProfile,
+  }
+}
+
+export default connect(mapStateToProps)(SaveButton);

@@ -5,10 +5,10 @@ import {
   TouchableHighlight,
   LayoutAnimation
 } from 'react-native';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { getFormValues } from 'redux-form';
 
-import { addTemperment, addSpayed } from '../../../redux/modules/petInfo'
+import { addTemperament, addSpayed } from '../../../redux/modules/petInfo'
 
 import { styles } from './styles';
 
@@ -27,7 +27,7 @@ class ToggleButton extends Component {
     if(this.props.info === 'Spayed'){
       this.props.dispatch(addSpayed(this.props.info))
     } else {
-      this.props.dispatch(addTemperment(this.props.info))
+      this.props.dispatch(addTemperament(this.props.info))
     }
   };
 

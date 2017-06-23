@@ -9,9 +9,9 @@ import { colors } from '../../config/styles';
 const petImage = require('../../assets/icons/new_pet_profile_icon.png')
 const plusCircle = require('../../assets/icons/plus-circle-black@2x.png');
 
-const PetProfile = ({ createProfile, myDogs, currentNavigatorUID }) => {
+const PetProfile = ({ myPets, currentNavigatorUID }) => {
   return (
-    myDogs.length < 1 ?
+    myPets.length < 1 ?
     <View>
       <TouchableOpacity onPress={() => goToSubpage('newProfile', currentNavigatorUID)} >
         <View style={styles.createProfile} >
@@ -30,15 +30,17 @@ const PetProfile = ({ createProfile, myDogs, currentNavigatorUID }) => {
     :
     <View>
     {
-      myDogs.map((dog, i) => (
-        <TouchableOpacity key={dog.name + i} onPress={() => goToSubpage('', currentNavigatorUID, dog)} >
-          <View style={styles.singleDog} >
-            <View style={styles.dogPicContainer} >
-              <Image source={dog.picture} style={styles.dogPic} />
+      myPets.map((pet, i) => (
+        <TouchableOpacity key={pet.name + i} onPress={() => goToSubpage('', currentNavigatorUID, pet)} >
+          <View style={styles.singlePet} >
+            <View style={styles.petPicContainer} >
+              <Image
+                source={require('../../assets/images/saddog.jpg')}
+                style={styles.petPic} />
             </View>
-            <View style={styles.dogText} >
-              <Text style={styles.name} >{dog.name}</Text>
-              <Text style={styles.breed} >{dog.breed}</Text>
+            <View style={styles.petText} >
+              <Text style={styles.name} >{pet.name}</Text>
+              <Text style={styles.breed} >{pet.breed}</Text>
             </View>
             <Text style={styles.edit}>Edit</Text>
           </View>

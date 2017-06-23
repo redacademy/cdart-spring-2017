@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { Text } from 'react-native';
 
 import { clearNavStack } from '../../lib/navigationHelpers';
+import { queryPetProfiles } from '../../config/models';
 
 import PetProfile from './PetProfile';
 
-class PetProfileContainer extends Component {
+const petProfilesArray = queryPetProfiles();
 
+class PetProfileContainer extends Component {
   constructor(){
     super();
     this.state = {
@@ -20,17 +22,13 @@ class PetProfileContainer extends Component {
         breed: 'Shepard/Husky',
         picture: require('../../assets/icons/check.png')
       }],
-      myDogs: []
+      myPets: []
     }
   }
   static route = {
     navigationBar: {
       title: 'Pet Profile',
     }
-  }
-
-  createProfile(myDogs){
-    console.log(myDogs);
   }
 
   componentWillUpdate() {
@@ -41,7 +39,7 @@ class PetProfileContainer extends Component {
     return (
       <PetProfile
         createProfile={this.createProfile}
-        myDogs={[]}
+        myPets={petProfilesArray}
         currentNavigatorUID="petProfile" />
     );
   }

@@ -1,18 +1,18 @@
-export const ADD_TEMPERMENT_INFO = 'ADD_TEMPERMENT_INFO';
+export const ADD_TEMPERAMENT_INFO = 'ADD_TEMPERAMENT_INFO';
 export const ADD_GENDER_INFO = 'ADD_GENDER_INFO';
 export const ADD_SPAYED = 'ADD_SPAYED';
 
-export const addTemperment = (info) => ({ type: ADD_TEMPERMENT_INFO, payload: info });
+export const addTemperament = (info) => ({ type: ADD_TEMPERAMENT_INFO, payload: info });
 export const addGender = (info) => ({ type: ADD_GENDER_INFO, payload: info });
 export const addSpayed = (info) => ({ type: ADD_SPAYED, payload: info });
 
 export function reducer(state = {
-    temperments: []
+    temperaments: []
 }, action) {
     switch (action.type) {
-    case ADD_TEMPERMENT_INFO:{
+    case ADD_TEMPERAMENT_INFO:{
         return Object.assign({}, state, {
-            temperments: [...state.temperments, action.payload]
+            temperaments: [...state.temperaments, action.payload]
         })
     }
     case ADD_GENDER_INFO:{

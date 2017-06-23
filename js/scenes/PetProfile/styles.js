@@ -1,6 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-var { height, width } = Dimensions.get('window')
+var { height } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
   createProfile: {
@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     padding: 55,
     paddingTop: 0,
   },
-  singleDog: {
+  singlePet: {
     borderBottomWidth: 2,
     borderColor: 'lightgrey',
     flexDirection: 'row',
@@ -38,16 +38,19 @@ export const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 20,
   },
-  dogPicContainer: {
+  petPicContainer: {
+    borderRadius: 50,
+    height: 60,
+    width: 100,
+  },
+  petPic: {
+    flex: 1,
+    height: 60,
+    width: 60,
+    resizeMode: 'cover',
     borderRadius: 10,
   },
-  dogPic: {
-    flex: 1,
-    height: 100,
-    width: 100,
-    resizeMode: 'contain'
-  },
-  dogText: {
+  petText: {
     padding: 20,
     flex: 1/2,
   },

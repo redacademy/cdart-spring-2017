@@ -12,18 +12,16 @@ class NewProfileContainer extends Component {
     }
   }
 
-  handleSubmit(){
-  }
-
   render() {
     return (
-      <NewProfile {...this.props} handleSubmit={() => this.handleSubmit()} />
+      <NewProfile {...this.props} />
     );
   }
 }
 
 function mapStateToProps(state) {
   return {
+    formData: state.petProfile,
     formValues: getFormValues('NewProfileForm')(state),
   }
 }
