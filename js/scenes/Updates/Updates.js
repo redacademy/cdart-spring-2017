@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, AppState } from 'react-native';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 import PushController from './../../pushController';
 import PushNotification from 'react-native-push-notification'
 
@@ -41,6 +42,20 @@ class Updates extends Component {
             <View>
             <Text style={{width: 200}}>{tweet.text}</Text>
             </View>
+=======
+const Updates = ({ tweets }) => {
+  console.log('passed Data', tweets)
+  return (
+    <View style={{padding:8}}>
+      {(tweets) ? tweets.map((tweet, i) => { return (
+        <View key={i} style={{marginBottom: 8, padding:8, borderBottomWidth: .5, borderColor:'grey'}}>
+          <View style={{flexDirection:'row', justifyContent: 'space-between'}}>
+            <Text style={{fontWeight:'bold'}}>CDART</Text>
+            <Text>{tweet.created_at.substring(4, 10)}</Text>
+          </View>
+          <View>
+          <Text style={{width: 200}}>{tweet.text}</Text>
+>>>>>>> styled updates
           </View>
         )})
         :
