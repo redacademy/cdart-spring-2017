@@ -17,7 +17,10 @@ class NewProfileContainer extends Component {
 
   render() {
     return (
-      <NewProfile {...this.props} handleSubmit={() => this.handleSubmit()} />
+      <NewProfile
+        {...this.props}
+        handleSubmit={() => this.handleSubmit()}
+        selectedImage={this.props.selectedImage}/>
     );
   }
 }
@@ -25,11 +28,12 @@ class NewProfileContainer extends Component {
 function mapStateToProps(state) {
   return {
     formValues: getFormValues('NewProfileForm')(state),
+    selectedImage: state.petProfile.toggleInputs.selectedImage
   }
 }
 
 const NewProfileForm = reduxForm({
-  form: 'NewProfileForm'
+  form: 'NewProfileForm',
 })(NewProfileContainer)
 
 export default connect(mapStateToProps)(NewProfileForm);
