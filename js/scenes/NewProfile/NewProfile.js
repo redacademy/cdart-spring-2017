@@ -17,7 +17,9 @@ const NewProfile = () => {
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
-      <ImageUploader currentNavigatorUID="petProfile"/>
+      <ImageUploader
+        currentNavigatorUID="petProfile"
+        selectedImage={props.selectedImage}/>
 
       <Field name="Name" title="Name" component={InlineInput} />
       <Field name="Age" title="Age" component={InlineInput} />
