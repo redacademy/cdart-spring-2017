@@ -13,7 +13,7 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 
 import { styles } from './styles';
 
-const NewProfile = () => {
+const NewProfile = (props) => {
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
