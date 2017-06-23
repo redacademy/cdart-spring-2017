@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import {
   Image,
   TouchableHighlight
@@ -8,32 +9,21 @@ import {goToSubpage} from '../../../lib/navigationHelpers';
 import { colors } from '../../../config/styles';
 import { styles } from './styles';
 
-class ImageUploader extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      image: null,
-    };
-  }
-
-  render() {
-    console.log(this.props, this.state);
-    return (
-      <TouchableHighlight
-        underlayColor={colors.grey}
-        onPress={() => goToSubpage('cameraRollView', 'petProfile')}
-        style={styles.container}
-      >
-        <Image
-          style={styles.image}
-          source={
-            this.state.image ? { uri: this.state.image }
-            : require('../../../assets/icons/paw_icon.png')}
-        />
-      </TouchableHighlight>
-    );
-  }
+const ImageUploader = (props) => {
+  return (
+    <TouchableHighlight
+      underlayColor={colors.grey}
+      onPress={() => goToSubpage('cameraRollView', 'petProfile')}
+      style={styles.container}
+    >
+      <Image
+        style={styles.image}
+        source={
+          props.selectedImage ? { uri: props.selectedImage }
+          : require('../../../assets/icons/paw_icon.png')}
+      />
+    </TouchableHighlight>
+  );
 }
 
 export default ImageUploader;
