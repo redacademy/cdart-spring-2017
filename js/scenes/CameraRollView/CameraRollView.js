@@ -26,6 +26,12 @@ class CameraRollView extends Component {
     };
   }
 
+  static route = {
+    navigationBar: {
+      title: 'Camera Roll',
+    }
+  }
+
   componentDidMount() {
     // get photos from camera roll
     CameraRoll.getPhotos({ first: 100 }).done(
@@ -47,7 +53,7 @@ class CameraRollView extends Component {
     this.setState({
       selectedImage: uri,
     });
-    exitCameraRollView();
+    exitCameraRollView('petProfile');
   }
 
   render() {
