@@ -10,6 +10,7 @@ import {
   NativeModules
 } from 'react-native';
 
+import { exitCameraRollView } from '../../lib/navigationHelpers';
 import { styles } from './styles';
 
 const { width } = Dimensions.get('window')
@@ -46,6 +47,7 @@ class CameraRollView extends Component {
     this.setState({
       selectedImage: uri,
     });
+    exitCameraRollView();
   }
 
   render() {
