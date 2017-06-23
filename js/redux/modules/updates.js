@@ -24,7 +24,7 @@ export const _fetchTwitter = () => (dispatch) => {
 export default function reducer(state = [], action) {
     switch (action.type) {
     case GET_TIMELINE:{
-        return Object.assign({}, state, {
+        return Object.assign([], state, {
             twitterData: action.payload
         })
     }

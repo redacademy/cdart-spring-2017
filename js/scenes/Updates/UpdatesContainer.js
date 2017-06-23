@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 
 import { connect } from 'react-redux'
 
@@ -9,10 +11,6 @@ import { clearNavStack } from '../../lib/navigationHelpers';
 import Updates from './Updates';
 
 class UpdatesContainer extends Component {
-  constructor(props){
-    super(props);
-  }
-
   static route = {
     navigationBar: {
       title: 'Updates',
@@ -44,4 +42,8 @@ function mapStateToProps(state){
     updates: state.updates
   }
 }
+
+UpdatesContainer.propTypes = {
+  updates: PropTypes.array,
+};
 export default connect(mapStateToProps, mapDispatchToProps)(UpdatesContainer);
