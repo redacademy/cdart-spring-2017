@@ -54,26 +54,10 @@ export const goToApp = () => {
   ));
 }
 
-export const goToNewProfile = (currentNavigatorUID) => {
-  console.log('hi from nav helper');
-  Store.dispatch(NavigationActions.push(
-    currentNavigatorUID,
-    Router.getRoute('newProfile')
-  ));
-}
-
-export const goToCameraRollView = () => {
-  console.log('hi from camera roll view nav helper');
-  Store.dispatch(NavigationActions.push(
-    'root',
-    Router.getRoute('cameraRollView')
-  ));
-}
-
-export const exitCameraRollView = () => {
+export const exitCameraRollView = (currentNavigatorUID) => {
   console.log('bye from exit camera roll view nav helper');
   Store.dispatch(NavigationActions.pop(
-    'root',
+    currentNavigatorUID,
     Router.getRoute('cameraRollView')
   ));
 }
