@@ -69,3 +69,11 @@ export const goToCameraRollView = () => {
     Router.getRoute('cameraRollView')
   ));
 }
+
+export const exitCameraRollView = () => {
+  console.log('bye from exit camera roll view nav helper');
+  Store.dispatch(NavigationActions.pop(
+    'root',
+    Router.getRoute('cameraRollView')
+  ));
+}
