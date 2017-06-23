@@ -1,11 +1,42 @@
- import React from 'react';
- import { Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text, AppState } from 'react-native';
+import PropTypes from 'prop-types';
 
-const Updates = ({ tweets }) => {
-  console.log('passed Data', tweets)
-  return (
-    <View style={{padding:16}}>
-      {(tweets) ? tweets.map((tweet, i) => { return (
+import PushController from './../../pushController';
+import PushNotification from 'react-native-push-notification'
+
+class Updates extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleAppListener = this.handleAppListener.bind(this);
+    this.state = {
+
+    };
+  }
+
+  componentDidMount() {
+    AppState.addEventListener('change', this.handleAppListener)
+  }
+
+  componentWillUnmount() {
+    AppState.addEventListener('change', this.handleAppListener)
+  }
+
+  handleAppListener(AppState) {
+    if(AppState === 'background') {
+      PushNotification.localNotificationSchedule({
+        message: "My Notification Message", // (required)
+        date: new Date(Date.now() + (5 * 1000)) // in 60 secs
+      });
+    }
+  }
+
+  render() {
+    console.log('passed Data', this.props.tweets)
+    return (
+      <View style={{padding:16}}>
+      {(this.props.tweets) ? this.props.tweets.map((tweet, i) => { return (
         <View key={i} style={{marginBottom: 16}}>
           <View style={{flexDirection:'row', justifyContent: 'space-between'}}>
             <Text style={{fontWeight:'bold'}}>CDART</Text>
@@ -19,9 +50,14 @@ const Updates = ({ tweets }) => {
       )
       :
       <Text style={{textAlign: 'center'}}>Loading Tweets... </Text>}
+      <PushController />
     </View>
-
-  );
+    );
+  }
 }
+
+Updates.propTypes = {
+  tweets: PropTypes.string
+};
 
 export default Updates;
