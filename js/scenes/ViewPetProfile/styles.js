@@ -186,6 +186,7 @@ export const styles = StyleSheet.create({
   },
   textInfoSection: {
     width: contentWidth,
+    marginBottom: 15,
     flex: 7,
     justifyContent: 'flex-start',
     alignItems: 'center',
