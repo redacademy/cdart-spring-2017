@@ -11,23 +11,22 @@ import SwitchButton from '../../components/PetProfileForm/SwitchButton';
 import SaveButton from '../../components/PetProfileForm/SaveButton';
 import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 
-import { colors } from '../../config/styles';
 import { styles } from './styles';
 
-const NewProfile = (props, handleSubmit) => {
+const NewProfile = () => {
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
       <ImageUploader currentNavigatorUID="petProfile"/>
 
-      <Field name="Name" component={InlineInput} />
-      <Field name="Age" component={InlineInput} />
-      <Field name="Species" component={InlineInput} />
-      <Field name="Breed" component={InlineInput} />
-      <Field name="Color" component={InlineInput} />
+      <Field name="Name" title="Name" component={InlineInput} />
+      <Field name="Age" title="Age" component={InlineInput} />
+      <Field name="Species" title="Species" component={InlineInput} />
+      <Field name="Breed" title="Breed" component={InlineInput} />
+      <Field name="Color" title="Color" component={InlineInput} />
 
       <View style={styles.inlineButtonsWrapper}>
-        <Field name="Gender" component={SwitchButton} />
+        <Field name="Gender" title="Gender"component={SwitchButton} />
         <ToggleButton info='Spayed' />
       </View>
 
@@ -40,15 +39,15 @@ const NewProfile = (props, handleSubmit) => {
         <ToggleButton info='Obedient' />
       </View>
 
-      <Field name="Expand" component={MultilineTextarea} />
-      <Field name="DistinguishingFeatures" component={MultilineTextarea} />
-      <Field name="CareInstructions" component={MultilineTextarea} />
-      <Field name="MedicalAlerts" component={MultilineTextarea} />
+      <Field name="Expand" title="Expand" component={MultilineTextarea} />
+      <Field name="DistinguishingFeatures" title="Distinguishing Features" component={MultilineTextarea} />
+      <Field name="CareInstructions" title="Care Instructions"component={MultilineTextarea} />
+      <Field name="MedicalAlerts" title="Medical Alerts" component={MultilineTextarea} />
 
-      <FieldArray name="Microchip" component={ContactInfoItem} />
-      <FieldArray name="OwnerContact" component={ContactInfoItem} />
-      <FieldArray name="VeterinarianContact" component={ContactInfoItem} />
-      <FieldArray name="SecondaryContact" component={ContactInfoItem} />
+      <FieldArray name="Microchip" title="Microchip" component={ContactInfoItem} />
+      <FieldArray name="OwnerContact" title="Owner Contact" component={ContactInfoItem} />
+      <FieldArray name="VeterinarianContact" title="Veterinarian Contact" component={ContactInfoItem} />
+      <FieldArray name="SecondaryContact" title="Secondary Contact" component={ContactInfoItem} />
 
       <SaveButton />
     </ScrollView>
