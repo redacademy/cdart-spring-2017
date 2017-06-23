@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import {
   CameraRoll,
   Image,
@@ -10,6 +12,7 @@ import {
   NativeModules
 } from 'react-native';
 
+import { setPetProfileImageUri } from '../../redux/modules/petInfo';
 import { exitCameraRollView } from '../../lib/navigationHelpers';
 import { styles } from './styles';
 
@@ -20,9 +23,6 @@ class CameraRollView extends Component {
     super(props);
     this.state = {
       images: [],
-      selectedImage: '',
-      fetchParams: { first: 25 },
-      groupTypes: 'SavedPhotos',
     };
   }
 
@@ -34,7 +34,7 @@ class CameraRollView extends Component {
 
   componentDidMount() {
     // get photos from camera roll
-    CameraRoll.getPhotos({ first: 100 }).done(
+    CameraRoll.getPhotos({ first: 100}).done(
       (data) => {
         const images = data.edges.map(asset => asset.node.image);
         this.setState({
@@ -49,18 +49,13 @@ class CameraRollView extends Component {
 
   _selectImage(uri) {
     // define whatever you want to happen when an image is selected here
-    console.log('this.state: ', this.state, 'NativeModules: ', NativeModules)
-    this.setState({
-      selectedImage: uri,
-    });
+    this.props.dispatch(setPetProfileImageUri(uri))
     exitCameraRollView('petProfile');
   }
 
   render() {
-    console.log('state onPress', this.state, 'selectedImage', this.state.selectedImage)
     return (
       <ScrollView style={styles.container}>
-        <Text>Camera Roll</Text>
         <View style={styles.imageGrid}>
           {this.state.images.map(image => (
             <TouchableHighlight style={styles.container} key={image.uri} onPress={() => this._selectImage(image.uri)}>
@@ -73,4 +68,4 @@ class CameraRollView extends Component {
   }
 }
 
-export default CameraRollView;
+export default connect()(CameraRollView);
