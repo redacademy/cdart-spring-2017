@@ -61,6 +61,8 @@ const PetProfile = {
 
 let realm = new Realm({schema: [Temperament, PetProfile, Owner, Vet]});
 
+console.log('the path is: ', realm.path);
+
 export const queryPetProfiles = () => {
   let profiles = realm.objects('PetProfile');
   console.log(profiles);
@@ -74,7 +76,7 @@ export const createPetProfile = (textInput, buttonInput) => {
   realm.write(() => {
     realm.create('PetProfile', {
       id: textInput.Name,
-      image: 'Hello It\'s me',
+      image: buttonInput.selectedImage,
       name: textInput.Name,
       age: textInput.Age,
       species: textInput.Species,

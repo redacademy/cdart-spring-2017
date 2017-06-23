@@ -34,8 +34,8 @@ const NewProfile = (props) => {
 
       <Text style={styles.heading}>Temperament</Text>
       <View style={styles.toggleButtonsWrapper}>
-        <ToggleButton info='Energetic' />
         <ToggleButton info='Friendly' />
+        <ToggleButton info='Energetic' />
         <ToggleButton info='Timid' />
         <ToggleButton info='Aggresive' />
         <ToggleButton info='Obedient' />

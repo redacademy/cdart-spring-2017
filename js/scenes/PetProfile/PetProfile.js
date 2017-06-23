@@ -35,7 +35,7 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
           <View style={styles.singlePet} >
             <View style={styles.petPicContainer} >
               <Image
-                source={require('../../assets/images/saddog.jpg')}
+                source={{ uri: pet.image }}
                 style={styles.petPic} />
             </View>
             <View style={styles.petText} >

@@ -13,6 +13,7 @@ class NewProfileContainer extends Component {
   }
 
   render() {
+    console.log(this.props.selectedImage);
     return (
       <NewProfile
         {...this.props}
