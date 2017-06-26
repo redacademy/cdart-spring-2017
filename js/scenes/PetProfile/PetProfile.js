@@ -32,14 +32,10 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
     :
     <View>
     {
-<<<<<<< HEAD
-      myPets.map((pet, i) => (
-=======
       myPets.isLoading
       ? <Text>Loading pet profiles...</Text>
 
       : myPets.petProfiles.map((pet, i) => (
->>>>>>> feature-storepetlist
         <TouchableOpacity key={pet.name + i} onPress={() => goToSubpage('viewPetProfile', currentNavigatorUID, pet)} >
           <View style={styles.singlePet} >
             <View style={styles.petPicContainer} >
