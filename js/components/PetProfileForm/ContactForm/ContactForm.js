@@ -21,20 +21,32 @@ const renderText = (props) => {
 
 
 const ContactForm = (props) => {
+  let fieldName = '';
+  if(props.fields.name === 'Microchip') return <Field name='Microchip' component={renderText} />;
+  if(props.fields.name === 'OwnerContact') fieldName = 'Owner';
+  if(props.fields.name === 'VeterinarianContact') fieldName = 'Vet';
+  if(props.fields.name === 'SecondaryContact') fieldName = 'Secondary';
+
   return(
     <View>
       <Text style={styles.heading}>Full Name</Text>
-      <Field name='HumanName' component={renderText} />
-
-      <FieldArray name='PhoneNumberField' component={PhoneNumberField} />
+      <Field name={`${fieldName}Name`} component={renderText} />
+      {fieldName === 'Vet' ?
+        <View>
+          <Text style={styles.heading}>Hospital/Clinic Name</Text>
+          <Field name={`${fieldName}Hospital`} component={renderText} />
+        </View>
+        : null
+      }
+      <FieldArray name='PhoneNumberField' fieldName={fieldName} component={PhoneNumberField} />
 
       <Text style={styles.heading}>Email Address</Text>
-      <Field name='EmailAddress' component={renderText} />
+      <Field name={`${fieldName}EmailAddress`} component={renderText} />
 
-      <FieldArray name='AddressField' component={AddressFields} />
+      <FieldArray name='AddressField' fieldName={fieldName} component={AddressFields} />
 
     </View>
-  );
+    );
 }
 
 export default ContactForm;

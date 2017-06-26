@@ -19,6 +19,7 @@ class SaveButton extends Component {
   }
 
   handleSubmit = () => {
+    console.log(this.props.formData.form.NewProfileForm);
     createPetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs);
   }
 

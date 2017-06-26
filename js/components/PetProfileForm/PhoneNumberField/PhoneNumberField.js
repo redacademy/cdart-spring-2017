@@ -23,17 +23,17 @@ const PhoneNumberField = (props) => {
       <Text style={styles.heading}>Phone Number</Text>
       <View style={{flexDirection: 'row'}}>
         <View>
-          <Field name='PhoneNumber1' component={renderText} />
+          <Field name={`${props.fieldName}PhoneNumber1`} component={renderText} />
           <Text style={styles.subheading}>Area Code</Text>
         </View>
 
-        <Field name='PhoneNumber2' component={renderText} />
+        <Field name={`${props.fieldName}PhoneNumber2`} component={renderText} />
         <Icon
           name={'ios-remove'}
           size={20}
           style={{height: 30, alignSelf: 'center', marginRight: 10}}
         />
-        <Field name='PhoneNumber3' component={renderText} />
+        <Field name={`${props.fieldName}PhoneNumber3`} component={renderText} />
       </View>
     </View>
   );

@@ -16,26 +16,26 @@ const renderText = (props) => {
         />
 }
 
-const AddressFields = () => {
+const AddressFields = (props) => {
   return(
     <View style={styles.container}>
       <Text style={styles.heading}>Address</Text>
-      <Field name='Address' component={renderText} />
+      <Field name={`${props.fieldName}Address`} component={renderText} />
       <Text style={styles.subheading}>Street Name and Number</Text>
 
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         <View>
-          <Field name='City' component={renderText} />
+          <Field name={`${props.fieldName}City`} component={renderText} />
           <Text style={styles.subheading}>City</Text>
         </View>
         <View>
-          <Field name='Province' component={renderText} />
+          <Field name={`${props.fieldName}Province`} component={renderText} />
           <Text style={styles.subheading}>Province</Text>
         </View>
 
       </View>
 
-      <Field name='PostalCode' component={renderText} />
+      <Field name={`${props.fieldName}PostalCode`} component={renderText} />
       <Text style={styles.subheading}>Postal Code</Text>
     </View>
   );

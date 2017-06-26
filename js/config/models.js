@@ -65,11 +65,71 @@ console.log('the path is: ', realm.path);
 
 export const queryPetProfiles = () => {
   let profiles = realm.objects('PetProfile');
-  console.log(profiles);
   return profiles;
 }
 
+export const deletePetProfile = (petName) => {
+  let pets = realm.objects('PetProfile');
+  let pet = pets.filtered('id == $0', petName);
+  realm.write(() => {
+    realm.delete(pet);
+  });
+}
+
 export const createPetProfile = (textInput, buttonInput) => {
+  const tempers = buttonInput.temperaments.map(temper => {
+    return {temperament: temper}
+  });
+  realm.write(() => {
+    realm.create('PetProfile', {
+      id: textInput.Name,
+      image: buttonInput.selectedImage,
+      name: textInput.Name,
+      age: textInput.Age,
+      species: textInput.Species,
+      breed: textInput.Breed,
+      color: textInput.Color,
+      sex: buttonInput.gender,
+      neutered: buttonInput.spayed,
+      temperInfo: textInput.Expand ? textInput.Expand : '',
+      features: textInput.DistinguishingFeatures ? textInput.DistinguishingFeatures : '',
+      care: textInput.CareInstructions ? textInput.CareInstructions : '',
+      medicalAlert: textInput.MedicalAlerts ? textInput.MedicalAlerts : '',
+      microchip: textInput.Microchip ? textInput.Microchip : '',
+      temperaments: tempers,
+      owner1: {
+        name: textInput.OwnerName,
+        phone: textInput.OwnerPhoneNumber1 ? textInput.OwnerPhoneNumber1+textInput.OwnerPhoneNumber2+textInput.OwnerPhoneNumber3 : '',
+        email: textInput.OwnerEmailAddress,
+        street: textInput.OwnerAddress,
+        city: textInput.OwnerCity,
+        province: textInput.OwnerProvince,
+        postal: textInput.OwnerPostalCode,
+      },
+      owner2: {
+        name: textInput.SecondaryName ? textInput.SecondaryName : '',
+        phone: textInput.SecondaryPhoneNumber1 ? textInput.SecondaryPhoneNumber1+textInput.SecondaryPhoneNumber2+textInput.SecondaryPhoneNumber3 : '',
+        email: textInput.SecondaryEmailAddress ? textInput.SecondaryEmailAddress : '',
+        street: textInput.SecondaryAddress ? textInput.SecondaryAddress : '',
+        city: textInput.SecondaryCity ? textInput.SecondaryCity : '',
+        province: textInput.SecondaryProvince ? textInput.SecondaryProvince : '',
+        postal: textInput.SecondaryPostalCode ? textInput.SecondaryPostalCode : ''
+      },
+      vet: {
+        name: textInput.VetName ? textInput.VetName : '',
+        hospital: textInput.VetHospital ? textInput.VetHospital : '',
+        phone: textInput.VetPhoneNumber1 ? textInput.VetPhoneNumber1+textInput.VetPhoneNumber2+textInput.VetPhoneNumber3 : '',
+        email: textInput.VetEmailAddress ? textInput.VetEmailAddress : '',
+        street: textInput.VetAddress ? textInput.VetAddress : '',
+        city: textInput.VetCity ? textInput.VetCity : '',
+        province: textInput.VetProvince ? textInput.VetProvince : '',
+        postal: textInput.VetPostalCode ? textInput.VetPostalCode : ''
+      },
+    });
+  });
+}
+
+export const updatePetProfile = (textInput, buttonInput) => {
   const tempers = buttonInput.temperaments.map(temper => {
     return {temperament: temper}
   });
@@ -118,6 +178,6 @@ export const createPetProfile = (textInput, buttonInput) => {
         province: textInput.Province,
         postal: textInput.PostalCode
       },
-    });
+    }, true);
   });
 }

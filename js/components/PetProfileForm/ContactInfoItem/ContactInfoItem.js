@@ -14,8 +14,8 @@ import { styles } from './styles';
 
 class ContactInfoItem extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       expanded: false,
     }
@@ -32,7 +32,7 @@ class ContactInfoItem extends Component {
         <TouchableHighlight
           onPress={this.onPress}>
           <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-            <Text style={styles.heading}>Owner Information</Text>
+            <Text style={styles.heading}>{this.props.title}</Text>
             <Icon
               name={'ios-add-circle-outline'}
               size={20}
