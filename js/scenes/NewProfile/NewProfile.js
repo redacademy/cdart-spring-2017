@@ -15,6 +15,7 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 import { styles } from './styles';
 
 const NewProfile = (props) => {
+
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
@@ -30,16 +31,16 @@ const NewProfile = (props) => {
 
       <View style={styles.inlineButtonsWrapper}>
         <Field name="Gender" title="Gender"component={SwitchButton} data={props.data.sex ? props.data.sex : ''} />
-        <ToggleButton info='Spayed' />
+        <ToggleButton info='Spayed' toggled={props.data.temperaments} />
       </View>
 
       <Text style={styles.heading}>Temperament</Text>
       <View style={styles.toggleButtonsWrapper}>
-        <ToggleButton info='Friendly' />
-        <ToggleButton info='Energetic' />
-        <ToggleButton info='Timid' />
-        <ToggleButton info='Aggresive' />
-        <ToggleButton info='Obedient' />
+        <ToggleButton info='Friendly' toggled={props.data.temperaments} />
+        <ToggleButton info='Energetic' toggled={props.data.temperaments} />
+        <ToggleButton info='Timid' toggled={props.data.temperaments} />
+        <ToggleButton info='Aggresive' toggled={props.data.temperaments} />
+        <ToggleButton info='Obedient' toggled={props.data.temperaments} />
       </View>
 
       <Field name="Expand" title="Expand" component={MultilineTextarea} data={props.data.expand ? props.data.expand : ''} />

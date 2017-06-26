@@ -26,13 +26,11 @@ class SaveButton extends Component {
   }
 
   handleEdit = () => {
-
     createPetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, this.props.id);
     goToSubpage( 'petProfile', this.props.currentNavigatorUID );
   }
 
   render() {
-    console.log(this.props.data)
     return (
       <TouchableOpacity onPress={this.props.id ? this.handleEdit : this.handleSubmit } style={styles.button}>
         <Text style={styles.buttonText}>Save Profile</Text>

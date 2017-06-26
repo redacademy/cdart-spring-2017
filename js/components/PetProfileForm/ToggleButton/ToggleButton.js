@@ -31,6 +31,14 @@ class ToggleButton extends Component {
     }
   };
 
+  componentDidMount(){
+    let tempers = []
+    this.props.toggled.map(t => tempers.push(t.temperament))
+    if(tempers.includes(this.props.info)){
+      this.setState({ selected: true })
+    }
+  }
+
   render() {
     return (
       this.state.selected ?
