@@ -58,7 +58,7 @@ class Updates extends Component {
                   <Text style={{fontWeight:'bold'}}>{tweet.user.name}
                     <Text style={{color:'grey'}}> @{tweet.user.screen_name}</Text>
                   </Text>
-                  <Text style={{color:'#FB725D'}}>{tweet.created_at.substring(4, 10)}</Text>
+                  <Text style={{color:'#BF3841'}}>{tweet.created_at.substring(4, 10)}</Text>
                 </View>
                 <View style={{width: width - 32}}>
                   {tweet.entities.media ?
@@ -66,7 +66,7 @@ class Updates extends Component {
                     :
                     <View></View>
                   }
-                  <Text>{tweet.text}</Text>
+                  <Text>{tweet.text.replace(/(?:https?|ftp):\/\/[\n\S]+/g, '')}</Text>
                 </View>
               </View>
             </View>

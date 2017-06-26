@@ -1,7 +1,7 @@
 export const colors = {
   red: '#BF3841',
   lightRed: '#FB725D',
-  dimRed: '#1F8C50',
+  dimRed: '#DB8F94',
 
   darkBlue: '#1F425B',
   blue: '#3D78A4',
