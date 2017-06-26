@@ -52,7 +52,7 @@ const NewProfile = (props) => {
       <FieldArray name="VeterinarianContact" title="Veterinarian Contact" component={ContactInfoItem} />
       <FieldArray name="SecondaryContact" title="Secondary Contact" component={ContactInfoItem} />
 
-      <SaveButton currentNavigatorUID={props.currentNavigatorUID} id={props.data.id ? props.data.id : ''} />
+      <SaveButton originalData={props.data} currentNavigatorUID={props.currentNavigatorUID} id={props.data.id ? props.data.id : ''} />
     </ScrollView>
   );
 }
