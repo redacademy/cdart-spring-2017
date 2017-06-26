@@ -96,16 +96,16 @@ const ViewProfile = ({ petInfo }) => (
       <View style={ styles.temperamentSection }>
         {
           petInfo.temperaments.map( temperament => (
-            temperament.selected === true ?
+            temperament.temperament ?
               <View key={ Math.random() + Date.now() }style={ styles.selectedTemperamentBubble }>
                 <Text style={ styles.selectedTemperamentText }>
-                  Friendly
+                  { temperament.temperament }
                 </Text>
               </View> :
 
               <View key={ temperament.type + Date.now() }style={ styles.temperamentBubble }>
                 <Text style={ styles.temperamentText }>
-                  Friendly
+                  { temperament.temperament }
                 </Text>
               </View>
           ))

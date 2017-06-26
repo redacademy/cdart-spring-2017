@@ -48,10 +48,6 @@ class ViewProfileContainer extends Component {
     }
   }
 
-  componentDidMount() {
-    console.log(this.props.data.temperements);
-  }
-
   render() {
     return(
       <ViewProfile petInfo={ this.props.data } />

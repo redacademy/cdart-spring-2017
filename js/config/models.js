@@ -64,8 +64,13 @@ let realm = new Realm({schema: [Temperament, PetProfile, Owner, Vet]});
 console.log('the path is: ', realm.path);
 
 export const queryPetProfiles = () => {
-  let profiles = realm.objects('PetProfile');
-  return profiles;
+  const profiles = realm.objects('PetProfile');
+  const profileKeys = Object.keys(profiles);
+  const profileArray = profileKeys.reduce( (acc, key, i) => {
+    acc.push( profiles[i] );
+    return acc;
+  }, []);
+  return profileArray;
 }
 
 export const deletePetProfile = (petName) => {

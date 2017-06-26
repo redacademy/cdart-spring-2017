@@ -3,12 +3,20 @@ import PropTypes from 'prop-types';
 import {styles} from './styles';
 
 import {
-  View
+  View,
+  Text
 } from 'react-native';
 
 import Home from './Home';
 
 class HomeContainer extends Component {
+
+  static route = {
+    navigationBar: {
+      title: 'Home'
+    }
+  }
+
   render() {
     return(
       <View style={styles.container}>
@@ -16,6 +24,10 @@ class HomeContainer extends Component {
       </View>
     );
   }
+}
+
+HomeContainer.propTypes = {
+  navigation: PropTypes.object
 }
 
 export default HomeContainer;
