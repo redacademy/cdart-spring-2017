@@ -25,7 +25,7 @@ class UpdatesContainer extends Component {
 
   render() {
     return (
-      <Updates tweets={this.props.updates.twitterData}/>
+      <Updates tweets={this.props.updates.twitterData} />
     );
   }
 }
