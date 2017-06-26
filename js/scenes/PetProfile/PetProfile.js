@@ -1,4 +1,6 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
+
 import { Image, TouchableOpacity, Text, View, Button } from 'react-native';
 
 import { goToSubpage } from '../../lib/navigationHelpers';
@@ -11,7 +13,7 @@ const plusCircle = require('../../assets/icons/plus-circle-black@2x.png');
 
 const PetProfile = ({ myPets, currentNavigatorUID }) => {
   return (
-    myPets.length < 1 ?
+    myPets.petProfiles.length < 1 ?
     <View>
       <TouchableOpacity onPress={() => goToSubpage('newProfile', currentNavigatorUID)} >
         <View style={styles.createProfile} >
@@ -30,7 +32,10 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
     :
     <View>
     {
-      myPets.map((pet, i) => (
+      myPets.isLoading
+      ? <Text>Loading pet profiles...</Text>
+
+      : myPets.petProfiles.map((pet, i) => (
         <TouchableOpacity key={pet.name + i} onPress={() => goToSubpage('viewPetProfile', currentNavigatorUID, pet)} >
           <View style={styles.singlePet} >
             <View style={styles.petPicContainer} >
@@ -56,6 +61,11 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
       </Button>
     </View>
   );
+}
+
+PetProfile.propTypes = {
+  myPets: PropTypes.object,
+  currentNavigatorUID: PropTypes.string.isRequired
 }
 
 export default PetProfile;

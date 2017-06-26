@@ -1,43 +1,27 @@
 import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
+
 import { Text } from 'react-native';
+import { connect } from 'react-redux';
 
 import { clearNavStack } from '../../lib/navigationHelpers';
-import { queryPetProfiles } from '../../config/models';
+
+import { _fetchPets } from '../../redux/modules/fetchPets';
 
 import PetProfile from './PetProfile';
 
-const petProfilesArray = queryPetProfiles();
-
 class PetProfileContainer extends Component {
-  constructor(){
-    super();
-    this.state = {
-      mockDog: [{
-        name: 'Bert',
-        breed: 'husky',
-        picture: require('../../assets/icons/check.png')
-      },
-      {
-        name: 'Ernie',
-        breed: 'Shepard/Husky',
-        picture: require('../../assets/icons/check.png')
-      }],
-      myDogs: [{
-        name: 'Bert',
-        breed: 'husky',
-        picture: require('../../assets/icons/check.png')
-      },
-      {
-        name: 'Ernie',
-        breed: 'Shepard/Husky',
-        picture: require('../../assets/icons/check.png')
-      }]
-    }
+  constructor(props){
+    super(props);
   }
   static route = {
     navigationBar: {
       title: 'Pet Profile',
     }
+  }
+
+  componentDidMount() {
+    this.props.fetchPets();
   }
 
   componentWillUpdate() {
@@ -48,10 +32,30 @@ class PetProfileContainer extends Component {
     return (
       <PetProfile
         createProfile={this.createProfile}
-        myPets={petProfilesArray}
+        myPets={this.props.pets}
         currentNavigatorUID="petProfile" />
     );
   }
 }
 
-export default PetProfileContainer;
+function mapStateToProps( state ) {
+  return {
+   pets: state.pets
+  }
+}
+
+function mapDispatchToProps( dispatch ) {
+  return {
+    fetchPets() {
+      dispatch( _fetchPets() )
+    }
+  }
+}
+
+PetProfileContainer.propTypes = {
+  fetchPets: PropTypes.func,
+  pets: PropTypes.object,
+  navigation: PropTypes.object
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PetProfileContainer);
