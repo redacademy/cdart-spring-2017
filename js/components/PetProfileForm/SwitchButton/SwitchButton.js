@@ -29,7 +29,16 @@ class SwitchButton extends Component{
     }
   }
 
+  componentDidMount(){
+    if(this.props.data === 'male'){
+      this.setState({ male: true })
+    } else if(this.props.data === 'female'){
+      this.setState({ female: true })
+    }
+  }
+
   render(){
+    console.log(this.props.data)
     return (
       <View style={styles.container}>
 

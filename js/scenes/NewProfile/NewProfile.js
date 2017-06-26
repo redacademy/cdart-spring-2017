@@ -21,14 +21,14 @@ const NewProfile = (props) => {
         currentNavigatorUID="petProfile"
         selectedImage={props.selectedImage}/>
 
-      <Field name="Name" title="Name" component={InlineInput} />
-      <Field name="Age" title="Age" component={InlineInput} />
-      <Field name="Species" title="Species" component={InlineInput} />
-      <Field name="Breed" title="Breed" component={InlineInput} />
-      <Field name="Color" title="Color" component={InlineInput} />
+      <Field name="Name" title="Name" component={InlineInput} data={props.data.name ? props.data.name : ''} />
+      <Field name="Age" title="Age" component={InlineInput} data={props.data.age ? props.data.age : ''} />
+      <Field name="Species" title="Species" component={InlineInput} data={props.data.species ? props.data.species : ''} />
+      <Field name="Breed" title="Breed" component={InlineInput} data={props.data.breed ? props.data.breed : ''} />
+      <Field name="Color" title="Color" component={InlineInput} data={props.data.color ? props.data.color : ''} />
 
       <View style={styles.inlineButtonsWrapper}>
-        <Field name="Gender" title="Gender"component={SwitchButton} />
+        <Field name="Gender" title="Gender"component={SwitchButton} data={props.data.sex ? props.data.sex : ''} />
         <ToggleButton info='Spayed' />
       </View>
 

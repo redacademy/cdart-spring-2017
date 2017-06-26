@@ -47,7 +47,9 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
               <Text style={styles.name} >{pet.name}</Text>
               <Text style={styles.breed} >{pet.breed}</Text>
             </View>
-            <Text style={styles.edit}>Edit</Text>
+            <TouchableOpacity style={styles.editContainer} onPress={() => goToSubpage('newProfile', currentNavigatorUID, pet)}>
+              <Text style={styles.edit}>Edit</Text>
+            </TouchableOpacity>
           </View>
         </TouchableOpacity>
       ))

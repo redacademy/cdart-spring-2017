@@ -70,6 +70,11 @@ export const styles = StyleSheet.create({
     color: '#3D78A3',
     fontSize: 17,
     flex: 1/4,
-    textAlign: 'right',
+    alignSelf: 'center'
+  },
+  editContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: 30
   }
 });
