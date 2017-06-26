@@ -6,6 +6,7 @@ import {
 import { connect } from 'react-redux';
 
 import { createPetProfile } from '../../../config/models';
+import { goToSubpage } from '../../../lib/navigationHelpers';
 
 import { styles } from './styles';
 
@@ -21,6 +22,7 @@ class SaveButton extends Component {
   handleSubmit = () => {
     console.log(this.props.formData.form.NewProfileForm);
     createPetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs);
+    goToSubpage( 'petProfile', this.props.currentNavigatorUID );
   }
 
   render() {

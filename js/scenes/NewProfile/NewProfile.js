@@ -51,7 +51,7 @@ const NewProfile = (props) => {
       <FieldArray name="VeterinarianContact" title="Veterinarian Contact" component={ContactInfoItem} />
       <FieldArray name="SecondaryContact" title="Secondary Contact" component={ContactInfoItem} />
 
-      <SaveButton />
+      <SaveButton currentNavigatorUID={props.currentNavigatorUID} />
     </ScrollView>
   );
 }

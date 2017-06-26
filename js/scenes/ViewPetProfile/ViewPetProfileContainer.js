@@ -42,11 +42,25 @@ const petInfo = {
 
 class ViewProfileContainer extends Component {
 
+  static route = {
+    navigationBar: {
+      title: 'View Profile'
+    }
+  }
+
+  componentDidMount() {
+    console.log(this.props.data.temperements);
+  }
+
   render() {
     return(
-      <ViewProfile petInfo={ petInfo } />
+      <ViewProfile petInfo={ this.props.data } />
     );
   }
+}
+
+ViewProfileContainer.propTypes = {
+  data: PropTypes.object
 }
 
 export default ViewProfileContainer;
