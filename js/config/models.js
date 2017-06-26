@@ -103,13 +103,13 @@ export const createPetProfile = (textInput, buttonInput) => {
       microchip: textInput.Microchip ? textInput.Microchip : '',
       temperaments: tempers,
       owner1: {
-        name: textInput.OwnerName,
+        name: textInput.OwnerName ? textInput.OwnerName : '',
         phone: textInput.OwnerPhoneNumber1 ? textInput.OwnerPhoneNumber1+textInput.OwnerPhoneNumber2+textInput.OwnerPhoneNumber3 : '',
-        email: textInput.OwnerEmailAddress,
-        street: textInput.OwnerAddress,
-        city: textInput.OwnerCity,
-        province: textInput.OwnerProvince,
-        postal: textInput.OwnerPostalCode,
+        email: textInput.OwnerEmailAddress ? textInput.OwnerEmailAddress : '',
+        street: textInput.OwnerAddress ? textInput.OwnerAddress : '',
+        city: textInput.OwnerCity ? textInput.OwnerCity : '',
+        province: textInput.OwnerProvince ? textInput.OwnerProvince : '',
+        postal: textInput.OwnerPostalCode ? textInput.OwnerPostalCode : '',
       },
       owner2: {
         name: textInput.SecondaryName ? textInput.SecondaryName : '',
@@ -129,59 +129,6 @@ export const createPetProfile = (textInput, buttonInput) => {
         city: textInput.VetCity ? textInput.VetCity : '',
         province: textInput.VetProvince ? textInput.VetProvince : '',
         postal: textInput.VetPostalCode ? textInput.VetPostalCode : ''
-      },
-    });
-  });
-}
-
-export const updatePetProfile = (textInput, buttonInput) => {
-  const tempers = buttonInput.temperaments.map(temper => {
-    return {temperament: temper}
-  });
-  realm.write(() => {
-    realm.create('PetProfile', {
-      id: textInput.Name,
-      image: buttonInput.selectedImage,
-      name: textInput.Name,
-      age: textInput.Age,
-      species: textInput.Species,
-      breed: textInput.Breed,
-      color: textInput.Color,
-      sex: buttonInput.gender,
-      neutered: buttonInput.spayed,
-      temperInfo: textInput.Expand,
-      features: textInput.DistinguishingFeatures,
-      care: textInput.CareInstructions,
-      medicalAlert: textInput.MedicalAlerts,
-      microchip: 'hello',
-      temperaments: tempers,
-      owner1: {
-        name: textInput.HumanName,
-        phone: textInput.PhoneNumber1+textInput.PhoneNumber2+textInput.PhoneNumber3,
-        email: textInput.EmailAddress,
-        street: textInput.Address,
-        city: textInput.City,
-        province: textInput.Province,
-        postal: textInput.PostalCode,
-      },
-      owner2: {
-        name: textInput.HumanName,
-        phone: textInput.PhoneNumber1+textInput.PhoneNumber2+textInput.PhoneNumber3,
-        email: textInput.EmailAddress,
-        street: textInput.Address,
-        city: textInput.City,
-        province: textInput.Province,
-        postal: textInput.PostalCode
-      },
-      vet: {
-        name: textInput.HumanName,
-        hospital: 'Hospital',
-        phone: textInput.PhoneNumber1+textInput.PhoneNumber2+textInput.PhoneNumber3,
-        email: textInput.EmailAddress,
-        street: textInput.Address,
-        city: textInput.City,
-        province: textInput.Province,
-        postal: textInput.PostalCode
       },
     }, true);
   });
