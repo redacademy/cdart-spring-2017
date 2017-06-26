@@ -22,6 +22,7 @@ export default function MultilineTextarea(props) {
         numberOfLines={3}
         placeholder={`This is placeholder text`}
         placeholderTextColor={colors.grey}
+        value={props.data}
       />
     </View>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field, FieldArray, reduxForm } from 'redux-form'
+import PropTypes from 'prop-types';
 
 import { ScrollView, View, Text, TextInput } from 'react-native';
 
@@ -41,10 +42,10 @@ const NewProfile = (props) => {
         <ToggleButton info='Obedient' />
       </View>
 
-      <Field name="Expand" title="Expand" component={MultilineTextarea} />
-      <Field name="DistinguishingFeatures" title="Distinguishing Features" component={MultilineTextarea} />
-      <Field name="CareInstructions" title="Care Instructions"component={MultilineTextarea} />
-      <Field name="MedicalAlerts" title="Medical Alerts" component={MultilineTextarea} />
+      <Field name="Expand" title="Expand" component={MultilineTextarea} data={props.data.expand ? props.data.expand : ''} />
+      <Field name="DistinguishingFeatures" title="Distinguishing Features" component={MultilineTextarea} data={props.data.distinguishingFeatures ? props.data.distinguishingFeatures : ''} />
+      <Field name="CareInstructions" title="Care Instructions"component={MultilineTextarea} data={props.data.careInstructions ? props.data.careInstructions : ''} />
+      <Field name="MedicalAlerts" title="Medical Alerts" component={MultilineTextarea} data={props.data.medicalAlert ? props.data.medicalAlert : ''} />
 
       <FieldArray name="Microchip" title="Microchip" component={ContactInfoItem} />
       <FieldArray name="OwnerContact" title="Owner Contact" component={ContactInfoItem} />
@@ -54,6 +55,12 @@ const NewProfile = (props) => {
       <SaveButton currentNavigatorUID={props.currentNavigatorUID} id={props.data.id ? props.data.id : ''} />
     </ScrollView>
   );
+}
+
+NewProfile.propTypes = {
+  currentNavigatorUID: PropTypes.string,
+  data: PropTypes.object,
+  selectedImage: PropTypes.string,
 }
 
 export default NewProfile;
