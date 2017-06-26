@@ -19,7 +19,7 @@ import ContactInfoDisplay from '../../components/ContactInfoDisplay';
 const ViewProfile = ({ petInfo }) => (
   <ScrollView>
     <View style={ styles.profileContainer }>
-      <Image source={ petInfo.profileImage } style={ styles.profileImage } />
+      <Image source={{ uri: petInfo.image }} style={ styles.profileImage } />
 
       <View style={ styles.textRow }>
         <Text style={ styles.nameLabel }>Name</Text>
@@ -45,12 +45,12 @@ const ViewProfile = ({ petInfo }) => (
 
       <View style={ styles.textRow }>
         <Text style={ styles.leftText }>Colour</Text>
-        <Text style={ styles.rightText }>{ petInfo.colour }</Text>
+        <Text style={ styles.rightText }>{ petInfo.color }</Text>
       </View>
 
       <View style={ styles.buttonRow }>
         {
-          petInfo.sex === 'Male' ?
+          petInfo.sex === 'male' ?
             <View style={ styles.genderToggle }>
               <View style={ styles.gender }>
                 <Text style={ styles.genderText }>
@@ -79,7 +79,7 @@ const ViewProfile = ({ petInfo }) => (
         }
 
         {
-          petInfo.spayedOrNeutered === true ?
+          petInfo.neutered === 'Spayed' || 'Neutered' ?
 
             <View style={ styles.neutered }>
               <Text style={ styles.neuteredText }>Spayed/Neutered</Text>
@@ -95,9 +95,9 @@ const ViewProfile = ({ petInfo }) => (
 
       <View style={ styles.temperamentSection }>
         {
-          petInfo.temperament.map( temperament => (
+          petInfo.temperaments.map( temperament => (
             temperament.selected === true ?
-              <View key={ temperament.type + Date.now() }style={ styles.selectedTemperamentBubble }>
+              <View key={ Math.random() + Date.now() }style={ styles.selectedTemperamentBubble }>
                 <Text style={ styles.selectedTemperamentText }>
                   Friendly
                 </Text>
@@ -114,7 +114,7 @@ const ViewProfile = ({ petInfo }) => (
 
       <View style={ styles.textInfoSection }>
         <View style={ styles.blueTextArea }>
-          <Text style={ styles.blueTextAreaText }>{ petInfo.temperamentText }</Text>
+          <Text style={ styles.blueTextAreaText }>{ petInfo.temperInfo }</Text>
         </View>
 
         <View style={ styles.whiteTextArea }>
@@ -128,20 +128,25 @@ const ViewProfile = ({ petInfo }) => (
           <Text style={ styles.sectionHeader }>Care Instructions</Text>
         </View>
         <View style={ styles.blueTextArea }>
-          <Text style={ styles.blueTextAreaText }>{ petInfo.careInstructions }</Text>
+          <Text style={ styles.blueTextAreaText }>{ petInfo.care }</Text>
         </View>
 
         <View style={ styles.whiteTextArea }>
           <Text style={ styles.sectionHeader }>Medical Alerts</Text>
         </View>
         <View style={ styles.blueTextArea }>
-          <Text style={ styles.blueTextAreaText }>{ petInfo.medicalAlerts }</Text>
+          <Text style={ styles.blueTextAreaText }>{ petInfo.medicalAlert }</Text>
         </View>
       </View>
 
       <ContactInfoDisplay />
     </View>
   </ScrollView>
-)
+);
+
+
+ViewProfile.propTypes = {
+  petInfo: PropTypes.object.isRequired
+}
 
 export default ViewProfile;

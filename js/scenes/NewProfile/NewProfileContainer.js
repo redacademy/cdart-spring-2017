@@ -4,6 +4,8 @@ import { getFormValues, reduxForm } from 'redux-form';
 
 import NewProfile from './NewProfile';
 
+const currentNavigatorUID = 'petProfile';
+
 class NewProfileContainer extends Component {
 
   static route = {
@@ -12,10 +14,15 @@ class NewProfileContainer extends Component {
     }
   }
 
+  handleSubmit() {
+
+  }
+
   render() {
     return (
       <NewProfile
         {...this.props}
+        currentNavigatorUID={currentNavigatorUID}
         handleSubmit={() => this.handleSubmit()}
         selectedImage={this.props.selectedImage}/>
     );

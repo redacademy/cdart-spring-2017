@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, TouchableOpacity, Text, View } from 'react-native';
+import { Image, TouchableOpacity, Text, View, Button } from 'react-native';
 
 import { goToSubpage } from '../../lib/navigationHelpers';
 
@@ -31,7 +31,7 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
     <View>
     {
       myPets.map((pet, i) => (
-        <TouchableOpacity key={pet.name + i} onPress={() => goToSubpage('', currentNavigatorUID, pet)} >
+        <TouchableOpacity key={pet.name + i} onPress={() => goToSubpage('viewPetProfile', currentNavigatorUID, pet)} >
           <View style={styles.singlePet} >
             <View style={styles.petPicContainer} >
               <Image
@@ -47,6 +47,13 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
         </TouchableOpacity>
       ))
     }
+
+      <Button
+        title='Create New'
+        onPress={ () => goToSubpage( 'newProfile', currentNavigatorUID ) }
+      >
+        Create New
+      </Button>
     </View>
   );
 }
