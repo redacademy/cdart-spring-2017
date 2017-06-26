@@ -26,11 +26,7 @@ class SaveButton extends Component {
   }
 
   handleEdit = () => {
-<<<<<<< HEAD
-    createPetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, this.props.id);
-=======
     updatePetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, this.props.originalData, this.props.id);
->>>>>>> Add update profiles method
     goToSubpage( 'petProfile', this.props.currentNavigatorUID );
   }
 
