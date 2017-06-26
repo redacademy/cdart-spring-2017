@@ -29,7 +29,7 @@ class Updates extends Component {
   handleAppListener(AppState) {
     if(AppState === 'background') {
       PushNotification.localNotification({
-        message: "Tweet Update", // (required)
+        message: `Tweet Update: ${this.props.tweets[0].text}`, // (required)
       });
     }
   }
