@@ -17,7 +17,7 @@ export default function InlineInput(props) {
         onBlur={input.onBlur}
         onFocus={input.onFocus}
         style={styles.textInput}
-        value={props.data}
+        defaultValue={props.data}
         />
     </View>
   );
