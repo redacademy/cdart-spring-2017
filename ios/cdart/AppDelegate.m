@@ -62,4 +62,7 @@
  [RCTPushNotificationManager didReceiveLocalNotification:notification];
 }
 
+ - (void)applicationDidBecomeActive:(UIApplication *)application {
+}
+
 @end
