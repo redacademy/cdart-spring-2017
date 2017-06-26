@@ -81,13 +81,13 @@ export const deletePetProfile = (petName) => {
   });
 }
 
-export const createPetProfile = (textInput, buttonInput) => {
+export const createPetProfile = (textInput, buttonInput, id) => {
   const tempers = buttonInput.temperaments.map(temper => {
     return {temperament: temper}
   });
   realm.write(() => {
     realm.create('PetProfile', {
-      id: textInput.Name,
+      id: id,
       image: buttonInput.selectedImage,
       name: textInput.Name,
       age: textInput.Age,

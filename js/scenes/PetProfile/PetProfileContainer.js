@@ -40,7 +40,7 @@ class PetProfileContainer extends Component {
 
 function mapStateToProps( state ) {
   return {
-   pets: state.pets
+    pets: state.pets
   }
 }
 
