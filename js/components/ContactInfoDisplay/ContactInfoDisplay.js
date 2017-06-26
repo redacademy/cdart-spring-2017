@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
+
 import {
   View,
   Text,
@@ -10,19 +12,6 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import { colors } from '../../config/styles';
 import { styles } from './styles';
-
-const ownerContact = {
-  name: 'Owner',
-  properties: {
-    name: 'string',
-    phone: '6045555555',
-    email: 'owner@owner.com',
-    street: 'West Street',
-    city: 'Cityville',
-    province: 'AB',
-    postal: 'A8N3K4',
-  }
-}
 
 class ContactInfoDisplay extends Component {
 
@@ -42,9 +31,12 @@ class ContactInfoDisplay extends Component {
     return (
       <View style={ styles.container }>
         <TouchableHighlight
-          onPress={this.onPress}>
+          onPress={this.onPress}
+          underlayColor={ colors.lightGrey }
+        >
           <View style={ styles.headingContainer }>
-            <Text style={styles.heading}>Owner Info</Text>
+            <Text style={styles.heading}>{ this.props.title }</Text>
+
             <Icon
               name={'ios-add-circle-outline'}
               size={20}
@@ -57,27 +49,64 @@ class ContactInfoDisplay extends Component {
         { this.state.expanded &&
           <View>
             <View>
-              <Text>Name</Text>
-              <Text>{ ownerContact.name }</Text>
+              <Text style={ styles.leftText }>Name</Text>
+              <View style={ styles.blueTextArea }>
+                <Text style={ styles.blueTextAreaText }>{ this.props.info.name }</Text>
+              </View>
+            </View>
+
+            {
+              this.props.info.hospital &&
+                <View>
+                  <Text style={ styles.leftText }>Hospital</Text>
+                  <View style={ styles.blueTextArea }>
+                    <Text style={ styles.blueTextAreaText }>{ this.props.info.hospital }</Text>
+                  </View>
+                </View>
+            }
+
+            <View>
+              <Text style={ styles.leftText }>Phone</Text>
+              <View style={ styles.blueTextArea }>
+                <Text style={ styles.blueTextAreaText }>{ this.props.info.phone }</Text>
+              </View>
             </View>
 
             <View>
-              <Text>Phone Number</Text>
-              <Text>{ ownerContact.properties.phone }</Text>
+              <Text style={ styles.leftText }>Email</Text>
+              <View style={ styles.blueTextArea }>
+                <Text style={ styles.blueTextAreaText }>{ this.props.info.email }</Text>
+              </View>
             </View>
 
             <View>
-              <Text>Email Address</Text>
-              <Text>{ ownerContact.properties.email }</Text>
+              <Text style={ styles.leftText }>Street</Text>
+              <View style={ styles.blueTextArea }>
+                <Text style={ styles.blueTextAreaText }>{ this.props.info.street }</Text>
+              </View>
             </View>
 
             <View>
-              <Text>Address</Text>
-              <Text>{ ownerContact.properties.street }</Text>
-              <Text>{ ownerContact.properties.city }</Text>
-              <Text>{ ownerContact.properties.province }</Text>
-              <Text>{ ownerContact.properties.postal }</Text>
+              <Text style={ styles.leftText }>City</Text>
+              <View style={ styles.blueTextArea }>
+                <Text style={ styles.blueTextAreaText }>{ this.props.info.city }</Text>
+              </View>
             </View>
+
+            <View>
+              <Text style={ styles.leftText }>Province</Text>
+              <View style={ styles.blueTextArea }>
+                <Text style={ styles.blueTextAreaText }>{ this.props.info.province }</Text>
+              </View>
+            </View>
+
+            <View>
+              <Text style={ styles.leftText }>Postal Code</Text>
+              <View style={ styles.blueTextArea }>
+                <Text style={ styles.blueTextAreaText }>{ this.props.info.postal }</Text>
+              </View>
+            </View>
+
           </View>
         }
       </View>
@@ -85,4 +114,8 @@ class ContactInfoDisplay extends Component {
   }
 }
 
+ContactInfoDisplay.propTypes ={
+  title: PropTypes.string,
+  info: PropTypes.object
+}
 export default ContactInfoDisplay;

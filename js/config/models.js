@@ -65,8 +65,6 @@ const PetProfile = {
 
 let realm = new Realm({schema: [Temperament, PetProfile, Owner, Vet]});
 
-console.log('the path is: ', realm.path);
-
 export const queryPetProfiles = () => {
   const profiles = realm.objects('PetProfile');
   const profileKeys = Object.keys(profiles);
