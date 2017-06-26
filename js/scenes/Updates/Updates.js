@@ -6,7 +6,7 @@ import PushController from './../../pushController';
 import { connect } from 'react-redux'
 
 import PushNotification from 'react-native-push-notification'
-
+import { styles } from './styles';
 var {height, width} = Dimensions.get('window');
 class Updates extends Component {
   constructor(props) {
@@ -39,7 +39,6 @@ class Updates extends Component {
   }
 
   render() {
-    console.log('passed Data', this.props.tweets)
     return (
     <ScrollView
       style={{padding:16}}
@@ -53,31 +52,17 @@ class Updates extends Component {
       <View>
         {(this.props.tweets) ? this.props.tweets.map((tweet, i) => {
           return (
-            <View
-              key={i}
-              style={{
-                flexDirection:'row',
-                marginBottom: 8,
-                paddingBottom: 8,
-                borderBottomWidth: .5,
-                borderColor:'grey',
-                justifyContent:'space-between'
-            }}>
-              <View
-                style={{
-                  width: width - 32,
-                  flexWrap: 'wrap'
-                }}
-              >
-                <View style={{flexDirection:'row', justifyContent: 'space-between', marginBottom: 4}}>
+            <View key={i} style={styles.tweet}>
+              <View style={{ width: width - 32 }}>
+                <View style={styles.nameDate}>
                   <Text style={{fontWeight:'bold'}}>{tweet.user.name}
                     <Text style={{color:'grey'}}> @{tweet.user.screen_name}</Text>
                   </Text>
-                  <Text style={{color:'red'}}>{tweet.created_at.substring(4, 10)}</Text>
+                  <Text style={{color:'#FB725D'}}>{tweet.created_at.substring(4, 10)}</Text>
                 </View>
                 <View style={{width: width - 32}}>
                   {tweet.entities.media ?
-                    <Image source={{uri: tweet.entities.media[0].media_url_https}} style={{width: '100%', height:250, marginBottom: 8, marginTop:4}} />
+                    <Image source={{uri: tweet.entities.media[0].media_url_https}} style={styles.tweetImage} />
                     :
                     <View></View>
                   }
@@ -106,10 +91,5 @@ function mapDispatchToProps(dispatch){
     }
   }
 }
-function mapStateToProps(state){
-  return {
-    updates: state.updates
-  }
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Updates);
+export default connect(null, mapDispatchToProps)(Updates);
