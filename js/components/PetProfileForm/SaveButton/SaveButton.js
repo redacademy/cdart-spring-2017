@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 
-import { createPetProfile } from '../../../config/models';
+import { createPetProfile, updatePetProfile } from '../../../config/models';
 import { goToSubpage } from '../../../lib/navigationHelpers';
 
 import { styles } from './styles';
@@ -26,7 +26,11 @@ class SaveButton extends Component {
   }
 
   handleEdit = () => {
+<<<<<<< HEAD
     createPetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, this.props.id);
+=======
+    updatePetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, this.props.originalData, this.props.id);
+>>>>>>> Add update profiles method
     goToSubpage( 'petProfile', this.props.currentNavigatorUID );
   }
 
