@@ -9,7 +9,9 @@ const Temperament = {
 
 const Owner = {
   name: 'Owner',
+  primaryKey: 'id',
   properties: {
+    id: 'string',
     name: 'string',
     phone: 'string',
     email: 'string',
@@ -22,7 +24,9 @@ const Owner = {
 
 const Vet = {
   name: 'Vet',
+  primaryKey: 'id',
   properties: {
+    id: 'string',
     name: 'string',
     hospital: 'string',
     phone: 'string',
@@ -73,9 +77,9 @@ export const queryPetProfiles = () => {
   return profileArray;
 }
 
-export const deletePetProfile = (petName) => {
+export const deletePetProfile = (id) => {
   let pets = realm.objects('PetProfile');
-  let pet = pets.filtered('id == $0', petName);
+  let pet = pets.filtered('id == $0', id);
   realm.write(() => {
     realm.delete(pet);
   });
@@ -103,6 +107,7 @@ export const createPetProfile = (textInput, buttonInput, id) => {
       microchip: textInput.Microchip ? textInput.Microchip : '',
       temperaments: tempers,
       owner1: {
+        id: id,
         name: textInput.OwnerName ? textInput.OwnerName : '',
         phone: textInput.OwnerPhoneNumber1 ? textInput.OwnerPhoneNumber1+textInput.OwnerPhoneNumber2+textInput.OwnerPhoneNumber3 : '',
         email: textInput.OwnerEmailAddress ? textInput.OwnerEmailAddress : '',
@@ -112,6 +117,7 @@ export const createPetProfile = (textInput, buttonInput, id) => {
         postal: textInput.OwnerPostalCode ? textInput.OwnerPostalCode : '',
       },
       owner2: {
+        id: id+'owner2',
         name: textInput.SecondaryName ? textInput.SecondaryName : '',
         phone: textInput.SecondaryPhoneNumber1 ? textInput.SecondaryPhoneNumber1+textInput.SecondaryPhoneNumber2+textInput.SecondaryPhoneNumber3 : '',
         email: textInput.SecondaryEmailAddress ? textInput.SecondaryEmailAddress : '',
@@ -121,6 +127,7 @@ export const createPetProfile = (textInput, buttonInput, id) => {
         postal: textInput.SecondaryPostalCode ? textInput.SecondaryPostalCode : ''
       },
       vet: {
+        id: id,
         name: textInput.VetName ? textInput.VetName : '',
         hospital: textInput.VetHospital ? textInput.VetHospital : '',
         phone: textInput.VetPhoneNumber1 ? textInput.VetPhoneNumber1+textInput.VetPhoneNumber2+textInput.VetPhoneNumber3 : '',

@@ -1,7 +1,8 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-import { Image, TouchableOpacity, Text, View, Button } from 'react-native';
+import { Image, TouchableOpacity, Text, View, Button, Platform } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import { goToSubpage } from '../../lib/navigationHelpers';
 
@@ -47,9 +48,19 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
               <Text style={styles.name} >{pet.name}</Text>
               <Text style={styles.breed} >{pet.breed}</Text>
             </View>
-            <TouchableOpacity style={styles.editContainer} onPress={() => goToSubpage('newProfile', currentNavigatorUID, pet)}>
-              <Text style={styles.edit}>Edit</Text>
-            </TouchableOpacity>
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity style={styles.editContainer} onPress={() => goToSubpage('newProfile', currentNavigatorUID, pet)}>
+                <Text style={styles.edit}>Edit</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.trashContainer} onPress={() => goToSubpage('newProfile', currentNavigatorUID, pet)}>
+                <Icon
+                  name={Platform.OS === 'ios' ? 'ios-trash' : 'md-trash'}
+                  size={28}
+                  color={colors.blue}
+                  style={{width: 25, marginRight: 8}}
+                />
+              </TouchableOpacity>
+            </View>
           </View>
         </TouchableOpacity>
       ))

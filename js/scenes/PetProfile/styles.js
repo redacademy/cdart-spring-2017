@@ -1,5 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
+import { colors } from '../../config/styles';
+
 var { height } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
@@ -7,7 +9,7 @@ export const styles = StyleSheet.create({
     padding: 40,
     flexDirection: 'row',
     borderBottomWidth: 2,
-    borderColor: 'lightgrey'
+    borderColor: colors.lightGrey
   },
   createProfileText: {
     textAlign: 'center',
@@ -24,14 +26,14 @@ export const styles = StyleSheet.create({
   bePreparedText: {
     textAlign: 'center',
     fontSize: 17,
-    color: '#3D78A3',
+    color: colors.blue,
     lineHeight: 23,
     padding: 55,
     paddingTop: 0,
   },
   singlePet: {
     borderBottomWidth: 2,
-    borderColor: 'lightgrey',
+    borderColor: colors.lightGrey,
     flexDirection: 'row',
     alignItems: 'center',
     height: 100,
@@ -62,19 +64,26 @@ export const styles = StyleSheet.create({
     fontSize: 18,
   },
   breed: {
-    color: 'grey',
+    color: colors.grey,
     lineHeight: 21,
     fontSize: 18,
   },
   edit: {
-    color: '#3D78A3',
+    color: colors.blue,
     fontSize: 17,
-    flex: 1/4,
     alignSelf: 'center'
   },
   editContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 30
+    marginRight: 10
+  },
+  trashContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonContainer:{
+    flex: 1/4,
+    flexDirection: 'row'
   }
 });
