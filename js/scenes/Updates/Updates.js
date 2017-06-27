@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 
 import PushNotification from 'react-native-push-notification'
 import PushController from './../../pushController';
+import { typography } from '../../config/styles';
 
 import { styles } from './styles';
 class Updates extends Component {
@@ -56,7 +57,7 @@ class Updates extends Component {
               <View style={styles.screenWidth}>
                 <View style={styles.nameDate}>
                   <Text style={{fontWeight:'bold'}}>{tweet.user.name}
-                    <Text style={{color:'grey'}}> @{tweet.user.screen_name}</Text>
+                    <Text style={{color:'grey', fontFamily: typography.fontMainLight}}> @{tweet.user.screen_name}</Text>
                   </Text>
                   <Text style={{color:'#BF3841'}}>{tweet.created_at.substring(4, 10)}</Text>
                 </View>

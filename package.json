@@ -9,6 +9,7 @@
   "dependencies": {
     "@expo/ex-navigation": "^3.0.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
+    "base-64": "^0.1.0",
     "cli-width": "^2.1.0",
     "exit-hook": "^1.1.1",
     "react": "^16.0.0-alpha.12",
