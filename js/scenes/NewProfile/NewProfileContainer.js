@@ -14,16 +14,11 @@ class NewProfileContainer extends Component {
     }
   }
 
-  handleSubmit() {
-
-  }
-
   render() {
     return (
       <NewProfile
         {...this.props}
         currentNavigatorUID={currentNavigatorUID}
-        handleSubmit={() => this.handleSubmit()}
         selectedImage={this.props.selectedImage}/>
     );
   }
