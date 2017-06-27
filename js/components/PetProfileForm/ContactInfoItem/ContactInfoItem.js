@@ -30,7 +30,9 @@ class ContactInfoItem extends Component {
     return (
       <View style={styles.container}>
         <TouchableHighlight
-          onPress={this.onPress}>
+          onPress={this.onPress}
+          underlayColor={ colors.lightGrey }
+        >
           <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
             <Text style={styles.heading}>{this.props.title}</Text>
             <Icon

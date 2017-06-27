@@ -15,14 +15,18 @@ export const styles = StyleSheet.create({
   },
   textInput: {
     height: 30,
-    borderColor: colors.skyBlue,
+    borderColor: colors.green,
     borderWidth: 1,
     borderRadius: 5,
     padding: 5,
   },
   textInputShort: {
+    height: 30,
     width: 65,
-    marginTop: 5
+    borderColor: colors.green,
+    borderWidth: 1,
+    borderRadius: 5,
+    padding: 5,
   },
   textInputMedium: {
     width: 200,

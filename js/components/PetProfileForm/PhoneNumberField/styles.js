@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   },
   textInput: {
     height: 30,
-    borderColor: colors.skyBlue,
+    borderColor: colors.green,
     borderWidth: 1,
     borderRadius: 5,
     padding: 5,

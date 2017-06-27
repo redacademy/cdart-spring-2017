@@ -27,7 +27,7 @@ const ContactForm = (props) => {
   if(props.fields.name === 'VeterinarianContact') fieldName = 'Vet';
   if(props.fields.name === 'SecondaryContact') fieldName = 'Secondary';
   return(
-    <View>
+    <View style={styles.container}>
       <Text style={styles.heading}>Full Name</Text>
       <Field name={`${fieldName}Name`} data={props.data.name ? props.data.name : ''} component={renderText} />
       {fieldName === 'Vet' ?
