@@ -14,7 +14,7 @@ class GetInvolvedContainer extends Component {
   }
 
   componentWillUpdate() {
-    clearNavStack();
+    clearNavStack('home');
   }
 
   render() {

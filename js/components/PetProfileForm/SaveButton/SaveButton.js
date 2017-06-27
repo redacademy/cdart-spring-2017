@@ -6,7 +6,8 @@ import {
 import { connect } from 'react-redux';
 
 import { createPetProfile, updatePetProfile } from '../../../config/models';
-import { goToSubpage } from '../../../lib/navigationHelpers';
+import { goToSubpage, clearNavStack } from '../../../lib/navigationHelpers';
+
 
 import { styles } from './styles';
 
@@ -27,7 +28,7 @@ class SaveButton extends Component {
 
   handleEdit = () => {
     updatePetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, this.props.originalData, this.props.id);
-    goToSubpage( 'petProfile', this.props.currentNavigatorUID );
+    clearNavStack('petProfile');
   }
 
   render() {

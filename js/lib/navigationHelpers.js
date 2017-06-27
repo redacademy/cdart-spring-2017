@@ -20,9 +20,9 @@ export const goToView = (currentNavigatorUID, routeName, tabName, isTabNav, navi
   }
 }
 
-export const clearNavStack = () => {
+export const clearNavStack = (currentNavigatorUID) => {
   Store.dispatch( NavigationActions.pop(
-    'home'
+    currentNavigatorUID
   ));
 }
 
@@ -38,13 +38,6 @@ export const goToSubpage = (targetRoute, currentNavigatorUID, data) => {
   Store.dispatch( NavigationActions.push(
     currentNavigatorUID,
     Router.getRoute(targetRoute, { data })
-  ));
-}
-
-export const goToCheckListPage = (currentNavigatorUID, infoData) => {
-  Store.dispatch(NavigationActions.push(
-    currentNavigatorUID,
-    Router.getRoute('checklistsPage', { infoData })
   ));
 }
 

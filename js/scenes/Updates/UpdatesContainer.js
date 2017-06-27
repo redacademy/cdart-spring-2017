@@ -20,7 +20,7 @@ class UpdatesContainer extends Component {
     this.props.fetchTwitter();
   }
   componentWillUpdate() {
-    clearNavStack();
+    clearNavStack('home');
   }
 
   render() {

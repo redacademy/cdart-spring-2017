@@ -25,7 +25,7 @@ class PetProfileContainer extends Component {
   }
 
   componentWillUpdate() {
-    clearNavStack();
+    clearNavStack('home');
   }
 
   render() {
