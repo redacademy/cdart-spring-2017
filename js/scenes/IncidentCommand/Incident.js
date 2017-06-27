@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity, LayoutAnimation } from 'react-native';
+import { View, Text, Image, TouchableOpacity, LayoutAnimation, Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import Expand from 'react-native-simple-expand';
 import { styles } from './styles';
+import Icon from 'react-native-vector-icons/Ionicons';
+import { colors } from '../../config/styles';
 
 class Incident extends Component {
 
@@ -28,8 +30,10 @@ class Incident extends Component {
         <TouchableOpacity onPress={() => this.toggleIncident()} key={this.props.rowData.title} >
           <View style={styles.incident} >
             <Text style={{color: this.props.rowData.color, fontSize: 16}} >{this.props.rowData.title}</Text>
-            <Image
-              source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
+            <Icon
+              name={Platform.OS === 'ios' ? 'ios-arrow-forward' : 'md-arrow-forward'}
+              size={32}
+              color={colors.blue}
               style={[styles.arrow, { transform: [{ rotate: this.state.arrow }] }]}
             />
           </View>
