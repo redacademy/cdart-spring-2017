@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 
-import ActivityView from 'react-native-activity-view';
-
 import PDFViewer from '../../components/PDFViewer';
 import ShareButton from '../../components/ShareButton';
 import FormInfoButton from '../../components/FormInfoButton';
@@ -10,19 +8,8 @@ import FormInfoButton from '../../components/FormInfoButton';
 import { styles } from './styles';
 
 import {
-View,
-Text,
-Image,
-TouchableWithoutFeedback,
+View
 } from 'react-native';
-
-const startAirDrop = (imageData) => {
-  ActivityView.show({
-    text: `Check out CDART's ${ imageData.title }`,
-    url: 'http://www.cdart.org',
-    image: 'image!animalIntake'
-  });
-}
 
 class FormContainer extends Component {
 
@@ -37,7 +24,7 @@ class FormContainer extends Component {
       },
       renderRight( params ) {
         const data = params.params.data;
-        return <ShareButton startAirDrop={ startAirDrop } data={ data }/>
+        return <ShareButton data={ data }/>
       }
     }
   }
@@ -47,7 +34,7 @@ class FormContainer extends Component {
       <View>
         <PDFViewer
           title={ this.props.data.title }
-          imagePath={ this.props.data.filePath }
+          imageName={ this.props.data.imageName }
           style={styles.pdf}
         />
         {

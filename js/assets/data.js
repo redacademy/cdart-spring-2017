@@ -20,82 +20,82 @@ export const homeForms = [
   {
     title: 'Animal Intake Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/animalIntake.pdf'
+    imageName: 'animalintake'
   },
   {
     title: 'Action Request Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/actionRequest.pdf'
+    imageName: 'actionrequest'
   },
   {
     title: 'Daily Animal Care Log',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/animalCare.pdf'
+    imageName: 'dailyanimalcare'
   },
   {
     title: 'Volunteer Sign-In Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/volunteerSignIn.pdf'
+    imageName: 'volunteerSignIn'
   },
   {
     title: 'Foster Locations Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/fosterLocations.pdf'
+    imageName: 'fosterLocations'
   },
   {
     title: 'Offer to Help Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/offerHelp.pdf'
+    imageName: 'offerHelp'
   },
   {
     title: 'Position Log Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/positionLog.pdf'
+    imageName: 'positionLog'
    },
   {
     title: 'Publication Consent Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/publicationConsent.pdf'
+    imageName: 'publicationConsent'
   },
   {
     title: 'Release of Responsibility Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/releaseResponsibility.pdf'
+    imageName: 'releaseResponsibility'
   },
   {
     title: 'Foster Request Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/fosterRequest.pdf'
+    imageName: 'fosterRequest'
    },
   {
     title: 'Situation Report Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/situationReport.pdf'
+    imageName: 'situationReport'
    },
   {
     title: 'Supplies Borrowed by CDART',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/suppliesBorrowed.pdf'
+    imageName: 'suppliesBorrowed'
   },
   {
     title: 'Supplies Lent by CDART',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/suppliesLent.pdf'
+    imageName: 'suppliesLent'
    },
   {
     title: 'Supplies Lent by Volunteers',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/suppliesLent.pdf'
+    imageName: 'volunteerSuppliesLent'
    },
   {
     title: 'Volunteer Phone Contact List',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/volunteerPhone.pdf'
+    imageName: 'volunteerPhone'
    },
   {
     title: 'Volunteer Hauler Form',
     targetRoute: 'singleForm',
-    imagePath: '../../assets/images/voluteerHauler.pdf'
+    imageName: 'volunteerHauler'
    },
 ]
 // Procedures
