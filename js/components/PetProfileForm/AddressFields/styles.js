@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
     borderColor: colors.green,
     borderWidth: 1,
     borderRadius: 5,
+    marginTop: 8,
     padding: 5,
   },
   textInputShort: {

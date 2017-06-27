@@ -44,13 +44,6 @@ const renderPostal = (props) => {
         />
 }
 
-const renderTextMed = (props) => {
-  return <TextInput
-          style={styles.textInputShort}
-          editable={true}
-          onChangeText={props.input.onChange}
-        />
-}
 const AddressFields = (props) => {
   return(
     <View style={styles.container}>
@@ -60,20 +53,18 @@ const AddressFields = (props) => {
 
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         <View>
-          <Field name={`${props.fieldName}City`} component={renderCity} />
-          <Text style={styles.subheading}>City</Text>
+          <Field name={`${props.fieldName}PostalCode`} data={props.data} component={renderPostal} />
+          <Text style={styles.subheading}>Postal Code</Text>
         </View>
-
         <View>
           <Field name={`${props.fieldName}Province`} data={props.data} component={renderProvince} />
           <Text style={styles.subheading}>Province</Text>
         </View>
 
-        <View>
-          <Field name={`${props.fieldName}PostalCode`} data={props.data} component={renderPostal} />
-          <Text style={styles.subheading}>Postal Code</Text>
-        </View>
       </View>
+
+      <Field name={`${props.fieldName}City`} data={props.data} component={renderCity} />
+      <Text style={styles.subheading}>City</Text>
     </View>
   );
 }
