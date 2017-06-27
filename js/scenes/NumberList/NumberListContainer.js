@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { ListView } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { receptionShelterSetup, dailyVolunteerDuties, basicAnimalCare, animalConditionInspection } from '../../assets/data';
-import ProcedureList from './ProcedureList';
+import NumberList from './NumberList';
 
 const whichInfo = (title) => {
   switch(title){
@@ -16,7 +17,7 @@ const whichInfo = (title) => {
       return basicAnimalCare;
   }
 }
-class ReceptionContainer extends Component {
+class NumberListContainer extends Component {
 
   static route = {
     navigationBar: {
@@ -36,9 +37,12 @@ class ReceptionContainer extends Component {
 
   render(){
     return (
-      <ProcedureList dataSource={this.state.dataSource} />
+      <NumberList dataSource={this.state.dataSource} />
     );
   }
 }
+NumberListContainer.propTypes = {
+  data: PropTypes.object
+}
 
-export default ReceptionContainer;
+export default NumberListContainer;
