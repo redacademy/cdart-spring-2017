@@ -92,7 +92,7 @@ export const updatePetProfile = (textInput, buttonInput, data, id) => {
       id: id,
       image: buttonInput.selectedImage ? buttonInput.selectedImage : data.image,
       name: textInput.Name ? textInput.Name : data.name,
-      age: textInput.Age ? textInput.Name : data.name,
+      age: textInput.Age ? textInput.Age : data.age,
       species: textInput.Species ? textInput.Species : data.species,
       breed: textInput.Breed ? textInput.Breed : data.breed,
       color: textInput.Color ? textInput.Color : data.color,

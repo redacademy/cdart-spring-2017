@@ -56,7 +56,6 @@ export const goToApp = () => {
 }
 
 export const exitCameraRollView = (currentNavigatorUID) => {
-  console.log('bye from exit camera roll view nav helper');
   Store.dispatch(NavigationActions.pop(
     currentNavigatorUID,
     Router.getRoute('cameraRollView')
