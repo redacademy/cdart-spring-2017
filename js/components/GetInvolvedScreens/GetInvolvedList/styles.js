@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   },
   blank: {
     backgroundColor: colors.dimBlue,
-    padding: 20,
+    padding: 14,
   },
   container: {
     flex: 1,
