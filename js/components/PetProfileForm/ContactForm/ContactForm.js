@@ -5,6 +5,7 @@ import {
   TextInput,
 } from 'react-native';
 import { Field, FieldArray } from 'redux-form'
+import PropTypes from 'prop-types';
 
 import PhoneNumberField from '../PhoneNumberField';
 import AddressFields from '../AddressFields';
@@ -46,6 +47,11 @@ const ContactForm = (props) => {
 
     </View>
     );
+}
+
+ContactForm.propTypes = {
+  fields: PropTypes.string,
+  data: PropTypes.object
 }
 
 export default ContactForm;
