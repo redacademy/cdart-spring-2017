@@ -19,7 +19,7 @@ const renderAddress = (props) => {
 
 const renderCity = (props) => {
   return <TextInput
-          style={styles.textInput}
+          style={[styles.textInput, styles.textInputMedium]}
           editable={true}
           onChangeText={props.input.onChange}
           defaultValue={props.data.city}
@@ -28,7 +28,7 @@ const renderCity = (props) => {
 
 const renderProvince = (props) => {
   return <TextInput
-          style={styles.textInput}
+          style={[styles.textInput, styles.textInputShort]}
           editable={true}
           onChangeText={props.input.onChange}
           defaultValue={props.data.province}
@@ -37,7 +37,7 @@ const renderProvince = (props) => {
 
 const renderPostal = (props) => {
   return <TextInput
-          style={styles.textInput}
+          style={[styles.textInput, styles.textInputMedium]}
           editable={true}
           onChangeText={props.input.onChange}
           defaultValue={props.data.postal}
@@ -53,8 +53,8 @@ const AddressFields = (props) => {
 
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         <View>
-          <Field name={`${props.fieldName}PostalCode`} data={props.data} component={renderPostal} />
-          <Text style={styles.subheading}>Postal Code</Text>
+          <Field name={`${props.fieldName}City`} data={props.data} component={renderCity} />
+          <Text style={styles.subheading}>City</Text>
         </View>
         <View>
           <Field name={`${props.fieldName}Province`} data={props.data} component={renderProvince} />
@@ -63,8 +63,8 @@ const AddressFields = (props) => {
 
       </View>
 
-      <Field name={`${props.fieldName}City`} data={props.data} component={renderCity} />
-      <Text style={styles.subheading}>City</Text>
+      <Field name={`${props.fieldName}PostalCode`} data={props.data} component={renderPostal} />
+      <Text style={styles.subheading}>Postal Code</Text>
     </View>
   );
 }
