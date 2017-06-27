@@ -5,7 +5,6 @@ import android.app.Application;
 import com.facebook.react.ReactApplication;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import io.realm.react.RealmReactPackage;
-import ga.piroro.rnt.RNTPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactNativeHost;
@@ -30,7 +29,6 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
             new ReactNativePushNotificationPackage(),
             new RealmReactPackage(),
-            new RNTPackage(),
             new VectorIconsPackage(),
             new LinearGradientPackage()
       );
