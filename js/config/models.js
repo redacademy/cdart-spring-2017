@@ -84,6 +84,8 @@ export const deletePetProfile = (id) => {
 }
 
 export const updatePetProfile = (textInput, buttonInput, data, id) => {
+  if(!textInput) textInput = {};
+  if(!buttonInput) buttonInput = {};
   const tempers = data.temperaments.map(temper => {
     return { temperament: temper.temperament }
   });
@@ -195,3 +197,5 @@ export const createPetProfile = (textInput, buttonInput, id) => {
     }, true);
   });
 }
+
+export default realm;

@@ -21,7 +21,7 @@ const NewProfile = (props) => {
 
       <ImageUploader
         currentNavigatorUID="petProfile"
-        selectedImage={props.selectedImage}/>
+        selectedImage={props.selectedImage ? props.selectedImage : props.data.image}/>
 
       <Field name="Name" title="Name" component={InlineInput} data={props.data.name ? props.data.name : ''} />
       <Field name="Age" title="Age" component={InlineInput} data={props.data.age ? props.data.age : ''} />

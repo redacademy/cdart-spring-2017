@@ -7,13 +7,18 @@ import { connect } from 'react-redux';
 import { clearNavStack } from '../../lib/navigationHelpers';
 
 import { _fetchPets } from '../../redux/modules/fetchPets';
+import realm from '../../config/models';
 
 import PetProfile from './PetProfile';
 
 class PetProfileContainer extends Component {
   constructor(props){
     super(props);
+    realm.addListener('change', () => {
+      this.props.fetchPets();
+    });
   }
+
   static route = {
     navigationBar: {
       title: 'Pet Profile',

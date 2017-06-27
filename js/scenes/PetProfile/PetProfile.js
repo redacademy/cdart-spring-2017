@@ -5,6 +5,7 @@ import { Image, TouchableOpacity, Text, View, Button, Platform } from 'react-nat
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import { goToSubpage } from '../../lib/navigationHelpers';
+import { deletePetProfile } from '../../config/models';
 
 import { styles } from './styles';
 import { colors } from '../../config/styles';
@@ -52,7 +53,7 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
               <TouchableOpacity style={styles.editContainer} onPress={() => goToSubpage('newProfile', currentNavigatorUID, pet)}>
                 <Text style={styles.edit}>Edit</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.trashContainer} onPress={() => goToSubpage('newProfile', currentNavigatorUID, pet)}>
+              <TouchableOpacity style={styles.trashContainer} onPress={() => deletePetProfile(pet.id)}>
                 <Icon
                   name={Platform.OS === 'ios' ? 'ios-trash' : 'md-trash'}
                   size={28}

@@ -23,7 +23,7 @@ class SaveButton extends Component {
   handleSubmit = () => {
     let id = Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
     createPetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, id);
-    goToSubpage( 'petProfile', this.props.currentNavigatorUID );
+    clearNavStack('petProfile');
   }
 
   handleEdit = () => {
