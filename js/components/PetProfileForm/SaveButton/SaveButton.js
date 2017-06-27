@@ -27,6 +27,7 @@ class SaveButton extends Component {
   }
 
   handleEdit = () => {
+    console.log(this.props.originalData);
     updatePetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, this.props.originalData, this.props.id);
     clearNavStack('petProfile');
   }

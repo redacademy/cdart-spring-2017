@@ -43,15 +43,15 @@ const NewProfile = (props) => {
         <ToggleButton info='Obedient' toggled={props.data.temperaments ? props.data.temperaments : []} />
       </View>
 
-      <Field name="Expand" title="Expand" component={MultilineTextarea} data={props.data.expand ? props.data.expand : ''} />
-      <Field name="DistinguishingFeatures" title="Distinguishing Features" component={MultilineTextarea} data={props.data.distinguishingFeatures ? props.data.distinguishingFeatures : ''} />
-      <Field name="CareInstructions" title="Care Instructions"component={MultilineTextarea} data={props.data.careInstructions ? props.data.careInstructions : ''} />
+      <Field name="Expand" title="Expand" component={MultilineTextarea} data={props.data.temperInfo ? props.data.temperInfo : ''} />
+      <Field name="DistinguishingFeatures" title="Distinguishing Features" component={MultilineTextarea} data={props.data.features ? props.data.features : ''} />
+      <Field name="CareInstructions" title="Care Instructions"component={MultilineTextarea} data={props.data.care ? props.data.care : ''} />
       <Field name="MedicalAlerts" title="Medical Alerts" component={MultilineTextarea} data={props.data.medicalAlert ? props.data.medicalAlert : ''} />
 
-      <FieldArray name="Microchip" title="Microchip" component={ContactInfoItem} />
-      <FieldArray name="OwnerContact" title="Owner Contact" component={ContactInfoItem} />
-      <FieldArray name="VeterinarianContact" title="Veterinarian Contact" component={ContactInfoItem} />
-      <FieldArray name="SecondaryContact" title="Secondary Contact" component={ContactInfoItem} />
+      <FieldArray name="Microchip" title="Microchip" component={ContactInfoItem} data={props.data.microchip ? props.data.microchip : ''} />
+      <FieldArray name="OwnerContact" title="Owner Contact" component={ContactInfoItem} data={props.data.owner1 ? props.data.owner1 : ''} />
+      <FieldArray name="VeterinarianContact" title="Veterinarian Contact" component={ContactInfoItem} data={props.data.vet ? props.data.vet : ''} />
+      <FieldArray name="SecondaryContact" title="Secondary Contact" component={ContactInfoItem} data={props.data.owner2 ? props.data.owner2 : ''} />
 
       <SaveButton originalData={props.data} currentNavigatorUID={props.currentNavigatorUID} id={props.data.id ? props.data.id : ''} />
     </ScrollView>

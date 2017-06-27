@@ -16,34 +16,33 @@ const renderText = (props) => {
           style={styles.textInput}
           editable={true}
           onChangeText={props.input.onChange}
+          defaultValue={props.data}
         />
 }
 
-
 const ContactForm = (props) => {
   let fieldName = '';
-  if(props.fields.name === 'Microchip') return <Field name='Microchip' component={renderText} />;
+  if(props.fields.name === 'Microchip') return <Field name='Microchip' data={props.data} component={renderText} />;
   if(props.fields.name === 'OwnerContact') fieldName = 'Owner';
   if(props.fields.name === 'VeterinarianContact') fieldName = 'Vet';
   if(props.fields.name === 'SecondaryContact') fieldName = 'Secondary';
-
   return(
     <View>
       <Text style={styles.heading}>Full Name</Text>
-      <Field name={`${fieldName}Name`} component={renderText} />
+      <Field name={`${fieldName}Name`} data={props.data.name ? props.data.name : ''} component={renderText} />
       {fieldName === 'Vet' ?
         <View>
           <Text style={styles.heading}>Hospital/Clinic Name</Text>
-          <Field name={`${fieldName}Hospital`} component={renderText} />
+          <Field name={`${fieldName}Hospital`} data={props.data.hospital} component={renderText} />
         </View>
         : null
       }
-      <FieldArray name='PhoneNumberField' fieldName={fieldName} component={PhoneNumberField} />
+      <FieldArray name='PhoneNumberField' data={props.data.phone ? props.data.phone : ''} fieldName={fieldName} component={PhoneNumberField} />
 
       <Text style={styles.heading}>Email Address</Text>
-      <Field name={`${fieldName}EmailAddress`} component={renderText} />
+      <Field name={`${fieldName}EmailAddress`} data={props.data.email ? props.data.email : ''} component={renderText} />
 
-      <FieldArray name='AddressField' fieldName={fieldName} component={AddressFields} />
+      <FieldArray name='AddressField' data={props.data ? props.data : ''} fieldName={fieldName} component={AddressFields} />
 
     </View>
     );
