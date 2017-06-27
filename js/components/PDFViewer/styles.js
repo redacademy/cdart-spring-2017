@@ -17,7 +17,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center'
   },
   instructionsText: {
-    height: 16,
     fontFamily: typography.fontMain,
     fontSize: typography.baseSize,
     textAlign: 'center'
