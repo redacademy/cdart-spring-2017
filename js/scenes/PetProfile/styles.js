@@ -1,10 +1,14 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-import { colors } from '../../config/styles';
+import { colors, typography } from '../../config/styles';
 
-var { height } = Dimensions.get('window')
+var { height, width } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
+  contentContainer: {
+    flex: 1,
+    alignItems: 'center'
+  },
   createProfile: {
     padding: 40,
     flexDirection: 'row',
@@ -85,5 +89,18 @@ export const styles = StyleSheet.create({
   buttonContainer:{
     flex: 1/4,
     flexDirection: 'row'
+  },
+  newProfileButton: {
+    width: width / 2,
+    marginTop: 30,
+    flex: 1,
+    justifyContent: 'center',
+    alignSelf: 'center'
+  },
+  buttonText: {
+    fontFamily: typography.fontMain,
+    fontSize: 18,
+    color: colors.green,
+    textAlign: 'center',
   }
 });

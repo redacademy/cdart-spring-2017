@@ -22,6 +22,9 @@ class ContactInfoDisplay extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log(this.props.info);
+  }
   onPress = () => {
     LayoutAnimation.easeInEaseOut();
     this.setState({expanded: !this.state.expanded});
@@ -48,64 +51,86 @@ class ContactInfoDisplay extends Component {
 
         { this.state.expanded &&
           <View>
-            <View>
-              <Text style={ styles.leftText }>Name</Text>
-              <View style={ styles.blueTextArea }>
-                <Text style={ styles.blueTextAreaText }>{ this.props.info.name }</Text>
-              </View>
-            </View>
-
             {
-              this.props.info.hospital &&
+              this.props.info.name !== `""` &&
                 <View>
-                  <Text style={ styles.leftText }>Hospital</Text>
+                  <Text style={ styles.leftText }>Name</Text>
                   <View style={ styles.blueTextArea }>
-                    <Text style={ styles.blueTextAreaText }>{ this.props.info.hospital }</Text>
+                    <Text style={ styles.blueTextAreaText }>{ this.props.info.name }</Text>
                   </View>
                 </View>
             }
 
-            <View>
-              <Text style={ styles.leftText }>Phone</Text>
-              <View style={ styles.blueTextArea }>
-                <Text style={ styles.blueTextAreaText }>{ this.props.info.phone }</Text>
-              </View>
-            </View>
+            {
+              this.props.title === 'Veterinarian Contact' &&
+                this.props.info.hospital !== `""` &&
+                  <View>
+                    <Text style={ styles.leftText }>Hospital</Text>
+                    <View style={ styles.blueTextArea }>
+                      <Text style={ styles.blueTextAreaText }>{ this.props.info.hospital }</Text>
+                    </View>
+                  </View>
+            }
 
-            <View>
-              <Text style={ styles.leftText }>Email</Text>
-              <View style={ styles.blueTextArea }>
-                <Text style={ styles.blueTextAreaText }>{ this.props.info.email }</Text>
-              </View>
-            </View>
+            {
+              this.props.info.phone !== `""` &&
+                <View>
+                  <Text style={ styles.leftText }>Phone</Text>
+                  <View style={ styles.blueTextArea }>
+                    <Text style={ styles.blueTextAreaText }>{ this.props.info.phone }</Text>
+                  </View>
+                </View>
+            }
 
-            <View>
-              <Text style={ styles.leftText }>Street</Text>
-              <View style={ styles.blueTextArea }>
-                <Text style={ styles.blueTextAreaText }>{ this.props.info.street }</Text>
-              </View>
-            </View>
+            {
+              this.props.info.email !== `""` &&
+                <View>
+                  <Text style={ styles.leftText }>Email</Text>
+                  <View style={ styles.blueTextArea }>
+                    <Text style={ styles.blueTextAreaText }>{ this.props.info.email }</Text>
+                  </View>
+                </View>
+            }
 
-            <View>
-              <Text style={ styles.leftText }>City</Text>
-              <View style={ styles.blueTextArea }>
-                <Text style={ styles.blueTextAreaText }>{ this.props.info.city }</Text>
-              </View>
-            </View>
+            {
+              this.props.info.street !== `""` &&
+                <View>
+                  <Text style={ styles.leftText }>Street</Text>
+                  <View style={ styles.blueTextArea }>
+                    <Text style={ styles.blueTextAreaText }>{ this.props.info.street }</Text>
+                  </View>
+                </View>
+            }
 
-            <View>
-              <Text style={ styles.leftText }>Province</Text>
-              <View style={ styles.blueTextArea }>
-                <Text style={ styles.blueTextAreaText }>{ this.props.info.province }</Text>
-              </View>
-            </View>
+            {
+              this.props.info.city !== `""` &&
+                <View>
+                  <Text style={ styles.leftText }>City</Text>
+                  <View style={ styles.blueTextArea }>
+                    <Text style={ styles.blueTextAreaText }>{ this.props.info.city }</Text>
+                  </View>
+                </View>
+            }
 
-            <View>
-              <Text style={ styles.leftText }>Postal Code</Text>
-              <View style={ styles.blueTextArea }>
-                <Text style={ styles.blueTextAreaText }>{ this.props.info.postal }</Text>
-              </View>
-            </View>
+            {
+              this.props.info.province !== `""` &&
+                <View>
+                  <Text style={ styles.leftText }>Province</Text>
+                  <View style={ styles.blueTextArea }>
+                    <Text style={ styles.blueTextAreaText }>{ this.props.info.province }</Text>
+                  </View>
+                </View>
+            }
+
+            {
+              this.props.info.postal !== `""` &&
+                <View>
+                  <Text style={ styles.leftText }>Postal Code</Text>
+                  <View style={ styles.blueTextArea }>
+                    <Text style={ styles.blueTextAreaText }>{ this.props.info.postal }</Text>
+                  </View>
+                </View>
+            }
 
           </View>
         }

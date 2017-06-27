@@ -47,13 +47,15 @@ class MicrochipNumDisplay extends Component {
         </TouchableHighlight>
 
         { this.state.expanded &&
-          <View>
-            <Text style={ styles.leftText }>Chip #:</Text>
-            <View style={ styles.blueTextArea }>
-              <Text style={ styles.blueTextAreaText }>{ this.props.info }</Text>
+
+          this.props.info !== `""` &&
+            <View>
+              <Text style={ styles.leftText }>Chip #:</Text>
+              <View style={ styles.blueTextArea }>
+                <Text style={ styles.blueTextAreaText }>{ this.props.info }</Text>
+              </View>
             </View>
-          </View>
-        }
+          }
       </View>
     );
   }

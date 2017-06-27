@@ -16,7 +16,7 @@ const plusCircle = require('../../assets/icons/plus-circle-black@2x.png');
 const PetProfile = ({ myPets, currentNavigatorUID }) => {
   return (
     myPets.petProfiles.length < 1 ?
-    <View>
+    <View style={ styles.contentContainer }>
       <TouchableOpacity onPress={() => goToSubpage('newProfile', currentNavigatorUID)} >
         <View style={styles.createProfile} >
           <Text style={styles.createProfileText} >Create Pet Profile</Text>
@@ -67,12 +67,15 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
       ))
     }
 
-      <Button
+      <TouchableOpacity
         title='Create New'
-        onPress={ () => goToSubpage( 'newProfile', currentNavigatorUID ) }
+        onPress={ () => goToSubpage( 'newProfile', currentNavigatorUID, {} ) }
+        style={styles.newProfileButton}
       >
-        Create New
-      </Button>
+        <Text style={styles.buttonText}>
+          Create New
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 }
