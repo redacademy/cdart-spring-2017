@@ -50,7 +50,7 @@ class GetInvolvedList extends Component {
 }
 
 GetInvolvedList.propTypes = {
-  list: PropTypes.object,
+  list: PropTypes.array,
 }
 
 export default GetInvolvedList;

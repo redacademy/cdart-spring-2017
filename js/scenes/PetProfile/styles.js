@@ -5,10 +5,10 @@ import { colors, typography } from '../../config/styles';
 var { height, width } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
-  contentContainer: {
-    flex: 1,
-    alignItems: 'center'
-  },
+  // contentContainer: {
+  //   flex: 1,
+  //   alignItems: 'center'
+  // },
   createProfile: {
     padding: 40,
     flexDirection: 'row',

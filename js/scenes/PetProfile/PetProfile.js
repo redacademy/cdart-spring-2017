@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-import { Image, TouchableOpacity, Text, View, Button, Platform } from 'react-native';
+import { Image, TouchableOpacity, Text, View, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import { goToSubpage } from '../../lib/navigationHelpers';
@@ -19,7 +19,7 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
     <View style={ styles.contentContainer }>
       <TouchableOpacity onPress={() => goToSubpage('newProfile', currentNavigatorUID)} >
         <View style={styles.createProfile} >
-          <Text style={styles.createProfileText} >Create Pet Profile</Text>
+          <Text style={styles.createProfileText}>Create Pet Profile</Text>
           <Image source={plusCircle} style={styles.plusCircle} />
         </View>
       </TouchableOpacity>
