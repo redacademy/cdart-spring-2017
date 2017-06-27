@@ -1,6 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-import { typography } from '../../config/styles'
+import { typography, colors } from '../../config/styles'
 
 export const styles = StyleSheet.create({
   incident: {
@@ -17,8 +17,6 @@ export const styles = StyleSheet.create({
     backgroundColor: '#8E8E8E',
   },
   arrow: {
-    width: 25,
-    height: 25,
     marginRight: 8,
   },
   incidentText: {
