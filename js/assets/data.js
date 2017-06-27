@@ -412,7 +412,7 @@ export const dailyVolunteerDuties = [
   'Attend training sessions - update and practice skills',
   'Update personal preparedness plan',
   'Discuss deployment with family - friends - employers(Letter from CDART available)',
-  'Assemble personal grab and go bag, Include I.D bade, unfirom, snacks, personal hygiene items, device chargers',
+  'Assemble personal grab and go bag, Include I.D badge, uniform, snacks, personal hygiene items, device chargers',
   'Keep vehicles fueled',
   'When called record task number/Shelter address',
   'Be honest with yourself about your readiness to respond'

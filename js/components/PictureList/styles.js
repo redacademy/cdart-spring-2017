@@ -1,6 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-var { height, width } = Dimensions.get('window');
+let { height, width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
@@ -19,5 +19,9 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center'
+  },
+  image: {
+    width: width,
+    height: (height / 2.75)
   }
 });

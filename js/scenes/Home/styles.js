@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
-
+import { typography, colors } from '../../config/styles';
 // const height = Dimensions.get('window').height;
 // const width = Dimensions.get('window').width;
 var { height, width } = Dimensions.get('window');
@@ -23,6 +23,10 @@ export const styles = StyleSheet.create({
   homeHeader: {
     width: width,
     textAlign: 'center',
+    color: '#20425B',
+    fontWeight: 'bold',
+    fontFamily: typography.fontMain,
+
     fontSize: 16,
     paddingBottom: height*( 16 / 568 )
 

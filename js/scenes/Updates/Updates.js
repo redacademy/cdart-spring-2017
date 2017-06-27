@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text, AppState, Image, Dimensions, ScrollView, RefreshControl } from 'react-native';
+import { View, Text, AppState, Image, ScrollView, RefreshControl } from 'react-native';
 import PropTypes from 'prop-types';
 import { _fetchTwitter } from '../../redux/modules/updates';
-import PushController from './../../pushController';
 import { connect } from 'react-redux'
 
 import PushNotification from 'react-native-push-notification'
+import PushController from './../../pushController';
+
 import { styles } from './styles';
-var {height, width} = Dimensions.get('window');
 class Updates extends Component {
   constructor(props) {
     super(props);
@@ -53,15 +53,16 @@ class Updates extends Component {
         {(this.props.tweets) ? this.props.tweets.map((tweet, i) => {
           return (
             <View key={i} style={styles.tweet}>
-              <View style={{ width: width - 32 }}>
+              <View style={styles.screenWidth}>
                 <View style={styles.nameDate}>
                   <Text style={{fontWeight:'bold'}}>{tweet.user.name}
                     <Text style={{color:'grey'}}> @{tweet.user.screen_name}</Text>
                   </Text>
                   <Text style={{color:'#BF3841'}}>{tweet.created_at.substring(4, 10)}</Text>
                 </View>
-                <View style={{width: width - 32}}>
-                  {tweet.entities.media ?
+                <View style={styles.screenWidth}>
+                  {
+                    tweet.entities.media ?
                     <Image source={{uri: tweet.entities.media[0].media_url_https}} style={styles.tweetImage} />
                     :
                     <View></View>
