@@ -20,83 +20,99 @@ export const homeForms = [
   {
     title: 'Animal Intake Form',
     targetRoute: 'singleForm',
-    imageName: 'animalintake'
+    imageName: 'animalintake',
+    imagePath: '../assets/images/animalIntake.pdf'
   },
   {
     title: 'Action Request Form',
     targetRoute: 'singleForm',
-    imageName: 'actionrequest'
+    imageName: 'actionrequest',
+    imagePath: '../assets/images/actionRequest.pdf'
   },
   {
     title: 'Daily Animal Care Log',
     targetRoute: 'singleForm',
-    imageName: 'dailyanimalcare'
+    imageName: 'dailyanimalcare',
+    imagePath: '../assets/images/animalCare.pdf'
   },
   {
     title: 'Volunteer Sign-In Form',
     targetRoute: 'singleForm',
-    imageName: 'volunteerSignIn'
+    imageName: 'volunteerSignIn',
+    imagePath: '../assets/images/volunteerSignIn.pdf'
   },
   {
     title: 'Foster Locations Form',
     targetRoute: 'singleForm',
-    imageName: 'fosterLocations'
+    imageName: 'fosterLocations',
+    imagePath: '../assets/images/fosterLocations.pdf'
   },
   {
     title: 'Offer to Help Form',
     targetRoute: 'singleForm',
-    imageName: 'offerHelp'
+    imageName: 'offerHelp',
+    imagePath: '../assets/images/offerHelp.pdf'
   },
   {
     title: 'Position Log Form',
     targetRoute: 'singleForm',
-    imageName: 'positionLog'
+    imageName: 'positionLog',
+    imagePath: '../assets/images/positionLog.pdf'
    },
   {
     title: 'Publication Consent Form',
     targetRoute: 'singleForm',
-    imageName: 'publicationConsent'
+    imageName: 'publicationConsent',
+    imagePath: '../assets/images/publicationConsent.pdf'
   },
   {
     title: 'Release of Responsibility Form',
     targetRoute: 'singleForm',
-    imageName: 'releaseResponsibility'
+    imageName: 'releaseResponsibility',
+    imagePath: '../assets/images/releaseResponsibility.pdf'
   },
   {
     title: 'Foster Request Form',
     targetRoute: 'singleForm',
-    imageName: 'fosterRequest'
+    imageName: 'fosterRequest',
+    imagePath: '../assets/images/fosterRequest.pdf'
    },
   {
     title: 'Situation Report Form',
     targetRoute: 'singleForm',
-    imageName: 'situationReport'
+    imageName: 'situationReport',
+    imagePath: '../assets/images/situationReport.pdf'
    },
   {
     title: 'Supplies Borrowed by CDART',
     targetRoute: 'singleForm',
-    imageName: 'suppliesBorrowed'
+    imageName: 'suppliesBorrowed',
+    imagePath: '../assets/images/suppliesBorrowed.pdf'
   },
   {
     title: 'Supplies Lent by CDART',
     targetRoute: 'singleForm',
-    imageName: 'suppliesLent'
+    imageName: 'suppliesLent',
+    imagePath: '../assets/images/suppliesLent.pdf'
    },
   {
     title: 'Supplies Lent by Volunteers',
     targetRoute: 'singleForm',
-    imageName: 'volunteerSuppliesLent'
+    imageName: 'volunteerSuppliesLent',
+    imagePath: '../assets/images/suppliesLent.pdf'
    },
   {
     title: 'Volunteer Phone Contact List',
     targetRoute: 'singleForm',
-    imageName: 'volunteerPhone'
+    imageName: 'volunteerPhone',
+    imagePath: '../assets/images/volunteerPhone.pdf'
    },
   {
     title: 'Volunteer Hauler Form',
     targetRoute: 'singleForm',
-    imageName: 'volunteerHauler'
-   },
+    imageName: 'volunteerHauler',
+    imagePath: '../assets/images/volunteerHauler.pdf'
+   }
 ]
 // Procedures
 export const procedureList = [

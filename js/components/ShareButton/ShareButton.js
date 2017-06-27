@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Platform } from 'react-native';
+
 import ActivityView from 'react-native-activity-view';
+import {RNPrint} from 'NativeModules';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -15,13 +18,22 @@ const startAirDrop = ( imageData ) => {
   });
 }
 
+const androidPrint = ( imageData ) => {
+  RNPrint.print( imageData.imagePath ).then((jobName) => {
+    console.log(`Printing ${jobName} complete!`);
+  });
+}
+
 const ShareButton = ({ data }) => (
   <Icon
     name={ 'md-more' }
     size={ 35 }
     color={ 'white' }
     style={ styles.shareIcon }
-    onPress={ ( ) => startAirDrop( data ) }
+    onPress={ Platform.OS === 'android'
+              ? () => androidPrint( data )
+              : ( ) => startAirDrop( data )
+            }
   />
 );
 
