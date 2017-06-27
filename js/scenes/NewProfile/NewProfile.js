@@ -36,11 +36,11 @@ const NewProfile = (props) => {
 
       <Text style={styles.heading}>Temperament</Text>
       <View style={styles.toggleButtonsWrapper}>
-        <ToggleButton info='Friendly' toggled={props.data.temperaments} />
-        <ToggleButton info='Energetic' toggled={props.data.temperaments} />
-        <ToggleButton info='Timid' toggled={props.data.temperaments} />
-        <ToggleButton info='Aggresive' toggled={props.data.temperaments} />
-        <ToggleButton info='Obedient' toggled={props.data.temperaments} />
+        <ToggleButton info='Friendly' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Energetic' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Timid' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Aggresive' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Obedient' toggled={props.data.temperaments ? props.data.temperaments : []} />
       </View>
 
       <Field name="Expand" title="Expand" component={MultilineTextarea} data={props.data.expand ? props.data.expand : ''} />
