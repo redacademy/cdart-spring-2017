@@ -10,6 +10,6 @@ export const styles = StyleSheet.create({
   },
   blank: {
     backgroundColor: colors.dimBlue,
-    padding: 14,
+    padding: 20,
   },
 });

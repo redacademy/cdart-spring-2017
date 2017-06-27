@@ -6,6 +6,5 @@ export const styles = StyleSheet.create({
   animalFlow: {
     maxHeight: height,
     maxWidth: width,
-    backgroundColor: 'aquamarine'
   }
 });
