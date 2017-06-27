@@ -1,6 +1,6 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import { typography, colors } from '../../config/styles'
+import { typography } from '../../config/styles'
 
 export const styles = StyleSheet.create({
   incident: {
