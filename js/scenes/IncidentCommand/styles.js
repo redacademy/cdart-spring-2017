@@ -2,8 +2,6 @@ import { StyleSheet, Dimensions } from 'react-native';
 
 import { typography } from '../../config/styles'
 
-var { height, width } = Dimensions.get('window')
-
 export const styles = StyleSheet.create({
   incident: {
     flex: 1,
@@ -11,6 +9,7 @@ export const styles = StyleSheet.create({
     justifyContent:'space-between',
     alignItems: 'center',
     padding: 10,
+    backgroundColor: 'white'
   },
   separator: {
     flex: 1,
@@ -23,7 +22,13 @@ export const styles = StyleSheet.create({
     marginRight: 8,
   },
   incidentText: {
-    padding: 10,
+    paddingHorizontal: 10,
+    paddingBottom: 10,
     fontFamily: typography.fontMain,
+    backgroundColor:'white',
+    fontSize: typography.baseSize
+  },
+  list: {
+    backgroundColor:'#DEE8F0',
   }
 });

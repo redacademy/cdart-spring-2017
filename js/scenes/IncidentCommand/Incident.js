@@ -27,7 +27,7 @@ class Incident extends Component {
       <View>
         <TouchableOpacity onPress={() => this.toggleIncident()} key={this.props.rowData.title} >
           <View style={styles.incident} >
-            <Text style={{color: this.props.rowData.color}} >{this.props.rowData.title}</Text>
+            <Text style={{color: this.props.rowData.color, fontSize: 16}} >{this.props.rowData.title}</Text>
             <Image
               source={{uri: 'https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_403-512.png'}}
               style={[styles.arrow, { transform: [{ rotate: this.state.arrow }] }]}
