@@ -10,11 +10,17 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.green,
     borderRadius: 15,
-    overflow: 'hidden'
+    overflow: 'hidden',
+    width: 210,
+    height: 140,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   image: {
-    flex: 1,
     width: 210,
     height: 140
+  },
+  icon: {
+    flexBasis: 'auto'
   }
 });
