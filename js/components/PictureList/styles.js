@@ -3,6 +3,9 @@ import { StyleSheet, Dimensions } from 'react-native';
 var { height, width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
+  container: {
+    backgroundColor:'#DEE8F0',
+  },
   separator: {
     flex: 1,
     height: StyleSheet.hairlineWidth,

@@ -1,17 +1,20 @@
 import { StyleSheet, Dimensions } from 'react-native';
-import {colors} from '../../config/styles';
-var { height, width } = Dimensions.get('window')
+import { colors, typography } from '../../config/styles';
+var { width } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
   greyTop: {
-    backgroundColor: 'lightgrey',
-    // flex: 1,
+    backgroundColor: 'rgba(61,120,163,0.17)',
     alignItems: 'center',
     width: width,
     padding: 16,
   },
   greyTopText: {
-    color: 'darkgrey'
+    fontSize: typography.baseSize,
+    lineHeight: 19,
+    fontStyle: 'italic',
+    fontFamily: typography.fontMain,
+    color: '#4A4A4A'
   },
   separator: {
     flex: 1,
