@@ -6,6 +6,8 @@ import {
   Dimensions
 } from 'react-native';
 
+import PropTypes from 'prop-types';
+
 import { styles } from './styles';
 
 import GetInvolvedListItem from '../GetInvolvedListItem';
@@ -45,6 +47,10 @@ class GetInvolvedList extends Component {
       </View>
     );
   }
+}
+
+GetInvolvedList.propTypes = {
+  list: PropTypes.object,
 }
 
 export default GetInvolvedList;

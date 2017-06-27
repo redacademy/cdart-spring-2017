@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import {
   Linking
@@ -18,14 +19,9 @@ class GetInvolvedInfoContainer extends Component {
   }
 
   handleClick = (url) => {
-    console.log(url)
     Linking.canOpenURL(url).then(supported => {
-      if (supported) {
-        Linking.openURL(url);
-      } else {
-        console.log('Don\'t know how to open URI: ' + url);
-      }
-    });
+        supported && Linking.openURL(url);
+    }, (err) => console.log(err));
   };
 
   render() {
@@ -35,6 +31,10 @@ class GetInvolvedInfoContainer extends Component {
         handleClick={this.handleClick} />
     );
   }
+}
+
+GetInvolvedInfoContainer.propTypes = {
+  infoData: PropTypes.object,
 }
 
 export default GetInvolvedInfoContainer;
