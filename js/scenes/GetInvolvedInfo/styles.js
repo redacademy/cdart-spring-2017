@@ -45,7 +45,7 @@ export const styles = StyleSheet.create({
   listBoxContainer: {
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    height: 100,
+    height: 110,
     justifyContent:'center',
     backgroundColor: colors.dimBlue,
     borderColor: colors.grey,

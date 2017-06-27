@@ -279,7 +279,7 @@ export const barnSupplyList = [
 
 export const communitySupplyResources = [
   'High visibility vests',
-  'Kneww pads, safety glasses, gloves',
+  'Knee pads, safety glasses, gloves',
   'Kleenex, hand sanitizer',
   'Surgical masks for mortality recovery',
   'Vicks/ other scent to mask odours',

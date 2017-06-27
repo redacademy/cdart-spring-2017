@@ -1,6 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
+import { typography } from '../../config/styles';
 
-var { height, width } = Dimensions.get('window')
+var { width } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
   container: {
@@ -27,6 +28,8 @@ export const styles = StyleSheet.create({
   },
   itemText: {
     padding: 16,
+    fontSize: typography.baseSize,
+    fontFamily: typography.fontMain,
     width: width*(270 / 320)
   }
 });
