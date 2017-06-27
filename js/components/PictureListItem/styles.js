@@ -1,7 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-var { height, width } = Dimensions.get('window');
-
 export const styles = StyleSheet.create({
   separator: {
     flex: 1,
@@ -15,6 +13,7 @@ export const styles = StyleSheet.create({
   singleItem: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'white'
   }
 });

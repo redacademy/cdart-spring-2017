@@ -35,7 +35,7 @@ class PictureList extends Component {
 
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={styles.container}>
         <Image source={whichPicture(this.props.title)}
         style={{width: width, height: (height / 2.75)}} />
         <ListView
