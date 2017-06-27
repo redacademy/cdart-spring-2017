@@ -7,8 +7,6 @@ import { styles } from './styles';
 
 import PictureListItem from '../PictureListItem';
 
-let { height, width } = Dimensions.get('window');
-
 const whichPicture = (title) => {
   switch(title){
     case 'checklists':
@@ -37,7 +35,7 @@ class PictureList extends Component {
     return (
       <ScrollView style={styles.container}>
         <Image source={whichPicture(this.props.title)}
-        style={{width: width, height: (height / 2.75)}} />
+        style={styles.image} />
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(rowData) => (

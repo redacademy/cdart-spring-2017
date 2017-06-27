@@ -21,5 +21,11 @@ export const styles = StyleSheet.create({
     height:250,
     marginBottom: 8,
     marginTop:4
+  },
+  hashTag: {
+    color:'blue'
+  },
+  screenWidth: {
+    width: width - 32
   }
 });
