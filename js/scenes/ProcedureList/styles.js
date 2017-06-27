@@ -1,6 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native';
-
-var { height, width } = Dimensions.get('window')
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   separator: {
@@ -15,17 +13,16 @@ export const styles = StyleSheet.create({
     padding: 15,
     flexDirection: 'row',
     alignItems: 'center',
-    // justifyContent:'space-between'
   },
   receptionNum: {
-    fontSize: 36,
+    fontSize: 32,
     width: 50,
     textAlign: 'center'
   },
   receptionText: {
     paddingLeft: 20,
     paddingRight: 50,
-    fontSize: 17,
+    fontSize: 16,
     lineHeight: 20
   }
 });
