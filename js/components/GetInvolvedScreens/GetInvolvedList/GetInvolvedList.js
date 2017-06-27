@@ -24,7 +24,7 @@ class GetInvolvedList extends Component {
   }
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Image source={mainImage}
         style={{width: width, height: 200}} />
         <ListView

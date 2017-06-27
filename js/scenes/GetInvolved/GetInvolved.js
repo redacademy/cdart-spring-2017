@@ -6,9 +6,11 @@ import {
 
 import GetInvolvedList from '../../components/GetInvolvedScreens/GetInvolvedList';
 
+import { colors } from '../../config/styles';
+
 const GetInvolved = ({list}) => {
   return (
-    <View>
+    <View style={{ backgroundColor: colors.dimBlue, flex: 1 }}>
       <GetInvolvedList list={list} />
     </View>
   );

@@ -123,7 +123,7 @@ export const getInvolved = [
         description: 'CDART volunteers respond in times of disaster and emergencies when domestic animals are in need of rescue and sheltering. CDART is 100% volunteer based and 100% of our funding comes from donations.'
       }
     ],
-    link:'https://www.google.ca/',
+    link:'http://cdart.org/',
     linktext: 'Learn more at cdart.org'
   },
   {
@@ -136,7 +136,7 @@ export const getInvolved = [
         description: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`,
       }
     ],
-    link:'https://www.google.ca/',
+    link:'http://cdart.org/training.htm',
     linktext: 'Course Information'
   },
   {
@@ -145,12 +145,12 @@ export const getInvolved = [
     image: 'volunteer',
     subsection: [
       {
-        subtitle:'Training',
-        description: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`,
+        subtitle:'Volunteer',
+        description: `There are many volunteer opportunities with CDART as shown below.  Persons who wish to respond during a disaster are required to have some cross-training with their provincial Emergency Social Services (ESS) in addition to their CDART-specific training courses.`,
       }
     ],
-    link:'https://www.google.ca/',
-    linktext: 'Course Information'
+    link:'http://cdart.org/volunteers.htm',
+    linktext: 'Volunteer Information'
   },
   {
     title: 'Donate',
@@ -158,12 +158,12 @@ export const getInvolved = [
     image: 'donate',
     subsection: [
       {
-        subtitle:'Training',
+        subtitle:'Donate',
         description: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`,
       }
     ],
-    link:'https://www.google.ca/',
-    linktext: 'Course Information'
+    link:'http://cdart.org/',
+    linktext: 'Donate'
   },
   {
     title: '',
@@ -175,12 +175,12 @@ export const getInvolved = [
     image: 'rate',
     subsection: [
       {
-        subtitle:'Training',
-        description: `CDART offers a basic introductory training coure and in-depth training courses for volunteers. \n \nYou don't have to be an existing registered CDART volunteer in order to be able to take this course. Some people take hte course first and then decide to become a volunteer.`,
+        subtitle:'Rate Us!',
+        description: `Let us know what you think of our App.`,
       }
     ],
     link:'https://www.google.ca/',
-    linktext: 'Learn more at cdart.org'
+    linktext: 'Rate Us!'
   }
 ]
 

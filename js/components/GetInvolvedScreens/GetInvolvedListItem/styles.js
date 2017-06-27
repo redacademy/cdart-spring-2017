@@ -1,5 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
+import { colors } from '../../../config/styles';
+
 export const styles = StyleSheet.create({
   title:{
     flexDirection: 'row',
@@ -12,6 +14,7 @@ export const styles = StyleSheet.create({
   singleItem: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: colors.white
   }
 });

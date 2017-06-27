@@ -5,18 +5,14 @@ var { width } = Dimensions.get('window');
 import { colors } from '../../config/styles';
 
 export const styles = StyleSheet.create({
-  separator: {
-    flex: 1,
-    height: StyleSheet.hairlineWidth,
-    backgroundColor: colors.grey,
-  },
   subtitle: {
     color: colors.blue,
     fontSize: 16,
     fontWeight: 'bold'
   },
   contentContainer: {
-    padding: 0
+    padding: 0,
+    backgroundColor: colors.dimBlue,
   },
   description: {
     marginTop: 2,
@@ -43,12 +39,13 @@ export const styles = StyleSheet.create({
     alignItems:'center',
   },
   listBoxContainer: {
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    height: 110,
+    height: 100,
     justifyContent:'center',
     backgroundColor: colors.dimBlue,
-    borderColor: colors.grey,
     width: width
-  }
+  },
+  separator: {
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: colors.grey,
+  },
 });

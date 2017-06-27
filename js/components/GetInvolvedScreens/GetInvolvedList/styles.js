@@ -12,4 +12,7 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.dimBlue,
     padding: 20,
   },
+  container: {
+    flex: 1,
+  }
 });

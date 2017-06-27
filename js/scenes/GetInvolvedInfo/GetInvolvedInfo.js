@@ -10,6 +10,7 @@ import {
   Platform
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { colors } from '../../config/styles';
 
 import { styles } from './styles';
 
@@ -36,15 +37,17 @@ const GetInvolvedInfo = ({infoData, handleClick}) => {
   return (
     <ScrollView style={styles.contentContainer}>
       <Image source={whichImage(infoData.image)}
-        style={{width: width, height: 150}} />
+        style={{width: width, height: 200}} />
       {infoData.subsection.map((info, i) => (
-        <View key={i} style={{padding:16}}>
+        <View key={i} style={{padding:16, backgroundColor:colors.white}}>
           <Text style={styles.subtitle}>{info.subtitle}</Text>
           <Text style={styles.description}>{info.description}</Text>
         </View>
       ))
       }
+      <View style={styles.separator} />
       <View style={styles.listBoxContainer}>
+        <View style={styles.separator} />
         <TouchableOpacity
           onPress={() => handleClick(infoData.link)}
         >
@@ -60,6 +63,7 @@ const GetInvolvedInfo = ({infoData, handleClick}) => {
             />
           </View>
         </TouchableOpacity>
+        <View style={styles.separator} />
       </View>
     </ScrollView>
   );
