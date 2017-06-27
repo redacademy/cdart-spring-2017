@@ -14,7 +14,7 @@ import Onboarding from '../scenes/Onboarding';
 import ChecklistsPage from '../scenes/ChecklistsPage';
 import SingleIncident from '../scenes/IncidentCommand/IncidentContainer';
 import AnimalFlow from '../scenes/AnimalRescue';
-import ProcedureList from '../scenes/ProcedureList';
+import NumberList from '../scenes/NumberList';
 import NewProfile from '../scenes/NewProfile';
 import ContactForm from '../components/PetProfileForm/ContactForm';
 import IntakeFormInstruction from '../scenes/SingleFormInstructions/IntakeFormInstruction'
@@ -37,7 +37,7 @@ const Router = createRouter(() => ({
   procedures: () => Procedures,
   singleIncident: () => SingleIncident,
   animalFlow: () => AnimalFlow,
-  reception: () => ProcedureList,
+  reception: () => NumberList,
   newProfile: () => NewProfile,
   intakeFormInstruction: () => IntakeFormInstruction,
   cameraRollView: () => CameraRollView,

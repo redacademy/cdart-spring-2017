@@ -4,7 +4,7 @@ import { Text, ListView, View } from 'react-native';
 import { styles } from './styles';
 
 
-const Reception = ({ dataSource }) => {
+const NumberList = ({ dataSource }) => {
   let count = 0;
   return (
     <ListView
@@ -23,4 +23,4 @@ const Reception = ({ dataSource }) => {
   )
 }
 
-export default Reception;
+export default NumberList;
