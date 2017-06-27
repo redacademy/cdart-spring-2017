@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {
   Image,
+  View,
+  Text,
   TouchableHighlight
 } from 'react-native';
 
@@ -16,12 +18,17 @@ const ImageUploader = (props) => {
       onPress={() => goToSubpage('cameraRollView', 'petProfile')}
       style={styles.container}
     >
+    {props.selectedImage ?
       <Image
         style={styles.image}
-        source={
-          props.selectedImage ? { uri: props.selectedImage }
-          : require('../../../assets/icons/paw_icon.png')}
+        source={{ uri: props.selectedImage }}
       />
+    :
+      <Image
+        style={styles.icon}
+        source={require('../../../assets/icons/pet_profile_add_photo.png')}
+      />
+    }
     </TouchableHighlight>
   );
 }
