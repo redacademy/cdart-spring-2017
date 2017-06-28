@@ -4,10 +4,9 @@ import { colors } from '../../../config/styles';
 
 var { height } = Dimensions.get('window');
 
-const navBarHeight = (Platform.OS !== 'ios' ? 55 : 65);
+const navBarHeight = (Platform.OS !== 'ios' ? 54 : 64);
+const componentHeights = 245+height/2.75+49+navBarHeight;
 
-const componentHeights = 176+height/2.75+height*.175+navBarHeight;
-console.log(height, componentHeights);
 export const styles = StyleSheet.create({
   separator: {
     flex: 1,
