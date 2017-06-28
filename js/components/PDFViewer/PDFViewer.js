@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 
 import { styles } from './styles';
-import { height, width } from 'Dimensions';
 
-import { View, WebView, Text } from 'react-native';
+import { View, WebView, Text, Dimensions } from 'react-native';
+import ZoomButton from '../../components/ZoomButton';
 
-// Note that pdf images must be added to your xcode project and included
-// in build folder to be displayed. Just adding them to the project's assets folder
-// won't work!
+const { height, width } = Dimensions.get('window');
+
+const pdfHeight = height * 0.8;
+const pdfWidth = width;
 
 class PDFViewer extends Component {
 
@@ -16,8 +17,12 @@ class PDFViewer extends Component {
     super( props );
 
     this.state = {
-      imagePath: ''
+      imagePath: '',
+      zoom: 1
     }
+
+    this.zoomIn = this.zoomIn.bind(this);
+    this.zoomOut = this.zoomOut.bind(this);
   }
 
   componentWillMount() {
@@ -172,6 +177,22 @@ class PDFViewer extends Component {
     }
   }
 
+  zoomIn() {
+    if( this.state.zoom <= 4 ) {
+      this.setState({
+        zoom: this.state.zoom + 1
+      })
+    }
+  }
+
+  zoomOut() {
+    if( this.state.zoom > 1 ) {
+      this.setState({
+        zoom: this.state.zoom - 1
+      })
+    }
+  }
+
   render() {
 
     return (
@@ -180,16 +201,19 @@ class PDFViewer extends Component {
     >
       <WebView
         source={ this.state.imagePath }
-        style={styles.pdfViewer}
+        style={{ height: pdfHeight * this.state.zoom, width: pdfWidth * this.state.zoom }}
       />
-      <View
-        style={ styles.instructionsBox }
-      >
-        <Text
-          style={ styles.instructionsText }
-        >
-          Pinch to zoom...
-        </Text>
+      <View style={ styles.zoomContainer }>
+        <ZoomButton
+          iconName='md-add'
+          zoom={ this.zoomIn }
+          style={ styles.zoomButton }
+        />
+        <ZoomButton
+          iconName='md-remove'
+          zoom={ this.zoomOut }
+          style={ styles.zoomButton }
+        />
       </View>
     </View>
   );
