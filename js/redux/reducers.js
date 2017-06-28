@@ -10,8 +10,8 @@ import { NavigationReducer } from '@expo/ex-navigation';
 export default combineReducers({
   navigation: NavigationReducer,
   updates: UpdatesReducer,
+  form: formReducer,
   petProfile: combineReducers({
-    form: formReducer,
     toggleInputs:  petReducer,
   }),
   pets: petProfilesReducer
