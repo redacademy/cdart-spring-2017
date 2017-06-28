@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
-
+import { colors } from '../../config/styles';
 let { height, width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   separator: {
     flex: 1,
     height: StyleSheet.hairlineWidth,
-    backgroundColor: '#8E8E8E',
+    backgroundColor: colors.grey,
   },
   textList: {
     padding: 16,

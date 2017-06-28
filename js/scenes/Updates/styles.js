@@ -20,7 +20,8 @@ export const styles = StyleSheet.create({
     width: '100%',
     height:250,
     marginBottom: 8,
-    marginTop:4
+    marginTop:4,
+    // resizeMode: 'cover'
   },
   hashTag: {
     color:'blue'
