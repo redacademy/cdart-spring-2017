@@ -5,8 +5,6 @@ import { typography, colors } from '../../config/styles';
 
 export const styles = StyleSheet.create({
   tab: {
-    // padding: 4,
-    // marginBottom: 30,
     borderWidth: 1,
     flex: 1,
     alignItems: 'center',
@@ -38,7 +36,6 @@ export const styles = StyleSheet.create({
   tabText: {
     marginTop: height* (4 / 568),
     color: colors.blue,
-    // fontFamily: typography.fontMain
   },
   linearGradient: {
     flex: 1,

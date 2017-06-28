@@ -12,7 +12,7 @@ import { styles } from './styles';
 
 import GetInvolvedListItem from '../GetInvolvedListItem';
 
-var { width } = Dimensions.get('window');
+var { width, height } = Dimensions.get('window');
 
 const mainImage = require('../../../assets/images/get_involved.png');
 
@@ -28,7 +28,7 @@ class GetInvolvedList extends Component {
     return (
       <View style={styles.container}>
         <Image source={mainImage}
-        style={{width: width, height: 200}} />
+        style={{width: width, height: (height / 2.75)}} />
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(rowData) => {

@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center'
   },
   textList: {
-    padding: 12,
+    padding: 14,
     fontSize: 16
   },
   singleItem: {

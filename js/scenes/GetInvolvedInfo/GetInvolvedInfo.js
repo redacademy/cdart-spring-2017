@@ -14,7 +14,7 @@ import { colors } from '../../config/styles';
 
 import { styles } from './styles';
 
-var { width } = Dimensions.get('window');
+var { width, height } = Dimensions.get('window');
 
 const whichImage = (icon) => {
   switch(icon){
@@ -37,7 +37,7 @@ const GetInvolvedInfo = ({infoData, handleClick}) => {
   return (
     <ScrollView style={styles.contentContainer}>
       <Image source={whichImage(infoData.image)}
-        style={{width: width, height: 200}} />
+        style={{width: width, height: (height / 2.75), flex:1}} />
       {infoData.subsection.map((info, i) => (
         <View key={i} style={{padding:16, backgroundColor:colors.white}}>
           <Text style={styles.subtitle}>{info.subtitle}</Text>

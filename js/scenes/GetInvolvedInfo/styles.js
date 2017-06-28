@@ -1,6 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-var { width } = Dimensions.get('window');
+var { width, height } = Dimensions.get('window');
 
 import { colors } from '../../config/styles';
 
@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
   contentContainer: {
     padding: 0,
     backgroundColor: colors.dimBlue,
+    flex: 1
   },
   description: {
     marginTop: 2,
@@ -39,13 +40,15 @@ export const styles = StyleSheet.create({
     alignItems:'center',
   },
   listBoxContainer: {
-    height: 100,
+    flex: 1,
     justifyContent:'center',
     backgroundColor: colors.dimBlue,
-    width: width
+    width: width,
+    bottom: height*.175
   },
   separator: {
     height: StyleSheet.hairlineWidth,
     backgroundColor: colors.grey,
+    flex: 1
   },
 });
