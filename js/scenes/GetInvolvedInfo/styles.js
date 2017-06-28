@@ -44,7 +44,6 @@ export const styles = StyleSheet.create({
     justifyContent:'center',
     backgroundColor: colors.dimBlue,
     width: width,
-    bottom: height*.175
   },
   separator: {
     height: StyleSheet.hairlineWidth,

@@ -47,7 +47,6 @@ const GetInvolvedInfo = ({infoData, handleClick}) => {
       }
       <View style={styles.separator} />
       <View style={styles.listBoxContainer}>
-        <View style={styles.separator} />
         <TouchableOpacity
           onPress={() => handleClick(infoData.link)}
         >
