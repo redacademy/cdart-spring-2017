@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { _fetchTwitter } from '../../redux/modules/updates';
 
 import PushController from './../../components/PushController';
-import BackgroundFetchController from './../../components/BackgroundFetchController';
 
 import { connect } from 'react-redux'
 
@@ -99,7 +98,6 @@ class Updates extends Component {
         :
         <Text style={{textAlign: 'center'}}>Loading Tweets... </Text>}
       </View>
-      <BackgroundFetchController />
       <PushController />
     </ScrollView>
     );

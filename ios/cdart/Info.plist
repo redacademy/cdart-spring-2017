@@ -36,7 +36,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>View Camera Roll</string>
 	<key>UIAppFonts</key>
@@ -56,10 +56,6 @@
 		<string>SFUIText-Medium.ttf</string>
 		<string>SFUIText-Regular.ttf</string>
 		<string>SFUIText-Semibold.ttf</string>
-	</array>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>fetch</string>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
