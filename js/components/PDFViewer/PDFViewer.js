@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 
 import { styles } from './styles';
 
-import { View, WebView, Text, Dimensions } from 'react-native';
+import { View, ScrollView, WebView, Dimensions } from 'react-native';
 import ZoomButton from '../../components/ZoomButton';
 
 const { height, width } = Dimensions.get('window');
@@ -199,10 +199,17 @@ class PDFViewer extends Component {
     <View
      style={styles.pdfViewer}
     >
-      <WebView
-        source={ this.state.imagePath }
-        style={{ height: pdfHeight * this.state.zoom, width: pdfWidth * this.state.zoom }}
-      />
+      <ScrollView
+        directionalLockEnabled={ false }
+        horizontal={ true }
+        showsHorizontalScrollIndicator={ true }
+      >
+        <WebView
+          source={ this.state.imagePath }
+          style={{ height: pdfHeight * this.state.zoom, width: pdfWidth * this.state.zoom }}
+        />
+      </ScrollView>
+
       <View style={ styles.zoomContainer }>
         <ZoomButton
           iconName='md-add'

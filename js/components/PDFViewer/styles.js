@@ -10,7 +10,8 @@ export const styles = StyleSheet.create({
     height: height * 0.88,
     width: width,
     marginBottom: 1,
-    backgroundColor: colors.dimBlue
+    backgroundColor: colors.dimBlue,
+    overflow: 'visible'
   },
   instructionsBox: {
     backgroundColor: colors.dimBlue,
