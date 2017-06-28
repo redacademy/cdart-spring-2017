@@ -23,7 +23,7 @@ const Home = ({ navigation }) => {
   return (
     <View style={ styles.container }>
       <View style={ styles.ownerSection }>
-        <Text style={ styles.homeHeader }>
+        <Text style={ styles.ownerHeader }>
           Pet Owner
         </Text>
         <View style={ styles.tabContainer }>
@@ -43,7 +43,7 @@ const Home = ({ navigation }) => {
         </View>
       </View>
       <View style={ styles.volunteerSection }>
-        <Text style={ styles.homeHeader }>
+        <Text style={ styles.volunteerHeader }>
           Volunteer
         </Text>
         <View style={ styles.tabContainer }>

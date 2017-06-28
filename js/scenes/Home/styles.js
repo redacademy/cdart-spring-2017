@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     backgroundColor: '#EEF3F7'
-
   },
   ownerSection: {
     height: (height - 100) * 0.35,
@@ -20,19 +19,24 @@ export const styles = StyleSheet.create({
     height: (height - 100) * 0.55,
     width: width,
   },
-  homeHeader: {
+  ownerHeader: {
     width: width,
     textAlign: 'center',
     color: '#20425B',
     fontWeight: 'bold',
     fontFamily: typography.fontMain,
-
     fontSize: 16,
-    paddingBottom: height*( 16 / 568 )
-
+  },
+  volunteerHeader: {
+    width: width,
+    textAlign: 'center',
+    color: '#20425B',
+    fontWeight: 'bold',
+    fontFamily: typography.fontMain,
+    fontSize: 16,
+    paddingBottom: height*( 20 / 568 )
   },
   tabContainer: {
-    paddingHorizontal: width * 0.015,
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
