@@ -14,7 +14,10 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 
 import { styles } from './styles';
 
-
+// const required = value => value ? undefined : console.log('Required')
+// const maxLength = max => value =>
+//   value && value.length > max ? console.log(`Must be ${max} characters or less`) : undefined
+// const maxLength15 = maxLength(1)
 
 const NewProfile = (props) => {
   return (
@@ -24,10 +27,7 @@ const NewProfile = (props) => {
         currentNavigatorUID="petProfile"
         selectedImage={props.selectedImage ? props.selectedImage : props.data.image}/>
 
-      <Field name="Name" title="Name" component={InlineInput} data={props.data.name ? props.data.name : ''} validate={[
-    (val) => val ? undefined : 'This field is required',
-    (val) => val && val.length >= 8 ? undefined : 'This must be at least 8 characters long'
-  ]}/>
+      <Field name="Name" title="Name" component={InlineInput} data={props.data.name ? props.data.name : ''} validate={ props.required }/>
       <Field name="Age" title="Age" component={InlineInput} data={props.data.age ? props.data.age : ''} />
       <Field name="Species" title="Species" component={InlineInput} data={props.data.species ? props.data.species : ''} />
       <Field name="Breed" title="Breed" component={InlineInput} data={props.data.breed ? props.data.breed : ''} />
@@ -64,7 +64,7 @@ const NewProfile = (props) => {
 
 NewProfile.propTypes = {
   currentNavigatorUID: PropTypes.string,
-  data: PropTypes.object,
+  data: PropTypes.string,
   selectedImage: PropTypes.string,
 }
 
