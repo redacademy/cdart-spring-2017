@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     borderColor: 'grey'
   },
   clickedGreenCheck: {
-    borderRadius: 15,
+    borderRadius: width*(15/320),
     height: height*(30 / 568),
     width: width*(30 / 320),
     borderWidth: 1,
