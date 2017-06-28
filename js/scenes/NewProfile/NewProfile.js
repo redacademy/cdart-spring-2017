@@ -31,16 +31,16 @@ const NewProfile = (props) => {
 
       <View style={styles.inlineButtonsWrapper}>
         <Field name="Gender" title="Gender"component={SwitchButton} data={props.data.sex ? props.data.sex : ''} />
-        <ToggleButton info='Spayed' toggled={props.data.temperaments} />
+        <ToggleButton info='Spayed' title="Spayed/Neutered"selected={props.data.neutered} />
       </View>
 
       <Text style={styles.heading}>Temperament</Text>
       <View style={styles.toggleButtonsWrapper}>
-        <ToggleButton info='Friendly' toggled={props.data.temperaments ? props.data.temperaments : []} />
-        <ToggleButton info='Energetic' toggled={props.data.temperaments ? props.data.temperaments : []} />
-        <ToggleButton info='Timid' toggled={props.data.temperaments ? props.data.temperaments : []} />
-        <ToggleButton info='Aggresive' toggled={props.data.temperaments ? props.data.temperaments : []} />
-        <ToggleButton info='Obedient' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Friendly' title='Friendly' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Energetic' title='Energetic'toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Timid' title='Timid' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Aggresive' title='Aggresive' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Obedient' title='Obedient' toggled={props.data.temperaments ? props.data.temperaments : []} />
       </View>
 
       <Field name="Expand" title="Expand" component={MultilineTextarea} data={props.data.temperInfo ? props.data.temperInfo : ''} />

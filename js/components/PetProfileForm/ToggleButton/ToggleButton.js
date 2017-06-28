@@ -32,6 +32,7 @@ class ToggleButton extends Component {
   };
 
   componentDidMount(){
+    if(this.props.selected === 'Spayed')  this.setState({ selected: true });
     let tempers = []
     if(this.props.toggled){
       this.props.toggled.map(t => tempers.push(t.temperament))
@@ -48,14 +49,14 @@ class ToggleButton extends Component {
           onPress={this.onPress}
           style={styles.selectedButton}
         >
-          <Text style={styles.selectedButtonText}>{this.props.info}</Text>
+          <Text style={styles.selectedButtonText}>{this.props.title}</Text>
         </TouchableHighlight>
       :
         <TouchableHighlight
           onPress={this.onPress}
           style={styles.button}
         >
-          <Text style={styles.buttonText}>{this.props.info}</Text>
+          <Text style={styles.buttonText}>{this.props.title}</Text>
         </TouchableHighlight>
     );
   }
