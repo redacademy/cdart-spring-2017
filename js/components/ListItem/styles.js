@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import { typography } from '../../config/styles';
 
-var { width } = Dimensions.get('window')
+var { width, height } = Dimensions.get('window')
 
 export const styles = StyleSheet.create({
   container: {
@@ -13,16 +13,16 @@ export const styles = StyleSheet.create({
     paddingRight: 10,
   },
   greenCheck: {
-    borderRadius: 15,
-    height: 30,
-    width: 30,
+    borderRadius: width*(15/320),
+    height: height*(30/568),
+    width: width*(30/320),
     borderWidth: 1,
     borderColor: 'grey'
   },
   clickedGreenCheck: {
     borderRadius: 15,
-    height: 30,
-    width: 30,
+    height: height*(30 / 568),
+    width: width*(30 / 320),
     borderWidth: 1,
     borderColor: 'grey'
   },

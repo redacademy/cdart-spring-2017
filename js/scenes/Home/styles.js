@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#EEF3F7'
   },
   ownerSection: {
-    height: (height - 100) * 0.35,
+    height: (height - 100) * 0.34,
     width: width,
     marginTop: height*( 16 / 568 )
   },
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: typography.fontMain,
     fontSize: 16,
-    paddingBottom: height*( 20 / 568 )
+    paddingBottom: height*( 16 / 568 )
   },
   tabContainer: {
     flex: 1,
