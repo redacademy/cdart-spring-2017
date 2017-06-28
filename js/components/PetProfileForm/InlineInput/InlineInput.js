@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   View,
   Text,
@@ -9,19 +8,20 @@ import {
 import { styles } from './styles';
 
 export default function InlineInput(props) {
-  const { input, meta, ...inputProps} = props;
 
+  const { input, ...inputProps} = props;
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>{input.name}</Text>
-      <View><TextInput
-        onChangeText={input.onChange}
-        onBlur={input.onBlur}
-        onFocus={input.onFocus}
-        style={styles.textInput}
+      <View>
+        <TextInput
+          onChangeText={input.onChange}
+          onBlur={input.onBlur}
+          onFocus={input.onFocus}
+          style={styles.textInput}
+          //value={input.value}
         />
-        {meta.touched ? console.log(input.name, 'has been touched!') : console.log('nothing happening here in: ', input.name)}
-        </View>
+      </View>
     </View>
   );
 }
