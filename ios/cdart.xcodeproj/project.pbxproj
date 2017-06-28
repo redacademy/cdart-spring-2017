@@ -50,6 +50,9 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		85D75CCF6C7E424B8B2187FE /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EB0A0C26F82453FA21F39EA /* Zocial.ttf */; };
 		8CE4750CDEDB4CE0BC0A806F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF55E34C603F4925B5057119 /* EvilIcons.ttf */; };
+		9946A6361F02CE31009B4569 /* libRNBackgroundFetch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9946A6341F02CE18009B4569 /* libRNBackgroundFetch.a */; };
+		9946A6381F02CE4B009B4569 /* TSBackgroundFetch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9946A6371F02CE4B009B4569 /* TSBackgroundFetch.framework */; };
+		9946A63A1F02CEAC009B4569 /* RNBackgroundFetch+AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9946A6391F02CEAC009B4569 /* RNBackgroundFetch+AppDelegate.m */; };
 		9958464D1EFDD13200AC562A /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 995846371EFDD11000AC562A /* libRCTPushNotification.a */; };
 		A0B973163C194526BC4D132F /* SFUIText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDC99BB057254E31B4E162C3 /* SFUIText-Light.ttf */; };
 		A4290FB7B0994B139BAAF8D0 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02E08E9194C4696AFF9317C /* SimpleLineIcons.ttf */; };
@@ -258,6 +261,13 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		9946A6331F02CE18009B4569 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9946A60D1F02CE18009B4569 /* RNBackgroundFetch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 835318541D52293F005738CD;
+			remoteInfo = RNBackgroundFetch;
+		};
 		995846361EFDD11000AC562A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 995846241EFDD11000AC562A /* RCTPushNotification.xcodeproj */;
@@ -369,6 +379,9 @@
 		84E1C9D5E2324AB2AC3B1DF0 /* ActivityView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ActivityView.xcodeproj; path = "../node_modules/react-native-activity-view/ActivityView.xcodeproj"; sourceTree = "<group>"; };
 		8515787578594495B3582728 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8E769786F1A64373B497031B /* libActivityView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libActivityView.a; sourceTree = "<group>"; };
+		9946A60D1F02CE18009B4569 /* RNBackgroundFetch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNBackgroundFetch.xcodeproj; path = "../node_modules/react-native-background-fetch/ios/RNBackgroundFetch.xcodeproj"; sourceTree = "<group>"; };
+		9946A6371F02CE4B009B4569 /* TSBackgroundFetch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TSBackgroundFetch.framework; path = "../node_modules/react-native-background-fetch/ios/RNBackgroundFetch/TSBackgroundFetch.framework"; sourceTree = "<group>"; };
+		9946A6391F02CEAC009B4569 /* RNBackgroundFetch+AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RNBackgroundFetch+AppDelegate.m"; path = "../node_modules/react-native-background-fetch/ios/RNBackgroundFetch/RNBackgroundFetch+AppDelegate.m"; sourceTree = "<group>"; };
 		995846241EFDD11000AC562A /* RCTPushNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTPushNotification.xcodeproj; path = "../node_modules/react-native/Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj"; sourceTree = "<group>"; };
 		9C15CBDB7A0643C48672AC83 /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Semibold.ttf"; path = "../js/assets/fonts/SFUIText-Semibold.ttf"; sourceTree = "<group>"; };
 		9E1C229B42C847968B2D3722 /* libRNPrint.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNPrint.a; sourceTree = "<group>"; };
@@ -398,6 +411,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9946A6381F02CE4B009B4569 /* TSBackgroundFetch.framework in Frameworks */,
+				9946A6361F02CE31009B4569 /* libRNBackgroundFetch.a in Frameworks */,
 				9958464D1EFDD13200AC562A /* libRCTPushNotification.a in Frameworks */,
 				032A78E21EF9E1FC00D956AF /* libRCTCameraRoll.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -537,6 +552,7 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				9946A6391F02CEAC009B4569 /* RNBackgroundFetch+AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -604,6 +620,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9946A60D1F02CE18009B4569 /* RNBackgroundFetch.xcodeproj */,
 				995846241EFDD11000AC562A /* RCTPushNotification.xcodeproj */,
 				032A78BE1EF9E14D00D956AF /* RCTCameraRoll.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
@@ -663,10 +680,19 @@
 		97DD9C53A2214A9A8767072D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9946A6371F02CE4B009B4569 /* TSBackgroundFetch.framework */,
 				A145B80C56D24087843E5F7F /* libc++.tbd */,
 				8515787578594495B3582728 /* libz.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9946A60E1F02CE18009B4569 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9946A6341F02CE18009B4569 /* libRNBackgroundFetch.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		995846251EFDD11000AC562A /* Products */ = {
@@ -807,6 +833,13 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = true;
+							};
+						};
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -897,6 +930,8 @@
 				{
 					ProductGroup = EB08E16B1F0308DA00BCE7A4 /* Products */;
 					ProjectRef = 224268AFEF444AFAA795E5AB /* RNPrint.xcodeproj */;
+					ProductGroup = 9946A60E1F02CE18009B4569 /* Products */;
+					ProjectRef = 9946A60D1F02CE18009B4569 /* RNBackgroundFetch.xcodeproj */;
 				},
 				{
 					ProductGroup = EBB8039E1EF2F87200FE997A /* Products */;
@@ -1096,6 +1131,13 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9946A6341F02CE18009B4569 /* libRNBackgroundFetch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNBackgroundFetch.a;
+			remoteRef = 9946A6331F02CE18009B4569 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		995846371EFDD11000AC562A /* libRCTPushNotification.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1260,6 +1302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9946A63A1F02CEAC009B4569 /* RNBackgroundFetch+AppDelegate.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -1329,6 +1372,9 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cdart.app/cdart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../node_modules/react-native-background-fetch/ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1360,6 +1406,9 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cdart.app/cdart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../node_modules/react-native-background-fetch/ios/**",
+				);
 			};
 			name = Release;
 		};
@@ -1370,6 +1419,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../node_modules/react-native-background-fetch/ios/**",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
@@ -1397,6 +1449,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../node_modules/react-native-background-fetch/ios/**",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
@@ -1455,6 +1510,9 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../node_modules/react-native-background-fetch/ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1495,6 +1553,9 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../node_modules/react-native-background-fetch/ios/**",
+				);
 			};
 			name = Release;
 		};
