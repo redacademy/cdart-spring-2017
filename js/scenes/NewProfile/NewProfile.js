@@ -14,13 +14,13 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 
 import { styles } from './styles';
 
-// const required = value => (value ? undefined : console.log('required field is empty'));
-const required = value => (value ? undefined : 'Required');
-const maxLength = max => value =>
-  value && value.length > max ? `Must be ${max} characters or less` : undefined;
-const maxLength5 = maxLength(5);
-const number = value =>
-  value && isNaN(Number(value)) ? 'Must be a number' : undefined;
+//const required = value => (value ? undefined : hello);
+// const required = value => (value ? undefined : 'Required');
+// const maxLength = max => value =>
+//   value && value.length > max ? `Must be ${max} characters or less` : undefined;
+// const maxLength5 = maxLength(5);
+// const number = value =>
+//   value && isNaN(Number(value)) ? 'Must be a number' : undefined;
 
 const NewProfile = (props) => {
   console.log('VALID >>> ', props.valid);
@@ -32,12 +32,12 @@ const NewProfile = (props) => {
         currentNavigatorUID="petProfile"
         selectedImage={props.selectedImage ? props.selectedImage : props.data.image}/>
 
-      <Field name="Name" title="Name" component={InlineInput} data={props.data.name ? props.data.name : ''} validate={[required, maxLength5]} />
+      <Field name="Name" title="Name" component={InlineInput} data={props.data.name ? props.data.name : ''} />
 
-      <Field name="Age" title="Age" component={InlineInput} data={props.data.age ? props.data.age : ''} validate={[required, number]} />
-      <Field name="Species" title="Species" component={InlineInput} data={props.data.species ? props.data.species : ''} validate={required} />
-      <Field name="Breed" title="Breed" component={InlineInput} data={props.data.breed ? props.data.breed : ''} validate={required} />
-      <Field name="Color" title="Color" component={InlineInput} data={props.data.color ? props.data.color : ''} validate={required} />
+      <Field name="Age" title="Age" component={InlineInput} data={props.data.age ? props.data.age : ''} />
+      <Field name="Species" title="Species" component={InlineInput} data={props.data.species ? props.data.species : ''}  />
+      <Field name="Breed" title="Breed" component={InlineInput} data={props.data.breed ? props.data.breed : ''} />
+      <Field name="Color" title="Color" component={InlineInput} data={props.data.color ? props.data.color : ''}/>
 
       <View style={styles.inlineButtonsWrapper}>
         <Field name="Gender" title="Gender"component={SwitchButton} data={props.data.sex ? props.data.sex : ''} />

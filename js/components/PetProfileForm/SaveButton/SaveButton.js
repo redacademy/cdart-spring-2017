@@ -22,6 +22,7 @@ class SaveButton extends Component {
   }
 
   handleSubmit = () => {
+    console.log(this.props.formData);
     let id = Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
     createPetProfile(this.props.formData.NewProfileForm.values, this.props.formToggle, id);
     clearNavStack('petProfile');
@@ -41,17 +42,11 @@ class SaveButton extends Component {
   }
 }
 
-function mapStateToProps(state){
-  return {
-    formData: state.petProfile,
-  }
-}
-
 SaveButton.propTypes = {
   originalData: PropTypes.object,
   id: PropTypes.string,
   formData: PropTypes.object
 }
 
-export default connect(mapStateToProps)(SaveButton);
+export default SaveButton;
 
