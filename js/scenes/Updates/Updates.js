@@ -92,7 +92,7 @@ class Updates extends Component {
           )
         })
         :
-        <Text style={styles.tweetLoading}>Loading Tweets... </Text>}
+        <Text style={styles.tweetLoading}>Connecting to twitter... </Text>}
       </View>
       <PushController />
     </ScrollView>

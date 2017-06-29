@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { View, Image, ListView, Dimensions, ScrollView } from 'react-native';
+import { View, Image, ListView, ScrollView } from 'react-native';
 
 import { styles } from './styles';
 
@@ -21,12 +21,10 @@ const whichPicture = (title) => {
 }
 
 class PictureList extends Component {
-
   constructor(props){
     super(props);
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      //CREATE A PROPERTY CALLED list and PASS AN ARRAY INTO IT
       dataSource: ds.cloneWithRows(this.props.list),
     }
   }
