@@ -5,6 +5,7 @@ import {
   Text,
   TextInput
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { styles } from './styles';
 
@@ -24,4 +25,9 @@ export default function InlineInput(props) {
       />
     </View>
   );
+}
+
+InlineInput.propTypes = {
+  input: PropTypes.object,
+  data: PropTypes.string
 }

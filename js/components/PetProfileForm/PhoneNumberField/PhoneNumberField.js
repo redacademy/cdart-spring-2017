@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Field } from 'redux-form';
+import PropTypes from 'prop-types';
 
 import { styles } from './styles';
 
@@ -38,6 +39,11 @@ const PhoneNumberField = (props) => {
       </View>
     </View>
   );
+}
+
+PhoneNumberField.propTypes = {
+  fieldName: PropTypes.string,
+  data: PropTypes.string,
 }
 
 export default PhoneNumberField;

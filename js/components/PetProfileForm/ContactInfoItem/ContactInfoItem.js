@@ -6,6 +6,7 @@ import {
   LayoutAnimation
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import PropTypes from 'prop-types';
 
 import ContactForm from '../ContactForm';
 
@@ -49,6 +50,10 @@ class ContactInfoItem extends Component {
       </View>
     );
   }
+}
+
+ContactInfoItem.propTypes = {
+  title: PropTypes.string
 }
 
 export default ContactInfoItem;
