@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import { ListView } from 'react-native';
 
@@ -9,7 +9,7 @@ import { styles } from './styles';
 
 const EmergencyKit = ({ dataSource }) => {
   return (
-    <View>
+    <ScrollView>
       <View style={styles.greyTop} >
         <Text style={styles.greyTopText} >
           Prepare your pet for an emergency by having these items ready to grab and go.
@@ -22,7 +22,7 @@ const EmergencyKit = ({ dataSource }) => {
         }}
         renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
       />
-    </View>
+    </ScrollView>
   )
 }
 
