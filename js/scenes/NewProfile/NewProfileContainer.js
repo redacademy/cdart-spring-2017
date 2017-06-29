@@ -26,9 +26,10 @@ class NewProfileContainer extends Component {
 
 function mapStateToProps(state) {
   return {
-    formData: state.petProfile,
+    formData: state.form,
+    formToggle: state.formToggle,
     formValues: getFormValues('NewProfileForm')(state),
-    selectedImage: state.petProfile.toggleInputs.selectedImage
+    selectedImage: state.formToggle.selectedImage
   }
 }
 
