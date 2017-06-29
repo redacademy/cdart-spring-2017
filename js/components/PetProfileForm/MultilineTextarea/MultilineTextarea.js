@@ -4,6 +4,7 @@ import {
   Text,
   TextInput
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { colors } from '../../../config/styles';
 import { styles } from './styles';
@@ -26,4 +27,9 @@ export default function MultilineTextarea(props) {
       />
     </View>
   );
+}
+
+MultilineTextarea.propTypes = {
+  data: PropTypes.string,
+  input: PropTypes.object
 }

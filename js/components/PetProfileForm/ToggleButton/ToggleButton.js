@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 import { getFormValues } from 'redux-form';
+import PropTypes from 'prop-types';
 
 import { addTemperament, addSpayed } from '../../../redux/modules/petInfo'
 
@@ -67,6 +68,14 @@ function mapStateToProps(state){
     data: state.petProfile,
     form: getFormValues('NewProfileForm')(state)
   }
+}
+
+ToggleButton.propTypes = {
+  title: PropTypes.string,
+  info: PropTypes.string,
+  toggled: PropTypes.array,
+  dispatch: PropTypes.func,
+  selected: PropTypes.bool
 }
 
 export default connect(mapStateToProps)(ToggleButton);

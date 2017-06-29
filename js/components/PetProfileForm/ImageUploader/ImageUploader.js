@@ -6,6 +6,7 @@ import {
   Text,
   TouchableHighlight
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import {goToSubpage} from '../../../lib/navigationHelpers';
 import { colors } from '../../../config/styles';
@@ -31,6 +32,10 @@ const ImageUploader = (props) => {
     }
     </TouchableHighlight>
   );
+}
+
+ImageUploader.propTypes = {
+  selectedImage: PropTypes.string
 }
 
 export default ImageUploader;

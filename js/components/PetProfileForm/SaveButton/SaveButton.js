@@ -4,6 +4,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { createPetProfile, updatePetProfile } from '../../../config/models';
 import { goToSubpage, clearNavStack } from '../../../lib/navigationHelpers';
@@ -40,5 +41,17 @@ class SaveButton extends Component {
   }
 }
 
-export default SaveButton;
+function mapStateToProps(state){
+  return {
+    formData: state.petProfile,
+  }
+}
+
+SaveButton.propTypes = {
+  originalData: PropTypes.object,
+  id: PropTypes.string,
+  formData: PropTypes.object
+}
+
+export default connect(mapStateToProps)(SaveButton);
 

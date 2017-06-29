@@ -5,6 +5,7 @@ import {
   TouchableHighlight
 } from 'react-native';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { addGender } from '../../../redux/modules/petInfo'
 import { styles } from './styles';
@@ -53,6 +54,10 @@ class SwitchButton extends Component{
       </View>
     );
   }
+}
+
+SwitchButton.propTypes = {
+  data: PropTypes.string
 }
 
 function mapStateToProps(state){
