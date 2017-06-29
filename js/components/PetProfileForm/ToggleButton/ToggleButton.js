@@ -28,7 +28,7 @@ class ToggleButton extends Component {
 
     if(!this.state.selected){
       if(this.props.info === 'Spayed'){
-        this.props.dispatch(removeSpayed(this.props.info))
+        this.props.dispatch(removeSpayed())
       } else {
         this.props.dispatch(removeTemperament(this.props.info))
       }

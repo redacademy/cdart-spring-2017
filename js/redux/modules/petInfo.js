@@ -9,7 +9,7 @@ export const addTemperament = (info) => ({ type: ADD_TEMPERAMENT_INFO, payload: 
 export const removeTemperament = (info) => ({ type: REMOVE_TEMPERAMENT_INFO, payload: info });
 export const addGender = (info) => ({ type: ADD_GENDER_INFO, payload: info });
 export const addSpayed = (info) => ({ type: ADD_SPAYED, payload: info });
-export const removeSpayed = (info) => ({ type: REMOVE_SPAYED, payload: info })
+export const removeSpayed = () => ({ type: REMOVE_SPAYED })
 export const setPetProfileImageUri = (uri) => ({ type: SET_PET_PROFILE_IMAGE_URI, payload: uri });
 
 export function reducer(state = {
@@ -46,7 +46,7 @@ export function reducer(state = {
     }
     case REMOVE_SPAYED:{
         return Object.assign({}, state, {
-            spayed: action.payload
+            spayed: ''
         })
     }
     default:
