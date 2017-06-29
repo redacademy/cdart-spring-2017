@@ -73,10 +73,10 @@ class Updates extends Component {
             <View key={i} style={styles.tweet}>
               <View style={styles.screenWidth}>
                 <View style={styles.nameDate}>
-                  <Text style={{fontWeight:'bold'}}>{tweet.user.name}
-                    <Text style={{color:'grey', fontFamily: typography.fontMainLight}}> @{tweet.user.screen_name}</Text>
+                  <Text style={styles.tweetUserName}>{tweet.user.name}
+                    <Text style={styles.screenName}> @{tweet.user.screen_name}</Text>
                   </Text>
-                  <Text style={{color:'#BF3841'}}>{tweet.created_at.substring(4, 10)}</Text>
+                  <Text style={styles.tweetDate}>{tweet.created_at.substring(4, 10)}</Text>
                 </View>
                 <View style={styles.screenWidth}>
                   {
@@ -92,7 +92,7 @@ class Updates extends Component {
           )
         })
         :
-        <Text style={{textAlign: 'center'}}>Loading Tweets... </Text>}
+        <Text style={styles.tweetLoading}>Loading Tweets... </Text>}
       </View>
       <PushController />
     </ScrollView>

@@ -1,6 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
+import { typography, colors } from '../../config/styles';
 
-const { height, width } = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   tweet: {
@@ -27,5 +28,18 @@ export const styles = StyleSheet.create({
   },
   screenWidth: {
     width: width - 32
+  },
+  tweetUserName: {
+    fontWeight:'bold'
+  },
+  screenName: {
+    color:'grey',
+    fontFamily: typography.fontMainLight,
+  },
+  tweetDate: {
+    color: colors.red
+  },
+  tweetLoading: {
+    textAlign: 'center'
   }
 });
