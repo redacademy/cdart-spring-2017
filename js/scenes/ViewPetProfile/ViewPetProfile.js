@@ -21,7 +21,8 @@ const ViewProfile = ({ petInfo }) => {
    const selectedTemperaments = petInfo.temperaments.map(temperament => {
       return temperament.temperament;
     });
-    console.log(selectedTemperaments);
+
+    console.log(petInfo)
 
   return (
     <ScrollView>
@@ -175,30 +176,31 @@ const ViewProfile = ({ petInfo }) => {
         </View>
 
         <View style={ styles.textInfoSection }>
-          <View style={ styles.blueTextArea }>
+        { petInfo.temperInfo && <View style={ styles.blueTextArea }>
             <Text style={ styles.blueTextAreaText }>{ petInfo.temperInfo }</Text>
           </View>
-
+        }
           <View style={ styles.whiteTextArea }>
             <Text style={ styles.sectionHeader }>Distinguishing Features</Text>
           </View>
-          <View style={ styles.blueTextArea }>
+        { petInfo.features &&  <View style={ styles.blueTextArea }>
             <Text style={ styles.blueTextAreaText }>{ petInfo.features }</Text>
           </View>
-
+        }
           <View style={ styles.whiteTextArea }>
             <Text style={ styles.sectionHeader }>Care Instructions</Text>
           </View>
-          <View style={ styles.blueTextArea }>
+        { petInfo.care &&  <View style={ styles.blueTextArea }>
             <Text style={ styles.blueTextAreaText }>{ petInfo.care }</Text>
           </View>
-
+        }
           <View style={ styles.whiteTextArea }>
             <Text style={ styles.sectionHeader }>Medical Alerts</Text>
           </View>
-          <View style={ styles.blueTextArea }>
+        { petInfo.medicalAlert &&  <View style={ styles.blueTextArea }>
             <Text style={ styles.blueTextAreaText }>{ petInfo.medicalAlert }</Text>
           </View>
+        }
         </View>
 
 
