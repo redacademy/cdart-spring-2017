@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+let { height, width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   separator: {
@@ -17,7 +19,7 @@ export const styles = StyleSheet.create({
     backgroundColor: 'white'
   },
   icon:{
-    width: 25,
+    width: width*(25 / 320),
     marginRight: 8
   }
 });
