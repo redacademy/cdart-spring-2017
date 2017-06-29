@@ -36,9 +36,12 @@ class ToggleButton extends Component {
     if(this.props.selected === 'Spayed')  this.setState({ selected: true });
     let tempers = []
     if(this.props.toggled){
-      this.props.toggled.map(t => tempers.push(t.temperament))
+      this.props.toggled.map(t => {
+        tempers.push(t.temperament)
+      })
       if(tempers.includes(this.props.info)){
         this.setState({ selected: true })
+        this.props.dispatch(addTemperament(this.props.info))
       }
     }
   }

@@ -32,7 +32,7 @@ const NewProfile = (props) => {
 
       <View style={styles.inlineButtonsWrapper}>
         <Field name="Gender" title="Gender"component={SwitchButton} data={props.data.sex ? props.data.sex : ''} />
-        <ToggleButton info='Spayed' title="Spayed/Neutered"selected={props.data.neutered} />
+        <ToggleButton info='Spayed' title="Spayed/Neutered" selected={props.data.neutered} />
       </View>
 
       <Text style={styles.heading}>Temperament</Text>
