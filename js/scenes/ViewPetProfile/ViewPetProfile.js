@@ -222,7 +222,7 @@ const ViewProfile = ({ petInfo }) => {
           petInfo.owner1.name &&<ContactInfoDisplay title='Owner Contact' info={ petInfo.owner1 } />
         }
         {
-          petInfo.vet.name && <ContactInfoDisplay title='Veterinarian Contact' info={ petInfo.vet } />
+          petInfo.vet.name || petInfo.vet.hospital && <ContactInfoDisplay title='Veterinarian Contact' info={ petInfo.vet } />
         }
         {
           petInfo.owner2.name && <ContactInfoDisplay title='Secondary Contact' info={ petInfo.owner2 } />
