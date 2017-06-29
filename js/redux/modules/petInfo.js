@@ -41,12 +41,12 @@ export function reducer(state = {
     }
     case REMOVE_TEMPERAMENT_INFO:{
         return Object.assign({}, state, {
-            temperaments: [...state.temperaments, action.payload]
+            temperaments: [...state.temperaments.pop(action.payload)]
         })
     }
     case REMOVE_SPAYED:{
         return Object.assign({}, state, {
-            spayed: ''
+            spayed: 'N/A'
         })
     }
     default:

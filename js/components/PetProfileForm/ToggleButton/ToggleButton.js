@@ -26,7 +26,7 @@ class ToggleButton extends Component {
     LayoutAnimation.easeInEaseOut();
     this.setState({selected: !this.state.selected});
 
-    if(!this.state.selected){
+    if(this.state.selected){
       if(this.props.info === 'Spayed'){
         this.props.dispatch(removeSpayed())
       } else {
