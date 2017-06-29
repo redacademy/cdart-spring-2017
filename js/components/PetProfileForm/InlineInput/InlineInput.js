@@ -8,20 +8,18 @@ import {
 import { styles } from './styles';
 
 export default function InlineInput(props) {
-
-  const { input, ...inputProps} = props;
+  const { input, ...inputProps } = props;
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>{input.name}</Text>
-      <View>
-        <TextInput
-          onChangeText={input.onChange}
-          onBlur={input.onBlur}
-          onFocus={input.onFocus}
-          style={styles.textInput}
-          //value={input.value}
+      <TextInput
+        onChangeText={ val => input.onChange(val) }
+        onBlur={ val => input.onBlur(val) }
+        onFocus={input.onFocus}
+        style={styles.textInput}
+        defaultValue={props.data}
+        value={input.value}
         />
-      </View>
     </View>
   );
 }
