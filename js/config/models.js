@@ -156,7 +156,7 @@ export const createPetProfile = (textInput, buttonInput, id) => {
       breed: textInput.Breed,
       color: textInput.Color,
       sex: buttonInput.gender,
-      neutered: buttonInput.spayed,
+      neutered: buttonInput.spayed ? buttonInput.spayed : '',
       temperInfo: textInput.Expand ? textInput.Expand : '',
       features: textInput.DistinguishingFeatures ? textInput.DistinguishingFeatures : '',
       care: textInput.CareInstructions ? textInput.CareInstructions : '',

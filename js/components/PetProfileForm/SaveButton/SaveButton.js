@@ -22,13 +22,12 @@ class SaveButton extends Component {
 
   handleSubmit = () => {
     let id = Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-    createPetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, id);
+    createPetProfile(this.props.formData.NewProfileForm.values, this.props.formToggle, id);
     clearNavStack('petProfile');
   }
 
   handleEdit = () => {
-    console.log(this.props.originalData);
-    updatePetProfile(this.props.formData.form.NewProfileForm.values, this.props.formData.toggleInputs, this.props.originalData, this.props.id);
+    updatePetProfile(this.props.formData.NewProfileForm.values, this.props.formToggle, this.props.originalData, this.props.id);
     clearNavStack('petProfile');
   }
 
@@ -41,11 +40,5 @@ class SaveButton extends Component {
   }
 }
 
-function mapStateToProps(state){
-  return {
-    formData: state.petProfile,
-  }
-}
-
-export default connect(mapStateToProps)(SaveButton);
+export default SaveButton;
 

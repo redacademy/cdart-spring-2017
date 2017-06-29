@@ -22,6 +22,7 @@ const maxLength50 = maxLength(50)
 
 const NewProfile = (props) => {
   console.log('VALID >>> ', props.valid)
+  console.log(props.data)
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
@@ -60,7 +61,7 @@ const NewProfile = (props) => {
       <FieldArray name="VeterinarianContact" title="Veterinarian Contact" component={ContactInfoItem} data={props.data.vet ? props.data.vet : ''} />
       <FieldArray name="SecondaryContact" title="Secondary Contact" component={ContactInfoItem} data={props.data.owner2 ? props.data.owner2 : ''} />
 
-      <SaveButton originalData={props.data} currentNavigatorUID={props.currentNavigatorUID} id={props.data.id ? props.data.id : ''} />
+      <SaveButton originalData={props.data} formData={props.formData} formToggle={props.formToggle} currentNavigatorUID={props.currentNavigatorUID} id={props.data.id ? props.data.id : ''} />
     </ScrollView>
   );
 }
