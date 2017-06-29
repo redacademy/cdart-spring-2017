@@ -14,12 +14,14 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 
 import { styles } from './styles';
 
-// const required = value => value ? undefined : console.log('Required')
-// const maxLength = max => value =>
-//   value && value.length > max ? console.log(`Must be ${max} characters or less`) : undefined
-// const maxLength15 = maxLength(1)
+const required = value => value ? undefined : 'Big Problem...';
+const maxLength = max => value =>
+  value && value.length > max ? console.log(`Must be ${max} characters or less`) : undefined
+const maxLength50 = maxLength(50)
+
 
 const NewProfile = (props) => {
+  console.log('VALID >>> ', props.valid)
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
@@ -27,11 +29,12 @@ const NewProfile = (props) => {
         currentNavigatorUID="petProfile"
         selectedImage={props.selectedImage ? props.selectedImage : props.data.image}/>
 
-      <Field name="Name" title="Name" component={InlineInput} data={props.data.name ? props.data.name : ''} validate={ props.required }/>
-      <Field name="Age" title="Age" component={InlineInput} data={props.data.age ? props.data.age : ''} />
-      <Field name="Species" title="Species" component={InlineInput} data={props.data.species ? props.data.species : ''} />
-      <Field name="Breed" title="Breed" component={InlineInput} data={props.data.breed ? props.data.breed : ''} />
-      <Field name="Color" title="Color" component={InlineInput} data={props.data.color ? props.data.color : ''} />
+      <Field name="Name" title="Name" component={InlineInput} data={props.data.name ? props.data.name : ''} validate={required} />
+
+      <Field name="Age" title="Age" component={InlineInput} data={props.data.age ? props.data.age : ''} validate={required} />
+      <Field name="Species" title="Species" component={InlineInput} data={props.data.species ? props.data.species : ''} validate={required} />
+      <Field name="Breed" title="Breed" component={InlineInput} data={props.data.breed ? props.data.breed : ''} validate={required} />
+      <Field name="Color" title="Color" component={InlineInput} data={props.data.color ? props.data.color : ''} validate={required} />
 
       <View style={styles.inlineButtonsWrapper}>
         <Field name="Gender" title="Gender"component={SwitchButton} data={props.data.sex ? props.data.sex : ''} />
