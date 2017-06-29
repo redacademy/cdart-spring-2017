@@ -2,27 +2,23 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 
 import { styles } from './styles';
-import { colors } from '../../config/styles';
-
-const { height, width } = Dimensions.get('window');
 
 import {
   ScrollView,
   View,
   Image,
-  Text,
-  Dimensions
+  Text
 } from 'react-native';
 
 import ContactInfoDisplay from '../../components/ContactInfoDisplay';
 import MicrochipNumDisplay from '../../components/MicrochipNumDisplay';
 
 const ViewProfile = ({ petInfo }) => {
-   const selectedTemperaments = petInfo.temperaments.map(temperament => {
+  const selectedTemperaments = petInfo.temperaments.map(temperament => {
       return temperament.temperament;
     });
 
-    console.log(petInfo)
+    petInfo.microchip ? console.log('I am true') : console.log('I am false')
 
   return (
     <ScrollView>
@@ -176,29 +172,45 @@ const ViewProfile = ({ petInfo }) => {
         </View>
 
         <View style={ styles.textInfoSection }>
-        { petInfo.temperInfo && <View style={ styles.blueTextArea }>
+        { petInfo.temperInfo ?
+          <View style={ styles.blueTextArea }>
             <Text style={ styles.blueTextAreaText }>{ petInfo.temperInfo }</Text>
+          </View>:
+          <View style={ styles.blueTextArea }>
+            <Text style={ styles.blueTextAreaText }>N/A</Text>
           </View>
         }
           <View style={ styles.whiteTextArea }>
             <Text style={ styles.sectionHeader }>Distinguishing Features</Text>
           </View>
-        { petInfo.features &&  <View style={ styles.blueTextArea }>
+        { petInfo.features ?
+          <View style={ styles.blueTextArea }>
             <Text style={ styles.blueTextAreaText }>{ petInfo.features }</Text>
+          </View>:
+          <View style={ styles.blueTextArea }>
+            <Text style={ styles.blueTextAreaText }>N/A</Text>
           </View>
         }
           <View style={ styles.whiteTextArea }>
             <Text style={ styles.sectionHeader }>Care Instructions</Text>
           </View>
-        { petInfo.care &&  <View style={ styles.blueTextArea }>
+        { petInfo.care ?
+          <View style={ styles.blueTextArea }>
             <Text style={ styles.blueTextAreaText }>{ petInfo.care }</Text>
+          </View>:
+          <View style={ styles.blueTextArea }>
+            <Text style={ styles.blueTextAreaText }>N/A</Text>
           </View>
         }
           <View style={ styles.whiteTextArea }>
             <Text style={ styles.sectionHeader }>Medical Alerts</Text>
           </View>
-        { petInfo.medicalAlert &&  <View style={ styles.blueTextArea }>
+        { petInfo.medicalAlert ?
+          <View style={ styles.blueTextArea }>
             <Text style={ styles.blueTextAreaText }>{ petInfo.medicalAlert }</Text>
+          </View>:
+          <View style={ styles.blueTextArea }>
+            <Text style={ styles.blueTextAreaText }>N/A</Text>
           </View>
         }
         </View>
@@ -208,13 +220,14 @@ const ViewProfile = ({ petInfo }) => {
           petInfo.microchip && <MicrochipNumDisplay title='Microchip #' info={ petInfo.microchip } />
         }
 
-        <ContactInfoDisplay title='Owner Contact' info={ petInfo.owner1 } />
-
         {
-          petInfo.vet && <ContactInfoDisplay title='Veterinarian Contact' info={ petInfo.vet } />
+          petInfo.owner1.name &&<ContactInfoDisplay title='Owner Contact' info={ petInfo.owner1 } />
         }
         {
-          petInfo.owner2 && <ContactInfoDisplay title='Secondary Contact' info={ petInfo.owner2 } />
+          petInfo.vet.name && <ContactInfoDisplay title='Veterinarian Contact' info={ petInfo.vet } />
+        }
+        {
+          petInfo.owner2.name && <ContactInfoDisplay title='Secondary Contact' info={ petInfo.owner2 } />
         }
       </View>
     </ScrollView>
