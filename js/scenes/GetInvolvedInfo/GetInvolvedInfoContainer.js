@@ -14,7 +14,9 @@ class GetInvolvedInfoContainer extends Component {
   }
   static route = {
     navigationBar: {
-      title: this.title,
+      title( params ) {
+        return params.infoData.title;
+      }
     }
   }
 
