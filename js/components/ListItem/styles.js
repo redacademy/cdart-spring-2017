@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 5,
-    paddingRight: 10,
+    paddingRight: width*(16/320),
   },
   greenCheck: {
     borderRadius: width*(15/320),

@@ -314,31 +314,31 @@ export const checkLists = [
   {
     title: `Volunteer Packing Checklist`,
     subsection: volunteerSupplyList,
-    subsectionText: `Volunteer Packing Checklist`,
+    subsectionText: `List of items volunteers should bring`,
     targetRoute: 'checklistsPage'
   },
   {
     title: `Animal Intake Supply List`,
     subsection: animalIntakeSupplyList,
-    subsectionText: `Animal Intake Supply List (First Aid Kit)`,
+    subsectionText: `Animal Intake Supply List and Pet First Aid Kit List`,
     targetRoute: 'checklistsPage'
   },
   {
     title: `Shelter Supply List`,
     subsection: shelterSupplyList,
-    subsectionText: `Shelter Supply List (Including human first aid kits)`,
+    subsectionText: `Shelter Supply List Also Including Human First Aid Kit List)`,
     targetRoute: 'checklistsPage'
   },
   {
     title: `Barn Supply List`,
     subsection: barnSupplyList,
-    subsectionText: `Barn Supply List`,
+    subsectionText: `List of Barn supply items`,
     targetRoute: 'checklistsPage'
   },
   {
     title: `Community Supply Resources`,
     subsection: communitySupplyResources,
-    subsectionText: `Community Supply Resources`,
+    subsectionText: `List of Community Supply Resources`,
     targetRoute: 'checklistsPage'
   },
 ]
