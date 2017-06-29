@@ -19,8 +19,7 @@ export default function InlineInput(props) {
         onFocus={input.onFocus}
         style={styles.textInput}
         defaultValue={props.data}
-        value={input.value}
-        />
+      />
     </View>
   );
 }
