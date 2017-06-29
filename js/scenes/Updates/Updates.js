@@ -5,7 +5,7 @@ import { _fetchTwitter } from '../../redux/modules/updates';
 import { connect } from 'react-redux'
 
 import PushNotification from 'react-native-push-notification'
-import PushController from './../../pushController';
+import PushController from '../../components/PushController';
 
 import { styles } from './styles';
 class Updates extends Component {
