@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
   },
   textInput: {
     height: 30,
-    borderColor: colors.green,
+    borderColor: colors.skyBlue,
     borderWidth: 1,
     borderRadius: 5,
     marginBottom: 5,

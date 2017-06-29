@@ -100,7 +100,7 @@ export const styles = StyleSheet.create({
   buttonText: {
     fontFamily: typography.fontMain,
     fontSize: 18,
-    color: colors.green,
+    color: colors.skyBlue,
     textAlign: 'center',
   }
 });

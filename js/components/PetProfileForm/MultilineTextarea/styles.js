@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   multilineInput: {
     height: 60,
     width: '100%',
-    borderColor: colors.green,
+    borderColor: colors.skyBlue,
     borderWidth: 1,
     borderRadius: 5,
     padding: 5,

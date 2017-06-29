@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     marginTop: 5,
     marginBottom: 15,
     borderWidth: 1,
-    borderColor: colors.green,
+    borderColor: colors.skyBlue,
     borderRadius: 15,
     overflow: 'hidden',
     width: 210,

@@ -43,7 +43,7 @@ class SwitchButton extends Component{
     return (
       <View style={styles.container}>
 
-        <TouchableHighlight style={this.state.female ? styles.clicked : styles.button} onPress={() => this.press('female')} >
+        <TouchableHighlight style={this.state.female ? [styles.clicked, styles.clickedSeparator] : [styles.button, styles.buttonSeparator]} onPress={() => this.press('female')} >
           <Text style={this.state.female ? styles.clickedText : styles.buttonText}>Female</Text>
         </TouchableHighlight>
 

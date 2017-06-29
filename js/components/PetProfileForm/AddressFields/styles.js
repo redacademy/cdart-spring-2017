@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   },
   textInput: {
     height: 30,
-    borderColor: colors.green,
+    borderColor: colors.skyBlue,
     borderWidth: 1,
     borderRadius: 5,
     marginTop: 8,
@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
   textInputShort: {
     height: 30,
     width: 65,
-    borderColor: colors.green,
+    borderColor: colors.skyBlue,
     borderWidth: 1,
     borderRadius: 5,
     padding: 5,
