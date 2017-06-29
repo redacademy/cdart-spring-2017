@@ -17,9 +17,7 @@ const ViewProfile = ({ petInfo }) => {
   const selectedTemperaments = petInfo.temperaments.map(temperament => {
       return temperament.temperament;
     });
-
-    petInfo.microchip ? console.log('I am true') : console.log('I am false')
-
+    console.log(petInfo);
   return (
     <ScrollView>
       <View style={ styles.profileContainer }>
@@ -224,7 +222,7 @@ const ViewProfile = ({ petInfo }) => {
           petInfo.owner1.name &&<ContactInfoDisplay title='Owner Contact' info={ petInfo.owner1 } />
         }
         {
-          petInfo.vet.name && <ContactInfoDisplay title='Veterinarian Contact' info={ petInfo.vet } />
+          petInfo.vet.name || petInfo.vet.hospital && <ContactInfoDisplay title='Veterinarian Contact' info={ petInfo.vet } />
         }
         {
           petInfo.owner2.name && <ContactInfoDisplay title='Secondary Contact' info={ petInfo.owner2 } />

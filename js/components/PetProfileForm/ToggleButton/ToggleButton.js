@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import { getFormValues } from 'redux-form';
 import PropTypes from 'prop-types';
 
-import { addTemperament, addSpayed } from '../../../redux/modules/petInfo'
+import { addTemperament, addSpayed, removeSpayed, removeTemperament } from '../../../redux/modules/petInfo'
 
 import { styles } from './styles';
 
@@ -25,10 +25,19 @@ class ToggleButton extends Component {
   onPress = () => {
     LayoutAnimation.easeInEaseOut();
     this.setState({selected: !this.state.selected});
-    if(this.props.info === 'Spayed'){
-      this.props.dispatch(addSpayed(this.props.info))
+
+    if(this.state.selected){
+      if(this.props.info === 'Spayed'){
+        this.props.dispatch(removeSpayed())
+      } else {
+        this.props.dispatch(removeTemperament(this.props.info))
+      }
     } else {
-      this.props.dispatch(addTemperament(this.props.info))
+      if(this.props.info === 'Spayed'){
+        this.props.dispatch(addSpayed(this.props.info))
+      } else {
+        this.props.dispatch(addTemperament(this.props.info))
+      }
     }
   };
 
@@ -36,9 +45,12 @@ class ToggleButton extends Component {
     if(this.props.selected === 'Spayed')  this.setState({ selected: true });
     let tempers = []
     if(this.props.toggled){
-      this.props.toggled.map(t => tempers.push(t.temperament))
+      this.props.toggled.map(t => {
+        tempers.push(t.temperament)
+      })
       if(tempers.includes(this.props.info)){
         this.setState({ selected: true })
+        this.props.dispatch(addTemperament(this.props.info))
       }
     }
   }
