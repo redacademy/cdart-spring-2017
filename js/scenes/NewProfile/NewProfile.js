@@ -14,17 +14,8 @@ import ContactInfoItem from '../../components/PetProfileForm/ContactInfoItem';
 
 import { styles } from './styles';
 
-//const required = value => (value ? undefined : hello);
-// const required = value => (value ? undefined : 'Required');
-// const maxLength = max => value =>
-//   value && value.length > max ? `Must be ${max} characters or less` : undefined;
-// const maxLength5 = maxLength(5);
-// const number = value =>
-//   value && isNaN(Number(value)) ? 'Must be a number' : undefined;
-
 const NewProfile = (props) => {
-  console.log('VALID >>> ', props.valid);
-  console.log('PROPS >>>>>>>>>', props);
+
   return (
     <ScrollView style={styles.container} keyboardShouldPersistTaps={'handled'} >
 
