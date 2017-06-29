@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   View,
   Text,
@@ -8,7 +9,8 @@ import {
 import { styles } from './styles';
 
 export default function InlineInput(props) {
-  const { input, ...inputProps } = props;
+  const { input, meta, ...inputProps} = props;
+
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>{input.name}</Text>
@@ -19,7 +21,7 @@ export default function InlineInput(props) {
         style={styles.textInput}
         defaultValue={props.data}
         value={input.value}
-        />
+      />
     </View>
   );
 }

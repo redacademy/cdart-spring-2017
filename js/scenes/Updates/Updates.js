@@ -2,16 +2,12 @@ import React, { Component } from 'react';
 import { View, Text, AppState, Image, ScrollView, RefreshControl } from 'react-native';
 import PropTypes from 'prop-types';
 import { _fetchTwitter } from '../../redux/modules/updates';
-
-import PushController from './../../components/PushController';
-
 import { connect } from 'react-redux'
 
 import PushNotification from 'react-native-push-notification'
-import { typography } from '../../config/styles';
+import PushController from './../../pushController';
 
 import { styles } from './styles';
-
 class Updates extends Component {
   constructor(props) {
     super(props);

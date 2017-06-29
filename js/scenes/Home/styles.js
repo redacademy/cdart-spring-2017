@@ -33,6 +33,7 @@ export const styles = StyleSheet.create({
     color: '#20425B',
     fontWeight: 'bold',
     fontFamily: typography.fontMain,
+
     fontSize: 16,
     paddingBottom: height*( 16 / 568 )
   },
