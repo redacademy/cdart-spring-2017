@@ -46,13 +46,13 @@ export const styles = StyleSheet.create({
   },
   petPicContainer: {
     borderRadius: 50,
-    height: 60,
+    height: 80,
     width: 100,
   },
   petPic: {
     flex: 1,
-    height: 60,
-    width: 60,
+    height: 80,
+    width: 80,
     resizeMode: 'cover',
     borderRadius: 10,
   },
