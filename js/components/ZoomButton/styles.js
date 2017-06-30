@@ -8,10 +8,10 @@ export const styles = StyleSheet.create({
   zoomButton: {
     justifyContent: 'center',
     alignItems: 'center',
-    height: 35,
-    width: 35,
+    height: 45,
+    width: 45,
     marginBottom: 5,
     backgroundColor: colors.skyBlue,
-    borderRadius: 35,
+    borderRadius: 55,
   }
 });

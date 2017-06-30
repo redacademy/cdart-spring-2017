@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Platform } from 'react-native';
+import { Platform, TouchableOpacity } from 'react-native';
 
 import ActivityView from 'react-native-activity-view';
 import {RNPrint} from 'NativeModules';
@@ -9,6 +9,7 @@ import {RNPrint} from 'NativeModules';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import { styles } from './styles';
+import { colors } from '../../config/styles';
 
 const startAirDrop = ( imageData ) => {
   ActivityView.show({
@@ -25,16 +26,21 @@ const androidPrint = ( imageData ) => {
 }
 
 const ShareButton = ({ data }) => (
-  <Icon
-    name={ 'md-more' }
-    size={ 35 }
-    color={ 'white' }
-    style={ styles.shareIcon }
+  <TouchableOpacity
+    style={ styles.shareButton }
+    underlayColor={ colors.lightRed }
     onPress={ Platform.OS === 'android'
               ? () => androidPrint( data )
               : ( ) => startAirDrop( data )
             }
-  />
+  >
+    <Icon
+      name={ 'md-more' }
+      size={ 35 }
+      color={ 'white' }
+      style={ styles.shareIcon }
+    />
+  </TouchableOpacity>
 );
 
 ShareButton.propTypes = {

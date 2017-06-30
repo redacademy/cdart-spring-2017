@@ -8,8 +8,10 @@ import FormInfoButton from '../../components/FormInfoButton';
 import { styles } from './styles';
 
 import {
-View
-} from 'react-native';
+  View,
+  Text,
+  Platform
+  } from 'react-native';
 
 class FormContainer extends Component {
 
@@ -32,13 +34,23 @@ class FormContainer extends Component {
   render() {
     return (
       <View>
-        <PDFViewer
-          title={ this.props.data.title }
-          imageName={ this.props.data.imageName }
-          style={styles.pdf}
-        />
         {
-          this.props.data.title === 'Animal Intake Form' &&
+          Platform.OS === 'android'
+            ?
+              <View>
+                <Text style={ styles.disclaimerText }>
+                  Sorry...viewing and printing forms is not supported on Android devices...
+                </Text>
+              </View>
+            :
+              <PDFViewer
+                title={ this.props.data.title }
+                imageName={ this.props.data.imageName }
+                style={styles.pdf}
+              />
+        }
+        {
+          Platform.OS === 'Animal Intake Form' &&
             <FormInfoButton />
         }
       </View>

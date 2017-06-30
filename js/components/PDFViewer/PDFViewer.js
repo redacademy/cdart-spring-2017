@@ -214,12 +214,10 @@ class PDFViewer extends Component {
         <ZoomButton
           iconName='md-add'
           zoom={ this.zoomIn }
-          style={ styles.zoomButton }
         />
         <ZoomButton
           iconName='md-remove'
           zoom={ this.zoomOut }
-          style={ styles.zoomButton }
         />
       </View>
     </View>

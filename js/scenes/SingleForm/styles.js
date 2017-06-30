@@ -1,5 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
+import { colors, typography } from '../../config/styles';
+
 const { height, width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
@@ -16,5 +18,16 @@ export const styles = StyleSheet.create({
     left: width * 0.75,
     width: 60,
     height: 60,
+  },
+  disclaimerText: {
+    width: width * 0.6,
+    marginTop: height * 0.3,
+    fontSize: 20,
+    lineHeight: 25,
+    fontFamily: typography.fontMain,
+    fontWeight: '600',
+    color: colors.dimBlue,
+    textAlign: 'center',
+    alignSelf: 'center'
   }
 });
