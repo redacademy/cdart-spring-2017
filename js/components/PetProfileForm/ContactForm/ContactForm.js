@@ -50,8 +50,14 @@ const ContactForm = (props) => {
 }
 
 ContactForm.propTypes = {
-  fields: PropTypes.string,
-  data: PropTypes.object
+  fields: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string
+  ]),
+  data: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string
+  ])
 }
 
 export default ContactForm;

@@ -61,7 +61,10 @@ const NewProfile = (props) => {
 
 NewProfile.propTypes = {
   currentNavigatorUID: PropTypes.string,
-  data: PropTypes.string,
+  data: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]),
   selectedImage: PropTypes.string,
 }
 

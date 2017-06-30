@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import { getFormValues, reduxForm } from 'redux-form';
 
@@ -22,6 +23,11 @@ class NewProfileContainer extends Component {
         selectedImage={this.props.selectedImage}/>
     );
   }
+}
+
+NewProfileContainer.propTypes = {
+  selectedImage: PropTypes.string,
+
 }
 
 function mapStateToProps(state) {

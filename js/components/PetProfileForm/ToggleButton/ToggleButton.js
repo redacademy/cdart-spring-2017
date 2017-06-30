@@ -85,9 +85,9 @@ function mapStateToProps(state){
 ToggleButton.propTypes = {
   title: PropTypes.string,
   info: PropTypes.string,
-  toggled: PropTypes.array,
+  toggled: PropTypes.object,
   dispatch: PropTypes.func,
-  selected: PropTypes.bool
+  selected: PropTypes.string
 }
 
 export default connect(mapStateToProps)(ToggleButton);

@@ -43,7 +43,10 @@ class SaveButton extends Component {
 }
 
 SaveButton.propTypes = {
-  originalData: PropTypes.object,
+  originalData: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string
+  ]),
   id: PropTypes.string,
   formData: PropTypes.object
 }

@@ -17,7 +17,8 @@ const ViewProfile = ({ petInfo }) => {
   const selectedTemperaments = petInfo.temperaments.map(temperament => {
       return temperament.temperament;
     });
-    console.log(petInfo);
+
+  console.log(petInfo.neutered);
   return (
     <ScrollView>
       <View style={ styles.profileContainer }>
@@ -81,12 +82,12 @@ const ViewProfile = ({ petInfo }) => {
           }
 
           {
-            petInfo.neutered === 'Spayed' || 'Neutered' ?
-
+            petInfo.neutered === 'Spayed'
+              ?
               <View style={ styles.neutered }>
                 <Text style={ styles.neuteredText }>Spayed/Neutered</Text>
-              </View> :
-
+              </View>
+              :
               <View style={ styles.notNeutered }>
                 <Text style={ styles.notNeuteredText }>Spayed/Neutered</Text>
               </View>

@@ -11,10 +11,6 @@ class ViewProfileContainer extends Component {
     }
   }
 
-  componentDidMount() {
-    console.log('Mounting with data:', this.props.data);
-  }
-
   render() {
     return(
       <ViewProfile petInfo={ this.props.data } />
