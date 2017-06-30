@@ -40,7 +40,7 @@ const NewProfile = (props) => {
         <ToggleButton info='Friendly' title='Friendly' toggled={props.data.temperaments ? props.data.temperaments : []} />
         <ToggleButton info='Energetic' title='Energetic'toggled={props.data.temperaments ? props.data.temperaments : []} />
         <ToggleButton info='Timid' title='Timid' toggled={props.data.temperaments ? props.data.temperaments : []} />
-        <ToggleButton info='Aggresive' title='Aggresive' toggled={props.data.temperaments ? props.data.temperaments : []} />
+        <ToggleButton info='Aggressive' title='Aggressive' toggled={props.data.temperaments ? props.data.temperaments : []} />
         <ToggleButton info='Obedient' title='Obedient' toggled={props.data.temperaments ? props.data.temperaments : []} />
       </View>
 
