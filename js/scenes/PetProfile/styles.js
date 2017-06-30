@@ -87,7 +87,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonContainer:{
-    flex: 1/4,
+    flex: 1/3,
     flexDirection: 'row'
   },
   newProfileButton: {

@@ -58,7 +58,7 @@ const PetProfile = ({ myPets, currentNavigatorUID }) => {
                   name={Platform.OS === 'ios' ? 'ios-trash' : 'md-trash'}
                   size={28}
                   color={colors.blue}
-                  style={{width: 25, marginRight: 8}}
+                  style={{width: 25, marginLeft: 15}}
                 />
               </TouchableOpacity>
             </View>
