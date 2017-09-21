@@ -1,7 +1,7 @@
 # cdart-spring-2017
 React Native App for CDART
 
-![App Screenshot](js/assets/images/app_screenshot.png "Cdart App Onboarding Screen")
+![App Screenshot](js/assets/images/app_screenshot.png "Cdart App Onboarding Screen"){:height="300px"}
 
 ## Team Members:
 - Montana Sawyer
