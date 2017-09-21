@@ -3,6 +3,7 @@ import { colors, typography } from '../../../config/styles';
 
 export const styles = StyleSheet.create({
   heading: {
+    fontSize: typography.baseSize,
     fontWeight: 'bold'
   },
   container: {

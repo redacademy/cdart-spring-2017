@@ -11,6 +11,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   heading: {
+    fontSize: typography.basSize,
     fontWeight: 'bold'
   },
   toggleButtonsWrapper: {

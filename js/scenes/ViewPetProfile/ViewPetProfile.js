@@ -18,7 +18,7 @@ const ViewProfile = ({ petInfo }) => {
       return temperament.temperament;
     });
 
-  console.log(petInfo.neutered);
+
   return (
     <ScrollView>
       <View style={ styles.profileContainer }>

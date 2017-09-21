@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -644,6 +645,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				5852B3BC80B945F69BF919F5 /* Resources */,
 				97DD9C53A2214A9A8767072D /* Frameworks */,
+				EB332B5C1F7372D60087283A /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -686,6 +688,18 @@
 				995846391EFDD11000AC562A /* libRCTPushNotification-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EB332B5C1F7372D60087283A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				2403303AAF2C4FEFB948B0D9 /* libBVLinearGradient.a */,
+				4DAA83B60C6541D69539497D /* libRNVectorIcons.a */,
+				F41BD573FD1842E9AAE9DF12 /* libRealmReact.a */,
+				8E769786F1A64373B497031B /* libActivityView.a */,
+				9E1C229B42C847968B2D3722 /* libRNPrint.a */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		EBA6577B1EFC2D9500327384 /* Products */ = {
